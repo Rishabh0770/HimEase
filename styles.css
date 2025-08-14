@@ -1207,14 +1207,6 @@ textarea {
 }
 
 
-
-
-
-
-
-
-
-
 .hero-slider-section {
   position: relative;
   height: 100vh;
@@ -1230,10 +1222,11 @@ textarea {
   filter: brightness(0.6);
   z-index: 0;
 }
+
 .hero-slider-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.3));
+  background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0));
   z-index: 1;
 }
 
