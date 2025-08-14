@@ -14,6 +14,8 @@ body{
   font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
   color:var(--ink);
   background:#fff;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* Utilities */
@@ -1198,6 +1200,11 @@ textarea {
   background-color: #000000;
   border-color: #000000;
 }
+@media (max-width: 767px) {
+  footer .d-flex {
+    justify-content: center !important;
+  }
+}
 
 
 
@@ -1404,11 +1411,8 @@ textarea {
     margin-top: -20px; /* push cards upward */
   }
   .hero-slider-arrows {
-    margin-top: -10px; /* keep your upward shift */
-    display: flex; /* make arrows line up together */
-    justify-content: center; /* center arrows horizontally */
-    gap: 10px; /* space between arrows */
-  }  
+    margin-top: -10px; /* move arrows up */
+  }
   .hero-card img {
     height: 200px;
   }
