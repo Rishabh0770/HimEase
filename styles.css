@@ -1359,7 +1359,7 @@ textarea {
 .hero-slider-arrows {
   position: absolute;
   bottom: -60px;
-  left: 50%;
+  left: 36%;
   transform: translateX(-50%);
   display: flex;
   gap: 12px;
