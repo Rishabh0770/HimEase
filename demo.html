@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kashmir Tour Card</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background: #f0f2f5;
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+    }
+    .card {
+        background: #fff;
+        width: 340px;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+        border: 1px solid #e5e7eb;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+    .card:hover {
+        transform: translateY(-6px) scale(1.02);
+        box-shadow: 0 8px 20px rgba(27,120,199,0.3);
+    }
+    .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+    }
+    .price-tag {
+        position: absolute;
+        background: #1b78c7;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-weight: 500;
+        top: 168px;
+        left: 14px;
+        font-size: 14px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    .card-content {
+        padding: 16px;
+        position: relative;
+    }
+    .card-title {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 4px;
+        color: #333;
+    }
+    .card-sub {
+        font-size: 12px;
+        color: #666;
+        margin-bottom: 12px;
+    }
+    .places {
+        color: #1b78c7;
+        font-weight: 500;
+        font-size: 13px;
+        margin-bottom: 4px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .places-list {
+        font-size: 13px;
+        color: #333;
+        margin-bottom: 14px;
+        line-height: 1.4;
+    }
+    .stars {
+        color: #1b78c7;
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+    .icons {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+        margin-bottom: 14px;
+    }
+    .icons i {
+        font-size: 18px;
+        color: #1b78c7;
+        transition: transform 0.25s ease, color 0.25s ease;
+        cursor: pointer;
+    }
+    .icons i:hover {
+        transform: scale(1.2);
+        color: #145a96;
+    }
+    .footer {
+        background: #f8f9fa;
+        color: #333;
+        padding: 10px 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 13px;
+        border-top: 1px solid #e5e7eb;
+    }
+    .footer .left {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: #1b78c7;
+        font-weight: 500;
+    }
+    .callback {
+        background: #1b78c7;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 4px;
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 12px;
+        transition: background 0.3s ease;
+    }
+    .callback:hover {
+        background: #145a96;
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <div style="position: relative;">
+        <img src="images/shimla.jpg" alt="Shimla">
+        <div class="price-tag">₹24,999 | 2 x Person</div>
+    </div>
+    <div class="card-content">
+        <div class="card-title">SHIMLA WINTER TOUR PACKAGE</div>
+        <div class="card-sub">(Note: Booking minimum for 2 people)</div>
+        <div class="places"><i class="fa-solid fa-map-location-dot"></i> Places Covered</div>
+        <div class="places-list">Srinagar » Pahalgam » Gulmarg » Sonamarg</div>
+        <div class="stars">★★★★★☆</div>
+        <div class="icons">
+            <i class="fa-solid fa-hotel"></i>
+            <i class="fa-solid fa-utensils"></i>
+            <i class="fa-solid fa-car"></i>
+            <i class="fa-regular fa-sun"></i>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="left"><i class="fa-regular fa-clock"></i> 4 Nights/5 Days</div>
+        <div class="callback">GET A CALLBACK</div>
+    </div>
+</div>
+
+</body>
+</html>

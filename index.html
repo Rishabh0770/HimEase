@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HimEase — Travel & Tours</title>
+  <meta name="description" content="Plan trips, discover destinations, and book curated travel packages." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="sticky-top shadow-sm bg-white">
+    <nav class="navbar navbar-expand-lg container py-2">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#">
+        <i class="fa-solid fa-earth-asia text-primary"></i>
+        HimEase
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Tours</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+<!-- Hero -->
+<section id="hero" class="hero-section position-relative overflow-hidden">
+  <div class="hero-bg-slideshow"></div>
+  <div class="container position-relative" style="z-index:2">
+    <div class="row justify-content-center align-items-center min-vh-75 py-5 text-center">
+      <div class="col-lg-8 text-white" data-aos="fade-up" data-aos-duration="1000">
+        <span class="badge rounded-pill bg-white text-primary mb-3" data-aos="zoom-in" data-aos-delay="200">#TravelSmart</span>
+        <h1 class="display-5 fw-bold lh-sm" data-aos="fade-up" data-aos-delay="400">
+          Discover. Plan. Book.<br>Travel made easy.
+        </h1>
+        <p class="lead opacity-75 mt-3" style="font-family: 'Dancing Script', cursive; font-size: 22px; color: white;" data-aos="fade-up" data-aos-delay="600">
+          From weekend getaways to bucket-list adventures — we curate experiences, so you can just show up.
+        </p>
+        <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap" data-aos="fade-up" data-aos-delay="800">
+          <a href="#packages" class="btn btn-primary btn-lg" data-aos="zoom-in" data-aos-delay="900">Explore Packages</a>
+          <a href="#destinations" class="btn btn-outline-light btn-lg" data-aos="zoom-in" data-aos-delay="1000">Top Destinations</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search card -->
+    <div class="search-card mt-5 p-3 p-md-4 rounded-4 shadow-lg hero-search-card" data-aos="fade-up" data-aos-delay="1200">
+      <form class="row g-3 align-items-center">
+        <div class="col-12 col-md-3" data-aos="fade-up" data-aos-delay="1300">
+          <input type="text" class="form-control form-control-lg" placeholder="Name" />
+        </div>
+        <div class="col-12 col-md-3" data-aos="fade-up" data-aos-delay="1400">
+          <input type="tel" class="form-control form-control-lg" placeholder="Phone" />
+        </div>
+        <div class="col-12 col-md-3" data-aos="fade-up" data-aos-delay="1500">
+          <input type="email" class="form-control form-control-lg" placeholder="Email" />
+        </div>
+        <div class="col-12 col-md-2" data-aos="fade-up" data-aos-delay="1600">
+          <select class="form-select form-select-lg">
+            <option>Select Package</option>
+            <option>Package 1</option>
+            <option>Package 2</option>
+          </select>
+        </div>
+        <div class="col-12 col-md-1 d-grid" data-aos="zoom-in" data-aos-delay="1700">
+          <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="hero-wave"></div>
+</section>
+
+
+<!-- About Us Section -->
+<section id="about-us" class="section-padding text-white">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Column: Image -->
+      <div class="col-lg-6 text-center" data-aos="fade-right" data-aos-duration="1000">
+        <img src="images/about.jpg" alt="Travel Experience" class="img-fluid rounded-4 shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+      </div>
+
+      <!-- Right Column: Text -->
+      <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-left" data-aos-duration="1000">
+        <span class="eyebrow text-uppercase fw-semibold" style="font-size: medium;" data-aos="fade-up" data-aos-delay="200">About Us</span>
+        <h2 class="section-title fw-bold" data-aos="fade-up" data-aos-delay="400">Discover the World with Us</h2>
+        <p class="lead" data-aos="fade-up" data-aos-delay="600">
+          We curate unforgettable travel experiences for adventurers, explorers, and dreamers.
+          From breathtaking mountains to serene beaches, our handpicked destinations are crafted 
+          to create memories that last a lifetime.
+        </p>
+        <p data-aos="fade-up" data-aos-delay="800">
+          With a passion for travel and years of expertise, our mission is to make your journey seamless, 
+          exciting, and truly unique. Let us be your guide to discovering the most beautiful corners of the world.
+        </p>
+        <a href="#" class="btn btn-primary mt-3" style="border-radius: 0%;" data-aos="zoom-in" data-aos-delay="1000">See More</a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="hero-slider-section">
+  <div class="hero-slider-bg" id="heroBg"></div>
+  <div class="hero-slider-overlay"></div>
+
+  <div class="hero-slider-content">
+    <!-- Left Side -->
+    <div class="hero-slider-left" data-aos="fade-right" data-aos-duration="1000">
+      <h1 id="heroTitle" data-aos="fade-up" data-aos-delay="200">Gulmarg</h1>
+      <p id="heroDesc" data-aos="fade-up" data-aos-delay="400">
+        Gulmarg, nestled in the Himalayas, offers pristine landscapes, world-class skiing, and lush meadows.
+      </p>
+      <button class="hero-slider-btn" data-aos="zoom-in" data-aos-delay="600">Explore</button>
+    </div>
+
+    <!-- Right Side (Slider) -->
+    <div class="hero-slider-right" data-aos="fade-left" data-aos-duration="1000">
+      <div class="swiper heroSwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide active-card"
+               data-title="Gulmarg"
+               data-desc="Gulmarg, nestled in the Himalayas, offers pristine landscapes, world-class skiing, and lush meadows."
+               data-bg="images/demo.jpg">
+            <div class="hero-card" data-aos="zoom-in" data-aos-delay="200">
+              <img src="images/demo.jpg" alt="Gulmarg">
+              <div class="hero-card-info">
+                <h3>Gulmarg</h3>
+                <span>Kashmir</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide"
+               data-title="Gurez"
+               data-desc="Gurez Valley is known for its breathtaking beauty, meadows, and rivers."
+               data-bg="images/shimla.jpg">
+            <div class="hero-card" data-aos="zoom-in" data-aos-delay="400">
+              <img src="images/manali.jpg" alt="Gurez">
+              <div class="hero-card-info">
+                <h3>Gurez</h3>
+                <span>Kashmir</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide"
+               data-title="Sonamarg"
+               data-desc="Sonamarg offers stunning mountain views, trekking routes, and adventure activities."
+               data-bg="images/dharamshala.jpg">
+            <div class="hero-card" data-aos="zoom-in" data-aos-delay="600">
+              <img src="images/kinnaur.jpg" alt="Sonamarg">
+              <div class="hero-card-info">
+                <h3>Sonamarg</h3>
+                <span>Kashmir</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrows (fixed under active card) -->
+      <div class="hero-slider-arrows" data-aos="fade-up" data-aos-delay="800">
+        <button class="hero-nav-btn hero-prev">&#10094;</button>
+        <button class="hero-nav-btn hero-next">&#10095;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Our Services Section -->
+<section id="services" class="py-5">
+  <div class="container text-center">
+
+    <!-- Section Heading -->
+    <p class="mb-1 fw-semibold" style="font-family: 'Patrick Hand', cursive; font-size: 20px;" data-aos="fade-up" data-aos-delay="100">
+      Why Choose Us?
+    </p>
+    <h2 class="mb-3" style="color: #1b78c7; font-size: 38px; font-weight: 700;" data-aos="fade-up" data-aos-delay="200">
+      Our Services
+    </h2>
+    <div class="d-flex justify-content-center align-items-center mb-5" data-aos="zoom-in" data-aos-delay="300">
+      <span class="me-2" style="width: 50px; height: 2px; background-color: #ccc;"></span>
+      <i class="fas fa-star" style="color: #000;"></i>
+      <span class="ms-2" style="width: 50px; height: 2px; background-color: #ccc;"></span>
+    </div>
+
+    <!-- Service Cards -->
+    <div class="row justify-content-center g-4">
+      <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card">
+          <div class="icon">
+            <i class="fas fa-hiking"></i>
+          </div>
+          <h5 class="mt-3">ADVENTURE<br>TOUR</h5>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card">
+          <div class="icon">
+            <i class="fas fa-hotel"></i>
+          </div>
+          <h5 class="mt-3">HOTEL<br>BOOKING</h5>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-card">
+          <div class="icon">
+            <i class="fas fa-hard-hat"></i>
+          </div>
+          <h5 class="mt-3">SAFETY<br>ENSURED</h5>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-card">
+          <div class="icon">
+            <i class="fas fa-campground"></i>
+          </div>
+          <h5 class="mt-3">EPIC<br>JOURNEYS</h5>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-card">
+          <div class="icon">
+            <i class="fas fa-tent"></i>
+          </div>
+          <h5 class="mt-3">TOUR<br>PACKAGES</h5>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="600">
+        <div class="service-card">
+          <div class="icon">
+            <i class="fas fa-horse"></i>
+          </div>
+          <h5 class="mt-3">HORSE<br>RIDING</h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- packages 3 in 1 images -->
+<section id="packages-section">
+  <div class="section-header" data-aos="fade-up" data-aos-delay="100">
+    <p class="subtitle" style="color: #000000; font-size: 28px;">Enjoy with adventure</p>
+    <h2 class="title" style="color: #000000; font-size: 38px; font-weight: 700;">Packages</h2>
+  </div>
+
+  <div class="packages-card">
+    <div class="package-section" data-bg="images/demo.jpg" data-aos="zoom-in" data-aos-delay="200">
+      <h3>Trek Packages</h3>
+      <p class="location">KASHMIR</p>
+      <a href="#" class="explore-btn">EXPLORE</a>
+    </div>
+    <div class="package-section" data-bg="images/packagespiti.jpg" data-aos="zoom-in" data-aos-delay="300">
+      <h3>Ladakh Packages</h3>
+      <p class="location">LADAKH</p>
+      <a href="#" class="explore-btn">EXPLORE</a>
+    </div>
+    <div class="package-section" data-bg="images/spiti.jpg" data-aos="zoom-in" data-aos-delay="400">
+      <h3>Tour Packages</h3>
+      <p class="location">KASHMIR</p>
+      <a href="#" class="explore-btn">EXPLORE</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Destinations -->
+<section id="destinations" class="section-padding bg-light">
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up" data-aos-delay="100">
+      <p class="subtitle">Cherished your memories</p>
+      <h2 class="title" style="color: #1b78c7; font-size: 38px; font-weight: 700;">Himachal Tour Packages</h2>
+    </div>
+    <div class="row g-4 mt-2">
+
+      <!-- Card 1 -->
+      <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="tour-card">
+          <div style="position: relative;">
+            <img src="images/shimla.jpg" alt="Shimla, Himachal">
+            <div class="price-tag">₹14,999 | 2 x Person</div>
+          </div>
+          <div class="card-content">
+            <div class="card-title">SHIMLA WINTER TOUR PACKAGE</div>
+            <div class="card-sub">(Minimum booking: 2 people)</div>
+            <div class="places"><i class="fa-solid fa-map-location-dot"></i> Places Covered</div>
+            <div class="places-list">Shimla » Kufri » Chail</div>
+            <div class="stars">★★★★★☆</div>
+            <div class="icons">
+              <i class="fa-solid fa-hotel"></i>
+              <i class="fa-solid fa-utensils"></i>
+              <i class="fa-solid fa-car"></i>
+              <i class="fa-regular fa-sun"></i>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="left"><i class="fa-regular fa-clock"></i> 3 Nights/4 Days</div>
+            <div class="callback">GET A CALLBACK</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="tour-card">
+          <div style="position: relative;">
+            <img src="images/manali.jpg" alt="Manali, Himachal">
+            <div class="price-tag">₹16,999 | 2 x Person</div>
+          </div>
+          <div class="card-content">
+            <div class="card-title">MANALI WINTER TOUR PACKAGE</div>
+            <div class="card-sub">(Minimum booking: 2 people)</div>
+            <div class="places"><i class="fa-solid fa-map-location-dot"></i> Places Covered</div>
+            <div class="places-list">Manali » Solang » Rohtang Pass</div>
+            <div class="stars">★★★★★☆</div>
+            <div class="icons">
+              <i class="fa-solid fa-hotel"></i>
+              <i class="fa-solid fa-utensils"></i>
+              <i class="fa-solid fa-car"></i>
+              <i class="fa-regular fa-sun"></i>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="left"><i class="fa-regular fa-clock"></i> 4 Nights/5 Days</div>
+            <div class="callback">GET A CALLBACK</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="tour-card">
+          <div style="position: relative;">
+            <img src="images/dharamshala.jpg" alt="Dharamshala, Himachal">
+            <div class="price-tag">₹15,499 | 2 x Person</div>
+          </div>
+          <div class="card-content">
+            <div class="card-title">DHARAMSHALA TOUR PACKAGE</div>
+            <div class="card-sub">(Minimum booking: 2 people)</div>
+            <div class="places"><i class="fa-solid fa-map-location-dot"></i> Places Covered</div>
+            <div class="places-list">Dharamshala » McLeod Ganj » Kangra</div>
+            <div class="stars">★★★★★☆</div>
+            <div class="icons">
+              <i class="fa-solid fa-hotel"></i>
+              <i class="fa-solid fa-utensils"></i>
+              <i class="fa-solid fa-car"></i>
+              <i class="fa-regular fa-sun"></i>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="left"><i class="fa-regular fa-clock"></i> 3 Nights/4 Days</div>
+            <div class="callback">GET A CALLBACK</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore More Button -->
+      <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="500">
+        <a href="#" class="explore-more-btn">EXPLORE MORE</a>
+      </div>
+
+      <!-- Overlay + Modal (no animation added to avoid modal issues) -->
+      <div id="formModal" class="modal-overlay">
+        <div class="modal-box">
+          <span class="close-btn" id="closeFormBtn">&times;</span>
+          <h3>Connect with a group tour expert</h3>
+          <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="tel" placeholder="Phone" required>
+            <input type="email" placeholder="Your Email" required>
+            <div class="two-inputs">
+              <input type="date" placeholder="Travel Date">
+              <input type="number" placeholder="Traveller Count">
+            </div>
+            <textarea placeholder="Please let me know about the trip"></textarea>
+            <button type="submit" class="callback-btn">Get A Callback</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="about-card" data-aos="fade-right" data-aos-duration="1000">
+    <span class="card-number">01</span>
+    <h2>What We Do ?</h2>
+    <p>At ‘The Trip Ease,’ we create unforgettable experiences in Kashmir and Ladakh. We specialize in crafting seamless journeys through these breathtaking regions. Whether it’s the serenity of a houseboat stay on Dal Lake or the thrill of a Kashmir trek, we curate adventures that become joyous memories in the making.</p>
+  </div>
+
+  <div class="about-card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+    <span class="card-number">02</span>
+    <h2>Where We Go ?</h2>
+    <p>At ‘The Trip Ease,’ we specialize in crafting seamless journeys through the captivating regions of Kashmir and Ladakh. Our expertise lies in curating unforgettable adventures, from serene houseboat stays on Dal Lake to exploring the scenic beauty of Kashmir through treks.</p>
+  </div>
+</section>
+
+
+
+<!-- Testimonial Section -->
+<section class="testimonial-section">
+  <div class="section-header text-center" data-aos="fade-up" data-aos-duration="1000">
+    <p class="subtitle">Client Voices: Our Pride, Your Joy</p>
+    <h2 class="title" style="color: #1b78c7; font-size: 38px; font-weight: 700;">What Our Clients Say</h2>
+  </div>
+
+  <!-- Swiper Container -->
+  <div class="testimonial-container" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+    <!-- Swiper -->
+    <div class="swiper testimonial-slider">
+      <div class="swiper-wrapper">
+
+        <!-- Testimonial Card -->
+        <div class="swiper-slide testimonial-card">
+          <div class="profile-pic">
+            <img src="images/icon.png" alt="Profile">
+          </div>
+          <h3>Ravina Verma</h3>
+          <small>Feb 07, 2025</small>
+          <div class="stars1"></div>
+          <p>Just like their name "TripEase" Totally recommendable 5/5. Thank you so much Rahila and Mir for the wonderful experience.</p>
+        </div>
+
+        <div class="swiper-slide testimonial-card">
+          <div class="profile-pic">
+            <img src="https://i.pravatar.cc/100?img=2" alt="Profile">
+          </div>
+          <h3>Fiza Makdoomi</h3>
+          <small>Aug 31, 2024</small>
+          <div class="stars1"></div>
+          <p>Excellent service & value for money. Keep up the good work!</p>
+        </div>
+
+        <div class="swiper-slide testimonial-card">
+          <div class="profile-pic">
+            <img src="https://i.pravatar.cc/100?img=3" alt="Profile">
+          </div>
+          <h3>Sameera Abdullatif</h3>
+          <small>Jul 09, 2024</small>
+          <div class="stars1"></div>
+          <p>It was a wonderful trip as a solo traveler. Thank you for all the arrangements done by TripEase team.</p>
+        </div>
+
+        <!-- Extra Cards -->
+        <div class="swiper-slide testimonial-card">
+          <div class="profile-pic">
+            <img src="https://i.pravatar.cc/100?img=4" alt="Profile">
+          </div>
+          <h3>Aditya Sharma</h3>
+          <small>Jun 15, 2024</small>
+          <div class="stars1"></div>
+          <p>Amazing coordination and well-planned trip. Definitely booking again!</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Navigation arrows -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
+
+
+<!-- Dream Team -->
+<section class="dreamteam-section" data-aos="fade-up" data-aos-duration="1000">
+  <h2 class="dreamteam-subtitle" data-aos="fade-up" data-aos-delay="100">Meet the Masters</h2>
+  <h1 class="dreamteam-title" data-aos="fade-up" data-aos-delay="200">Our Dream Team</h1>
+  <div class="d-flex justify-content-center align-items-center mb-5" data-aos="zoom-in" data-aos-delay="300">
+    <span class="me-2" style="width: 50px; height: 2px; background-color: #ccc;"></span>
+    <i class="fas fa-star" style="color: #000;"></i>
+    <span class="ms-2" style="width: 50px; height: 2px; background-color: #ccc;"></span>
+  </div>
+
+  <div class="dreamteam-cards">
+    <div class="dreamteam-card" data-aos="fade-right" data-aos-delay="200">
+      <div class="dreamteam-img-wrapper">
+        <img src="https://i.pravatar.cc/200?img=12" alt="Er Rishav Kumar">
+      </div>
+      <h3 class="dreamteam-name">Er Rishav Kumar</h3>
+      <p class="dreamteam-role">Founder</p>
+      <p class="dreamteam-text">Rishav Kumar is the visionary founder...</p>
+      <div class="dreamteam-socials">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="dreamteam-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="dreamteam-img-wrapper">
+        <img src="https://i.pravatar.cc/200?img=13" alt="Mir Uzair">
+      </div>
+      <h3 class="dreamteam-name">Mir Uzair</h3>
+      <p class="dreamteam-role">Sales Head</p>
+      <p class="dreamteam-text">With a passion for customer satisfaction...</p>
+      <div class="dreamteam-socials">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="dreamteam-card" data-aos="fade-left" data-aos-delay="400">
+      <div class="dreamteam-img-wrapper">
+        <img src="https://i.pravatar.cc/200?img=14" alt="Haya Khan">
+      </div>
+      <h3 class="dreamteam-name">Haya Khan</h3>
+      <p class="dreamteam-role">Operations Head</p>
+      <p class="dreamteam-text">Haya Khan expertly manages our operations...</p>
+      <div class="dreamteam-socials">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Blogs -->
+<section class="blog-section" data-aos="fade-up" data-aos-duration="1000">
+  <h3 class="blog-subtitle" data-aos="fade-up" data-aos-delay="100">Our Blogs</h3>
+  <h2 class="blog-title" style="color: #1b78c7; font-size: 38px; font-weight: 700;" data-aos="fade-up" data-aos-delay="200">Latest Posts</h2>
+
+  <div class="blog-cards">
+    <div class="blog-card" data-aos="zoom-in" data-aos-delay="200">
+      <div class="blog-image">
+        <img src="images/spiti.jpg" alt="Blog Cover">
+        <div class="blog-date"><span>16</span><small>Mar</small></div>
+      </div>
+      <div class="blog-content">
+        <div class="blog-author"><i class="fa fa-user"></i> Rishav Kumar</div> 
+        <h4>The Ultimate Himachal Travel Guide</h4>
+        <a href="#" class="blog-btn">Learn more</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-aos="zoom-in" data-aos-delay="300">
+      <div class="blog-image">
+        <img src="images/dharamshala.jpg" alt="Blog Cover">
+        <div class="blog-date"><span>01</span><small>Dec</small></div>
+      </div>
+      <div class="blog-content">
+        <div class="blog-author"><i class="fa fa-user"></i> Rishav Kumar</div> 
+        <h4>The HimEase: Your Trusted Travel Partner</h4>
+        <a href="#" class="blog-btn">Learn more</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-aos="zoom-in" data-aos-delay="400">
+      <div class="blog-image">
+        <img src="images/demo.jpg" alt="Blog Cover">
+        <div class="blog-date"><span>22</span><small>Nov</small></div>
+      </div>
+      <div class="blog-content">
+        <div class="blog-author"><i class="fa fa-user"></i> Rishav Kumar</div> 
+        <h4>Top 04 Destinations to Visit in Himachal</h4>
+        <a href="#" class="blog-btn">Learn more</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta" class="section-padding cta-section text-center text-white" data-aos="fade-up" data-aos-duration="1000">
+  <div class="container">
+    <h2 class="fw-bold display-6" data-aos="fade-up" data-aos-delay="100">Ready to lock your next getaway?</h2>
+    <p class="lead opacity-85" data-aos="fade-up" data-aos-delay="200">DM us your dates. We’ll handle flights, stays, and the fun parts.</p>
+    <a href="#contact" class="btn btn-light btn-lg mt-2" data-aos="zoom-in" data-aos-delay="300">Get a Free Plan</a>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section-padding" data-aos="fade-up" data-aos-duration="1000">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+        <h3 class="section-title mb-3">Contact Us</h3>
+        <p class="text-muted">Tell us your travel goals...</p>
+        <ul class="list-unstyled d-grid gap-2">
+          <li><i class="fa-solid fa-location-dot me-2 text-primary"></i> Bengaluru, IN</li>
+          <li><i class="fa-solid fa-phone me-2 text-primary"></i> +91 98765 43210</li>
+          <li><i class="fa-solid fa-envelope me-2 text-primary"></i> hello@tripease.example</li>
+        </ul>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+        <div class="card border-0 shadow-sm rounded-4">
+          <div class="card-body p-4">
+            <form id="contactForm" class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" rows="4" required></textarea>
+              </div>
+              <div class="col-12 d-grid d-md-flex gap-2">
+                <button class="btn btn-primary px-4" type="submit">Send</button>
+                <button class="btn btn-outline-secondary px-4" type="reset">Reset</button>
+              </div>
+              <p class="small text-success d-none" id="contactSuccess"><i class="fa-regular fa-circle-check me-1"></i> Message sent!</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="pt-5 pb-4 bg-dark text-white">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold">HimEase</h5>
+          <p class="text-white-50">Making travel effortless with curated, transparent packages.</p>
+        </div>
+        <div class="col-md-4">
+          <h6 class="fw-semibold">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#why">Why Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6 class="fw-semibold">Follow</h6>
+          <div class="d-flex gap-3 fs-5">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <div class="d-flex justify-content-between small text-white-50">
+        <span>© <span id="year"></span> HimEase. All rights reserved.</span>
+        <span>Built with ♥ by Rishav</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+  <!-- Include Swiper CSS & JS in your <head> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Swiper CSS & JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800, // animation speed
+    once: true,    // animate only once
+    offset: 100    // trigger point before element enters viewport
+  });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const heroBg = document.getElementById("heroBg");
+    const heroTitle = document.getElementById("heroTitle");
+    const heroDesc = document.getElementById("heroDesc");
+
+    const swiper = new Swiper(".heroSwiper", {
+        slidesPerView: 2.5,
+        spaceBetween: 25,
+        centeredSlides: true,
+        autoHeight: true,
+        breakpoints: {
+            0: { slidesPerView: 1.1, spaceBetween: 15 },
+            768: { slidesPerView: 2.5, spaceBetween: 25 }
+        },
+        navigation: {
+            nextEl: ".hero-next",
+            prevEl: ".hero-prev",
+        },
+        on: {
+            init: function () {
+                updateHero(this.slides[this.activeIndex]);
+                this.slides[0].classList.add("active-card");
+            },
+            slideChange: function () {
+                updateHero(this.slides[this.activeIndex]);
+                document.querySelectorAll(".swiper-slide").forEach(slide => {
+                    slide.classList.remove("active-card");
+                });
+                this.slides[this.activeIndex].classList.add("active-card");
+            }
+        }
+    });
+
+    function updateHero(slide) {
+        const title = slide.getAttribute("data-title");
+        const desc = slide.getAttribute("data-desc");
+        const bg = slide.getAttribute("data-bg");
+
+        heroTitle.textContent = title;
+        heroDesc.textContent = desc;
+        heroBg.style.backgroundImage = `url('${bg}')`;
+    }
+});
+
+
+</script>
+
+
+
+</body>
+</html>
