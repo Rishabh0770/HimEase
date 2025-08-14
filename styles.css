@@ -91,7 +91,9 @@ footer a:hover{color:#fff}
 
 .hero-search-card {
   background: rgba(255, 255, 255, 0.95); /* Slight transparency */
-  border-radius: 12px;
+  border-radius: 8px;
+  position: relative; /* if it's already absolute, keep absolute */
+  top: 80px; /* increase this to move it further down */
 }
 
 .hero-search-card input,
@@ -143,6 +145,65 @@ footer a:hover{color:#fff}
     padding-bottom: 40px; /* Smaller gap for mobile */
   }
 }
+
+/* Default - Desktop first styles already in your CSS */
+
+/* Large tablets and small desktops (992px and below) */
+@media (max-width: 992px) {
+  .hero-search-card {
+    top: 60px; /* slightly closer to hero text */
+  }
+  .hero-search-card .form-control-lg,
+  .hero-search-card .form-select-lg {
+    font-size: 1rem; /* smaller input text */
+    padding: 8px 10px;
+  }
+}
+
+/* Tablets and large phones (768px and below) */
+@media (max-width: 768px) {
+  .hero-section {
+    padding-bottom: 40px;
+    padding-top: 20px;
+  }
+  .hero-search-card {
+    top: 40px;
+    padding: 1.2rem;
+  }
+  .hero-search-card .row > div {
+    flex: 0 0 100%; /* stack inputs */
+    max-width: 100%;
+  }
+  .hero-search-card button {
+    width: 100%; /* full-width submit button */
+  }
+}
+
+/* Small phones (576px and below) */
+@media (max-width: 576px) {
+  .hero-section h1 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+  .hero-section p {
+    font-size: 1rem;
+  }
+  .hero-search-card {
+    top: 30px;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .hero-search-card input,
+  .hero-search-card select {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+  .hero-section .btn-lg {
+    font-size: 1rem;
+    padding: 0.65rem 1rem;
+  }
+}
+
 
 /* Cards */
 .destination-card img{transition:transform .8s ease}
