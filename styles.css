@@ -99,8 +99,8 @@ footer a:hover{color:#fff}
   justify-content: center;
 }
 .hero-section {
-  padding-bottom: 120px; /* Add gap at bottom */
-  padding-top: 10px;
+  padding-bottom: 0px; /* Add gap at bottom */
+  padding-top: 0px;
 }
 
 .hero-search-card {
