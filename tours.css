@@ -1,0 +1,23 @@
+html{scroll-behavior:smooth}
+body {
+  overflow-x: hidden;
+}
+
+
+/* Default styling (desktop first) */
+.about-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/kullu.jpg') no-repeat center center/cover;
+  position: relative;
+  padding: 80px 20px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  z-index: 1;
+}
