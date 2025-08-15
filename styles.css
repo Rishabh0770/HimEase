@@ -55,10 +55,8 @@ footer a:hover{color:#fff}
 }
 
 /* Hero */
-.hero-section{background:linear-gradient(120deg,#1b78c7);}
 .hero-bg{
   position:absolute;inset:0;
-  background:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
   filter:brightness(.7);
   mix-blend:overlay;
   opacity:.55;
@@ -85,8 +83,14 @@ footer a:hover{color:#fff}
 
 .hero-section {
   text-align: center;
+  min-height: 100vh; /* full screen height */
+  display: flex;
+  align-items: center; /* vertically center everything */
+  position: relative;
 }
-
+.hero-section .container {
+  z-index: 2; /* keep content above background */
+}
 .hero-section .badge {
   display: inline-block;
 }
@@ -138,15 +142,23 @@ footer a:hover{color:#fff}
   z-index: 1;
   background-size: cover;
   background-position: center;
-  animation: slideShow 25s infinite;
+  transition: opacity 1s ease-in-out; /* smooth fade */
+}
+
+.hero-bg-slideshow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* dark shade */
+  pointer-events: none; /* don't block clicks */
 }
 
 @keyframes slideShow {
   0%   { background-image: url('images/img1.jpg'); }
-  20%  { background-image: url('images/img2.jpg'); }
-  40%  { background-image: url('images/img3.jpg'); }
+  20%  { background-image: url('images/img5.jpg'); }
+  40%  { background-image: url('images/img2.jpg'); }
   60%  { background-image: url('images/img4.jpg'); }
-  80%  { background-image: url('images/img5.jpg'); }
+  80%  { background-image: url('images/img3.jpg'); }
   100% { background-image: url('images/img1.jpg'); }
 }
 
@@ -155,8 +167,6 @@ footer a:hover{color:#fff}
     padding-bottom: 40px; /* Smaller gap for mobile */
   }
 }
-
-/* Default - Desktop first styles already in your CSS */
 
 /* Large tablets and small desktops (992px and below) */
 @media (max-width: 992px) {

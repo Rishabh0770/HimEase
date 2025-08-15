@@ -99,24 +99,34 @@ var swiper = new Swiper(".testimonial-slider", {
 });
 
 // slideshow hero background
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const images = [
     "images/img1.jpg",
+    "images/img5.jpg",
     "images/img2.jpg",
-    "images/img3.jpg",
     "images/img4.jpg",
-    "images/img5.jpg"
+    "images/img3.jpg"
   ];
+  
   let current = 0;
   const slideshow = document.querySelector(".hero-bg-slideshow");
 
+  slideshow.style.backgroundImage = `url(${images[current]})`;
+  slideshow.style.transition = "opacity 1s ease-in-out";
+
   setInterval(() => {
-    current = (current + 1) % images.length;
-    slideshow.style.backgroundImage = `url(${images[current]})`;
-  }, 6000); // Change every 6s
+    const next = (current + 1) % images.length;
+    const img = new Image();
+    img.src = images[next];
+
+    img.onload = () => {
+      slideshow.style.opacity = 0; // fade out current
+      setTimeout(() => {
+        slideshow.style.backgroundImage = `url(${images[next]})`;
+        slideshow.style.opacity = 1; // fade in
+        current = next;
+      }, 50); // tiny delay to trigger CSS transition
+    };
+  }, 5000);
 });
-
-
-
-
 
