@@ -79,7 +79,6 @@ body {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  font-weight: bold;
   transition: background 0.3s ease;
 }
 
@@ -169,10 +168,12 @@ body {
 
   .custom-packages .small-heading {
     font-size: 22px;
+    font-weight: bold;
   }
 
   .custom-packages .main-heading {
     font-size: 32px;
+    font-weight: bold;
   }
 
   .custom-packages .description {
