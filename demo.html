@@ -131,7 +131,7 @@
 </head>
 <body>
 
-<div class="card">
+<div class="card" onclick="window.location.href='tour-details.html'">
     <div style="position: relative;">
         <img src="images/shimla.jpg" alt="Shimla">
         <div class="price-tag">₹24,999 | 2 x Person</div>
@@ -151,9 +151,12 @@
     </div>
     <div class="footer">
         <div class="left"><i class="fa-regular fa-clock"></i> 4 Nights/5 Days</div>
-        <div class="callback">GET A CALLBACK</div>
+        <div class="callback" onclick="event.stopPropagation(); window.location.href='tour-details.html'">
+            View Tour
+        </div>
     </div>
 </div>
+
 
 </body>
 </html>

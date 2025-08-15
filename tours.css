@@ -105,3 +105,98 @@ body {
     object-fit: cover;   /* Ensures the image fills rectangle */
   }
 }
+
+.callback:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Custom Packages Section */
+.custom-packages {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.custom-packages .small-heading {
+  font-family: 'Dancing Script', cursive;
+  font-size: 26px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.custom-packages .main-heading {
+  font-family: 'Merriweather', serif;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.custom-packages .description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #000;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.custom-packages .callback-btn {
+  display: inline-block;
+  width: auto; /* keeps button tight to text */
+  padding: 12px 25px;
+  background: #1b78c7;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 10px;
+  white-space: nowrap;
+  transition: background 0.3s ease;
+}
+
+.custom-packages .callback-btn:hover {
+  background: #000;
+}
+
+/* 📱 Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .custom-packages {
+    padding: 40px 15px;
+  }
+
+  .custom-packages .small-heading {
+    font-size: 22px;
+  }
+
+  .custom-packages .main-heading {
+    font-size: 32px;
+  }
+
+  .custom-packages .description {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  .custom-packages .callback-btn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-packages .main-heading {
+    font-size: 26px;
+  }
+
+  .custom-packages .description {
+    font-size: 14px;
+  }
+
+  .custom-packages .callback-btn {
+    padding: 9px 18px;
+    font-size: 14px;
+  }
+}
