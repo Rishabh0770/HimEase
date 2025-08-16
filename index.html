@@ -633,5 +633,31 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 </script>
 
+<div id="chat-widget"></div>
+
+<script>
+  fetch("whatsapp.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("chat-widget").innerHTML = data;
+
+      // Execute any scripts inside whatsapp.html
+      const scripts = document
+        .getElementById("chat-widget")
+        .querySelectorAll("script");
+      
+      scripts.forEach(script => {
+        const newScript = document.createElement("script");
+        if (script.src) {
+          newScript.src = script.src; // if script has a src attribute
+        } else {
+          newScript.textContent = script.textContent; // inline JS
+        }
+        document.body.appendChild(newScript);
+      });
+    });
+</script>
+
+
 </body>
 </html>
