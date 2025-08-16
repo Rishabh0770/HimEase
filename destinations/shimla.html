@@ -223,11 +223,22 @@
 
 .swiper-slide img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;  /* keeps image proportional inside rectangle */
+  height: auto;
+  object-fit: contain;  /* keeps full image visible */
+  background: #000; 
+  cursor: pointer;    /* 👈 add this */
 }
 
+.swiper-slide img:hover {
+  transform: scale(1.03); /* optional smooth zoom */
+  transition: transform 0.3s ease;
+}
 
+.swiper-slide a {
+  display: block;
+  text-decoration: none;
+  color: inherit; /* keeps text white */
+}
 
     .form-box h3 {
       text-align: center;
@@ -278,14 +289,22 @@
 /* Text overlay */
 .slide-text {
   position: absolute;
-  bottom: 40px;
+  bottom: 50px;
   left: 10px;
   right: 10px;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
   text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+}
+
+@media (max-width: 768px) {
+  .slide-text {
+    font-size: 1rem;   /* smaller font for tablets & phones */
+    bottom: 40px;      /* bring it closer to bottom */
+    padding: 0 8px;    /* little breathing space */
+  }
 }
 
 /* Pagination dots */
@@ -438,12 +457,8 @@
   color: #444;
   font-size: 0.95rem;
   line-height: 1.6;
-  transition: all 0.3s ease;
-}
-
-.faq-card.active .faq-answer {
-  max-height: 500px; /* big enough for text */
-  padding: 15px 20px 20px;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  will-change: max-height;
 }
 
 .faq-card.active .arrow {
@@ -555,158 +570,187 @@
   </div>
 </section>
 
- <div class="section-container">
-    <!-- Left Text -->
-    <div class="content">
-  <h2>Discover Shimla</h2>
-  <p>
-    Gulmarg, an exquisite jewel of the Indian-administered union territory of Jammu and Kashmir, is a captivating mountain resort nestled in the lap of the majestic Himalayas. Its name, quite literally translating to “Meadow of Flowers,” is a testament to the lush, rolling meadows blanketed in a kaleidoscope of wildflowers during the warmer months.
-  </p>
-  <p>
-    A cornerstone of Gulmarg’s charm lies in its breathtaking natural beauty. It’s a place where verdant meadows, carpeted with a myriad of blossoms, merge seamlessly with towering snow-clad peaks. Dominating the skyline is Mount Apharwat, an icon for adventure seekers. The Gulmarg Gondola, one of the highest cable cars in the world, offers thrilling rides to lofty altitudes, providing mesmerizing panoramic views that defy description.
-  </p>
-  <p>
-    Gulmarg’s allure extends far beyond aesthetics. It’s a year-round haven for outdoor enthusiasts. In winter, the town transforms into a powdery playground for skiers and snowboarders, attracting aficionados from around the globe. In summer, it beckons trekkers and hikers with its intricate network of trails that wind through emerald valleys and lead to pristine lakes, like the shimmering Alpather Lake. The town is also a paradise for golf enthusiasts, featuring one of the world’s highest golf courses, nestled at an elevation of over 2,600 meters.
-  </p>
+<!-- Section with AOS Effects -->
+<div class="section-container" data-aos="fade-up">
 
-  <div class="image-row">
-    <div class="img-box"><img src="../images/shimla.jpg" alt="Gulmarg View"></div>
-    <div class="img-box"><img src="../images/ridge.jpg" alt="Gulmarg Gondola"></div>
-    <div class="img-box"><img src="../images/spiti.jpg" alt="Gulmarg Meadows"></div>
+  <!-- Left Text -->
+  <div class="content" data-aos="fade-up">
+    <h2 data-aos="fade-up">Discover Shimla</h2>
+    <p data-aos="fade-up">
+      Gulmarg, an exquisite jewel of the Indian-administered union territory of Jammu and Kashmir, 
+      is a captivating mountain resort nestled in the lap of the majestic Himalayas. Its name, 
+      quite literally translating to “Meadow of Flowers,” is a testament to the lush, rolling meadows 
+      blanketed in a kaleidoscope of wildflowers during the warmer months.
+    </p>
+    <p data-aos="fade-up">
+      A cornerstone of Gulmarg’s charm lies in its breathtaking natural beauty. It’s a place where 
+      verdant meadows, carpeted with a myriad of blossoms, merge seamlessly with towering snow-clad 
+      peaks. Dominating the skyline is Mount Apharwat, an icon for adventure seekers. The Gulmarg Gondola, 
+      one of the highest cable cars in the world, offers thrilling rides to lofty altitudes, 
+      providing mesmerizing panoramic views that defy description.
+    </p>
+    <p data-aos="fade-up">
+      Gulmarg’s allure extends far beyond aesthetics. It’s a year-round haven for outdoor enthusiasts. 
+      In winter, the town transforms into a powdery playground for skiers and snowboarders, attracting 
+      aficionados from around the globe. In summer, it beckons trekkers and hikers with its intricate 
+      network of trails that wind through emerald valleys and lead to pristine lakes, like the shimmering 
+      Alpather Lake. The town is also a paradise for golf enthusiasts, featuring one of the world’s highest 
+      golf courses, nestled at an elevation of over 2,600 meters.
+    </p>
+
+    <!-- Image Row -->
+    <div class="image-row" data-aos="zoom-in">
+      <div class="img-box"><img src="../images/shimla.jpg" alt="Shimla View"></div>
+      <div class="img-box"><img src="../images/ridge.jpg" alt="Shimla Ridge"></div>
+      <div class="img-box"><img src="../images/spiti.jpg" alt="Spiti Valley"></div>
+    </div>
+
+    <p data-aos="fade-up">
+      Gulmarg, an exquisite jewel of the Indian-administered union territory of Jammu and Kashmir, 
+      is a captivating mountain resort nestled in the lap of the majestic Himalayas. Its name, 
+      quite literally translating to “Meadow of Flowers,” is a testament to the lush, rolling meadows 
+      blanketed in a kaleidoscope of wildflowers during the warmer months.
+    </p>
+    <p data-aos="fade-up">
+      A cornerstone of Gulmarg’s charm lies in its breathtaking natural beauty. It’s a place where 
+      verdant meadows, carpeted with a myriad of blossoms, merge seamlessly with towering snow-clad 
+      peaks. Dominating the skyline is Mount Apharwat, an icon for adventure seekers. The Gulmarg Gondola, 
+      one of the highest cable cars in the world, offers thrilling rides to lofty altitudes, providing 
+      mesmerizing panoramic views that defy description.
+    </p>
+
+    <!-- Image Row -->
+    <div class="image-row" data-aos="zoom-in">
+      <div class="img-box"><img src="../images/shimla.jpg" alt="Shimla View"></div>
+      <div class="img-box"><img src="../images/ridge.jpg" alt="Shimla Ridge"></div>
+      <div class="img-box"><img src="../images/spiti.jpg" alt="Spiti Valley"></div>
+    </div>
+    
+    <!-- FAQ Section -->
+    <section class="faq-section" style="background-image: url('../images/your-bg.png');" data-aos="fade-up">
+      <h2 class="faq-heading">FAQ'S</h2>
+      <div class="faq-container">
+
+        <div class="faq-card active" data-aos="fade-up">
+          <div class="faq-question">
+            <span>What is the best time to visit Gulmarg?</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            The best time to visit Gulmarg depends on your interests. 
+            <strong>Summer (May to September)</strong> is perfect for trekking and enjoying the lush green meadows. 
+            <strong>Winter (December to February)</strong> is ideal for snow sports like skiing and snowboarding.
+          </div>
+        </div>
+
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>What is the Gulmarg Gondola, and is it a must-do activity?</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            The Gulmarg Gondola is one of the world’s highest cable cars, offering stunning views of the Himalayas. Yes, it’s a must-do!
+          </div>
+        </div>
+
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>Can I go skiing or snowboarding in Gulmarg if I'm a beginner?</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            Absolutely! Gulmarg offers beginner slopes and professional instructors to help you learn skiing and snowboarding.
+          </div>
+        </div>
+
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>Is it safe to travel to Gulmarg?</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            Yes, Gulmarg is safe for tourists. However, it’s always best to check local travel advisories before planning your trip.
+          </div>
+        </div>
+
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>What are the dining options in Gulmarg?</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            Gulmarg has a range of dining options, from local Kashmiri cuisine to international dishes, mainly served at hotels and resorts.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
   </div>
 
-  <p>
-    Gulmarg, an exquisite jewel of the Indian-administered union territory of Jammu and Kashmir, is a captivating mountain resort nestled in the lap of the majestic Himalayas. Its name, quite literally translating to “Meadow of Flowers,” is a testament to the lush, rolling meadows blanketed in a kaleidoscope of wildflowers during the warmer months.
-  </p>
-  <p>
-    A cornerstone of Gulmarg’s charm lies in its breathtaking natural beauty. It’s a place where verdant meadows, carpeted with a myriad of blossoms, merge seamlessly with towering snow-clad peaks. Dominating the skyline is Mount Apharwat, an icon for adventure seekers. The Gulmarg Gondola, one of the highest cable cars in the world, offers thrilling rides to lofty altitudes, providing mesmerizing panoramic views that defy description.
-  </p>
-
-  <div class="image-row">
-    <div class="img-box"><img src="../images/shimla.jpg" alt="Gulmarg View"></div>
-    <div class="img-box"><img src="../images/ridge.jpg" alt="Gulmarg Gondola"></div>
-    <div class="img-box"><img src="../images/spiti.jpg" alt="Gulmarg Meadows"></div>
-  </div>
-  
-<!-- FAQ Section -->
-<section class="faq-section" style="background-image: url('../images/your-bg.png');">
-  <h2 class="faq-heading">FAQ'S</h2>
-
-  <div class="faq-container">
-
-    <div class="faq-card">
-      <div class="faq-question">
-        <span>What is the best time to visit Gulmarg?</span>
-        <i class="arrow">&#x25BC;</i>
-      </div>
-      <div class="faq-answer">
-        The best time to visit Gulmarg depends on your interests. 
-        <strong>Summer (May to September)</strong> is perfect for trekking and enjoying the lush green meadows. 
-        <strong>Winter (December to February)</strong> is ideal for snow sports like skiing and snowboarding.
-      </div>
-    </div>
-
-    <div class="faq-card">
-      <div class="faq-question">
-        <span>What is the Gulmarg Gondola, and is it a must-do activity?</span>
-        <i class="arrow">&#x25BC;</i>
-      </div>
-      <div class="faq-answer">
-        The Gulmarg Gondola is one of the world’s highest cable cars, offering stunning views of the Himalayas. Yes, it’s a must-do!
-      </div>
-    </div>
-
-    <div class="faq-card">
-      <div class="faq-question">
-        <span>Can I go skiing or snowboarding in Gulmarg if I'm a beginner?</span>
-        <i class="arrow">&#x25BC;</i>
-      </div>
-      <div class="faq-answer">
-        Absolutely! Gulmarg offers beginner slopes and professional instructors to help you learn skiing and snowboarding.
-      </div>
-    </div>
-
-    <div class="faq-card">
-      <div class="faq-question">
-        <span>Is it safe to travel to Gulmarg?</span>
-        <i class="arrow">&#x25BC;</i>
-      </div>
-      <div class="faq-answer">
-        Yes, Gulmarg is safe for tourists. However, it’s always best to check local travel advisories before planning your trip.
-      </div>
-    </div>
-
-    <div class="faq-card">
-      <div class="faq-question">
-        <span>What are the dining options in Gulmarg?</span>
-        <i class="arrow">&#x25BC;</i>
-      </div>
-      <div class="faq-answer">
-        Gulmarg has a range of dining options, from local Kashmiri cuisine to international dishes, mainly served at hotels and resorts.
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-</div>
-
-
-<div class="form-container">
-  <div class="form-box">
-    <h3>TOUR ENQUIRY</h3>
+  <!-- Right Form + Slider + Map -->
+  <div class="form-container" data-aos="fade-left">
+    <div class="form-box" data-aos="fade-up">
+      <h3>TOUR ENQUIRY</h3>
       <form>
-        <input type="text" placeholder="Name" required>
-        <input type="tel" placeholder="Phone" required>
-        <input type="email" placeholder="Email" required>
-        <input type="date" required>
-        <select required>
+        <input type="text" placeholder="Name" required data-aos="fade-up">
+        <input type="tel" placeholder="Phone" required data-aos="fade-up">
+        <input type="email" placeholder="Email" required data-aos="fade-up">
+        <input type="date" required data-aos="fade-up">
+        <select required data-aos="fade-up">
           <option value="">Select Package</option>
           <option value="basic">Basic Package</option>
           <option value="premium">Premium Package</option>
           <option value="luxury">Luxury Package</option>
         </select>
-        <button type="submit">Submit</button>
+        <button type="submit" data-aos="zoom-in">Submit</button>
       </form>
-  </div>
+    </div>
 
-     <!-- Slider below form -->
-  <div class="slider-container">
-  <h3 class="slider-heading">Explore Tours</h3>
-  
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="../images/shimla.jpg" />
-        <div class="slide-text">Adventure Escape in Shimla</div>
-      </div>
-      <div class="swiper-slide">
-        <img src="../images/ridge.jpg" />
-        <div class="slide-text">Explore Shimla</div>
+    <!-- Slider below form -->
+    <div class="slider-container" data-aos="fade-up">
+      <h3 class="slider-heading">Explore Tours</h3>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-aos="zoom-in">
+  <a href="#" target="_blank">
+    <img src="../images/ridge.jpg" alt="Shimla" />
+    <div class="slide-text">Adventure Escape in Shimla</div>
+  </a>
+</div>
+
+<div class="swiper-slide" data-aos="zoom-in">
+  <a href="#" target="_blank">
+    <img src="../images/gallery4.jpg" alt="lake Shimla" />
+    <div class="slide-text">Explore Shimla</div>
+  </a>
+</div>
+
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
-    <div class="swiper-pagination"></div>
-  </div>
-</div>
 
-<div class="explore-section" style="margin-top: 15px;">
-  <h3 class="slider-heading">Explore Shimla</h3>
-  <div class="explore-map">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.3878!2d74.3805!3d34.0484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e20f6f6b2f0d07%3A0x6c6a7893d5eb!2sGulmarg!5e0!3m2!1sen!2sin!4v1694176400000!5m2!1sen!2sin" 
-      width="100%" 
-      height="100%" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy">
-    </iframe>
-  </div>
-</div>
-
-</div>
+    <!-- Map -->
+    <div class="explore-section" style="margin-top: 15px;" data-aos="fade-up">
+      <h3 class="slider-heading">Explore Shimla</h3>
+      <div class="explore-map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54674.093992430695!2d77.11782141946671!3d31.078286363802526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390578e3e35d6e67%3A0x1f7e7ff6ff9f54b7!2sShimla%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1755366729549!5m2!1sen!2sin" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
 
   </div>
+
+</div>
+
 
 <!-- WhatsApp Floating Button -->
   <div class="whatsapp-float" onclick="toggleChat()">
@@ -812,13 +856,98 @@
 </script>
 
 <script>
-  document.querySelectorAll(".faq-question").forEach(question => {
-    question.addEventListener("click", () => {
-      const parent = question.parentElement;
-      parent.classList.toggle("active");
+  document.addEventListener("DOMContentLoaded", () => {
+    const cards = Array.from(document.querySelectorAll(".faq-card"));
+
+    // helper to set max-height with !important (beats any external CSS caps)
+    const setMax = (el, val) => el.style.setProperty("max-height", val, "important");
+
+    const openCard = (card) => {
+      const ans = card.querySelector(".faq-answer");
+      // close others
+      cards.forEach(c => { if (c !== card) closeCard(c); });
+
+      card.classList.add("active");
+      ans.style.padding = "15px 20px 20px";
+      // animate to full height then free it to grow naturally
+      setMax(ans, ans.scrollHeight + "px");
+      // after transition, remove cap so long text/images can keep expanding
+      ans.addEventListener("transitionend", function tidy(e){
+        if (e.propertyName === "max-height" && card.classList.contains("active")) {
+          setMax(ans, "none");
+          ans.removeEventListener("transitionend", tidy);
+        }
+      });
+    };
+
+    const closeCard = (card) => {
+      const ans = card.querySelector(".faq-answer");
+      if (!card.classList.contains("active")) return;
+
+      // from auto/none → measure → collapse (to keep smooth animation)
+      setMax(ans, ans.scrollHeight + "px");
+      // force reflow
+      void ans.offsetHeight;
+      setMax(ans, "0px");
+      ans.style.padding = "0 20px";
+      card.classList.remove("active");
+    };
+
+    // click handlers
+    cards.forEach(card => {
+      const q = card.querySelector(".faq-question");
+      q.addEventListener("click", () => {
+        if (card.classList.contains("active")) {
+          closeCard(card);
+        } else {
+          openCard(card);
+        }
+      });
     });
+
+    // keep first card open by default (and fully expanded)
+    if (cards.length) {
+      openCard(cards[0]);
+    }
+
+    // re-measure when viewport changes (e.g., phone rotation)
+    const adjustOpen = () => {
+      const openAns = document.querySelector(".faq-card.active .faq-answer");
+      if (openAns) {
+        setMax(openAns, openAns.scrollHeight + "px");
+        // free it again after transition
+        setTimeout(() => setMax(openAns, "none"), 410);
+      }
+    };
+    window.addEventListener("resize", adjustOpen);
+    window.addEventListener("load", adjustOpen);
+
+    // fonts/AOS can change text flow—recheck once fonts settle
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(adjustOpen).catch(()=>{});
+    }
   });
 </script>
 
+
+
+
+
+
+<script>
+    function toggleChat() {
+      const chatBox = document.getElementById("chatBox");
+      const overlay = document.getElementById("chatOverlay");
+      chatBox.classList.toggle("show");
+      overlay.classList.toggle("show");
+    }
+
+    function openWhatsApp() {
+      let phoneNumber = "917018434170"; // Change to your WhatsApp number
+      let msg = "Hi, I’d like to know more about your travel packages.";
+      let url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(msg)}`;
+      window.open(url, "_blank");
+    }
+  </script>
 </body>
 </html>
