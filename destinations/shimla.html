@@ -385,6 +385,111 @@
   margin-bottom: 15px;
 }
 
+
+.faq-section {
+  padding: 50px 0px;
+  background-size: cover;
+  background-position: center;
+}
+
+.faq-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: left;
+  color: #000;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-image: url(../images/background2.jpg);
+}
+
+.faq-card {
+  background: #fff;
+  background-image: url(../images/background2.jpg);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.faq-question .arrow {
+  transition: transform 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+.faq-card.active .faq-answer {
+  max-height: 500px; /* big enough for text */
+  padding: 15px 20px 20px;
+}
+
+.faq-card.active .arrow {
+  transform: rotate(180deg);
+}
+
+/* 📱 Mobile styles */
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 30px 15px;
+  }
+
+  .faq-heading {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .faq-container {
+    gap: 10px;
+  }
+
+  .faq-card {
+    border-radius: 8px;
+  }
+
+  .faq-question {
+    padding: 14px 15px;
+    font-size: 1rem;
+  }
+
+  .faq-question .arrow {
+    font-size: 1rem;
+  }
+
+  .faq-answer {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    padding: 0 15px;
+  }
+
+  .faq-card.active .faq-answer {
+    padding: 10px 15px 15px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -466,6 +571,68 @@
     <div class="img-box"><img src="../images/spiti.jpg" alt="Gulmarg Meadows"></div>
   </div>
   
+<!-- FAQ Section -->
+<section class="faq-section" style="background-image: url('../images/your-bg.png');">
+  <h2 class="faq-heading">FAQ'S</h2>
+
+  <div class="faq-container">
+
+    <div class="faq-card">
+      <div class="faq-question">
+        <span>What is the best time to visit Gulmarg?</span>
+        <i class="arrow">&#x25BC;</i>
+      </div>
+      <div class="faq-answer">
+        The best time to visit Gulmarg depends on your interests. 
+        <strong>Summer (May to September)</strong> is perfect for trekking and enjoying the lush green meadows. 
+        <strong>Winter (December to February)</strong> is ideal for snow sports like skiing and snowboarding.
+      </div>
+    </div>
+
+    <div class="faq-card">
+      <div class="faq-question">
+        <span>What is the Gulmarg Gondola, and is it a must-do activity?</span>
+        <i class="arrow">&#x25BC;</i>
+      </div>
+      <div class="faq-answer">
+        The Gulmarg Gondola is one of the world’s highest cable cars, offering stunning views of the Himalayas. Yes, it’s a must-do!
+      </div>
+    </div>
+
+    <div class="faq-card">
+      <div class="faq-question">
+        <span>Can I go skiing or snowboarding in Gulmarg if I'm a beginner?</span>
+        <i class="arrow">&#x25BC;</i>
+      </div>
+      <div class="faq-answer">
+        Absolutely! Gulmarg offers beginner slopes and professional instructors to help you learn skiing and snowboarding.
+      </div>
+    </div>
+
+    <div class="faq-card">
+      <div class="faq-question">
+        <span>Is it safe to travel to Gulmarg?</span>
+        <i class="arrow">&#x25BC;</i>
+      </div>
+      <div class="faq-answer">
+        Yes, Gulmarg is safe for tourists. However, it’s always best to check local travel advisories before planning your trip.
+      </div>
+    </div>
+
+    <div class="faq-card">
+      <div class="faq-question">
+        <span>What are the dining options in Gulmarg?</span>
+        <i class="arrow">&#x25BC;</i>
+      </div>
+      <div class="faq-answer">
+        Gulmarg has a range of dining options, from local Kashmiri cuisine to international dishes, mainly served at hotels and resorts.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 </div>
 
 
@@ -611,6 +778,15 @@
       el: ".swiper-pagination",
       clickable: true,
     },
+  });
+</script>
+
+<script>
+  document.querySelectorAll(".faq-question").forEach(question => {
+    question.addEventListener("click", () => {
+      const parent = question.parentElement;
+      parent.classList.toggle("active");
+    });
   });
 </script>
 
