@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="./styles.css" />
   <link rel="stylesheet" href="about.css">
   <link rel="stylesheet" href="tours.css">
+  <link rel="stylesheet" href="whatsapp.css">
 </head>
 <body>
 
@@ -251,8 +252,6 @@
   </div>
 </section>
 
-
-
 <section class="custom-packages" data-aos="fade-up" data-aos-delay="100">
   <h3 class="small-heading" data-aos="fade-down" data-aos-delay="200">Create Your</h3>
   <h2 class="main-heading" data-aos="zoom-in" data-aos-delay="300">Customized Packages</h2>
@@ -263,7 +262,40 @@
   <a href="#" class="callback-btn" data-aos="zoom-in" data-aos-delay="500">Request a Callback</a>
 </section>
 
+<!-- WhatsApp Floating Button -->
+  <div class="whatsapp-float" onclick="toggleChat()">
+    <i class="fab fa-whatsapp"></i>
+  </div>
 
+  <!-- Overlay -->
+  <div class="chat-overlay" id="chatOverlay" onclick="toggleChat()"></div>
+
+  <!-- Chat Box -->
+  <div class="chat-box" id="chatBox">
+    <div class="chat-header">
+      <span><i class="fab fa-whatsapp"></i> WhatsApp</span>
+      <span class="close-btn" onclick="toggleChat()"><i class="fas fa-times"></i></span>
+    </div>
+    <div class="chat-body">
+      <div class="chat-msg">
+        Hello 👋 <br>
+        How can we help you?
+      </div>
+    </div>
+    <div class="chat-footer">
+      <div class="whatsapp-btn-wrapper">
+        <button class="open-chat-btn" onclick="openWhatsApp()">
+          Open chat <i class="fas fa-paper-plane"></i>
+        </button>
+
+        <!-- QR Popup -->
+        <div class="qr-popup">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/917018434170?text=Hi%20I’d%20like%20to%20know%20more%20about%20your%20travel%20packages" alt="WhatsApp QR">
+          <p>Scan me 👆</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="pt-5 pb-4 bg-dark text-white">
@@ -318,31 +350,6 @@
     once: true,    // animate only once
     offset: 100    // trigger point before element enters viewport
   });
-</script>
-
-<div id="chat-widget"></div>
-
-<script>
-  fetch("whatsapp.html")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("chat-widget").innerHTML = data;
-
-      // Execute any scripts inside whatsapp.html
-      const scripts = document
-        .getElementById("chat-widget")
-        .querySelectorAll("script");
-      
-      scripts.forEach(script => {
-        const newScript = document.createElement("script");
-        if (script.src) {
-          newScript.src = script.src; // if script has a src attribute
-        } else {
-          newScript.textContent = script.textContent; // inline JS
-        }
-        document.body.appendChild(newScript);
-      });
-    });
 </script>
 
 </body>
