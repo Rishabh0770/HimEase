@@ -26,17 +26,34 @@
     }
 
     .testimonial-section p {
-      font-family: 'Dancing Script', cursive;
-      font-size: 15px;
+      font-family: 'Dancing Script';
+      font-size: 16px;
       margin-bottom: 10px;
     }
 
-    .testimonial-section h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 40px;
-      font-weight: 600;
-    }
 
+    .section-header .subtitle {
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.section-header .title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .section-header .subtitle {
+    font-size: 18px; /* smaller subtitle */
+  }
+
+  .section-header .title {
+    font-size: 20px; /* reduce title size */
+    margin-bottom: 25px;
+  }
+}
     /* Swiper */
     .swiper {
       padding: 40px 0;
@@ -157,9 +174,10 @@
 <body>
 
 <section class="testimonial-section">
-  <p>Client Voices: Our Pride, Your Joy</p>
-  <h2>What Our Clients Say</h2>
-
+<div class="section-header text-center" data-aos="fade-up" data-aos-delay="100">
+      <p class="subtitle">Client Voices: Our Pride, Your Joy</p>
+      <h2 class="title" style="color: #1b78c7; font-size: 38px; font-weight: 700;">What Our Clients Say</h2>
+    </div>
   <div class="container position-relative">
     <!-- Swiper -->
     <div class="swiper mySwiper mt-5">

@@ -77,26 +77,7 @@ window.addEventListener('click', (e) => {
 });
 
 
-// testimonial slider/ swiper 
-var swiper = new Swiper(".testimonial-slider", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  centeredSlides: false,
-  loop: false, // still no extra duplicates
-  autoplay: {
-    delay: 5000, // 5 seconds per slide
-    disableOnInteraction: false // keeps autoplay after manual swipe
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  },
-  breakpoints: {
-    1024: { slidesPerView: 3 },
-    768: { slidesPerView: 2 },
-    0: { slidesPerView: 1 }
-  }
-});
+
 
 // slideshow hero background
 document.addEventListener("DOMContentLoaded", function () {
