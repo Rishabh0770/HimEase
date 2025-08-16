@@ -189,7 +189,15 @@
       from { opacity: 0; transform: translate(-50%, 20px); }
       to { opacity: 1; transform: translate(-50%, 0); }
     }
-
+@media (max-width: 600px) {
+  .whatsapp-float {
+    right: 10px;   /* push slightly left */
+    bottom: 15px;  /* optional: adjust bottom spacing */
+    width: 55px;   /* a bit smaller on mobile */
+    height: 55px;
+    font-size: 24px;
+  }
+}
     /* ✅ Responsive for mobile */
     @media (max-width: 600px) {
       .chat-box {
