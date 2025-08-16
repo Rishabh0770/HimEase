@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="whatsapp.css">
 </head>
 <body>
   <!-- Header / Navbar -->
@@ -521,8 +522,40 @@
   </div>
 </section>
 
-<div id="chat-widget"></div>
+<!-- WhatsApp Floating Button -->
+  <div class="whatsapp-float" onclick="toggleChat()">
+    <i class="fab fa-whatsapp"></i>
+  </div>
 
+  <!-- Overlay -->
+  <div class="chat-overlay" id="chatOverlay" onclick="toggleChat()"></div>
+
+  <!-- Chat Box -->
+  <div class="chat-box" id="chatBox">
+    <div class="chat-header">
+      <span><i class="fab fa-whatsapp"></i> WhatsApp</span>
+      <span class="close-btn" onclick="toggleChat()"><i class="fas fa-times"></i></span>
+    </div>
+    <div class="chat-body">
+      <div class="chat-msg">
+        Hello 👋 <br>
+        How can we help you?
+      </div>
+    </div>
+    <div class="chat-footer">
+      <div class="whatsapp-btn-wrapper">
+        <button class="open-chat-btn" onclick="openWhatsApp()">
+          Open chat <i class="fas fa-paper-plane"></i>
+        </button>
+
+        <!-- QR Popup -->
+        <div class="qr-popup">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/917018434170?text=Hi%20I’d%20like%20to%20know%20more%20about%20your%20travel%20packages" alt="WhatsApp QR">
+          <p>Scan me 👆</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="pt-5 pb-4 bg-dark text-white">
@@ -633,27 +666,6 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("reviews-iframe").style.height = e.data.height + "px";
     }
   });
-</script>
-
-<script>
-  fetch("whatsapp.html")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("chat-widget").innerHTML = data;
-
-      // Execute scripts inside whatsapp.html
-      const scripts = document.getElementById("chat-widget").querySelectorAll("script");
-      scripts.forEach(script => {
-        const newScript = document.createElement("script");
-        if (script.src) {
-          newScript.src = script.src;  // external script
-        } else {
-          newScript.textContent = script.textContent;  // inline script
-        }
-        document.body.appendChild(newScript);
-      });
-    })
-    .catch(err => console.error("Failed to load WhatsApp widget:", err));
 </script>
 
 

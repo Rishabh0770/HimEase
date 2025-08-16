@@ -111,3 +111,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 5000);
 });
 
+// whatsapp icon
+function toggleChat() {
+      const chatBox = document.getElementById("chatBox");
+      const overlay = document.getElementById("chatOverlay");
+      chatBox.classList.toggle("show");
+      overlay.classList.toggle("show");
+    }
+
+    function openWhatsApp() {
+      let phoneNumber = "917018434170"; // Change to your WhatsApp number
+      let msg = "Hi, I’d like to know more about your travel packages.";
+      let url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(msg)}`;
+      window.open(url, "_blank");
+    }
