@@ -29,7 +29,7 @@
         <!-- Card 1 -->
         <div class="swiper-slide">
           <div class="card">
-            <img src="images/ridge.jpg" alt="">
+            <img src="images/ridge.jpg" loading="lazy" alt="">
             <div class="card-overlay">
               <h3>Shimla</h3>
               <span>Himachal</span>
@@ -40,7 +40,7 @@
         <!-- Card 2 -->
         <div class="swiper-slide">
           <div class="card">
-            <img src="images/kinnaur.jpg" alt="">
+            <img src="images/kinnaur.jpg"loading="lazy" alt="">
             <div class="card-overlay">
               <h3>Kinnaur</h3>
               <span>Himachal</span>
@@ -51,7 +51,7 @@
         <!-- Card 3 -->
         <div class="swiper-slide">
           <div class="card">
-            <img src="images/spiti.jpg" alt="">
+            <img src="images/spiti.jpg" loading="lazy" alt="">
             <div class="card-overlay">
               <h3>Spiti</h3>
               <span>Himachal</span>
@@ -62,7 +62,7 @@
         <!-- Card 4 -->
         <div class="swiper-slide">
           <div class="card">
-            <img src="images/ladakh2.jpg" alt="">
+            <img src="images/ladakh2.jpg" loading="lazy" alt="">
             <div class="card-overlay">
               <h3>Ladakh</h3>
               <span>Himachal</span>
@@ -73,7 +73,7 @@
         <!-- Card 5 -->
         <div class="swiper-slide">
           <div class="card">
-            <img src="images/kullu.jpg" alt="">
+            <img src="images/kullu.jpg" loading="lazy" alt="">
             <div class="card-overlay">
               <h3>Kullu</h3>
               <span>Himachal</span>
@@ -84,7 +84,7 @@
         <!-- Card 6 -->
         <div class="swiper-slide">
           <div class="card">
-            <img src="images/stadium.jpg" alt="">
+            <img src="images/stadium.jpg" loading="lazy" alt="">
             <div class="card-overlay">
               <h3>Dharamshala</h3>
               <span>Himachal</span>
@@ -95,7 +95,7 @@
         <!-- Card 7 -->
         <div class="swiper-slide">
           <div class="card">
-            <img src="images/gallery1.jpg" alt="">
+            <img src="images/gallery1.jpg" loading="lazy" alt="">
             <div class="card-overlay">
               <h3>Manikaran</h3>
               <span>Himachal</span>
@@ -106,7 +106,7 @@
         <!-- Card 8 -->
         <div class="swiper-slide">
           <div class="card">
-            <img src="images/gallery3.jpg" alt="">
+            <img src="images/gallery3.jpg" loading="lazy" alt="">
             <div class="card-overlay">
               <h3>Rohtang</h3>
               <span>Himachal</span>
@@ -117,7 +117,7 @@
         <!-- Card 9 -->
         <div class="swiper-slide">
           <div class="card">
-            <img src="images/manali.jpg" alt="">
+            <img src="images/manali.jpg"loading="lazy"  alt="">
             <div class="card-overlay">
               <h3>Manali</h3>
               <span>Himachal</span>
@@ -128,7 +128,7 @@
         <!-- Card 10 -->
         <div class="swiper-slide">
           <div class="card">
-            <img src="images/river.jpg" alt="">
+            <img src="images/river.jpg" loading="lazy" alt="">
             <div class="card-overlay">
               <h3>Kasol</h3>
               <span>Parwati Valley</span>
@@ -211,6 +211,7 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 20,
   centeredSlides: true,
   loop: true,
+  speed: 600,  // smoother slide
   loopedSlides: data.length,
   navigation: {
     nextEl: '.swiper-button-next',
