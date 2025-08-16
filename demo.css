@@ -35,6 +35,12 @@ body {
   color: white;
   z-index: 1;
 }
+/* Sirf desktop view */
+@media (min-width: 1025px) {
+  .hero-content {
+    margin-left: 130px; /* 👈 thoda right shift */
+  }
+}
 
 .hero-title {
   font-size: 4rem;
@@ -42,9 +48,10 @@ body {
 }
 
 .hero-desc {
+  font-size: 1.20rem;
   margin: 20px 0;
   max-width: 450px;
-  line-height: 1.6;
+  line-height: 1.2;
 }
 
 .explore-btn {
@@ -54,8 +61,12 @@ body {
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
+  transition: all 0.3s ease; /* Smooth hover */
 }
-
+.explore-btn:hover {
+  background: #000;   /* 👈 Black on hover */
+  color: #fff;        /* Text white for contrast */
+}
 .cards-slider {
   width: 50%;
   z-index: 1;
@@ -73,8 +84,11 @@ body {
   justify-content: center;
   align-items: flex-start;
   transition: transform 0.4s ease, opacity 0.4s ease;
+  cursor: grab;
 }
-
+.swiper-slide:active {
+  cursor: grabbing;
+}
 .card {
   position: relative;
   width: 260px;
@@ -82,8 +96,11 @@ body {
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.4s ease;
+  cursor: grab;
 }
-
+.card:active {
+  cursor: grabbing;
+}
 .card img {
   width: 100%;
   height: 100%;
@@ -93,8 +110,14 @@ body {
 .card-overlay {
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
-  padding: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* text always bottom */
+  align-items: center;
+  text-align: center;
   background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
   color: white;
 }
@@ -162,5 +185,25 @@ body {
 
   .swiper-slide-active .card {
     height: 340px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;  /* was 4rem */
+  }
+
+  .hero-desc {
+  font-size: 0.95rem;
+  max-width: 100%;
+  line-height: 1.6;  /* 👈 Add this */
+}
+
+
+  .card-overlay h3 {
+    font-size: 1rem;  /* smaller heading on card */
+  }
+
+  .card-overlay p {
+    font-size: 0.8rem; /* smaller paragraph */
   }
 }

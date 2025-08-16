@@ -120,75 +120,8 @@
 </section>
 
 
-<section class="hero-slider-section">
-  <div class="hero-slider-bg" id="heroBg"></div>
-  <div class="hero-slider-overlay"></div>
-
-  <div class="hero-slider-content">
-    <!-- Left Side -->
-    <div class="hero-slider-left" data-aos="fade-right" data-aos-duration="1000">
-      <h1 id="heroTitle" data-aos="fade-up" data-aos-delay="200">Gulmarg</h1>
-      <p id="heroDesc" data-aos="fade-up" data-aos-delay="400">
-        Gulmarg, nestled in the Himalayas, offers pristine landscapes, world-class skiing, and lush meadows.
-      </p>
-      <button class="hero-slider-btn" data-aos="zoom-in" data-aos-delay="600">Explore</button>
-    </div>
-
-    <!-- Right Side (Slider) -->
-    <div class="hero-slider-right" data-aos="fade-left" data-aos-duration="1000">
-      <div class="swiper heroSwiper">
-        <div class="swiper-wrapper">
-          <!-- Slide 1 -->
-          <div class="swiper-slide active-card data-aos="fade-up data-aos-delay="200"
-               data-title="Shimla"
-               data-desc="Shimla, nestled in the Himalayas, offers pristine landscapes, world-class skiing, and lush meadows."
-               data-bg="images/packageshimla.jpg">
-            <div class="hero-card" data-aos="zoom-in" data-aos-delay="200">
-              <img src="images/ridge.jpg" alt="shimla">
-              <div class="hero-card-info">
-                <h3>Shimla</h3>
-                <span>Himachal Pradesh</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="swiper-slide"
-               data-title="Manali"
-               data-desc="Manali is known for its breathtaking beauty, meadows, adventure sports & activities and rivers."
-               data-bg="images/packagemanali.jpg">
-            <div class="hero-card" data-aos="zoom-in" data-aos-delay="400">
-              <img src="images/river.jpg" alt="manali">
-              <div class="hero-card-info">
-                <h3>Manali</h3>
-                <span>Himachal Pradesh</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="swiper-slide"
-               data-title="Dharamshala"
-               data-desc="Dharamshala offers stunning mountain views, trekking routes, and adventure activities."
-               data-bg="images/dharamshala.jpg">
-            <div class="hero-card" data-aos="zoom-in" data-aos-delay="600">
-              <img src="images/stadium.jpg" alt="Dharamshala">
-              <div class="hero-card-info">
-                <h3>Dharamshala</h3>
-                <span>Himachal Pradesh</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Arrows (fixed under active card) -->
-      <div class="hero-slider-arrows" data-aos="fade-up" data-aos-delay="800">
-        <button class="hero-nav-btn hero-prev">&#10094;</button>
-        <button class="hero-nav-btn hero-next">&#10095;</button>
-      </div>
-    </div>
-  </div>
+<section>
+  <iframe src="imageslider.html" style="width:100%; height:715px; border:none;"></iframe>
 </section>
 
 
@@ -695,51 +628,8 @@
   });
 </script>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const heroBg = document.getElementById("heroBg");
-    const heroTitle = document.getElementById("heroTitle");
-    const heroDesc = document.getElementById("heroDesc");
 
-    const swiper = new Swiper(".heroSwiper", {
-        slidesPerView: 2.5,
-        spaceBetween: 25,
-        centeredSlides: true,
-        autoHeight: true,
-        breakpoints: {
-            0: { slidesPerView: 1.1, spaceBetween: 15 },
-            768: { slidesPerView: 2.5, spaceBetween: 25 }
-        },
-        navigation: {
-            nextEl: ".hero-next",
-            prevEl: ".hero-prev",
-        },
-        on: {
-            init: function () {
-                updateHero(this.slides[this.activeIndex]);
-                this.slides[0].classList.add("active-card");
-            },
-            slideChange: function () {
-                updateHero(this.slides[this.activeIndex]);
-                document.querySelectorAll(".swiper-slide").forEach(slide => {
-                    slide.classList.remove("active-card");
-                });
-                this.slides[this.activeIndex].classList.add("active-card");
-            }
-        }
-    });
 
-    function updateHero(slide) {
-        const title = slide.getAttribute("data-title");
-        const desc = slide.getAttribute("data-desc");
-        const bg = slide.getAttribute("data-bg");
-
-        heroTitle.textContent = title;
-        heroDesc.textContent = desc;
-        heroBg.style.backgroundImage = `url('${bg}')`;
-    }
-});
-</script>
 
 </body>
 </html>

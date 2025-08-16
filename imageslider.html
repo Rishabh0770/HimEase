@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kashmir Slider</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="demo.css" />
+</head>
+<body>
+
+<section class="hero-section">
+  <div class="hero-bg">
+    <img src="images/packagemanali.jpg" alt="Background" />
+  </div>
+
+  <div class="hero-content">
+    <h1 class="hero-title">Gulmarg</h1>
+    <p class="hero-desc">
+      Gulmarg, nestled in the Himalayas, offers pristine landscapes, world-class skiing, and lush meadows.
+      It’s a haven for adventure seekers and nature lovers alike.
+    </p>
+    <a href="#" class="explore-btn">Explore</a>
+  </div>
+
+  <div class="cards-slider">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- Card 1 -->
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="images/ridge.jpg" alt="">
+            <div class="card-overlay">
+              <h3>Shimla</h3>
+              <span>Himachal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="images/kinnaur.jpg" alt="">
+            <div class="card-overlay">
+              <h3>Kinnaur</h3>
+              <span>Himachal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="images/spiti.jpg" alt="">
+            <div class="card-overlay">
+              <h3>Spiti</h3>
+              <span>Himachal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="images/ladakh2.jpg" alt="">
+            <div class="card-overlay">
+              <h3>Ladakh</h3>
+              <span>Himachal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="images/kullu.jpg" alt="">
+            <div class="card-overlay">
+              <h3>Kullu</h3>
+              <span>Himachal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="images/stadium.jpg" alt="">
+            <div class="card-overlay">
+              <h3>Dharamshala</h3>
+              <span>Himachal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="images/gallery1.jpg" alt="">
+            <div class="card-overlay">
+              <h3>Manikaran</h3>
+              <span>Himachal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="images/gallery3.jpg" alt="">
+            <div class="card-overlay">
+              <h3>Rohtang</h3>
+              <span>Himachal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="images/manali.jpg" alt="">
+            <div class="card-overlay">
+              <h3>Manali</h3>
+              <span>Himachal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="images/river.jpg" alt="">
+            <div class="card-overlay">
+              <h3>Kasol</h3>
+              <span>Parwati Valley</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrows -->
+      <div class="slider-arrows">
+        <button class="swiper-button-prev"></button>
+        <button class="swiper-button-next"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+const data = [
+  {
+    title: "Shimla",
+    desc: "The capital city of Himachal Pradesh, famous for its colonial architecture, The Ridge, and Mall Road.",
+    bg: "images/packageshimla.jpg"
+  },
+  {
+    title: "Kinnaur",
+    desc: "Known for apple orchards, majestic mountains, and rich Tibetan culture. Sangla and Kalpa are highlights.",
+    bg: "images/gallery6.jpg"
+  },
+  {
+    title: "Spiti",
+    desc: "A cold desert mountain valley with monasteries, surreal landscapes, and adventure treks.",
+    bg: "images/packagespiti.jpg"
+  },
+  {
+    title: "Ladakh",
+    desc: "High-altitude desert known for monasteries, Pangong Lake, and adventure tourism.",
+    bg: "images/ladakhcover.jpg"
+  },
+  {
+    title: "Kullu",
+    desc: "A beautiful valley on the banks of Beas River, known for temples, festivals, and adventure sports.",
+    bg: "images/kullucover.jpg"
+  },
+  {
+    title: "Dharamshala",
+    desc: "The home of the Dalai Lama, famous for cricket stadium, monasteries, and Tibetan culture.",
+    bg: "images/dharamshala.jpg"
+  },
+  {
+    title: "Manikaran",
+    desc: "A holy place in Parvati Valley, famous for hot springs and religious significance.",
+    bg: "images/manikarancover.jpg"
+  },
+  {
+    title: "Rohtang",
+    desc: "A high mountain pass connecting Kullu Valley to Lahaul and Spiti, known for snow and adventure sports.",
+    bg: "images/rohtangcover.jpg"
+  },
+  {
+    title: "Manali",
+    desc: "A popular hill station surrounded by mountains, valleys, and known for adventure activities.",
+    bg: "images/manalicover.jpg"
+  },
+  {
+    title: "Kasol",
+    desc: "A scenic village in Parvati Valley, known as mini Israel of India, famous for trekking and hippie vibes.",
+    bg: "images/kasolcover.jpg"
+  }
+];
+
+
+const heroBg = document.querySelector(".hero-bg img");
+const heroTitle = document.querySelector(".hero-title");
+const heroDesc = document.querySelector(".hero-desc");
+
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  centeredSlides: true,
+  loop: true,
+  loopedSlides: data.length,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      centeredSlides: true
+    },
+    1024: {
+      slidesPerView: 3,
+      centeredSlides: true
+    }
+  }
+});
+
+swiper.slideToLoop(0, 0);
+
+swiper.on('slideChange', () => {
+  let realIndex = swiper.realIndex;
+  heroBg.src = data[realIndex].bg;
+  heroTitle.textContent = data[realIndex].title;
+  heroDesc.textContent = data[realIndex].desc;
+});
+</script>
+
+</body>
+</html>
