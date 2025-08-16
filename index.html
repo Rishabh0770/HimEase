@@ -629,7 +629,53 @@
 </script>
 
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const heroBg = document.getElementById("heroBg");
+    const heroTitle = document.getElementById("heroTitle");
+    const heroDesc = document.getElementById("heroDesc");
 
+    const swiper = new Swiper(".heroSwiper", {
+        slidesPerView: 2.5,
+        spaceBetween: 25,
+        centeredSlides: true,
+        autoHeight: true,
+        breakpoints: {
+            0: { slidesPerView: 1.1, spaceBetween: 15 },
+            768: { slidesPerView: 2.5, spaceBetween: 25 }
+        },
+        navigation: {
+            nextEl: ".hero-next",
+            prevEl: ".hero-prev",
+        },
+        on: {
+            init: function () {
+                updateHero(this.slides[this.activeIndex]);
+                this.slides[0].classList.add("active-card");
+            },
+            slideChange: function () {
+                updateHero(this.slides[this.activeIndex]);
+                document.querySelectorAll(".swiper-slide").forEach(slide => {
+                    slide.classList.remove("active-card");
+                });
+                this.slides[this.activeIndex].classList.add("active-card");
+            }
+        }
+    });
+
+    function updateHero(slide) {
+        const title = slide.getAttribute("data-title");
+        const desc = slide.getAttribute("data-desc");
+        const bg = slide.getAttribute("data-bg");
+
+        heroTitle.textContent = title;
+        heroDesc.textContent = desc;
+        heroBg.style.backgroundImage = `url('${bg}')`;
+    }
+});
+
+
+</script>
 
 </body>
 </html>
