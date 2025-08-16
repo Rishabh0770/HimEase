@@ -641,21 +641,19 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(data => {
       document.getElementById("chat-widget").innerHTML = data;
 
-      // Execute any scripts inside whatsapp.html
-      const scripts = document
-        .getElementById("chat-widget")
-        .querySelectorAll("script");
-      
+      // Execute scripts inside whatsapp.html
+      const scripts = document.getElementById("chat-widget").querySelectorAll("script");
       scripts.forEach(script => {
         const newScript = document.createElement("script");
         if (script.src) {
-          newScript.src = script.src; // if script has a src attribute
+          newScript.src = script.src;  // external script
         } else {
-          newScript.textContent = script.textContent; // inline JS
+          newScript.textContent = script.textContent;  // inline script
         }
         document.body.appendChild(newScript);
       });
-    });
+    })
+    .catch(err => console.error("Failed to load WhatsApp widget:", err));
 </script>
 
 
