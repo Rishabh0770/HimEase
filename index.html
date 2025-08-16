@@ -366,70 +366,13 @@
 </section>
 
 
-
-<!-- Testimonial Section -->
-<section class="testimonial-section">
-  <div class="section-header text-center" data-aos="fade-up" data-aos-duration="1000">
-    <p class="subtitle">Client Voices: Our Pride, Your Joy</p>
-    <h2 class="title" style="color: #1b78c7; font-size: 38px; font-weight: 700;">What Our Clients Say</h2>
-  </div>
-
-  <!-- Swiper Container -->
-  <div class="testimonial-container" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-    <!-- Swiper -->
-    <div class="swiper testimonial-slider">
-      <div class="swiper-wrapper">
-
-        <!-- Testimonial Card -->
-        <div class="swiper-slide testimonial-card">
-          <div class="profile-pic">
-            <img src="images/icon.png" alt="Profile">
-          </div>
-          <h3>Ravina Verma</h3>
-          <small>Feb 07, 2025</small>
-          <div class="stars1"></div>
-          <p>Just like their name "TripEase" Totally recommendable 5/5. Thank you so much Rahila and Mir for the wonderful experience.</p>
-        </div>
-
-        <div class="swiper-slide testimonial-card">
-          <div class="profile-pic">
-            <img src="https://i.pravatar.cc/100?img=2" alt="Profile">
-          </div>
-          <h3>Fiza Makdoomi</h3>
-          <small>Aug 31, 2024</small>
-          <div class="stars1"></div>
-          <p>Excellent service & value for money. Keep up the good work!</p>
-        </div>
-
-        <div class="swiper-slide testimonial-card">
-          <div class="profile-pic">
-            <img src="https://i.pravatar.cc/100?img=3" alt="Profile">
-          </div>
-          <h3>Sameera Abdullatif</h3>
-          <small>Jul 09, 2024</small>
-          <div class="stars1"></div>
-          <p>It was a wonderful trip as a solo traveler. Thank you for all the arrangements done by TripEase team.</p>
-        </div>
-
-        <!-- Extra Cards -->
-        <div class="swiper-slide testimonial-card">
-          <div class="profile-pic">
-            <img src="https://i.pravatar.cc/100?img=4" alt="Profile">
-          </div>
-          <h3>Aditya Sharma</h3>
-          <small>Jun 15, 2024</small>
-          <div class="stars1"></div>
-          <p>Amazing coordination and well-planned trip. Definitely booking again!</p>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Navigation arrows -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
+<section id="reviews">
+  <iframe src="reviews.html"
+          style="width:100%; border:none; overflow:hidden;"
+          id="reviews-iframe">
+  </iframe>
 </section>
+
 
 <!-- Dream Team -->
 <section class="dreamteam-section" data-aos="fade-up" data-aos-duration="1000">
@@ -679,8 +622,15 @@ document.addEventListener("DOMContentLoaded", function () {
         heroBg.style.backgroundImage = `url('${bg}')`;
     }
 });
+</script>
 
-
+<script>
+  // ✅ Listen for resize messages from reviews.html
+  window.addEventListener("message", function (e) {
+    if (e.data.type === "resize") {
+      document.getElementById("reviews-iframe").style.height = e.data.height + "px";
+    }
+  });
 </script>
 
 </body>
