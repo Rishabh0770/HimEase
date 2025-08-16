@@ -490,6 +490,23 @@
   }
 }
 
+.explore-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.explore-map {
+  height: 400px;  /* adjust height */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 350px; /* same width as form */
+  margin: 0 auto;
+  text-align: center;
+}
+
   </style>
 </head>
 <body>
@@ -541,7 +558,7 @@
  <div class="section-container">
     <!-- Left Text -->
     <div class="content">
-  <h2>Discover Gulmarg</h2>
+  <h2>Discover Shimla</h2>
   <p>
     Gulmarg, an exquisite jewel of the Indian-administered union territory of Jammu and Kashmir, is a captivating mountain resort nestled in the lap of the majestic Himalayas. Its name, quite literally translating to “Meadow of Flowers,” is a testament to the lush, rolling meadows blanketed in a kaleidoscope of wildflowers during the warmer months.
   </p>
@@ -673,6 +690,19 @@
   </div>
 </div>
 
+<div class="explore-section" style="margin-top: 15px;">
+  <h3 class="slider-heading">Explore Shimla</h3>
+  <div class="explore-map">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.3878!2d74.3805!3d34.0484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e20f6f6b2f0d07%3A0x6c6a7893d5eb!2sGulmarg!5e0!3m2!1sen!2sin!4v1694176400000!5m2!1sen!2sin" 
+      width="100%" 
+      height="100%" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+</div>
 
 </div>
 
