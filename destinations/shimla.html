@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>HimEase — About Us</title>
+  <meta name="description" content="Plan trips, discover destinations, and book curated travel packages." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../about.css">
+  <link rel="stylesheet" href="../whatsapp.css">
+  <style>
+.about-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/packageshimla.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+  height: 60vh;
+}
+
+
+/* Offer Section */
+.offer-section {
+  padding: 40px 20px;
+}
+
+.offer-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #d9eaff;
+  box-shadow: 0 0 8px rgba(27,120,199,0.2);
+  padding: 15px 25px;
+  max-width: 1000px;
+  margin: auto;
+  transition: all 0.3s ease;
+}
+
+.offer-box:hover {
+  box-shadow: 0 0 20px rgba(27,120,199,0.4);
+  transform: translateY(-2px);
+}
+
+.offer-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.offer-left img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.offer-text h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.offer-text p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.offer-btn {
+  background: #1b78c7;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.offer-btn:hover {
+  background: black;
+}
+
+/* Responsive Adjustment */
+@media (max-width: 768px) {
+  .offer-box {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  .offer-left {
+    flex-direction: column;
+    width: 100%;
+  }
+  .offer-left img {
+    width: 100%;         /* Full width */
+    height: 100px;       /* Taller than width proportion for rectangle */
+    border-radius: 10px; /* Keeps rounded corners */
+    object-fit: cover;   /* Ensures the image fills rectangle */
+  }
+}
+
+ body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+
+    .section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 40px;
+  max-width: 1200px;   /* limit the width */
+  margin: 0 auto;      /* center the section */
+}
+
+
+    /* Left Content */
+    .content {
+      flex: 2;
+    }
+
+    .content h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;  
+    }
+
+    .content p {
+  line-height: 1.7;
+  margin-bottom: 18px;
+  font-size: 1rem;
+  color: #555;
+  text-align: justify;   /* makes the text lines equal width */
+}
+
+.image-row {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
+}
+
+.img-box {
+  flex: 1;
+  overflow: visible;
+}
+
+.img-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+  border-radius: 10px; /* smooth corners */
+}
+
+.img-box:hover img {
+  transform: scale(1.1) translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Tablet (max 768px) → 2 images per row */
+@media (max-width: 768px) {
+  .img-box {
+    flex: 0 0 calc(50% - 15px); /* 2 columns */
+  }
+}
+
+/* Mobile (max 480px) → 1 image per row */
+@media (max-width: 480px) {
+  .img-box {
+    flex: 0 0 100%; /* full width */
+  }
+
+  .img-box img {
+    height: 180px; /* slightly smaller height for mobile */
+  }
+}
+
+
+
+
+    /* Right Form Box */
+   .form-container {
+  display: flex;
+  flex-direction: column;  /* stack vertically */
+  align-items: center;     /* center align */
+}
+
+.form-box {
+  width: 100%;
+  max-width: 350px; /* form width */
+  background: #e6f0fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  margin-bottom: 20px; /* gap before slider */
+}
+
+.swiper {
+  width: 100%;
+  max-width: 320px;   /* same as form width */
+  height: 400px;      /* increase height to make vertical rectangle */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* keeps image proportional inside rectangle */
+}
+
+
+
+    .form-box h3 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #1d2f4f;
+    }
+
+    .form-box input,
+    .form-box select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    .form-box input:focus,
+    .form-box select:focus {
+      border: 2px solid #357ABD;
+    }
+
+    .form-box button {
+      width: 100%;
+      padding: 14px;
+      background: #1d3c73;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .form-box button:hover {
+      background: #0d2a56;
+    }
+
+
+.swiper-slide {
+  position: relative;
+}
+
+/* Text overlay */
+.slide-text {
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+}
+
+/* Pagination dots */
+.swiper-pagination {
+  bottom: 8px !important;
+}
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column;  /* stack form & slider */
+    align-items: center;
+  }
+
+  .form-box,
+  .swiper {
+    max-width: 100%;   /* take full width on small screens */
+    width: 90%;        /* with some margin */
+  }
+
+  .form-box {
+    margin-bottom: 25px; /* gap between form and slider */
+  }
+
+  .swiper {
+    height: 300px; /* reduce height for phones */
+  }
+
+  .form-box h3 {
+    font-size: 1.2rem;
+  }
+
+  .form-box input,
+  .form-box select,
+  .form-box button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .slide-text {
+    font-size: 0.9rem;
+    bottom: 20px;
+  }
+}
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .section-container {
+        flex-direction: column;
+        padding: 20px;
+      }
+    }
+    /* 📱 Mobile Styling - Centered Boxes */
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column;   /* stack vertically */
+    align-items: center;      /* center horizontally */
+    justify-content: center;  /* center vertically if parent allows */
+  }
+
+  .form-box,
+  .swiper {
+    width: 90%;          /* not full width */
+    max-width: 350px;    /* keep nice centered box */
+  }
+
+  .form-box {
+    margin-bottom: 25px; /* gap between form and slider */
+  }
+
+  .swiper {
+    height: 400px;       /* rectangle look */
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 480px) {
+  .form-box,
+  .swiper {
+    width: 95%;          /* keep some margin */
+    max-width: 320px;
+  }
+
+  .swiper {
+    height: 260px;       /* slightly smaller for small screens */
+  }
+}
+
+  </style>
+</head>
+<body>
+
+ <!-- Header / Navbar -->
+  <header class="sticky-top shadow-sm bg-white">
+    <nav class="navbar navbar-expand-lg container py-2">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="../index.html">
+        <i class="fa-solid fa-earth-asia text-primary"></i>HimEase</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="../aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="../tours.html">Tours</a></li>
+          <li class="nav-item"><a class="nav-link" href="../contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- About Us Section -->
+<section class="about-section">
+  <div class="container">
+    <h1 data-aos="fade-up" data-aos-duration="1000">Shimla</h1>
+    <p data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
+     <strong>Where Nature Paints Its Masterpiece</strong>
+    </p>
+  </div>
+</section>
+
+<!-- Offer Section -->
+<section class="offer-section" data-aos="fade-down" data-aos-delay="300">
+  <div class="offer-box">
+    <div class="offer-left" data-aos="fade-up" data-aos-delay="400">
+      <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=200&auto=format&fit=crop" alt="Offer">
+      <div class="offer-text" data-aos="fade-down" data-aos-delay="500">
+        <h2>Bigger Group? Get special offers upto 50% off!</h2>
+        <p>We create unforgettable adventures, customized for your group.</p>
+      </div>
+    </div>
+    <button class="offer-btn" data-aos="zoom-in" data-aos-delay="400">Request a Callback</button>
+  </div>
+</section>
+
+ <div class="section-container">
+    <!-- Left Text -->
+    <div class="content">
+  <h2>Discover Gulmarg</h2>
+  <p>
+    Gulmarg, an exquisite jewel of the Indian-administered union territory of Jammu and Kashmir, is a captivating mountain resort nestled in the lap of the majestic Himalayas. Its name, quite literally translating to “Meadow of Flowers,” is a testament to the lush, rolling meadows blanketed in a kaleidoscope of wildflowers during the warmer months.
+  </p>
+  <p>
+    A cornerstone of Gulmarg’s charm lies in its breathtaking natural beauty. It’s a place where verdant meadows, carpeted with a myriad of blossoms, merge seamlessly with towering snow-clad peaks. Dominating the skyline is Mount Apharwat, an icon for adventure seekers. The Gulmarg Gondola, one of the highest cable cars in the world, offers thrilling rides to lofty altitudes, providing mesmerizing panoramic views that defy description.
+  </p>
+  <p>
+    Gulmarg’s allure extends far beyond aesthetics. It’s a year-round haven for outdoor enthusiasts. In winter, the town transforms into a powdery playground for skiers and snowboarders, attracting aficionados from around the globe. In summer, it beckons trekkers and hikers with its intricate network of trails that wind through emerald valleys and lead to pristine lakes, like the shimmering Alpather Lake. The town is also a paradise for golf enthusiasts, featuring one of the world’s highest golf courses, nestled at an elevation of over 2,600 meters.
+  </p>
+
+  <div class="image-row">
+    <div class="img-box"><img src="../images/shimla.jpg" alt="Gulmarg View"></div>
+    <div class="img-box"><img src="../images/ridge.jpg" alt="Gulmarg Gondola"></div>
+    <div class="img-box"><img src="../images/spiti.jpg" alt="Gulmarg Meadows"></div>
+  </div>
+
+  <p>
+    Gulmarg, an exquisite jewel of the Indian-administered union territory of Jammu and Kashmir, is a captivating mountain resort nestled in the lap of the majestic Himalayas. Its name, quite literally translating to “Meadow of Flowers,” is a testament to the lush, rolling meadows blanketed in a kaleidoscope of wildflowers during the warmer months.
+  </p>
+  <p>
+    A cornerstone of Gulmarg’s charm lies in its breathtaking natural beauty. It’s a place where verdant meadows, carpeted with a myriad of blossoms, merge seamlessly with towering snow-clad peaks. Dominating the skyline is Mount Apharwat, an icon for adventure seekers. The Gulmarg Gondola, one of the highest cable cars in the world, offers thrilling rides to lofty altitudes, providing mesmerizing panoramic views that defy description.
+  </p>
+
+  <div class="image-row">
+    <div class="img-box"><img src="../images/shimla.jpg" alt="Gulmarg View"></div>
+    <div class="img-box"><img src="../images/ridge.jpg" alt="Gulmarg Gondola"></div>
+    <div class="img-box"><img src="../images/spiti.jpg" alt="Gulmarg Meadows"></div>
+  </div>
+  
+</div>
+
+
+<div class="form-container">
+  <div class="form-box">
+    <h3>TOUR ENQUIRY</h3>
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="tel" placeholder="Phone" required>
+        <input type="email" placeholder="Email" required>
+        <input type="date" required>
+        <select required>
+          <option value="">Select Package</option>
+          <option value="basic">Basic Package</option>
+          <option value="premium">Premium Package</option>
+          <option value="luxury">Luxury Package</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+  </div>
+
+     <!-- Slider below form -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="../images/shimla.jpg" />
+        <div class="slide-text">Adventure Escape in Shimla</div>
+      </div>
+      <div class="swiper-slide">
+        <img src="../images/ridge.jpg" />
+        <div class="slide-text">Explore Shimla</div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+   
+
+  </div>
+
+<!-- WhatsApp Floating Button -->
+  <div class="whatsapp-float" onclick="toggleChat()">
+    <i class="fab fa-whatsapp"></i>
+  </div>
+
+  <!-- Overlay -->
+  <div class="chat-overlay" id="chatOverlay" onclick="toggleChat()"></div>
+
+  <!-- Chat Box -->
+  <div class="chat-box" id="chatBox">
+    <div class="chat-header">
+      <span><i class="fab fa-whatsapp"></i> WhatsApp</span>
+      <span class="close-btn" onclick="toggleChat()"><i class="fas fa-times"></i></span>
+    </div>
+    <div class="chat-body">
+      <div class="chat-msg">
+        Hello 👋 <br>
+        How can we help you?
+      </div>
+    </div>
+    <div class="chat-footer">
+      <div class="whatsapp-btn-wrapper">
+        <button class="open-chat-btn" onclick="openWhatsApp()">
+          Open chat <i class="fas fa-paper-plane"></i>
+        </button>
+
+        <!-- QR Popup -->
+        <div class="qr-popup">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/917018434170?text=Hi%20I’d%20like%20to%20know%20more%20about%20your%20travel%20packages" alt="WhatsApp QR">
+          <p>Scan me 👆</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="pt-5 pb-4 bg-dark text-white">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold">HimEase</h5>
+          <p class="text-white-50">Making travel effortless with curated, transparent packages.</p>
+        </div>
+        <div class="col-md-4">
+          <h6 class="fw-semibold">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../aboutus.html">About Us</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="../tours.html">Tours</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
+
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6 class="fw-semibold">Follow</h6>
+          <div class="d-flex gap-3 fs-5">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <div class="d-flex justify-content-between small text-white-50">
+        <span>© <span id="year"></span> HimEase. All rights reserved.</span>
+        <span>Built with ♥ by Rishav</span>
+      </div>
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+  <!-- Include Swiper CSS & JS in your <head> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Swiper CSS & JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800, // animation speed
+    once: true,    // animate only once
+    offset: 100    // trigger point before element enters viewport
+  });
+</script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 4000, // 4 seconds
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
+</body>
+</html>
