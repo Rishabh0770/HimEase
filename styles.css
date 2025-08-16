@@ -631,16 +631,29 @@ textarea {
 
 /* Section Styles */
 #packages-section {
+  position: relative;
   text-align: center;
   color: white;
   padding: 60px 20px;
   background: url('images/background-3.jpg') center/cover no-repeat;
 }
 
+#packages-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* adjust 0.4 → darker or lighter */
+}
+
+#packages-section * {
+  position: relative; /* keeps your text/content above overlay */
+}
+
 .section-header .subtitle {
   font-family: 'Dancing Script', cursive;
   font-size: 22px;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .section-header .title {
@@ -870,8 +883,8 @@ textarea {
 }
 
 .subtitle {
-  font-size: 18px;
-  font-style: italic;
+  font-size: 16px;
+  
   color: #333;
 }
 
@@ -988,9 +1001,10 @@ textarea {
 
 .dreamteam-subtitle {
   font-family: 'Dancing Script', cursive;
-  font-size: 20px;
+  font-size: 22px;
   color: #000;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .dreamteam-title {
@@ -1095,6 +1109,7 @@ textarea {
   font-family: 'Dancing Script', cursive;
   font-size: 24px;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .blog-title {
