@@ -4,11 +4,24 @@
   box-sizing: border-box;
 }
 
+html{scroll-behavior:smooth}
+
 body {
   font-family: "Poppins", sans-serif;
   background: #f5f5f5;
 }
 
+/*SCROLLBAR Styling*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #1b78c7;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1b78c7; 
+}
 /* Hero Section Layout */
 .hero-section {
   position: relative;
