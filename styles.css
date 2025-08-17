@@ -1295,3 +1295,19 @@ textarea {
 #makeitfull img {
   width: 50px;
 }
+
+/* Remove Bootstrap default caret */
+.dropdown-toggle::after {
+  display: none !important;
+}
+/* Show dropdown on hover */
+@media (min-width: 992px) { /* Only for desktop */
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* optional: smooth dropdown alignment */
+  }
+}
+.nav-item.dropdown:hover .fa-angle-down {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
