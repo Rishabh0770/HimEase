@@ -443,36 +443,79 @@ footer a:hover{color:#fff}
     transform: scale(1.2);
     color: #145a96;
   }
+  
+.footer {
+  background: #f8f9fa;
+  color: #333;
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.footer .left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #1b78c7;
+  font-weight: 500;
+  white-space: nowrap; /* text ek line me hi rahe */
+}
+
+.footer-buttons {
+  display: flex;
+  gap: 8px; /* space between buttons */
+}
+
+.callback,
+.book-btn {
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+/* Hover effects */
+.callback {
+  background: #1b78c7;
+  color: white;
+}
+.callback:hover {
+  background: #145a96;
+}
+
+.book-btn {
+  background: #28a745;
+  color: white;
+}
+.book-btn:hover {
+  background: #218838;
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 576px) {
   .footer {
-    background: #f8f9fa;
-    color: #333;
-    padding: 10px 14px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 13px;
-    border-top: 1px solid #e5e7eb;
-  }
-  .footer .left {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    color: #1b78c7;
-    font-weight: 500;
-  }
-  .callback {
-    background: #1b78c7;
-    color: white;
-    padding: 6px 12px;
-    border-radius: 4px;
-    font-weight: 500;
-    cursor: pointer;
     font-size: 12px;
-    transition: background 0.3s ease;
+    gap: 6px;
   }
-  .callback:hover {
-    background: #145a96;
+
+  .callback,
+  .book-btn {
+    padding: 4px 8px;  /* 👈 smaller padding on phone */
+    font-size: 11px;   /* 👈 smaller text on phone */
   }
+
+  .footer-buttons {
+    gap: 6px; /* buttons closer on mobile */
+  }
+}
+
+
 
   .explore-more-btn {
   display: inline-block;
@@ -489,6 +532,7 @@ footer a:hover{color:#fff}
   background: #000000; /* Darker on hover */
   transform: translateY(-2px);
 }
+
 /* Modal background */
 .modal-overlay {
   display: none;

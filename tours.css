@@ -201,3 +201,67 @@ body {
     font-size: 14px;
   }
 }
+
+
+
+/* Modal background */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Modal box */
+.modal-box {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 350px;
+  max-width: 90%;
+  position: relative;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Inputs */
+.modal-box input, .modal-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.two-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+textarea {
+  resize: none;
+}
+
+.callback-btn {
+  background: #1b78c7;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.callback-btn:hover {
+  background: #003f80;
+}
