@@ -1,0 +1,504 @@
+.about-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url() no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+  height: 60vh;
+}
+
+
+/* Offer Section */
+.offer-section {
+  padding: 40px 20px;
+}
+
+.offer-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #d9eaff;
+  box-shadow: 0 0 8px rgba(27,120,199,0.2);
+  padding: 15px 25px;
+  max-width: 1000px;
+  margin: auto;
+  transition: all 0.3s ease;
+}
+
+.offer-box:hover {
+  box-shadow: 0 0 20px rgba(27,120,199,0.4);
+  transform: translateY(-2px);
+}
+
+.offer-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.offer-left img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.offer-text h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.offer-text p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.offer-btn {
+  background: #1b78c7;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.offer-btn:hover {
+  background: black;
+}
+
+/* Responsive Adjustment */
+@media (max-width: 768px) {
+  .offer-box {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  .offer-left {
+    flex-direction: column;
+    width: 100%;
+  }
+  .offer-left img {
+    width: 100%;         /* Full width */
+    height: 100px;       /* Taller than width proportion for rectangle */
+    border-radius: 10px; /* Keeps rounded corners */
+    object-fit: cover;   /* Ensures the image fills rectangle */
+  }
+}
+
+ body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+
+    .section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 40px;
+  max-width: 1200px;   /* limit the width */
+  margin: 0 auto;      /* center the section */
+}
+
+
+    /* Left Content */
+    .content {
+      flex: 2;
+    }
+
+    .content h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;  
+    }
+
+    .content p {
+  line-height: 1.7;
+  margin-bottom: 18px;
+  font-size: 1rem;
+  color: #555;
+  text-align: justify;   /* makes the text lines equal width */
+}
+
+.image-row {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
+}
+
+.img-box {
+  flex: 1;
+  overflow: visible;
+}
+
+.img-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+  border-radius: 10px; /* smooth corners */
+}
+
+.img-box:hover img {
+  transform: scale(1.1) translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Tablet (max 768px) → 2 images per row */
+@media (max-width: 768px) {
+  .img-box {
+    flex: 0 0 calc(50% - 15px); /* 2 columns */
+  }
+}
+
+/* Mobile (max 480px) → 1 image per row */
+@media (max-width: 480px) {
+  .img-box {
+    flex: 0 0 100%; /* full width */
+  }
+
+  .img-box img {
+    height: 180px; /* slightly smaller height for mobile */
+  }
+}
+
+
+
+
+    /* Right Form Box */
+   .form-container {
+  display: flex;
+  flex-direction: column;  /* stack vertically */
+  align-items: center;     /* center align */
+}
+
+.form-box {
+  width: 100%;
+  max-width: 350px; /* form width */
+  background: #e6f0fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  margin-bottom: 20px; /* gap before slider */
+}
+
+.swiper {
+  width: 100%;
+  max-width: 320px;   /* same as form width */
+  height: 400px;      /* increase height to make vertical rectangle */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;  /* keeps full image visible */
+  background: #000; 
+  cursor: pointer;    /* 👈 add this */
+}
+
+.swiper-slide img:hover {
+  transform: scale(1.03); /* optional smooth zoom */
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide a {
+  display: block;
+  text-decoration: none;
+  color: inherit; /* keeps text white */
+}
+
+    .form-box h3 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #1d2f4f;
+    }
+
+    .form-box input,
+    .form-box select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    .form-box input:focus,
+    .form-box select:focus {
+      border: 2px solid #357ABD;
+    }
+
+    .form-box button {
+      width: 100%;
+      padding: 14px;
+      background: #1d3c73;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .form-box button:hover {
+      background: #0d2a56;
+    }
+
+
+.swiper-slide {
+  position: relative;
+}
+
+/* Text overlay */
+.slide-text {
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+}
+
+@media (max-width: 768px) {
+  .slide-text {
+    font-size: 1rem;   /* smaller font for tablets & phones */
+    bottom: 40px;      /* bring it closer to bottom */
+    padding: 0 8px;    /* little breathing space */
+  }
+}
+
+/* Pagination dots */
+.swiper-pagination {
+  bottom: 8px !important;
+}
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column;  /* stack form & slider */
+    align-items: center;
+  }
+
+  .form-box,
+  .swiper {
+    max-width: 100%;   /* take full width on small screens */
+    width: 90%;        /* with some margin */
+  }
+
+  .form-box {
+    margin-bottom: 25px; /* gap between form and slider */
+  }
+
+  .swiper {
+    height: 300px; /* reduce height for phones */
+  }
+
+  .form-box h3 {
+    font-size: 1.2rem;
+  }
+
+  .form-box input,
+  .form-box select,
+  .form-box button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .slide-text {
+    font-size: 0.9rem;
+    bottom: 20px;
+  }
+}
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .section-container {
+        flex-direction: column;
+        padding: 20px;
+      }
+    }
+    /* 📱 Mobile Styling - Centered Boxes */
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column;   /* stack vertically */
+    align-items: center;      /* center horizontally */
+    justify-content: center;  /* center vertically if parent allows */
+  }
+
+  .form-box,
+  .swiper {
+    width: 90%;          /* not full width */
+    max-width: 350px;    /* keep nice centered box */
+  }
+
+  .form-box {
+    margin-bottom: 25px; /* gap between form and slider */
+  }
+
+  .swiper {
+    height: 400px;       /* rectangle look */
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 480px) {
+  .form-box,
+  .swiper {
+    width: 95%;          /* keep some margin */
+    max-width: 320px;
+  }
+
+  .swiper {
+    height: 350px;       /* slightly smaller for small screens */
+  }
+}
+.slider-container {
+  width: 100%;
+  max-width: 350px; /* same width as form */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slider-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;  /* same theme as form heading */
+  margin-bottom: 15px;
+}
+
+
+.faq-section {
+  padding: 50px 0px;
+  background-size: cover;
+  background-position: center;
+}
+
+.faq-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: left;
+  color: #000;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-image: url(../images/background2.jpg);
+}
+
+.faq-card {
+  background: #fff;
+  background-image: url(../images/background2.jpg);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.faq-question .arrow {
+  transition: transform 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  will-change: max-height;
+}
+
+.faq-card.active .arrow {
+  transform: rotate(180deg);
+}
+
+/* 📱 Mobile styles */
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 30px 15px;
+  }
+
+  .faq-heading {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .faq-container {
+    gap: 10px;
+  }
+
+  .faq-card {
+    border-radius: 8px;
+  }
+
+  .faq-question {
+    padding: 14px 15px;
+    font-size: 1rem;
+  }
+
+  .faq-question .arrow {
+    font-size: 1rem;
+  }
+
+  .faq-answer {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    padding: 0 15px;
+  }
+
+  .faq-card.active .faq-answer {
+    padding: 10px 15px 15px;
+  }
+}
+
+.explore-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.explore-map {
+  height: 400px;  /* adjust height */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 350px; /* same width as form */
+  margin: 0 auto;
+  text-align: center;
+}

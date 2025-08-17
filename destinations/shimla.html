@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>HimEase — About Us</title>
+  <title>Destinations - Shimla</title>
   <meta name="description" content="Plan trips, discover destinations, and book curated travel packages." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +16,9 @@
   <link rel="stylesheet" href="../styles.css" />
   <link rel="stylesheet" href="../about.css">
   <link rel="stylesheet" href="../whatsapp.css">
+  <link rel="stylesheet" href="destinations.css">
   <style>
-.about-section {
+    .about-section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/packageshimla.jpg') no-repeat center center/cover;
   display: flex;
   justify-content: center;
@@ -25,501 +26,6 @@
   padding: 60px 20px;
   text-align: center;
   height: 60vh;
-}
-
-
-/* Offer Section */
-.offer-section {
-  padding: 40px 20px;
-}
-
-.offer-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #fff;
-  border-radius: 16px;
-  border: 1px solid #d9eaff;
-  box-shadow: 0 0 8px rgba(27,120,199,0.2);
-  padding: 15px 25px;
-  max-width: 1000px;
-  margin: auto;
-  transition: all 0.3s ease;
-}
-
-.offer-box:hover {
-  box-shadow: 0 0 20px rgba(27,120,199,0.4);
-  transform: translateY(-2px);
-}
-
-.offer-left {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.offer-left img {
-  width: 70px;
-  height: 70px;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.offer-text h2 {
-  margin: 0;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.offer-text p {
-  margin: 5px 0 0;
-  font-size: 14px;
-  color: #444;
-}
-
-.offer-btn {
-  background: #1b78c7;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.offer-btn:hover {
-  background: black;
-}
-
-/* Responsive Adjustment */
-@media (max-width: 768px) {
-  .offer-box {
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-  }
-  .offer-left {
-    flex-direction: column;
-    width: 100%;
-  }
-  .offer-left img {
-    width: 100%;         /* Full width */
-    height: 100px;       /* Taller than width proportion for rectangle */
-    border-radius: 10px; /* Keeps rounded corners */
-    object-fit: cover;   /* Ensures the image fills rectangle */
-  }
-}
-
- body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fff;
-      color: #333;
-    }
-
-    .section-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 50px;
-  gap: 40px;
-  max-width: 1200px;   /* limit the width */
-  margin: 0 auto;      /* center the section */
-}
-
-
-    /* Left Content */
-    .content {
-      flex: 2;
-    }
-
-    .content h2 {
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 20px;  
-    }
-
-    .content p {
-  line-height: 1.7;
-  margin-bottom: 18px;
-  font-size: 1rem;
-  color: #555;
-  text-align: justify;   /* makes the text lines equal width */
-}
-
-.image-row {
-  display: flex;
-  gap: 15px;
-  margin-top: 20px;
-  flex-wrap: wrap; /* allow wrapping on smaller screens */
-}
-
-.img-box {
-  flex: 1;
-  overflow: visible;
-}
-
-.img-box img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  transition: transform 0.4s ease;
-  cursor: pointer;
-  border-radius: 10px; /* smooth corners */
-}
-
-.img-box:hover img {
-  transform: scale(1.1) translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
-
-/* Tablet (max 768px) → 2 images per row */
-@media (max-width: 768px) {
-  .img-box {
-    flex: 0 0 calc(50% - 15px); /* 2 columns */
-  }
-}
-
-/* Mobile (max 480px) → 1 image per row */
-@media (max-width: 480px) {
-  .img-box {
-    flex: 0 0 100%; /* full width */
-  }
-
-  .img-box img {
-    height: 180px; /* slightly smaller height for mobile */
-  }
-}
-
-
-
-
-    /* Right Form Box */
-   .form-container {
-  display: flex;
-  flex-direction: column;  /* stack vertically */
-  align-items: center;     /* center align */
-}
-
-.form-box {
-  width: 100%;
-  max-width: 350px; /* form width */
-  background: #e6f0fa;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  margin-bottom: 20px; /* gap before slider */
-}
-
-.swiper {
-  width: 100%;
-  max-width: 320px;   /* same as form width */
-  height: 400px;      /* increase height to make vertical rectangle */
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;  /* keeps full image visible */
-  background: #000; 
-  cursor: pointer;    /* 👈 add this */
-}
-
-.swiper-slide img:hover {
-  transform: scale(1.03); /* optional smooth zoom */
-  transition: transform 0.3s ease;
-}
-
-.swiper-slide a {
-  display: block;
-  text-decoration: none;
-  color: inherit; /* keeps text white */
-}
-
-    .form-box h3 {
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 1.4rem;
-      font-weight: bold;
-      color: #1d2f4f;
-    }
-
-    .form-box input,
-    .form-box select {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 15px;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      outline: none;
-    }
-
-    .form-box input:focus,
-    .form-box select:focus {
-      border: 2px solid #357ABD;
-    }
-
-    .form-box button {
-      width: 100%;
-      padding: 14px;
-      background: #1d3c73;
-      color: #fff;
-      font-size: 1rem;
-      font-weight: bold;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .form-box button:hover {
-      background: #0d2a56;
-    }
-
-
-.swiper-slide {
-  position: relative;
-}
-
-/* Text overlay */
-.slide-text {
-  position: absolute;
-  bottom: 50px;
-  left: 10px;
-  right: 10px;
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-align: center;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.8);
-}
-
-@media (max-width: 768px) {
-  .slide-text {
-    font-size: 1rem;   /* smaller font for tablets & phones */
-    bottom: 40px;      /* bring it closer to bottom */
-    padding: 0 8px;    /* little breathing space */
-  }
-}
-
-/* Pagination dots */
-.swiper-pagination {
-  bottom: 8px !important;
-}
-@media (max-width: 768px) {
-  .form-container {
-    flex-direction: column;  /* stack form & slider */
-    align-items: center;
-  }
-
-  .form-box,
-  .swiper {
-    max-width: 100%;   /* take full width on small screens */
-    width: 90%;        /* with some margin */
-  }
-
-  .form-box {
-    margin-bottom: 25px; /* gap between form and slider */
-  }
-
-  .swiper {
-    height: 300px; /* reduce height for phones */
-  }
-
-  .form-box h3 {
-    font-size: 1.2rem;
-  }
-
-  .form-box input,
-  .form-box select,
-  .form-box button {
-    font-size: 0.95rem;
-    padding: 10px;
-  }
-
-  .slide-text {
-    font-size: 0.9rem;
-    bottom: 20px;
-  }
-}
-
-    /* Responsive */
-    @media (max-width: 900px) {
-      .section-container {
-        flex-direction: column;
-        padding: 20px;
-      }
-    }
-    /* 📱 Mobile Styling - Centered Boxes */
-@media (max-width: 768px) {
-  .form-container {
-    flex-direction: column;   /* stack vertically */
-    align-items: center;      /* center horizontally */
-    justify-content: center;  /* center vertically if parent allows */
-  }
-
-  .form-box,
-  .swiper {
-    width: 90%;          /* not full width */
-    max-width: 350px;    /* keep nice centered box */
-  }
-
-  .form-box {
-    margin-bottom: 25px; /* gap between form and slider */
-  }
-
-  .swiper {
-    height: 400px;       /* rectangle look */
-  }
-}
-
-/* Smaller phones */
-@media (max-width: 480px) {
-  .form-box,
-  .swiper {
-    width: 95%;          /* keep some margin */
-    max-width: 320px;
-  }
-
-  .swiper {
-    height: 350px;       /* slightly smaller for small screens */
-  }
-}
-.slider-container {
-  width: 100%;
-  max-width: 350px; /* same width as form */
-  margin: 0 auto;
-  text-align: center;
-}
-
-.slider-heading {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #000000;  /* same theme as form heading */
-  margin-bottom: 15px;
-}
-
-
-.faq-section {
-  padding: 50px 0px;
-  background-size: cover;
-  background-position: center;
-}
-
-.faq-heading {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 30px;
-  text-align: left;
-  color: #000;
-}
-
-.faq-container {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  background-image: url(../images/background2.jpg);
-}
-
-.faq-card {
-  background: #fff;
-  background-image: url(../images/background2.jpg);
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-.faq-question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 20px;
-  font-size: 1.1rem;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.faq-question .arrow {
-  transition: transform 0.3s ease;
-  font-size: 1.2rem;
-}
-
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  padding: 0 20px;
-  color: #444;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  transition: max-height 0.4s ease, padding 0.3s ease;
-  will-change: max-height;
-}
-
-.faq-card.active .arrow {
-  transform: rotate(180deg);
-}
-
-/* 📱 Mobile styles */
-@media (max-width: 768px) {
-  .faq-section {
-    padding: 30px 15px;
-  }
-
-  .faq-heading {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .faq-container {
-    gap: 10px;
-  }
-
-  .faq-card {
-    border-radius: 8px;
-  }
-
-  .faq-question {
-    padding: 14px 15px;
-    font-size: 1rem;
-  }
-
-  .faq-question .arrow {
-    font-size: 1rem;
-  }
-
-  .faq-answer {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    padding: 0 15px;
-  }
-
-  .faq-card.active .faq-answer {
-    padding: 10px 15px 15px;
-  }
-}
-
-.explore-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.explore-map {
-  height: 400px;  /* adjust height */
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  width: 100%;
-  max-width: 350px; /* same width as form */
-  margin: 0 auto;
-  text-align: center;
 }
 
   </style>
@@ -537,8 +43,8 @@
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
           <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="../aboutus.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="../aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Destinations</a></li>
           <li class="nav-item"><a class="nav-link" href="../tours.html">Tours</a></li>
           <li class="nav-item"><a class="nav-link" href="../contact.html">Contact Us</a></li>
         </ul>
@@ -560,7 +66,7 @@
 <section class="offer-section" data-aos="fade-down" data-aos-delay="300">
   <div class="offer-box">
     <div class="offer-left" data-aos="fade-up" data-aos-delay="400">
-      <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=200&auto=format&fit=crop" alt="Offer">
+      <img src="../images/group.jpg" alt="Offer">
       <div class="offer-text" data-aos="fade-down" data-aos-delay="500">
         <h2>Bigger Group? Get special offers upto 50% off!</h2>
         <p>We create unforgettable adventures, customized for your group.</p>
@@ -576,54 +82,74 @@
   <!-- Left Text -->
   <div class="content" data-aos="fade-up">
     <h2 data-aos="fade-up">Discover Shimla</h2>
-    <p data-aos="fade-up">
-      Gulmarg, an exquisite jewel of the Indian-administered union territory of Jammu and Kashmir, 
-      is a captivating mountain resort nestled in the lap of the majestic Himalayas. Its name, 
-      quite literally translating to “Meadow of Flowers,” is a testament to the lush, rolling meadows 
-      blanketed in a kaleidoscope of wildflowers during the warmer months.
-    </p>
-    <p data-aos="fade-up">
-      A cornerstone of Gulmarg’s charm lies in its breathtaking natural beauty. It’s a place where 
-      verdant meadows, carpeted with a myriad of blossoms, merge seamlessly with towering snow-clad 
-      peaks. Dominating the skyline is Mount Apharwat, an icon for adventure seekers. The Gulmarg Gondola, 
-      one of the highest cable cars in the world, offers thrilling rides to lofty altitudes, 
-      providing mesmerizing panoramic views that defy description.
-    </p>
-    <p data-aos="fade-up" style="margin-bottom: 10px;">
-      Gulmarg’s allure extends far beyond aesthetics. It’s a year-round haven for outdoor enthusiasts. 
-      In winter, the town transforms into a powdery playground for skiers and snowboarders, attracting 
-      aficionados from around the globe. In summer, it beckons trekkers and hikers with its intricate 
-      network of trails that wind through emerald valleys and lead to pristine lakes, like the shimmering 
-      Alpather Lake. The town is also a paradise for golf enthusiasts, featuring one of the world’s highest 
-      golf courses, nestled at an elevation of over 2,600 meters.
-    </p>
+<p data-aos="fade-up">
+  <strong>Shimla</strong>, the charming capital of <strong>Himachal Pradesh</strong>, is a 
+  timeless hill station tucked away in the foothills of the mighty <strong>Himalayas</strong>. 
+  Popularly known as the “<strong>Queen of Hills</strong>,” Shimla beautifully blends its 
+  <strong>colonial heritage</strong> with <strong>breathtaking natural landscapes</strong>, making 
+  it one of the most visited <strong>tourist destinations in India</strong>.
+</p>
+
+<p data-aos="fade-up">
+  The town is surrounded by <strong>pine-covered hills</strong>, <strong>snow-clad peaks</strong>, 
+  and <strong>picturesque valleys</strong> that change colors with every season. At its heart lies 
+  the iconic <strong>Mall Road</strong>, lined with bustling shops, cozy cafés, and 
+  <strong>colonial-era buildings</strong> that transport visitors to a bygone era. Another highlight, 
+  the <strong>Ridge</strong>, offers sweeping views of the mountains and serves as a vibrant hub for 
+  <strong>festivals</strong> and <strong>local gatherings</strong>.
+</p>
+
+<p data-aos="fade-up" style="margin-bottom: 10px;">
+  Beyond its scenic charm, Shimla is a paradise for <strong>adventure seekers</strong> and 
+  <strong>nature lovers</strong>. In winter, it transforms into a snowy retreat perfect for 
+  <strong>skiing</strong> and <strong>ice skating</strong>, while in summer, it becomes an inviting 
+  escape for <strong>trekking</strong>, <strong>camping</strong>, and <strong>nature walks</strong>. 
+  Popular nearby attractions such as <strong>Kufri</strong>, <strong>Chail</strong>, and 
+  <strong>Mashobra</strong> add to its allure, offering everything from <strong>wildlife experiences</strong> 
+  to <strong>panoramic viewpoints</strong>. With its perfect blend of <strong>beauty</strong>, 
+  <strong>culture</strong>, and <strong>adventure</strong>, Shimla promises an unforgettable 
+  experience for every traveler.
+</p>
+
+
 
     <!-- Image Row -->
     <div class="image-row" data-aos="zoom-in">
       <div class="img-box"><img src="../images/shimla.jpg" alt="Shimla View"></div>
-      <div class="img-box"><img src="../images/ridge.jpg" alt="Shimla Ridge"></div>
-      <div class="img-box"><img src="../images/spiti.jpg" alt="Spiti Valley"></div>
+      <div class="img-box"><img src="../images/shimla1.jpg" alt="Shimla Ridge"></div>
+      <div class="img-box"><img src="../images/shimla2.jpg" alt="shimla Valley"></div>
     </div>
+    
 
     <p data-aos="fade-up" style="margin-top: 10px;">
-      Gulmarg, an exquisite jewel of the Indian-administered union territory of Jammu and Kashmir, 
-      is a captivating mountain resort nestled in the lap of the majestic Himalayas. Its name, 
-      quite literally translating to “Meadow of Flowers,” is a testament to the lush, rolling meadows 
-      blanketed in a kaleidoscope of wildflowers during the warmer months.
-    </p>
-    <p data-aos="fade-up">
-      A cornerstone of Gulmarg’s charm lies in its breathtaking natural beauty. It’s a place where 
-      verdant meadows, carpeted with a myriad of blossoms, merge seamlessly with towering snow-clad 
-      peaks. Dominating the skyline is Mount Apharwat, an icon for adventure seekers. The Gulmarg Gondola, 
-      one of the highest cable cars in the world, offers thrilling rides to lofty altitudes, providing 
-      mesmerizing panoramic views that defy description.
-    </p>
+  <strong>Shimla</strong> is not just about <strong>scenic landscapes</strong> but also about its 
+  <strong>rich colonial heritage</strong> and <strong>timeless charm</strong>. Once the 
+  <strong>summer capital of British India</strong>, the town is dotted with architectural marvels 
+  like the <strong>Viceregal Lodge</strong>, <strong>Christ Church</strong>, and the 
+  <strong>Gaiety Theatre</strong>, each narrating stories from a bygone era. The famous 
+  <strong>Kalka–Shimla Toy Train</strong>, a <strong>UNESCO World Heritage experience</strong>, 
+  adds a nostalgic touch with its winding tracks, tunnels, and breathtaking <strong>mountain views</strong>.
+</p>
+
+<p data-aos="fade-up">
+  Beyond its history, Shimla offers a <strong>vibrant cultural experience</strong>. Local markets 
+  such as <strong>Lakkar Bazaar</strong> and <strong>Lower Bazaar</strong> bustle with 
+  <strong>traditional handicrafts</strong>, <strong>woolens</strong>, and <strong>Himachali delicacies</strong>. 
+  The town also serves as a gateway to nearby retreats like <strong>Naldehra</strong> (famous for its 
+  <strong>golf course</strong>) and <strong>Tattapani</strong> (renowned for its <strong>hot springs</strong>). 
+  Whether it’s savoring a cup of tea with views of <strong>snow-capped peaks</strong>, enjoying 
+  leisurely walks on the <strong>Ridge</strong>, or exploring hidden <strong>temples</strong> and 
+  <strong>monasteries</strong>, Shimla blends <strong>relaxation</strong> with 
+  <strong>discovery</strong>, making it a destination that appeals to <strong>every kind of traveler</strong>.
+</p>
+
+
 
     <!-- Image Row -->
     <div class="image-row" data-aos="zoom-in">
-      <div class="img-box"><img src="../images/shimla.jpg" alt="Shimla View"></div>
-      <div class="img-box"><img src="../images/ridge.jpg" alt="Shimla Ridge"></div>
-      <div class="img-box"><img src="../images/spiti.jpg" alt="Spiti Valley"></div>
+      <div class="img-box"><img src="../images/shimla3.jpg" alt="Shimla View"></div>
+      <div class="img-box"><img src="../images/shimla4.jpg" alt="Shimla Ridge"></div>
+      <div class="img-box"><img src="../images/shimla5.jpg" alt="shimla Valley"></div>
     </div>
     
     <!-- FAQ Section -->
@@ -632,56 +158,68 @@
       <div class="faq-container">
 
         <div class="faq-card active" data-aos="fade-up">
-          <div class="faq-question">
-            <span>What is the best time to visit Gulmarg?</span>
-            <i class="arrow">&#x25BC;</i>
-          </div>
-          <div class="faq-answer">
-            The best time to visit Gulmarg depends on your interests. 
-            <strong>Summer (May to September)</strong> is perfect for trekking and enjoying the lush green meadows. 
-            <strong>Winter (December to February)</strong> is ideal for snow sports like skiing and snowboarding.
-          </div>
-        </div>
+  <div class="faq-question">
+    <span>What is the best time to visit Shimla?</span>
+    <i class="arrow">&#x25BC;</i>
+  </div>
+  <div class="faq-answer">
+    The best time to visit <strong>Shimla</strong> is from <strong>March to June</strong> for 
+    <strong>pleasant summer weather</strong>, and from <strong>December to February</strong> if you 
+    wish to experience <strong>snowfall</strong> and <strong>winter sports</strong>.
+  </div>
+</div>
 
-        <div class="faq-card" data-aos="fade-up">
-          <div class="faq-question">
-            <span>What is the Gulmarg Gondola, and is it a must-do activity?</span>
-            <i class="arrow">&#x25BC;</i>
-          </div>
-          <div class="faq-answer">
-            The Gulmarg Gondola is one of the world’s highest cable cars, offering stunning views of the Himalayas. Yes, it’s a must-do!
-          </div>
-        </div>
+<div class="faq-card" data-aos="fade-up">
+  <div class="faq-question">
+    <span>What are the must-visit attractions in Shimla?</span>
+    <i class="arrow">&#x25BC;</i>
+  </div>
+  <div class="faq-answer">
+    Popular attractions include <strong>Mall Road</strong>, <strong>The Ridge</strong>, 
+    <strong>Christ Church</strong>, <strong>Jakhoo Temple</strong>, <strong>Kufri</strong>, and the 
+    historic <strong>Viceregal Lodge</strong>. Each offers a unique glimpse of Shimla’s 
+    <strong>beauty</strong> and <strong>heritage</strong>.
+  </div>
+</div>
 
-        <div class="faq-card" data-aos="fade-up">
-          <div class="faq-question">
-            <span>Can I go skiing or snowboarding in Gulmarg if I'm a beginner?</span>
-            <i class="arrow">&#x25BC;</i>
-          </div>
-          <div class="faq-answer">
-            Absolutely! Gulmarg offers beginner slopes and professional instructors to help you learn skiing and snowboarding.
-          </div>
-        </div>
+<div class="faq-card" data-aos="fade-up">
+  <div class="faq-question">
+    <span>Is Shimla good for adventure activities?</span>
+    <i class="arrow">&#x25BC;</i>
+  </div>
+  <div class="faq-answer">
+    Yes! <strong>Shimla</strong> offers <strong>trekking</strong>, <strong>camping</strong>, 
+    <strong>ice skating</strong> in winter, and <strong>adventure parks</strong> in 
+    <strong>Kufri</strong>. Nearby areas also provide opportunities for 
+    <strong>river rafting</strong> and <strong>paragliding</strong>.
+  </div>
+</div>
 
-        <div class="faq-card" data-aos="fade-up">
-          <div class="faq-question">
-            <span>Is it safe to travel to Gulmarg?</span>
-            <i class="arrow">&#x25BC;</i>
-          </div>
-          <div class="faq-answer">
-            Yes, Gulmarg is safe for tourists. However, it’s always best to check local travel advisories before planning your trip.
-          </div>
-        </div>
+<div class="faq-card" data-aos="fade-up">
+  <div class="faq-question">
+    <span>How can I reach Shimla?</span>
+    <i class="arrow">&#x25BC;</i>
+  </div>
+  <div class="faq-answer">
+    <strong>Shimla</strong> is well-connected by <strong>road</strong> from 
+    <strong>Delhi</strong> and <strong>Chandigarh</strong>. You can also take the famous 
+    <strong>Kalka–Shimla Toy Train</strong>, a <strong>UNESCO World Heritage journey</strong>, 
+    or fly to the nearby <strong>Jubbarhatti Airport</strong>.
+  </div>
+</div>
 
-        <div class="faq-card" data-aos="fade-up">
-          <div class="faq-question">
-            <span>What are the dining options in Gulmarg?</span>
-            <i class="arrow">&#x25BC;</i>
-          </div>
-          <div class="faq-answer">
-            Gulmarg has a range of dining options, from local Kashmiri cuisine to international dishes, mainly served at hotels and resorts.
-          </div>
-        </div>
+
+<div class="faq-card" data-aos="fade-up">
+  <div class="faq-question">
+    <span>What food is Shimla famous for?</span>
+    <i class="arrow">&#x25BC;</i>
+  </div>
+  <div class="faq-answer">
+    Shimla is known for traditional Himachali dishes like Siddu, Madra, and Chha Gosht, along with 
+    cozy cafés serving momos, thukpa, and freshly baked goods on Mall Road.
+  </div>
+</div>
+
 
       </div>
     </section>
@@ -691,21 +229,22 @@
   <!-- Right Form + Slider + Map -->
   <div class="form-container" data-aos="fade-left">
     <div class="form-box" data-aos="fade-up">
-      <h3>TOUR ENQUIRY</h3>
-      <form>
-        <input type="text" placeholder="Name" required data-aos="fade-up">
-        <input type="tel" placeholder="Phone" required data-aos="fade-up">
-        <input type="email" placeholder="Email" required data-aos="fade-up">
-        <input type="date" required data-aos="fade-up">
-        <select required data-aos="fade-up">
-          <option value="">Select Package</option>
-          <option value="basic">Basic Package</option>
-          <option value="premium">Premium Package</option>
-          <option value="luxury">Luxury Package</option>
-        </select>
-        <button type="submit" data-aos="zoom-in">Submit</button>
-      </form>
-    </div>
+  <h3>TOUR ENQUIRY</h3>
+  <form action="https://formspree.io/f/mrblvqzv" method="POST">
+    <input type="text" name="name" placeholder="Name" required data-aos="fade-up">
+    <input type="tel" name="phone" placeholder="Phone" required data-aos="fade-up">
+    <input type="email" name="email" placeholder="Email" required data-aos="fade-up">
+    <input type="date" name="date" required data-aos="fade-up">
+    <select name="package" required data-aos="fade-up">
+      <option value="">Select Package</option>
+      <option value="basic">Basic Package</option>
+      <option value="premium">Premium Package</option>
+      <option value="luxury">Luxury Package</option>
+    </select>
+    <button type="submit" data-aos="zoom-in">Submit</button>
+  </form>
+</div>
+
 
     <!-- Slider below form -->
     <div class="slider-container" data-aos="fade-up">
@@ -713,16 +252,16 @@
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide" data-aos="zoom-in">
-  <a href="#" target="_blank">
-    <img src="../images/ridge.jpg" alt="Shimla" />
-    <div class="slide-text" data-aos="fade-up" data-aos-delay="200">Adventure Escape in Shimla</div>
+  <a href="manali.html" target="_blank">
+    <img src="../images/rafting.jpg" alt="Manali" />
+    <div class="slide-text" data-aos="fade-up" data-aos-delay="200">Adventure Escape in Manali</div>
   </a>
 </div>
 
 <div class="swiper-slide" data-aos="zoom-in">
-  <a href="#" target="_blank">
-    <img src="../images/gallery4.jpg" alt="lake Shimla" />
-    <div class="slide-text" data-aos="fade-up" data-aos-delay="500">Explore Shimla</div>
+  <a href="manali.html" target="_blank">
+    <img src="../images/paragliding1.jpg" alt="paragliding in manali" />
+    <div class="slide-text" data-aos="fade-up" data-aos-delay="500">Explore Manali</div>
   </a>
 </div>
 
@@ -750,7 +289,6 @@
   </div>
 
 </div>
-
 
 <!-- WhatsApp Floating Button -->
   <div class="whatsapp-float" onclick="toggleChat()">
