@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>HimEase — About Us</title>
+  <title>HimEase — Tours</title>
   <meta name="description" content="Plan trips, discover destinations, and book curated travel packages." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -83,7 +83,7 @@
 
       <!-- Card 1 -->
 <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-  <div class="tour-card">
+  <div class="tour-card" onclick="event.stopPropagation(); window.location.href='./destinations/shimla.html'">
     <div style="position: relative;">
       <img src="images/shimla.jpg" alt="Shimla, Himachal">
       <div class="price-tag">₹14,999 | 2 x Person</div>
@@ -118,7 +118,7 @@
 
 <!-- Card 2 -->
 <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-  <div class="tour-card">
+  <div class="tour-card" onclick="event.stopPropagation(); window.location.href='./destinations/manali.html'">
     <div style="position: relative;">
       <img src="images/manali.jpg" alt="Manali, Himachal">
       <div class="price-tag">₹16,999 | 2 x Person</div>
@@ -153,7 +153,7 @@
 
 <!-- Card 3 -->
 <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-  <div class="tour-card">
+  <div class="tour-card" onclick="event.stopPropagation(); window.location.href='./destinations/kangra.html'">
     <div style="position: relative;">
       <img src="images/dharamshala.jpg" alt="Dharamshala, Himachal">
       <div class="price-tag">₹15,499 | 2 x Person</div>
@@ -186,9 +186,9 @@
   </div>
 </div>
 
- <!-- Card 1 - Kinnaur -->
+ <!-- Card 4 - Kinnaur -->
 <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-  <div class="tour-card">
+  <div class="tour-card" onclick="event.stopPropagation(); window.location.href='./destinations/kinnaur.html'">
     <div style="position: relative;">
       <img src="images/kinnaur.jpg" alt="Kinnaur, Himachal">
       <div class="price-tag">₹18,999 | 2 x Person</div>
@@ -221,9 +221,9 @@
   </div>
 </div>
 
-<!-- Card 2 - Spiti Valley -->
+<!-- Card 5 - Spiti Valley -->
 <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-  <div class="tour-card">
+  <div class="tour-card" onclick="event.stopPropagation(); window.location.href='./destinations/shimla.html'">
     <div style="position: relative;">
       <img src="images/spiti.jpg" alt="Spiti Valley, Himachal">
       <div class="price-tag">₹22,999 | 2 x Person</div>
@@ -256,9 +256,9 @@
   </div>
 </div>
 
-<!-- Card 3 - Kullu -->
+<!-- Card 6 - Kullu -->
 <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-  <div class="tour-card" >
+  <div class="tour-card" onclick="event.stopPropagation(); window.location.href='./destinations/shimla.html'">
     <div style="position: relative;">
       <img src="images/kullu.jpg" alt="Kullu, Himachal">
       <div class="price-tag">₹13,499 | 2 x Person</div>
@@ -295,17 +295,17 @@
         <div class="modal-box">
           <span class="close-btn" id="closeFormBtn">&times;</span>
           <h3>Connect with a group tour expert</h3>
-          <form>
-            <input type="text" placeholder="Full Name" required>
-            <input type="tel" placeholder="Phone" required>
-            <input type="email" placeholder="Your Email" required>
-            <div class="two-inputs">
-              <input type="date" placeholder="Travel Date">
-              <input type="number" placeholder="Traveller Count">
-            </div>
-            <textarea placeholder="Please let me know about the trip"></textarea>
-            <button type="submit" class="callback-btn">Get A Callback</button>
-          </form>
+          <form action="https://formspree.io/f/mrblvqzv" method="POST">
+  <input type="text" name="name" placeholder="Full Name" required>
+  <input type="tel" name="phone" placeholder="Phone" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <div class="two-inputs">
+    <input type="date" name="date" placeholder="Travel Date">
+    <input type="number" name="travellers" placeholder="Traveller Count">
+  </div>
+  <textarea name="message" placeholder="Please let me know about the trip"></textarea>
+  <button type="submit" class="callback-btn">Get A Callback</button>
+</form>
         </div>
       </div>
 </section>

@@ -54,39 +54,39 @@
           Where Adventure and Joy Find Their Perfect Blend
         </p>
         <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap" data-aos="fade-down" data-aos-delay="1000">
-          <a href="#packages" class="btn btn-primary btn" data-aos="zoom-in" data-aos-delay="1100">Explore Packages</a>
-          <a href="#destinations" class="btn btn-outline-light btn" data-aos="zoom-in" data-aos-delay="1200">Top Destinations</a>
+          <a href="#destinations" class="btn btn-primary btn" data-aos="zoom-in" data-aos-delay="1100">Explore Packages</a>
+          <a href="#Trending" class="btn btn-outline-light btn" data-aos="zoom-in" data-aos-delay="1200">Top Destinations</a>
         </div>
       </div>
     </div>
 
     <!-- Search card -->
 <div class="mt-5" style="padding-top: 90px;">
-  <form class="row g-3 align-items-center">
-    <div class="col-12 col-md-3" data-aos="fade-up" data-aos-delay="500">
-      <input type="text" class="form-control form-control" placeholder="Name" />
-    </div>
-    <div class="col-12 col-md-3" data-aos="fade-down" data-aos-delay="600">
-      <input type="tel" class="form-control form-control" placeholder="Phone" />
-    </div>
-    <div class="col-12 col-md-3" data-aos="fade-up" data-aos-delay="700">
-      <input type="email" class="form-control form-control" placeholder="Email" />
-    </div>
-    <div class="col-12 col-md-2" data-aos="fade-down" data-aos-delay="800">
-      <select class="form-select form-select">
-        <option>Select Package</option>
-        <option>Package 1</option>
-        <option>Package 2</option>
-        <option>Package 3</option>
-        <option>Package 4</option>
-        <option>Package 5</option>
-        <option>Package 6</option>
-      </select>
-    </div>
-    <div class="col-12 col-md-1 d-grid" data-aos="zoom-in" data-aos-delay="900">
-      <button type="submit" class="btn btn-primary btn">Submit</button>
-    </div>
-  </form>
+  <form class="row g-3 align-items-center" action="https://formspree.io/f/mrblvqzv" method="POST">
+  <div class="col-12 col-md-3">
+    <input type="text" class="form-control" name="name" placeholder="Name" required />
+  </div>
+  <div class="col-12 col-md-3">
+    <input type="tel" class="form-control" name="phone" placeholder="Phone" required />
+  </div>
+  <div class="col-12 col-md-3">
+    <input type="email" class="form-control" name="email" placeholder="Email" required />
+  </div>
+  <div class="col-12 col-md-2">
+    <select class="form-select" name="package" required>
+      <option value="">Select Package</option>
+      <option>Shimla</option>
+      <option>Manali</option>
+      <option>Kinnaur</option>
+      <option>Dharamshala</option>
+      <option>Kullu</option>
+      <option>Spiti</option>
+    </select>
+  </div>
+  <div class="col-12 col-md-1 d-grid">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
 </div>
 </section>
 
@@ -229,7 +229,7 @@
     <div class="package-section" data-bg="images/spiti.jpg" data-aos="zoom-in" data-aos-delay="400">
       <h3>Tour Packages</h3>
       <p class="location">HIMACHAL</p>
-      <a href="#" class="explore-btn">EXPLORE</a>
+      <a href="tours.html" class="explore-btn">EXPLORE</a>
     </div>
   </div>
 </section>
@@ -248,7 +248,7 @@
 
       <!-- Card 1 -->
       <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="tour-card">
+        <div class="tour-card" onclick="event.stopPropagation(); window.location.href='./destinations/shimla.html'">
           <div style="position: relative;">
             <img src="images/shimla.jpg" alt="Shimla, Himachal">
             <div class="price-tag">₹14,999 | 2 x Person</div>
@@ -284,7 +284,7 @@
 
       <!-- Card 2 -->
       <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="tour-card">
+        <div class="tour-card" onclick="event.stopPropagation(); window.location.href='./destinations/manali.html'">
           <div style="position: relative;">
             <img src="images/manali.jpg" alt="Manali, Himachal">
             <div class="price-tag">₹16,999 | 2 x Person</div>
@@ -319,7 +319,7 @@
 
       <!-- Card 3 -->
       <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-        <div class="tour-card">
+        <div class="tour-card" onclick="event.stopPropagation(); window.location.href='./destinations/kangra.html'">
           <div style="position: relative;">
             <img src="images/dharamshala.jpg" alt="Dharamshala, Himachal">
             <div class="price-tag">₹15,499 | 2 x Person</div>
@@ -362,17 +362,18 @@
         <div class="modal-box">
           <span class="close-btn" id="closeFormBtn">&times;</span>
           <h3>Connect with a group tour expert</h3>
-          <form>
-            <input type="text" placeholder="Full Name" required>
-            <input type="tel" placeholder="Phone" required>
-            <input type="email" placeholder="Your Email" required>
-            <div class="two-inputs">
-              <input type="date" placeholder="Travel Date">
-              <input type="number" placeholder="Traveller Count">
-            </div>
-            <textarea placeholder="Please let me know about the trip"></textarea>
-            <button type="submit" class="callback-btn">Get A Callback</button>
-          </form>
+          <form action="https://formspree.io/f/mrblvqzv" method="POST">
+  <input type="text" name="name" placeholder="Full Name" required>
+  <input type="tel" name="phone" placeholder="Phone" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <div class="two-inputs">
+    <input type="date" name="date" placeholder="Travel Date">
+    <input type="number" name="travellers" placeholder="Traveller Count">
+  </div>
+  <textarea name="message" placeholder="Please let me know about the trip"></textarea>
+  <button type="submit" class="callback-btn">Get A Callback</button>
+</form>
+
         </div>
       </div>
     </div>
@@ -523,25 +524,28 @@
       <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
         <div class="card border-0 shadow-sm rounded-4">
           <div class="card-body p-4">
-            <form id="contactForm" class="row g-3">
-              <div class="col-md-6">
-                <label class="form-label">Name</label>
-                <input type="text" class="form-control" required>
-              </div>
-              <div class="col-md-6">
-                <label class="form-label">Email</label>
-                <input type="email" class="form-control" required>
-              </div>
-              <div class="col-12">
-                <label class="form-label">Message</label>
-                <textarea class="form-control" rows="4" required></textarea>
-              </div>
-              <div class="col-12 d-grid d-md-flex gap-2">
-                <button class="btn btn-primary px-4" type="submit">Send</button>
-                <button class="btn btn-outline-secondary px-4" type="reset">Reset</button>
-              </div>
-              <p class="small text-success d-none" id="contactSuccess"><i class="fa-regular fa-circle-check me-1"></i> Message sent!</p>
-            </form>
+            <form id="contactForm" class="row g-3" action="https://formspree.io/f/mrblvqzv" method="POST">
+  <div class="col-md-6">
+    <label class="form-label">Name</label>
+    <input type="text" name="name" class="form-control" required>
+  </div>
+  <div class="col-md-6">
+    <label class="form-label">Email</label>
+    <input type="email" name="email" class="form-control" required>
+  </div>
+  <div class="col-12">
+    <label class="form-label">Message</label>
+    <textarea name="message" class="form-control" rows="4" required></textarea>
+  </div>
+  <div class="col-12 d-grid d-md-flex gap-2">
+    <button class="btn btn-primary px-4" type="submit">Send</button>
+    <button class="btn btn-outline-secondary px-4" type="reset">Reset</button>
+  </div>
+  <p class="small text-success d-none" id="contactSuccess">
+    <i class="fa-regular fa-circle-check me-1"></i> Message sent!
+  </p>
+</form>
+
           </div>
         </div>
       </div>

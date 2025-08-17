@@ -45,7 +45,7 @@ document.querySelectorAll('.package-section').forEach(section => {
 // callback form appears on clicking oncards
 // Select all cards and all 'Get a Callback' buttons
 const cards = document.querySelectorAll('.book-btn'); // your card class
-const callbackButtons = document.querySelectorAll(''); // your button class
+const callbackButtons = document.querySelectorAll('.book-btn'); // your button class
 
 const formModal = document.getElementById('formModal');
 const closeFormBtn = document.getElementById('closeFormBtn');
