@@ -88,9 +88,30 @@
         <p>We create unforgettable adventures, customized for your group.</p>
       </div>
     </div>
-    <button class="offer-btn" data-aos="zoom-in" data-aos-delay="400">Request a Callback</button>
+    <!-- Button -->
+    <button class="offer-btn" id="offerBtn">Request a Callback</button>
   </div>
 </section>
+
+<!-- Modal -->
+<div id="offerModal" class="modal-overlay">
+  <div class="modal-box">
+    <span class="close-btn">&times;</span>
+    <h3>Connect with a group tour expert</h3>
+    <!-- form -->
+    <form action="https://formspree.io/f/mrblvqzv" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="tel" name="phone" placeholder="Phone" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <div class="form-row">
+        <input type="date" name="date" placeholder="Travel Date">
+        <input type="number" name="travellers" placeholder="Traveller Count">
+      </div>
+      <textarea name="message" placeholder="Please let me know about the trip"></textarea>
+      <button type="submit">Get A Callback</button>
+    </form>
+  </div>
+</div>
 
 <!-- Section with AOS Effects -->
 <div class="section-container" data-aos="fade-up">
@@ -496,5 +517,29 @@
       window.open(url, "_blank");
     }
   </script>
+
+  <script>
+  const offerBtn = document.getElementById("offerBtn");
+  const offerModal = document.getElementById("offerModal");
+  const closeBtn = offerModal.querySelector(".close-btn");
+
+  // Open modal
+  offerBtn.addEventListener("click", () => {
+    offerModal.style.display = "flex";
+  });
+
+  // Close modal
+  closeBtn.addEventListener("click", () => {
+    offerModal.style.display = "none";
+  });
+
+  // Close on outside click
+  window.addEventListener("click", (e) => {
+    if (e.target === offerModal) {
+      offerModal.style.display = "none";
+    }
+  });
+</script>
+
 </body>
 </html>

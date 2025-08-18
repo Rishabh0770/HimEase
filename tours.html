@@ -17,6 +17,74 @@
   <link rel="stylesheet" href="about.css">
   <link rel="stylesheet" href="tours.css">
   <link rel="stylesheet" href="whatsapp.css">
+<style>
+.modal-overlay {
+  display: none;              /* hidden by default */
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;    /* keep flex props but only when shown */
+  align-items: center;
+  z-index: 1000;
+}
+
+  .modal-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    position: relative;
+  }
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .modal-box h3 {
+  text-align: center;   /* centers the heading */
+  margin-bottom: 15px;
+}
+
+.modal-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-box form button {
+  background: #0a5db5;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+
+  /* Center the button */
+  align-self: center;
+}
+
+.modal-box form button:hover {
+  background: #084a90;  /* hover effect */
+}
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close-btn:hover {
+  color: #084a90; /* red hover */
+}
+</style>
 </head>
 <body>
 
@@ -76,15 +144,36 @@
 <section class="offer-section" data-aos="fade-down" data-aos-delay="300">
   <div class="offer-box">
     <div class="offer-left" data-aos="fade-up" data-aos-delay="400">
-      <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=200&auto=format&fit=crop" alt="Offer">
+      <img src="../images/group.jpg" alt="Offer">
       <div class="offer-text" data-aos="fade-down" data-aos-delay="500">
         <h2>Bigger Group? Get special offers upto 50% off!</h2>
         <p>We create unforgettable adventures, customized for your group.</p>
       </div>
     </div>
-    <button class="offer-btn" data-aos="zoom-in" data-aos-delay="400">Request a Callback</button>
+    <!-- Button -->
+    <button class="offer-btn" id="offerBtn">Request a Callback</button>
   </div>
 </section>
+
+<!-- Modal -->
+<div id="offerModal" class="modal-overlay">
+  <div class="modal-box">
+    <span class="close-btn">&times;</span>
+    <h3>Connect with a group tour expert</h3>
+    <!-- form -->
+    <form action="https://formspree.io/f/mrblvqzv" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="tel" name="phone" placeholder="Phone" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <div class="form-row">
+        <input type="date" name="date" placeholder="Travel Date">
+        <input type="number" name="travellers" placeholder="Traveller Count">
+      </div>
+      <textarea name="message" placeholder="Please let me know about the trip"></textarea>
+      <button type="submit">Get A Callback</button>
+    </form>
+  </div>
+</div>
 
 
   <!-- Destinations -->
@@ -332,8 +421,29 @@
     Tailor your experience with us by creating custom packages that suit your needs – 
     contact us to personalize your journey.
   </p>
-  <a href="#" class="callback-btn" data-aos="zoom-in" data-aos-delay="500">Request a Callback</a>
+  <!-- Changed <a> to <button> and applied same class -->
+  <button class="offer-btn" data-aos="zoom-in" data-aos-delay="500">Request a Callback</button>
 </section>
+
+<!-- Modal -->
+<div id="offerModal" class="modal-overlay">
+  <div class="modal-box">
+    <span class="close-btn">&times;</span>
+    <h3>Connect with a group tour expert</h3>
+    <!-- form -->
+    <form action="https://formspree.io/f/mrblvqzv" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="tel" name="phone" placeholder="Phone" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <div class="form-row">
+        <input type="date" name="date" placeholder="Travel Date">
+        <input type="number" name="travellers" placeholder="Traveller Count">
+      </div>
+      <textarea name="message" placeholder="Please let me know about the trip"></textarea>
+      <button type="submit">Get A Callback</button>
+    </form>
+  </div>
+</div>
 
 <!-- WhatsApp Floating Button -->
   <div class="whatsapp-float" onclick="toggleChat()">
@@ -424,6 +534,35 @@
     offset: 100    // trigger point before element enters viewport
   });
 </script>
+
+<script>
+  const offerModal = document.getElementById("offerModal");
+  const closeBtn = offerModal.querySelector(".close-btn");
+
+  // Select all buttons with class "offer-btn"
+  const offerBtns = document.querySelectorAll(".offer-btn");
+
+  // Loop through each button and attach event listener
+  offerBtns.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault(); // stops <a> from jumping
+      offerModal.style.display = "flex";
+    });
+  });
+
+  // Close modal
+  closeBtn.addEventListener("click", () => {
+    offerModal.style.display = "none";
+  });
+
+  // Close on outside click
+  window.addEventListener("click", (e) => {
+    if (e.target === offerModal) {
+      offerModal.style.display = "none";
+    }
+  });
+</script>
+
 
 </body>
 </html>
