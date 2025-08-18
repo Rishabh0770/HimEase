@@ -633,3 +633,28 @@ footer .col-md-4 .d-flex {
   justify-content: center;   /* centers the icons */
   margin-top: 10px;
 }
+
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* yahi center karega */
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 8px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link {
+    display: inline-block;
+  }
+}
