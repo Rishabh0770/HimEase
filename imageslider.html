@@ -152,52 +152,62 @@ const data = [
   {
     title: "Shimla",
     desc: "The capital city of Himachal Pradesh, famous for its colonial architecture, The Ridge, and Mall Road.",
-    bg: "images/packageshimla.jpg"
+    bg: "images/packageshimla.jpg",
+    link: "destinations/shimla.html"  // 👈 yaha link add kar do
   },
   {
     title: "Kinnaur",
     desc: "Known for apple orchards, majestic mountains, and rich Tibetan culture. Sangla and Kalpa are highlights.",
-    bg: "images/gallery6.jpg"
+    bg: "images/gallery6.jpg",
+    link: "destinations/kinnaur.html"
   },
   {
     title: "Spiti",
     desc: "A cold desert mountain valley with monasteries, surreal landscapes, and adventure treks.",
-    bg: "images/packagespiti.jpg"
+    bg: "images/packagespiti.jpg",
+    link: "destinations/spiti.html"
   },
   {
     title: "Ladakh",
     desc: "High-altitude desert known for monasteries, Pangong Lake, and adventure tourism.",
-    bg: "images/ladakhcover.jpg"
+    bg: "images/ladakhcover.jpg",
+    link: "destinations/ladakh.html"
   },
   {
     title: "Kullu",
     desc: "A beautiful valley on the banks of Beas River, known for temples, festivals, and adventure sports.",
-    bg: "images/kullucover.jpg"
+    bg: "images/kullucover.jpg",
+    link: "destinations/kullu.html"
   },
   {
     title: "Dharamshala",
     desc: "The home of the Dalai Lama, famous for cricket stadium, monasteries, and Tibetan culture.",
-    bg: "images/dharamshala.jpg"
+    bg: "images/dharamshala.jpg",
+    link: "destinations/kangra.html"
   },
   {
     title: "Manikaran",
     desc: "A holy place in Parvati Valley, famous for hot springs and religious significance.",
-    bg: "images/manikarancover.jpg"
+    bg: "images/manikarancover.jpg",
+    link: "destinations/kinnaur.html"
   },
   {
     title: "Rohtang",
     desc: "A high mountain pass connecting Kullu Valley to Lahaul and Spiti, known for snow and adventure sports.",
-    bg: "images/rohtangcover.jpg"
+    bg: "images/rohtangcover.jpg",
+    link: "destinations/kinnaur.html"
   },
   {
     title: "Manali",
     desc: "A popular hill station surrounded by mountains, valleys, and known for adventure activities.",
-    bg: "images/manalicover.jpg"
+    bg: "images/manalicover.jpg",
+    link: "destinations/manali.html"
   },
   {
     title: "Kasol",
     desc: "A scenic village in Parvati Valley, known as mini Israel of India, famous for trekking and hippie vibes.",
-    bg: "images/kasolcover.jpg"
+    bg: "images/kasolcover.jpg",
+    link: "destinations/kinnaur.html"
   }
 ];
 
@@ -205,6 +215,7 @@ const data = [
 const heroBg = document.querySelector(".hero-bg img");
 const heroTitle = document.querySelector(".hero-title");
 const heroDesc = document.querySelector(".hero-desc");
+const exploreBtn = document.querySelector(".explore-btn");
 
 const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
@@ -236,6 +247,7 @@ swiper.on('slideChange', () => {
   heroBg.src = data[realIndex].bg;
   heroTitle.textContent = data[realIndex].title;
   heroDesc.textContent = data[realIndex].desc;
+  exploreBtn.href = data[realIndex].link || "#";
 });
 </script>
 
