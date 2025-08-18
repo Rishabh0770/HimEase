@@ -31,25 +31,42 @@
 </head>
 <body>
 
- <!-- Header / Navbar -->
+<!-- Header / Navbar -->
   <header class="sticky-top shadow-sm bg-white">
-    <nav class="navbar navbar-expand-lg container py-2">
-      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="../index.html">
-        <i class="fa-solid fa-earth-asia text-primary"></i>HimEase</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
-          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="../aboutus.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link active" href="#">Destinations</a></li>
-          <li class="nav-item"><a class="nav-link" href="../tours.html">Tours</a></li>
-          <li class="nav-item"><a class="nav-link" href="../contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+  <nav class="navbar navbar-expand-lg container py-2">
+    <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="../index.html">
+      <i class="fa-solid fa-earth-asia text-primary"></i>
+      HimEase
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../aboutus.html">About Us</a></li>
+        
+        <!-- Dropdown for Destinations -->
+        <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle active" href="#" id="destinationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Destinations <i class="fa-solid fa-angle-down ms-1"></i>
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="destinationsDropdown">
+    <li><a class="dropdown-item" href="../destinations/manali.html">Manali</a></li>
+    <li><a class="dropdown-item active" href="../destinations/shimla.html">Shimla</a></li>
+    <li><a class="dropdown-item" href="../destinations/kinnaur.html">Kinnaur</a></li>
+    <li><a class="dropdown-item" href="../destinations/kangra.html">Dharamshala / Kangra</a></li>
+    <li><a class="dropdown-item" href="../destinations/kullu.html">Kullu</a></li>
+    <li><a class="dropdown-item" href="#">Spiti</a></li>
+    <li><a class="dropdown-item" href="#">Leh</a></li>
+  </ul>
+</li>
+        <li class="nav-item"><a class="nav-link" href="../tours.html">Tours</a></li>
+        <li class="nav-item"><a class="nav-link" href="../contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
   <!-- About Us Section -->
 <section class="about-section">
@@ -113,15 +130,25 @@
 
 
     <!-- Image Row -->
-    <div class="image-row" data-aos="zoom-in">
-      <div class="img-box"><img src="../images/shimla.jpg" alt="Shimla View"></div>
-      <div class="img-box"><img src="../images/shimla1.jpg" alt="Shimla Ridge"></div>
-      <div class="img-box"><img src="../images/shimla2.jpg" alt="shimla Valley"></div>
-    </div>
+    <div class="image-row">
+  <div class="img-box" data-aos="fade-right" data-aos-delay="100">
+    <img src="../images/shimla.jpg" alt="Shimla View">
+  </div>
+  <div class="img-box" data-aos="zoom-in" data-aos-delay="200">
+    <img src="../images/shimla1.jpg" alt="Shimla Ridge">
+  </div>
+  <div class="img-box" data-aos="fade-left" data-aos-delay="300">
+    <img src="../images/shimla2.jpg" alt="Shimla Valley">
+  </div>
+</div>
+
+
     
 
-    <h3 style="margin-top: 20px;">The Enchanting Beauty of Shimla</h3>
-<ul >
+    <h3 style="margin-top: 20px;" data-aos="fade-up" data-aos-delay="100">
+  The Enchanting Beauty of Shimla
+</h3>
+<ul data-aos="fade-up" data-aos-delay="200">
   <li><strong>The Ridge & Mall Road:</strong> The heart of Shimla, perfect for evening strolls, shopping, and soaking in colonial charm with stunning mountain views.</li>
   <li><strong>Kufri:</strong> Known as the winter sports capital, Kufri offers skiing, horse riding, and panoramic views of the surrounding snow-clad peaks.</li>
   <li><strong>Jakhoo Temple:</strong> Dedicated to Lord Hanuman, this hilltop temple offers spiritual vibes and sweeping views of the city.</li>
@@ -129,16 +156,16 @@
   <li><strong>Green Valley & Chail:</strong> Scenic pine-covered valleys and the serene town of Chail make for relaxing day trips away from the hustle.</li>
 </ul>
 
-<h3>Experiences in Shimla</h3>
-<ul>
+<h3 data-aos="fade-up" data-aos-delay="300">Experiences in Shimla</h3>
+<ul data-aos="fade-up" data-aos-delay="400">
   <li><strong>Toy Train Ride:</strong> Experience the UNESCO-listed Kalka–Shimla railway, winding through tunnels, forests, and breathtaking landscapes.</li>
   <li><strong>Adventure Sports:</strong> Enjoy trekking, camping, ice-skating in winters, and horse riding in the surrounding hills.</li>
   <li><strong>Shopping & Cafés:</strong> Explore Mall Road’s handicrafts, woollens, and cosy colonial-era cafés serving delicious local and global cuisines.</li>
   <li><strong>Nature Walks:</strong> Gentle walks through pine and deodar forests at Summer Hill, Annandale, or Mashobra make Shimla a true nature lover’s delight.</li>
 </ul>
 
-<h3>How to Reach Shimla</h3>
-<p>
+<h3 data-aos="fade-up" data-aos-delay="500">How to Reach Shimla</h3>
+<p data-aos="fade-up" data-aos-delay="600">
   Shimla is well connected by road from Delhi, Chandigarh, and nearby cities. 
   The nearest airport is <strong>Jubbarhatti Airport</strong> (about 23 km away), though flights are limited. 
   Most travellers prefer the scenic <strong>Kalka–Shimla toy train</strong> or Volvo buses, which make the journey comfortable and memorable.
@@ -147,12 +174,20 @@
 
 
 
+
     <!-- Image Row -->
-    <div class="image-row" data-aos="zoom-in">
-      <div class="img-box"><img src="../images/shimla3.jpg" alt="Shimla View"></div>
-      <div class="img-box"><img src="../images/shimla4.jpg" alt="Shimla Ridge"></div>
-      <div class="img-box"><img src="../images/shimla5.jpg" alt="shimla Valley"></div>
-    </div>
+    <div class="image-row">
+  <div class="img-box" data-aos="fade-right" data-aos-delay="100">
+    <img src="../images/shimla3.jpg" alt="Shimla View">
+  </div>
+  <div class="img-box" data-aos="zoom-in" data-aos-delay="200">
+    <img src="../images/shimla4.jpg" alt="Shimla Ridge">
+  </div>
+  <div class="img-box" data-aos="fade-left" data-aos-delay="300">
+    <img src="../images/shimla5.jpg" alt="shimla Valley">
+  </div>
+</div>
+
     
     <!-- FAQ Section -->
     <section class="faq-section" style="background-image: url('../images/your-bg.png');" data-aos="fade-up">
