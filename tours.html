@@ -20,27 +20,42 @@
 </head>
 <body>
 
- <!-- Header / Navbar -->
+  <!-- Header / Navbar -->
   <header class="sticky-top shadow-sm bg-white">
-    <nav class="navbar navbar-expand-lg container py-2">
-      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
-        <i class="fa-solid fa-earth-asia text-primary"></i>
-        HimEase
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Destinations</a></li>
-          <li class="nav-item"><a class="nav-link active" href="tours.html">Tours</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+  <nav class="navbar navbar-expand-lg container py-2">
+    <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+      <i class="fa-solid fa-earth-asia text-primary"></i>
+      HimEase
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+        
+        <!-- Dropdown for Destinations -->
+        <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="destinationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Destinations <i class="fa-solid fa-angle-down ms-1"></i>
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="destinationsDropdown">
+    <li><a class="dropdown-item" href="./destinations/manali.html">Manali</a></li>
+    <li><a class="dropdown-item" href="./destinations/shimla.html">Shimla</a></li>
+    <li><a class="dropdown-item" href="./destinations/kinnaur.html">Kinnaur</a></li>
+    <li><a class="dropdown-item" href="./destinations/kangra.html">Dharamshala / Kangra</a></li>
+    <li><a class="dropdown-item" href="./destinations/kullu.html">Kullu</a></li>
+    <li><a class="dropdown-item" href="./destinations/spiti.html">Spiti</a></li>
+    <li><a class="dropdown-item" href="./destinations/ladakh.html">Ladakh</a></li>
+  </ul>
+</li>
+        <li class="nav-item"><a class="nav-link active" href="tours.html">Tours</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
   <!-- About Us Section -->
 <section class="about-section">
