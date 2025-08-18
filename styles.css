@@ -1311,3 +1311,18 @@ textarea {
   transform: rotate(180deg);
   transition: 0.3s;
 }
+
+
+/* Mobile view mein Destinations dropdown ko center karna */
+@media (max-width: 991px) {
+  .navbar .dropdown-menu {
+    position: relative !important; /* absolute hatayenge */
+    margin: 10px auto;             /* auto margin = center */
+    width: 80%;                    /* chhota box */
+    text-align: center;            /* links center */
+  }
+
+  .navbar .dropdown-menu .dropdown-item {
+    text-align: center;
+  }
+}
