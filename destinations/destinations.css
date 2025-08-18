@@ -547,3 +547,88 @@ ul li {
     text-align: left;       /* force text to start from left */
   }
 }
+
+/* Mobile Responsive Footer */
+@media (max-width: 576px) {
+  footer {
+    text-align: center;
+    padding: 30px 15px;
+  }
+
+  footer .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  footer .col-md-4 {
+    width: 100%;
+  }
+
+  /* Center Quick Links heading + links */
+  footer .col-md-4 h6 {
+    text-align: center;
+  }
+
+  footer .col-md-4 ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* ⬅️ forces li to center */
+  }
+
+  footer .col-md-4 ul li {
+    margin: 5px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  footer .d-flex {
+    justify-content: center;
+  }
+
+  footer hr {
+    margin: 20px auto;
+    width: 80%;
+  }
+
+  footer .d-flex.justify-content-between {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
+footer .col-md-4 h6 {
+  text-align: center;
+}
+
+footer .col-md-4 ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px auto 0;
+  text-align: center;   /* centers the links under heading */
+}
+
+footer .col-md-4 ul li {
+  margin: 5px 0;
+}
+
+footer .col-md-4 ul li a {
+  text-decoration: none;
+  color: #fff;          /* adjust as per your footer */
+}
+
+footer .col-md-4 ul li a:hover {
+  color: #ccc;          /* hover effect */
+}
+
+footer .col-md-4 h6 {
+  text-align: center;
+}
+
+footer .col-md-4 .d-flex {
+  justify-content: center;   /* centers the icons */
+  margin-top: 10px;
+}
