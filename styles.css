@@ -831,7 +831,7 @@ textarea {
 .about-card {
   position: relative;
   width: 400px;
-  max-width: 90%; /* shrink on small screens */
+  max-width: 90%;
   padding: 40px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -840,10 +840,17 @@ textarea {
   color: #fff;
   text-align: center;
   overflow: hidden;
-  transition: box-shadow 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   transform-style: preserve-3d;
   perspective: 1000px;
 }
+
+/* reset smoothly on leave */
+.about-card.reset {
+  transform: rotateX(0) rotateY(0);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
 
 .about-card .card-number {
   position: absolute;
@@ -861,20 +868,6 @@ textarea {
 .about-card p {
   position: relative;
   z-index: 1;
-}
-
-/* 🔄 Continuous tilt animation */
-@keyframes cardTilt {
-  0%   { transform: rotateX(5deg) rotateY(5deg); }
-  25%  { transform: rotateX(-5deg) rotateY(5deg); }
-  50%  { transform: rotateX(-5deg) rotateY(-5deg); }
-  75%  { transform: rotateX(5deg) rotateY(-5deg); }
-  100% { transform: rotateX(5deg) rotateY(5deg); }
-}
-
-.about-card:hover {
-  animation: cardTilt 3s ease-in-out infinite;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
 }
 
 /* 📱 Mobile adjustments */

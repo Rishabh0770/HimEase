@@ -125,3 +125,28 @@ function toggleChat() {
       let url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(msg)}`;
       window.open(url, "_blank");
     }
+
+
+
+    document.querySelectorAll(".about-card").forEach(card => {
+  card.addEventListener("mousemove", (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateX = ((y - centerY) / centerY) * 10; // tilt up/down
+    const rotateY = ((x - centerX) / centerX) * 10; // tilt left/right
+
+    card.style.transform = `rotateX(${-rotateX}deg) rotateY(${rotateY}deg)`;
+    card.style.boxShadow = `${-rotateY}px ${rotateX}px 30px rgba(0,0,0,0.25)`;
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.classList.add("reset");
+    card.style.transform = "rotateX(0) rotateY(0)";
+    card.style.boxShadow = "0 8px 32px rgba(0,0,0,0.2)";
+  });
+});
