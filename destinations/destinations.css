@@ -131,7 +131,7 @@
 
 .image-row {
   display: flex;
-  gap: 15px;
+  gap: 20px;
   margin-top: 20px;
   flex-wrap: wrap; /* allow wrapping on smaller screens */
 }
@@ -143,11 +143,11 @@
 
 .img-box img {
   width: 100%;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
   transition: transform 0.4s ease;
   cursor: pointer;
-  border-radius: 10px; /* smooth corners */
+  border-radius: 0px; /* smooth corners */
 }
 
 .img-box:hover img {
@@ -169,7 +169,7 @@
   }
 
   .img-box img {
-    height: 180px; /* slightly smaller height for mobile */
+    height: 250px; /* slightly smaller height for mobile */
   }
 }
 
@@ -501,4 +501,49 @@
   max-width: 350px; /* same width as form */
   margin: 0 auto;
   text-align: center;
+}
+
+
+/* Default styles (desktop/tablet) */
+h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #000;
+  margin-left: 0; /* keep heading aligned left */
+}
+
+ul {
+  margin: 0 0 20px 45px; /* indent list */
+  padding: 0;
+  list-style-type: disc;
+}
+
+ul li {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+
+
+/* ---------- Mobile Responsive ---------- */
+@media (max-width: 768px) {
+  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+   text-align: left; /* heading stays aligned left */
+  }
+
+  ul {
+    margin: 0 0 18px 20px; /* slight left margin for bullets */
+    padding-left: 20px;    /* ensures bullets + text align well */
+    list-style-position: outside; /* keeps bullets outside text */
+  }
+
+  ul li {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    text-align: left;       /* force text to start from left */
+  }
 }

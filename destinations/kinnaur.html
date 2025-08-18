@@ -27,35 +27,6 @@
   text-align: center;
   height: 60vh;
 }
-
- .swiper {
-    width: 100%;
-    max-width: 750px;
-    height: 400px;
-    margin: auto;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  }
-  .swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  @media (max-width: 480px) {
-  .swiper {
-    width: 95%;          /* keep slider centered */
-    max-width: 320px;    /* same size as form/map */
-    height: 320px;       /* reduce height for mobile */
-    margin: 0 auto 20px; /* center + bottom spacing */
-    border-radius: 12px; /* match form/map rounded edges */
-  }
-
-  .swiper-slide img {
-    object-fit: cover;   /* images fill properly */
-  }
-}
-
   </style>
 </head>
 <body>
@@ -149,43 +120,36 @@
       <div class="img-box"><img src="../images/kalpa.jpg" alt="Kalpa Kinnaur"></div>
     </div>
 
-    <p data-aos="fade-up" style="margin-top: 10px;">
-  <strong>Kinnaur</strong>, the land of gods, is one of Himachal Pradesh’s hidden treasures. Known 
-  for its <strong>mesmerizing valleys</strong>, <strong>apple orchards</strong>, and a unique 
-  blend of <strong>Buddhist</strong> and <strong>Hindu cultures</strong>, it is a must-visit 
-  destination. From the rustic beauty of <strong>Chitkul</strong> to the divine aura of 
-  <strong>Kinner Kailash</strong>, Kinnaur enchants every traveler with its untouched charm.
+    <h3 style="margin-top: 20px;">The Enchanting Beauty of Kinnaur</h3>
+<ul>
+  <li><strong>Sangla Valley:</strong> Known as the Baspa Valley, it offers apple orchards, wooden houses, and breathtaking views of snow-clad peaks.</li>
+  <li><strong>Kalpa:</strong> A picturesque town famous for its apple orchards and magnificent views of the sacred Kinner Kailash range.</li>
+  <li><strong>Chitkul:</strong> The last inhabited village near the Indo-Tibet border, surrounded by pristine landscapes and the Baspa River.</li>
+  <li><strong>Reckong Peo:</strong> The district headquarters of Kinnaur, offering panoramic views of Kailash peaks and a vibrant local market.</li>
+  <li><strong>Nako Lake & Village:</strong> A high-altitude lake surrounded by monasteries and willow trees, offering serenity and spiritual vibes.</li>
+</ul>
+
+<h3>Experiences in Kinnaur</h3>
+<ul>
+  <li><strong>Trekking:</strong> Trails like Kinnaur–Spiti, Kinner Kailash Parikrama, and Sangla–Chitkul are popular among adventure enthusiasts.</li>
+  <li><strong>Cultural Exploration:</strong> Experience unique Kinnauri traditions, ancient monasteries, and the fusion of Hindu–Buddhist heritage.</li>
+  <li><strong>Apple Orchards:</strong> Walk through lush orchards, taste fresh Kinnauri apples, and learn about the region’s horticultural richness.</li>
+  <li><strong>Nature & Photography:</strong> Capture stunning Himalayan landscapes, river valleys, and traditional wooden architecture of Kinnauri villages.</li>
+</ul>
+
+<h3>How to Reach Kinnaur</h3>
+<p>
+  Kinnaur is connected by road from Shimla via National Highway 5, passing through scenic mountain terrain. 
+  The nearest airport is <strong>Shimla Airport</strong> (about 250 km away), and the nearest railway station is <strong>Kalka</strong>. 
+  Most travellers prefer to reach by road, with regular buses and taxis available from Shimla and Rampur.
 </p>
 
-<p data-aos="fade-up">
-  Beyond the valleys, Kinnaur offers <strong>ancient monasteries</strong>, 
-  <strong>forts</strong>, and <strong>temples</strong> that narrate centuries-old tales. The 
-  spectacular <strong>Sutlej Gorge</strong>, scenic <strong>Nako Lake</strong>, and vibrant 
-  <strong>Sangla Meadows</strong> are among its many highlights. For those seeking 
-  <strong>adventure</strong>, <strong>treks to Kinner Kailash</strong> and camping in Sangla 
-  Valley are unforgettable. Whether you crave peace, culture, or adrenaline, Kinnaur welcomes 
-  you with open arms.
-</p>
-
-    <!-- Image Slider -->
-    <div class="swiper mySwiper" data-aos="zoom-in">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="../images/kinnaur2.jpg" alt="Kinnaur Valley"></div>
-        <div class="swiper-slide"><img src="../images/nakolake.jpg" alt="Nako Lake"></div>
-        <div class="swiper-slide"><img src="../images/sangla.jpg" alt="Sangla Valley"></div>
-        <div class="swiper-slide"><img src="../images/chitkul2.jpg" alt="Chitkul Village"></div>
-        <div class="swiper-slide"><img src="../images/kalpa2.jpg" alt="Kalpa Sunrise"></div>
-        <div class="swiper-slide"><img src="../images/kinnaurfort.jpg" alt="Kamru Fort"></div>
-      </div>
-
-      <!-- Navigation buttons -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-
-      <!-- Pagination dots -->
-      <div class="swiper-pagination"></div>
+<div class="image-row" data-aos="zoom-in">
+      <div class="img-box"><img src="../images/kalpa2.jpg" alt="Kalpa Sunrise"></div>
+      <div class="img-box"><img src="../images/chitkul2.jpg" alt="Chitkul Village"></div>
+      <div class="img-box"><img src="../images/nakolake.jpg" alt="Nako Lake"></div>
     </div>
-    
+
     <!-- FAQ Section -->
     <section class="faq-section" data-aos="fade-up">
       <h2 class="faq-heading">FAQ'S</h2>
@@ -348,8 +312,6 @@
 
   </div>
 </div>
-
-
 
 <!-- WhatsApp Floating Button -->
   <div class="whatsapp-float" onclick="toggleChat()">
@@ -528,11 +490,6 @@
   });
 </script>
 
-
-
-
-
-
 <script>
     function toggleChat() {
       const chatBox = document.getElementById("chatBox");
@@ -548,29 +505,6 @@
       window.open(url, "_blank");
     }
   </script>
-
-
-
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    loop: true,                
-    autoplay: { 
-      delay: 2500, 
-      disableOnInteraction: false 
-    },
-    speed: 800, // 👈 Smooth transition speed (in ms)
-
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    effect: "slide", // or try "fade", "cube", "coverflow", "flip"
-  });
-</script>
 
 </body>
 </html>

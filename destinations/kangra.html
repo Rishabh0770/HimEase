@@ -27,35 +27,6 @@
   text-align: center;
   height: 60vh;
 }
-
- .swiper {
-    width: 100%;
-    max-width: 750px;
-    height: 400px;
-    margin: auto;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  }
-  .swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  @media (max-width: 480px) {
-  .swiper {
-    width: 95%;          /* keep slider centered */
-    max-width: 320px;    /* same size as form/map */
-    height: 320px;       /* reduce height for mobile */
-    margin: 0 auto 20px; /* center + bottom spacing */
-    border-radius: 12px; /* match form/map rounded edges */
-  }
-
-  .swiper-slide img {
-    object-fit: cover;   /* images fill properly */
-  }
-}
-
   </style>
 </head>
 <body>
@@ -144,31 +115,37 @@
       <div class="img-box"><img src="../images/kangrafort.jpg" alt="Kangra Fort"></div>
     </div>
 
-    <p data-aos="fade-up" style="margin-top: 10px;">
-      <strong>Kangra</strong> enchants with its <strong>ancient temples</strong>, 
-      <strong>tea estates</strong>, <strong>Tibetan monasteries</strong>, and 
-      <strong>paragliding adventures</strong>. Whether you seek peace in monasteries, 
-      history at Kangra Fort, or thrill in Bir Billing, Kangra promises a memorable journey.
-    </p>
+    <h3 style="margin-top: 20px;">The Enchanting Beauty of Kangra</h3>
+<ul>
+  <li><strong>Kangra Fort:</strong> One of the largest forts in the Himalayas, offering a glimpse into the region’s royal history and panoramic valley views.</li>
+  <li><strong>Masroor Rock Cut Temples:</strong> Ancient monolithic temples carved from rock, often called the “Ellora of the Himalayas.”</li>
+  <li><strong>Baijnath Temple:</strong> A 13th-century temple dedicated to Lord Shiva, known for its exquisite Nagara-style architecture.</li>
+  <li><strong>Mcleodganj & Dharamshala:</strong> Famous for Tibetan culture, monasteries, the Dalai Lama’s residence, and vibrant cafés.</li>
+  <li><strong>Kangra Valley:</strong> Surrounded by lush tea gardens, pine forests, and the backdrop of the Dhauladhar range, perfect for nature lovers.</li>
+</ul>
 
-    <!-- Image Slider -->
-    <div class="swiper mySwiper" data-aos="zoom-in">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="../images/dharamshala3.jpg" alt="Dharamshala View"></div>
-        <div class="swiper-slide"><img src="../images/mcleodganj2.jpg" alt="McLeodganj Monastery"></div>
-        <div class="swiper-slide"><img src="../images/palampur.jpg" alt="Palampur Tea Gardens"></div>
-        <div class="swiper-slide"><img src="../images/kangrafort2.jpg" alt="Kangra Fort"></div>
-        <div class="swiper-slide"><img src="../images/birbilling.jpg" alt="Bir Billing Paragliding"></div>
-      </div>
+<h3>Experiences in Kangra</h3>
+<ul>
+  <li><strong>Trekking:</strong> Popular treks include Triund, Kareri Lake, and Indrahar Pass, offering breathtaking Himalayan views.</li>
+  <li><strong>Spiritual Exploration:</strong> Visit monasteries in Dharamshala and ancient temples spread across the valley for a cultural-spiritual blend.</li>
+  <li><strong>Tea Gardens:</strong> Walk through the scenic Kangra tea estates and taste authentic Kangra green tea.</li>
+  <li><strong>Paragliding:</strong> Head to nearby Bir-Billing, one of the world’s top paragliding sites, for an adrenaline-filled adventure.</li>
+</ul>
 
-      <!-- Navigation buttons -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+<h3>How to Reach Kangra</h3>
+<p>
+  Kangra is well connected by road to Delhi, Chandigarh, and other North Indian cities.  
+  The nearest airport is <strong>Kangra Airport (Gaggal)</strong>, about 15 km from Dharamshala.  
+  The nearest railway station is <strong>Pathankot</strong>, with a narrow-gauge line to Kangra.  
+  Regular buses and taxis operate from Dharamshala, Palampur, and Chandigarh.
+</p>
 
-      <!-- Pagination dots -->
-      <div class="swiper-pagination"></div>
+<div class="image-row" data-aos="zoom-in">
+      <div class="img-box"><img src="../images/paragliding.jpg" alt="Bir Billing Paragliding"></div>
+      <div class="img-box"><img src="../images/palampur.jpg" alt="Palampur Tea Gardens"></div>
+      <div class="img-box"><img src="../images/dharamshala3.jpg" alt="Dharamshala View"></div>
     </div>
-    
+
     <!-- FAQ Section -->
     <section class="faq-section" data-aos="fade-up">
       <h2 class="faq-heading">FAQ'S</h2>
@@ -498,27 +475,6 @@
       window.open(url, "_blank");
     }
   </script>
-
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    loop: true,                
-    autoplay: { 
-      delay: 2500, 
-      disableOnInteraction: false 
-    },
-    speed: 800, // 👈 Smooth transition speed (in ms)
-
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    effect: "slide", // or try "fade", "cube", "coverflow", "flip"
-  });
-</script>
 
 </body>
 </html>
