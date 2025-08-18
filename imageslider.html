@@ -20,7 +20,7 @@
       Gulmarg, nestled in the Himalayas, offers pristine landscapes, world-class skiing, and lush meadows.
       It’s a haven for adventure seekers and nature lovers alike.
     </p>
-    <a href="#" class="explore-btn">Explore</a>
+    <a href="#" class="explore-btn" target="_top">Explore</a>
   </div>
 
   <div class="cards-slider">
@@ -248,6 +248,8 @@ swiper.on('slideChange', () => {
   heroTitle.textContent = data[realIndex].title;
   heroDesc.textContent = data[realIndex].desc;
   exploreBtn.href = data[realIndex].link || "#";
+exploreBtn.setAttribute("target", "_top");
+
 });
 </script>
 
