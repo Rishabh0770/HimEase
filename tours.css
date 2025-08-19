@@ -6,13 +6,31 @@ body {
 
 /* Default styling (desktop first) */
 .about-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/kullu.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('images/kullu.jpg') no-repeat center center/cover;
   position: relative;
   padding: 80px 20px;
   color: white;
   justify-content: center;
   align-items: center;
+
+  /* 🔑 Add this */
+  min-height: 60vh;  /* desktop pe full screen */
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
 }
+
+@media (max-width: 768px) {
+  .about-section {
+    min-height: 100vh;   /* mobile pe thoda bada */
+    padding-bottom: 100px; /* neeche safe gap for form */
+    border-bottom-left-radius: 20px;  /* left corner round */
+    border-bottom-right-radius: 20px; /* right corner round */
+    overflow: hidden; /* zaroori h taki background bahar na nikle */
+  }
+}
+
 
 .about-section::before {
   content: "";
@@ -37,7 +55,7 @@ body {
   border: 1px solid #d9eaff;
   box-shadow: 0 0 8px rgba(27,120,199,0.2);
   padding: 15px 25px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   transition: all 0.3s ease;
 }
@@ -264,4 +282,9 @@ textarea {
 
 .callback-btn:hover {
   background: #003f80;
+}
+
+.form-select {
+  padding: 6px;
+  transition: all 0.3s ease;
 }

@@ -84,6 +84,8 @@
 .close-btn:hover {
   color: #084a90; /* red hover */
 }
+
+
 </style>
 </head>
 <body>
@@ -138,6 +140,37 @@
         </p>
       </div>
     </div>
+
+    <!-- Search card -->
+<div class="mt-5" style="padding-top: 30px;">
+  <form class="row g-3 align-items-center" action="https://formspree.io/f/mrblvqzv" method="POST">
+  <div class="col-12 col-md-3">
+    <input type="text" class="form-control" name="name" placeholder="Name" required />
+  </div>
+  <div class="col-12 col-md-3">
+    <input type="tel" class="form-control" name="phone" placeholder="Phone" required />
+  </div>
+  <div class="col-12 col-md-3">
+    <input type="email" class="form-control" name="email" placeholder="Email" required />
+  </div>
+  <div class="col-12 col-md-2">
+    <select class="form-select" name="package" required>
+      <option value="">Select Package</option>
+      <option>Shimla</option>
+      <option>Manali</option>
+      <option>Kinnaur</option>
+      <option>Dharamshala</option>
+      <option>Kullu</option>
+      <option>Spiti</option>
+      <option>Ladakh</option>
+      <option>Other</option>
+    </select>
+  </div>
+  <div class="col-12 col-md-1 d-grid">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+</div>
 </section>
 
 <!-- Offer Section -->
