@@ -1,10 +1,8 @@
 
 @media (max-width: 768px) {
   .about-section {
-    min-height: 40vh;   /* mobile pe thoda bada */
+    min-height: 20vh;  
     padding-bottom: 100px; /* neeche safe gap for form */
-    border-bottom-left-radius: 20px;  /* left corner round */
-    border-bottom-right-radius: 20px; /* right corner round */
     overflow: hidden; /* zaroori h taki background bahar na nikle */
   }
 }
@@ -38,8 +36,6 @@
   transform: scale(1.05) translateY(13px); /* thoda neeche aur zoom */
 }
 
-
-
 /* Optional: dark overlay effect */
 .about-section::before {
   content: "";
@@ -48,8 +44,6 @@
   background: rgba(0,0,0,0.3); 
   transition: background 0.5s ease-in-out;
   z-index: 1;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
 }
 
 .about-section:hover::before {
