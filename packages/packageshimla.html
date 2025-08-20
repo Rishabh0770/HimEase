@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Package — Manali</title>
+  <title>Package — Shimla</title>
   <meta name="description" content="Plan trips, discover destinations, and book curated travel packages." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +20,17 @@
   <link rel="stylesheet" href="packages.css">
   <link rel="stylesheet" href="../whatsapp.css">
 <style>
+.about-section {
+  position: relative;
+  background: url('../images/packageshimla.jpg') center/cover no-repeat;
+  transition: all 0.6s ease-in-out;
+  overflow: hidden;
+  min-height: 70vh;
+  border-radius: 0 !important;  /* corners bilkul square */
+  margin: 0 !important;         /* left/right gap hatao */
+  width: 100% !important;       /* full screen cover */
+}
+
 .modal-overlay {
   display: none;              /* hidden by default */
   position: fixed;
@@ -136,21 +147,21 @@
     <div class="row justify-content-center align-items-center min-vh-75 py-5 text-center">
       <div class="col-lg-8 text-white" data-aos="fade-up" data-aos-duration="1000">
         <h1 class="display-5 fw-bold lh-sm" data-aos="fade-left" data-aos-delay="600">
-          Manali Tour Packages
+          Shimla Tour Packages
         </h1>
         <p class="lead opacity-75 mt-3" style="font-family: 'Dancing Script', cursive; font-size: 22px; color: white;" data-aos="fade-right" data-aos-delay="800">
-          A Symphony of Beauty, A Dance of Delights
+          Indulgence Redefined, Himachal Unveiled
         </p>
       </div>
     </div>
 
-     <!-- Feature Cards for Manali -->
+    <!-- Feature Cards for Shimla -->
 <div class="row justify-content-center mt-4 g-3 feature-cards">
   <div class="col-6 col-md-2">
     <div class="card bg-dark bg-opacity-50 text-white text-center h-100 border-0 shadow-sm hover-card">
       <div class="card-body d-flex flex-column">
-        <i class="fa-solid fa-person-hiking fa-2x mb-2 text-primary"></i>
-        <p class="m-0 fs-6 mt-auto">TREKKING</p>
+        <i class="fa-solid fa-mountain-sun fa-2x mb-2 text-primary"></i>
+        <p class="m-0 fs-6 mt-auto">MOUNTAIN VIEWS</p>
       </div>
     </div>
   </div>
@@ -158,8 +169,8 @@
   <div class="col-6 col-md-2">
     <div class="card bg-dark bg-opacity-50 text-white text-center h-100 border-0 shadow-sm hover-card">
       <div class="card-body d-flex flex-column">
-        <i class="fa-solid fa-hotel fa-2x mb-2 text-primary"></i>
-        <p class="m-0 fs-6 mt-auto">COMFORT STAYS</p>
+        <i class="fa-solid fa-train fa-2x mb-2 text-primary"></i>
+        <p class="m-0 fs-6 mt-auto">TOY TRAIN RIDE</p>
       </div>
     </div>
   </div>
@@ -167,8 +178,8 @@
   <div class="col-6 col-md-2">
     <div class="card bg-dark bg-opacity-50 text-white text-center h-100 border-0 shadow-sm hover-card">
       <div class="card-body d-flex flex-column">
-        <i class="fa-solid fa-user-shield fa-2x mb-2 text-primary"></i>
-        <p class="m-0 fs-6 mt-auto">SAFETY ENSURED</p>
+        <i class="fa-solid fa-snowflake fa-2x mb-2 text-primary"></i>
+        <p class="m-0 fs-6 mt-auto">SNOW ADVENTURES</p>
       </div>
     </div>
   </div>
@@ -176,8 +187,8 @@
   <div class="col-6 col-md-2">
     <div class="card bg-dark bg-opacity-50 text-white text-center h-100 border-0 shadow-sm hover-card">
       <div class="card-body d-flex flex-column">
-        <i class="fa-solid fa-person-skiing fa-2x mb-2 text-primary"></i>
-        <p class="m-0 fs-6 mt-auto">SKIING</p>
+        <i class="fa-solid fa-landmark fa-2x mb-2 text-primary"></i>
+        <p class="m-0 fs-6 mt-auto">HERITAGE SITES</p>
       </div>
     </div>
   </div>
@@ -185,8 +196,8 @@
   <div class="col-6 col-md-2">
     <div class="card bg-dark bg-opacity-50 text-white text-center h-100 border-0 shadow-sm hover-card">
       <div class="card-body d-flex flex-column">
-        <i class="fa-solid fa-fire fa-2x mb-2 text-primary"></i>
-        <p class="m-0 fs-6 mt-auto">BONFIRE & CAMPING</p>
+        <i class="fa-solid fa-shop fa-2x mb-2 text-primary"></i>
+        <p class="m-0 fs-6 mt-auto">MALL ROAD SHOPPING</p>
       </div>
     </div>
   </div>
@@ -194,8 +205,8 @@
   <div class="col-6 col-md-2">
     <div class="card bg-dark bg-opacity-50 text-white text-center h-100 border-0 shadow-sm hover-card">
       <div class="card-body d-flex flex-column">
-        <i class="fa-solid fa-parachute-box fa-2x mb-2 text-primary"></i>
-        <p class="m-0 fs-6 mt-auto">PARAGLIDING</p>
+        <i class="fa-solid fa-utensils fa-2x mb-2 text-primary"></i>
+        <p class="m-0 fs-6 mt-auto">LOCAL CUISINE</p>
       </div>
     </div>
   </div>
@@ -213,16 +224,16 @@
 <!-- Tabs with data-price -->
 <ul class="nav nav-tabs justify-content-center custom-tabs" id="packageTabs" data-aos="fade-up">
   <li class="nav-item">
-    <a class="nav-link active" data-bs-toggle="tab" href="#pkg1" data-price="18999" data-aos="fade-up">Delights (7D)</a>
+    <a class="nav-link active" data-bs-toggle="tab" href="#pkg1" data-price="11,999" data-aos="fade-up">Classic Shimla (5D)</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" data-bs-toggle="tab" href="#pkg2" data-price="14999" data-aos="fade-up">Adventure (5D)</a>
+    <a class="nav-link" data-bs-toggle="tab" href="#pkg2" data-price="14,999" data-aos="fade-up">Snow Adventure (4D)</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" data-bs-toggle="tab" href="#pkg3" data-price="21999" data-aos="fade-up">Luxury (6D)</a>
+    <a class="nav-link" data-bs-toggle="tab" href="#pkg3" data-price="12,999" data-aos="fade-up">Heritage & Toy Train (6D)</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" data-bs-toggle="tab" href="#pkg4" data-price="17999" data-aos="fade-up">Honeymoon (5D)</a>
+    <a class="nav-link" data-bs-toggle="tab" href="#pkg4" data-price="16,999" data-aos="fade-up">Honeymoon Special (5D)</a>
   </li>
 </ul>
 
@@ -237,211 +248,32 @@
 
   <div class="tab-content mt-4">
 
-  <!-- Left Text -->
-   <div class="tab-pane fade show active" id="pkg1">
+<!-- Left Text -->
+<div class="tab-pane fade show active" id="pkg1">
   <div class="content" data-aos="fade-up">
-    <h2 data-aos="fade-up">Manali Delights Tour Package | 7 Days 6 Nights</h2>
-     <!-- Places Covered -->
+    <h2 data-aos="fade-up">Classic Shimla Tour Package | 5 Days 4 Nights</h2>
+
+    <!-- Places Covered -->
     <div class="places-covered d-flex align-items-center mb-2" data-aos="fade-up">
-  <i class="fa-solid fa-map-marked-alt text-primary me-2"></i>
-  <span class="text-primary fw-semibold">Places Covered</span>
-</div>
-
-
-    <p class="locations text-dark fw-semibold" data-aos="fade-up">
-  Shimla » Manali » Solang Valley » Rohtang Pass
-</p>
-
-<p data-aos="fade-up">
-  Experience the charm of Himachal with our “Manali Delights” package, thoughtfully designed to let you soak in the breathtaking beauty and vibrant culture of this Himalayan gem. Over seven memorable days, you’ll explore the lively town of Manali, enjoy thrilling adventures at Solang Valley and Rohtang Pass, and unwind amidst the tranquil landscapes of Kullu. This package offers the perfect balance of relaxation, adventure, and cultural exploration, making it an unforgettable Himalayan getaway.
-</p>
-
-    <!-- Image Row -->
-    <div class="image-row">
-  <div class="img-box" data-aos="fade-right" data-aos-delay="100">
-    <img src="../images/hadimbatemple.jpg" alt="hadimbatemple">
-  </div>
-  <div class="img-box" data-aos="zoom-in" data-aos-delay="200">
-    <img src="../images/packagemanali.jpg" alt="manali">
-  </div>
-</div>
-
-    <h3 style="margin-top: 20px;" data-aos="fade-up" data-aos-delay="100">
- What To Expect !
-</h3>
- <p data-aos="fade-up">In “Manali Delights” (7 Days, 6 Nights), expect an unforgettable journey through the breathtaking valleys of Himachal. Begin with a warm welcome in Manali, where you’ll stay in cozy accommodations amidst the Himalayas. Explore the town’s charm with visits to Hadimba Temple, Mall Road, and local markets. Embark on thrilling excursions to Solang Valley, known for adventure sports like paragliding and zorbing, and to Rohtang Pass, where you’ll witness snow-capped peaks and stunning landscapes. Continue to Kullu, famous for its lush valleys, temples, and vibrant culture. Throughout the trip, enjoy a harmonious mix of scenic beauty, adventure, and cultural exploration, making this Manali getaway truly memorable.</p>
-
-    <!-- Image Row -->
-    <div class="image-row">
-  <div class="img-box" data-aos="fade-right" data-aos-delay="100">
-    <img src="../images/manikarancover.jpg" alt="manikaran">
-  </div>
-  <div class="img-box" data-aos="zoom-in" data-aos-delay="200">
-    <img src="../images/manali.jpg" alt="manali">
-  </div>
-  <div class="img-box" data-aos="fade-left" data-aos-delay="300">
-    <img src="../images/rohtangcover.jpg" alt="rohtang">
-  </div>
-</div>
-
-    <h3 style="margin-top: 20px;" data-aos="fade-up" data-aos-delay="100">
-Tour Itinerary
-</h3>
-<p data-aos="fade-up">This revised itinerary covers 6 nights and 7 days, offering the perfect blend of Manali’s natural beauty, adventure, and cultural charm. Travelers will get the chance to explore Manali town, enjoy thrilling activities at Solang Valley, witness the snow-clad peaks of Rohtang Pass, and soak in the serene landscapes of Kullu. The itinerary ensures a balanced mix of relaxation and adventure, making your Manali trip truly unforgettable.</p>
-
-
-    <!-- FAQ Section -->
-    <section class="faq-section" style="background-image: url('../images/your-bg.png');" data-aos="fade-up">
-  <h2 class="faq-heading">FAQ'S</h2>
-  <div class="faq-container">
-
-    <!-- DAY 1 -->
-    <div class="faq-card active" data-aos="fade-up">
-      <div class="faq-question">
-        <span>DAY 1 - ARRIVAL IN MANALI</span>
-        <i class="arrow">&#x25BC;</i>
-      </div>
-      <div class="faq-answer">
-        <ul>
-          <li>Arrive in <strong>Manali</strong> and receive a warm welcome.</li>
-          <li>Transfer to your <strong>hotel</strong> and complete check-in formalities.</li>
-          <li>Relax after the journey and enjoy the mountain vibes.</li>
-          <li>In the evening, take a stroll along <strong>Mall Road</strong> and explore local cafés.</li>
-          <li>Overnight stay in <strong>Manali</strong>.</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- DAY 2 -->
-    <div class="faq-card" data-aos="fade-up">
-      <div class="faq-question">
-        <span>DAY 2 - MANALI LOCAL SIGHTSEEING</span>
-        <i class="arrow">&#x25BC;</i>
-      </div>
-      <div class="faq-answer">
-        <ul>
-          <li>After breakfast, proceed for a local sightseeing tour.</li>
-          <li>Visit <strong>Hadimba Devi Temple</strong>, <strong>Vashisht Temple & Hot Springs</strong>.</li>
-          <li>Explore the <strong>Manu Temple</strong> and surrounding villages.</li>
-          <li>Evening free to relax at <strong>Van Vihar Park</strong>.</li>
-          <li>Overnight stay at the hotel in <strong>Manali</strong>.</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- DAY 3 -->
-    <div class="faq-card" data-aos="fade-up">
-      <div class="faq-question">
-        <span>DAY 3 - EXCURSION TO SOLANG VALLEY</span>
-        <i class="arrow">&#x25BC;</i>
-      </div>
-      <div class="faq-answer">
-        <ul>
-          <li>After breakfast, head out for a <strong>full-day excursion to Solang Valley</strong>.</li>
-          <li>Enjoy adventure activities like <strong>paragliding, zorbing, skiing</strong> (seasonal).</li>
-          <li>Capture stunning views of the <strong>snow-capped Himalayas</strong>.</li>
-          <li>Return to Manali for <strong>dinner and overnight stay</strong>.</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- DAY 4 -->
-    <div class="faq-card" data-aos="fade-up">
-      <div class="faq-question">
-        <span>DAY 4 - EXCURSION TO ROHTANG PASS (if open)</span>
-        <i class="arrow">&#x25BC;</i>
-      </div>
-      <div class="faq-answer">
-        <ul>
-          <li>After breakfast, drive towards the famous <strong>Rohtang Pass</strong> (subject to permits & weather).</li>
-          <li>Enjoy breathtaking landscapes, glaciers, and snow adventure activities.</li>
-          <li>Photography session at high-altitude points.</li>
-          <li>Return to your hotel in the evening for <strong>dinner and overnight stay</strong>.</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- DAY 5 -->
-    <div class="faq-card" data-aos="fade-up">
-      <div class="faq-question">
-        <span>DAY 5 - KULLU VALLEY & NAGGAR CASTLE</span>
-        <i class="arrow">&#x25BC;</i>
-      </div>
-      <div class="faq-answer">
-        <ul>
-          <li>After breakfast, depart for a scenic drive to <strong>Kullu Valley</strong>.</li>
-          <li>Enjoy adventure sports like <strong>river rafting</strong> (optional).</li>
-          <li>Visit <strong>Naggar Castle</strong> and <strong>Roerich Art Gallery</strong>.</li>
-          <li>Return to Manali for overnight stay.</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- DAY 6 -->
-    <div class="faq-card" data-aos="fade-up">
-      <div class="faq-question">
-        <span>DAY 6 - MANIKARAN & KASOL EXCURSION</span>
-        <i class="arrow">&#x25BC;</i>
-      </div>
-      <div class="faq-answer">
-        <ul>
-          <li>After breakfast, proceed for an excursion to <strong>Kasol & Manikaran</strong>.</li>
-          <li>Explore the vibrant <strong>Kasol village</strong> (Mini Israel of India).</li>
-          <li>Visit <strong>Manikaran Sahib Gurudwara</strong> and enjoy the hot water springs.</li>
-          <li>Return to Manali in the evening for <strong>dinner and overnight stay</strong>.</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- DAY 7 -->
-    <div class="faq-card" data-aos="fade-up">
-      <div class="faq-question">
-        <span>DAY 7 - JOGINI WATERFALL & DEPARTURE</span>
-        <i class="arrow">&#x25BC;</i>
-      </div>
-      <div class="faq-answer">
-        <ul>
-          <li>After breakfast, visit the serene <strong>Jogini Waterfalls</strong> with a short trek.</li>
-          <li>Explore <strong>Tibetan Monastery</strong> and buy local handicrafts.</li>
-          <li>Enjoy some free time for last-minute shopping at <strong>Mall Road</strong>.</li>
-          <li>In the evening, bid farewell to Manali and start your <strong>return journey</strong>.</li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-</section>
-  </div>
-</div>
-
-
-
-
-
-<div class="tab-pane fade" id="pkg2">
-  <div class="content" >
-    <h2 ">Manali Winter Adventure Tour Package | 5 Days 4 Nights</h2>
-     <!-- Places Covered -->
-    <div class="places-covered d-flex align-items-center mb-2">
       <i class="fa-solid fa-map-marked-alt text-primary me-2"></i>
       <span class="text-primary fw-semibold">Places Covered</span>
     </div>
 
-    <p class="locations text-dark fw-semibold">
-      Manali » Solang Valley » Atal Tunnel » Kullu
+    <p class="locations text-dark fw-semibold" data-aos="fade-up">
+      Shimla » Kufri » Chail » Naldehra
     </p>
 
-    <p >
-      Embrace the magic of the Himalayas with our specially designed “Manali Winter Adventure” package. Over 5 exciting days, you’ll experience the thrill of snow adventures, witness stunning white landscapes, and explore the charm of Manali. From skiing and snowboarding in Solang Valley to driving through the iconic Atal Tunnel, this trip is packed with winter fun. The itinerary perfectly blends adventure, sightseeing, and leisure time, making it the ultimate winter escape.
+    <p data-aos="fade-up">
+      Experience the timeless charm of Shimla with our “Classic Shimla” package. Over five relaxing days, enjoy the colonial elegance of the Mall Road, panoramic views from Jakhoo Temple, and the fun-filled adventures of Kufri. Visit serene hill spots like Naldehra and Chail for a peaceful retreat amidst pine forests and breathtaking landscapes. This package is the perfect blend of sightseeing, leisure, and cultural exploration in the Queen of Hills.
     </p>
 
     <!-- Image Row -->
     <div class="image-row">
       <div class="img-box" data-aos="fade-right" data-aos-delay="100">
-        <img src="../images/solangvalley.jpg" alt="solang valley">
+        <img src="../images/shimlamallroad.jpg" alt="shimla mall road">
       </div>
       <div class="img-box" data-aos="zoom-in" data-aos-delay="200">
-        <img src="../images/atal-tunnel.jpg" alt="atal tunnel">
+        <img src="../images/shimlajakhoo.jpg" alt="jakhoo temple">
       </div>
     </div>
 
@@ -449,19 +281,19 @@ Tour Itinerary
       What To Expect !
     </h3>
     <p data-aos="fade-up">
-      In “Manali Winter Adventure” (5 Days, 4 Nights), expect an exhilarating Himalayan experience. Stay in cozy warm hotels in Manali and enjoy snow activities like skiing, snowboarding, and tubing at Solang Valley. Witness the marvel of the Atal Tunnel and the scenic Lahaul Valley. Stroll through Mall Road, visit ancient temples, and explore the winter charm of Kullu. Perfect for adventure lovers and snow seekers, this package gives you a refreshing winter getaway.
+      On this “Classic Shimla” (5 Days, 4 Nights) journey, expect a refreshing escape to the scenic hill town. Stroll down the lively Mall Road, visit colonial landmarks, and admire panoramic mountain views. Enjoy a full-day excursion to Kufri for adventure and fun, while exploring apple orchards and pine forests. Continue your journey with serene visits to Chail and Naldehra, famous for their peaceful ambiance and natural beauty. This Shimla trip offers relaxation, family-friendly fun, and the serene charm of the Himalayas.
     </p>
 
     <!-- Image Row -->
     <div class="image-row">
       <div class="img-box" data-aos="fade-right" data-aos-delay="100">
-        <img src="../images/wintersnow.jpg" alt="winter manali">
+        <img src="../images/kufri.jpg" alt="kufri">
       </div>
       <div class="img-box" data-aos="zoom-in" data-aos-delay="200">
-        <img src="../images/kullu.jpg" alt="kullu valley">
+        <img src="../images/chailpalace.jpg" alt="chail palace">
       </div>
       <div class="img-box" data-aos="fade-left" data-aos-delay="300">
-        <img src="../images/mallroadmanali.jpg" alt="mall road manali">
+        <img src="../images/naldehra.jpg" alt="naldehra">
       </div>
     </div>
 
@@ -469,7 +301,7 @@ Tour Itinerary
       Tour Itinerary
     </h3>
     <p data-aos="fade-up">
-      This 4 Nights / 5 Days itinerary is crafted for winter lovers who want to enjoy the best of snow-clad Himachal. From exploring the vibrant streets of Manali to thrilling adventures in Solang Valley, and from experiencing the Atal Tunnel to relaxing by Kullu’s natural beauty, this trip ensures a memorable winter escape.
+      This itinerary covers 4 nights and 5 days in Shimla, offering a mix of leisure, adventure, and cultural exploration. Discover Shimla’s colonial charm, indulge in Kufri’s adventure activities, and relax amidst the peaceful beauty of Chail and Naldehra.
     </p>
 
     <!-- FAQ Section -->
@@ -480,15 +312,15 @@ Tour Itinerary
         <!-- DAY 1 -->
         <div class="faq-card active" data-aos="fade-up">
           <div class="faq-question">
-            <span>DAY 1 - ARRIVAL IN MANALI</span>
+            <span>DAY 1 - ARRIVAL IN SHIMLA</span>
             <i class="arrow">&#x25BC;</i>
           </div>
           <div class="faq-answer">
             <ul>
-              <li>Arrive in <strong>Manali</strong> and transfer to your hotel.</li>
-              <li>Check-in and relax in the cozy winter vibes.</li>
-              <li>Evening free to explore <strong>Mall Road</strong> and enjoy hot coffee in local cafés.</li>
-              <li>Overnight stay in <strong>Manali</strong>.</li>
+              <li>Arrive in <strong>Shimla</strong> and transfer to your hotel.</li>
+              <li>Complete check-in and relax after the journey.</li>
+              <li>In the evening, take a leisurely walk along <strong>Mall Road</strong> & <strong>The Ridge</strong>.</li>
+              <li>Overnight stay in <strong>Shimla</strong>.</li>
             </ul>
           </div>
         </div>
@@ -496,15 +328,15 @@ Tour Itinerary
         <!-- DAY 2 -->
         <div class="faq-card" data-aos="fade-up">
           <div class="faq-question">
-            <span>DAY 2 - MANALI LOCAL SIGHTSEEING</span>
+            <span>DAY 2 - SHIMLA LOCAL SIGHTSEEING</span>
             <i class="arrow">&#x25BC;</i>
           </div>
           <div class="faq-answer">
             <ul>
-              <li>After breakfast, start with a <strong>local sightseeing tour</strong>.</li>
-              <li>Visit <strong>Hadimba Temple</strong>, <strong>Vashisht Hot Springs</strong>, and <strong>Tibetan Monastery</strong>.</li>
-              <li>Walk around <strong>Old Manali</strong> streets and riverside cafés.</li>
-              <li>Overnight stay in Manali.</li>
+              <li>After breakfast, visit <strong>Jakhoo Temple</strong> for panoramic views.</li>
+              <li>Explore <strong>Christ Church</strong> and colonial heritage buildings.</li>
+              <li>Stroll around <strong>Lakkar Bazaar</strong> for shopping.</li>
+              <li>Overnight stay in Shimla.</li>
             </ul>
           </div>
         </div>
@@ -512,15 +344,15 @@ Tour Itinerary
         <!-- DAY 3 -->
         <div class="faq-card" data-aos="fade-up">
           <div class="faq-question">
-            <span>DAY 3 - SOLANG VALLEY SNOW ADVENTURE</span>
+            <span>DAY 3 - EXCURSION TO KUFRI</span>
             <i class="arrow">&#x25BC;</i>
           </div>
           <div class="faq-answer">
             <ul>
-              <li>After breakfast, proceed for a <strong>snow adventure day at Solang Valley</strong>.</li>
-              <li>Enjoy activities like <strong>skiing, snowboarding, zorbing, and tubing</strong> (seasonal).</li>
-              <li>Capture the stunning snow-clad peaks.</li>
-              <li>Return to hotel for <strong>dinner and overnight stay</strong>.</li>
+              <li>After breakfast, proceed to <strong>Kufri</strong>, famous for adventure and snow (seasonal).</li>
+              <li>Enjoy activities like <strong>horse riding & yak rides</strong>.</li>
+              <li>Visit Kufri Fun World and enjoy the scenic landscapes.</li>
+              <li>Return to Shimla for overnight stay.</li>
             </ul>
           </div>
         </div>
@@ -528,15 +360,15 @@ Tour Itinerary
         <!-- DAY 4 -->
         <div class="faq-card" data-aos="fade-up">
           <div class="faq-question">
-            <span>DAY 4 - ATAL TUNNEL & KULLU</span>
+            <span>DAY 4 - CHAIL & NALDEHRA EXCURSION</span>
             <i class="arrow">&#x25BC;</i>
           </div>
           <div class="faq-answer">
             <ul>
-              <li>Drive through the iconic <strong>Atal Tunnel</strong> and explore <strong>Lahaul Valley</strong> landscapes.</li>
-              <li>Continue the journey towards <strong>Kullu Valley</strong>.</li>
-              <li>Optional adventure: <strong>river rafting</strong> in Kullu (subject to weather).</li>
-              <li>Return to Manali for overnight stay.</li>
+              <li>After breakfast, head to <strong>Chail</strong> to explore the beautiful palace and cricket ground.</li>
+              <li>Continue to <strong>Naldehra</strong>, famous for its golf course and pine forests.</li>
+              <li>Enjoy peaceful walks amidst nature before returning to Shimla.</li>
+              <li>Overnight stay in Shimla.</li>
             </ul>
           </div>
         </div>
@@ -544,14 +376,146 @@ Tour Itinerary
         <!-- DAY 5 -->
         <div class="faq-card" data-aos="fade-up">
           <div class="faq-question">
-            <span>DAY 5 - DEPARTURE</span>
+            <span>DAY 5 - DEPARTURE FROM SHIMLA</span>
             <i class="arrow">&#x25BC;</i>
           </div>
           <div class="faq-answer">
             <ul>
-              <li>After breakfast, enjoy a short walk to <strong>Van Vihar Park</strong> or do some <strong>last-minute shopping</strong> at Mall Road.</li>
-              <li>Check-out from the hotel.</li>
-              <li>Start your <strong>return journey with wonderful memories</strong>.</li>
+              <li>After breakfast, check out from your hotel.</li>
+              <li>Visit <strong>local handicraft shops</strong> for souvenirs.</li>
+              <li>Depart from Shimla with wonderful memories of your trip.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="tab-pane fade" id="pkg2">
+  <div class="content">
+    <h2>Shimla Snow Adventure Tour Package | 4 Days 3 Nights</h2>
+    <!-- Places Covered -->
+    <div class="places-covered d-flex align-items-center mb-2">
+      <i class="fa-solid fa-map-marked-alt text-primary me-2"></i>
+      <span class="text-primary fw-semibold">Places Covered</span>
+    </div>
+
+    <p class="locations text-dark fw-semibold">
+      Shimla » Kufri » Chail » Mall Road
+    </p>
+
+    <p>
+      Discover the snowy charm of Himachal with our “Shimla Snow Adventure” package. This 4-day trip is perfect for winter enthusiasts seeking adventure and relaxation. Enjoy the beauty of Shimla’s colonial streets, thrilling snow activities at Kufri, and the peaceful surroundings of Chail. Whether it’s horse riding in snow, sipping hot tea on the Ridge, or walking along Mall Road under snowy skies—this package is your ideal winter escape to the Queen of Hills.
+    </p>
+
+    <!-- Image Row -->
+    <div class="image-row">
+      <div class="img-box" data-aos="fade-right" data-aos-delay="100">
+        <img src="../images/shimlamallroad.jpg" alt="shimla mall road">
+      </div>
+      <div class="img-box" data-aos="zoom-in" data-aos-delay="200">
+        <img src="../images/kufri.jpg" alt="kufri snow adventure">
+      </div>
+    </div>
+
+    <h3 style="margin-top: 20px;" data-aos="fade-up" data-aos-delay="100">
+      What To Expect !
+    </h3>
+    <p data-aos="fade-up">
+      In “Shimla Snow Adventure” (4 Days, 3 Nights), expect a perfect blend of sightseeing and winter fun. Stay in cozy hotels in Shimla, stroll down Mall Road, and visit heritage landmarks like Jakhoo Temple and Christ Church. Experience thrilling snow activities at Kufri, such as skiing, sledging, and horse riding, before heading to Chail for scenic walks and royal charm. This package ensures an exciting yet relaxing winter holiday.
+    </p>
+
+    <!-- Image Row -->
+    <div class="image-row">
+      <div class="img-box" data-aos="fade-right" data-aos-delay="100">
+        <img src="../images/chailpalace.jpg" alt="chail palace">
+      </div>
+      <div class="img-box" data-aos="zoom-in" data-aos-delay="200">
+        <img src="../images/naldehra.jpg" alt="naldehra snow">
+      </div>
+      <div class="img-box" data-aos="fade-left" data-aos-delay="300">
+        <img src="../images/shimlajakhoo.jpg" alt="jakhoo temple shimla">
+      </div>
+    </div>
+
+    <h3 style="margin-top: 20px;" data-aos="fade-up" data-aos-delay="100">
+      Tour Itinerary
+    </h3>
+    <p data-aos="fade-up">
+      This 3 Nights / 4 Days itinerary is designed for snow lovers and adventure seekers. From exploring Shimla’s colonial heritage to snow-filled adventures at Kufri, and from peaceful landscapes of Chail to the lively Mall Road, every moment brings a memorable winter experience.
+    </p>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" style="background-image: url('../images/your-bg.png');" data-aos="fade-up">
+      <h2 class="faq-heading">FAQ'S</h2>
+      <div class="faq-container">
+
+        <!-- DAY 1 -->
+        <div class="faq-card active" data-aos="fade-up">
+          <div class="faq-question">
+            <span>DAY 1 - ARRIVAL IN SHIMLA</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            <ul>
+              <li>Arrive in <strong>Shimla</strong> and check in to your hotel.</li>
+              <li>Relax and enjoy the winter vibes of the hill station.</li>
+              <li>In the evening, take a stroll along <strong>Mall Road & The Ridge</strong>.</li>
+              <li>Overnight stay in <strong>Shimla</strong>.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DAY 2 -->
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>DAY 2 - SHIMLA LOCAL SIGHTSEEING</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            <ul>
+              <li>After breakfast, visit <strong>Jakhoo Temple</strong> and enjoy panoramic views.</li>
+              <li>Explore <strong>Christ Church</strong>, Ridge Ground, and Lakkar Bazaar.</li>
+              <li>Evening free for leisure walks and local shopping.</li>
+              <li>Overnight stay in Shimla.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DAY 3 -->
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>DAY 3 - KUFRI SNOW ADVENTURE & CHAIL</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            <ul>
+              <li>After breakfast, proceed to <strong>Kufri</strong> for snow fun.</li>
+              <li>Enjoy activities like <strong>skiing, sledging, and horse riding</strong> (seasonal).</li>
+              <li>Continue to <strong>Chail</strong> and visit the beautiful palace and cricket ground.</li>
+              <li>Return to Shimla for overnight stay.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DAY 4 -->
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>DAY 4 - DEPARTURE</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            <ul>
+              <li>After breakfast, check out from your hotel.</li>
+              <li>Enjoy some last-minute shopping at <strong>Mall Road</strong>.</li>
+              <li>Depart Shimla with beautiful snowy memories.</li>
             </ul>
           </div>
         </div>
@@ -569,7 +533,7 @@ Tour Itinerary
 
 <div class="tab-pane fade" id="pkg3">
   <div class="content">
-    <h2>Manali Luxury Tour Package | 6 Days 5 Nights</h2>
+    <h2>Shimla Heritage & Toy Train Tour Package | 6 Days 5 Nights</h2>
      <!-- Places Covered -->
     <div class="places-covered d-flex align-items-center mb-2">
       <i class="fa-solid fa-map-marked-alt text-primary me-2"></i>
@@ -577,20 +541,20 @@ Tour Itinerary
     </div>
 
     <p class="locations text-dark fw-semibold">
-      Manali » Solang Valley » Rohtang Pass » Kullu » Naggar
+      Shimla » Kufri » Jakhoo Temple » Mall Road » Ridge » Toy Train (Kalka–Shimla) » Chail
     </p>
 
     <p>
-      Experience the ultimate comfort and style with our “Manali Luxury” package. Over 6 days, indulge in premium accommodations, scenic drives, and curated experiences. Enjoy leisure walks in Manali, breathtaking views from Solang Valley and Rohtang Pass, cultural tours in Kullu and Naggar, and fine dining. Perfect for travelers seeking a stress-free, high-end Himalayan getaway.
+      Step back in time with our “Shimla Heritage & Toy Train” package. Over 6 days, experience the charm of the British summer capital with a scenic toy train ride, colonial architecture, hilltop temples, and serene valleys. Explore Shimla’s vibrant Mall Road, panoramic Ridge, snow fun at Kufri, and cultural gems of Chail. Perfect for families, couples, and history enthusiasts seeking a classic Himachal escape.
     </p>
 
     <!-- Image Row -->
     <div class="image-row">
       <div class="img-box">
-        <img src="../images/luxurymanali1.jpg" alt="manali luxury stay">
+        <img src="../images/shimla-toytrain.jpg" alt="shimla toy train">
       </div>
       <div class="img-box">
-        <img src="../images/solangvalley_lux.jpg" alt="solang valley luxury">
+        <img src="../images/shimla-ridge.jpg" alt="shimla ridge">
       </div>
     </div>
 
@@ -598,19 +562,19 @@ Tour Itinerary
       What To Expect !
     </h3>
     <p>
-      In the “Manali Luxury” package, expect a seamless blend of comfort, sightseeing, and relaxation. Stay at premium hotels with mountain views, enjoy guided tours to Solang Valley, Rohtang Pass, Kullu, and Naggar, savor fine dining experiences, and unwind with spa or leisure activities. Every detail is curated for a luxurious Himalayan escape.
+      In the “Shimla Heritage & Toy Train” package, expect an enchanting journey through the hills. Stay in heritage-style hotels, ride the UNESCO World Heritage <strong>Kalka–Shimla Toy Train</strong>, explore colonial landmarks like the Christ Church and Viceregal Lodge, enjoy scenic Kufri adventures, and stroll through Shimla’s bustling Mall Road. This trip is crafted to blend nostalgia, culture, and Himalayan beauty.
     </p>
 
     <!-- Image Row -->
     <div class="image-row">
       <div class="img-box">
-        <img src="../images/manalikullu_lux.jpg" alt="kullu luxury">
+        <img src="../images/shimla-kufri.jpg" alt="kufri snow">
       </div>
       <div class="img-box" data-aos="zoom-in">
-        <img src="../images/rohtang_lux.jpg" alt="rohtang pass luxury">
+        <img src="../images/chail-palace.jpg" alt="chail palace shimla">
       </div>
       <div class="img-box" data-aos="fade-left">
-        <img src="../images/manalimall_lux.jpg" alt="manali luxury">
+        <img src="../images/shimla-mallroad.jpg" alt="shimla mall road">
       </div>
     </div>
 
@@ -618,7 +582,7 @@ Tour Itinerary
       Tour Itinerary
     </h3>
     <p>
-      This 5 Nights / 6 Days itinerary focuses on luxury, comfort, and curated experiences. Explore iconic spots of Manali, enjoy Solang Valley excursions, visit Rohtang Pass, Kullu, and Naggar, relax in premium resorts, and indulge in local gourmet experiences. Perfect for travelers seeking hassle-free comfort with stunning Himalayan landscapes.
+      This 5 Nights / 6 Days itinerary highlights Shimla’s heritage charm and natural beauty. From a magical toy train ride to exploring Kufri’s snowy fun, visiting Jakhoo Temple, colonial architecture, and serene escapes in Chail, this tour ensures a wholesome Himachali experience.
     </p>
 
     <!-- FAQ Section -->
@@ -629,15 +593,15 @@ Tour Itinerary
         <!-- DAY 1 -->
         <div class="faq-card active" data-aos="fade-up">
           <div class="faq-question">
-            <span>DAY 1 - ARRIVAL & LUXURY CHECK-IN</span>
+            <span>DAY 1 - ARRIVAL IN SHIMLA</span>
             <i class="arrow">&#x25BC;</i>
           </div>
           <div class="faq-answer">
             <ul>
-              <li>Arrive in <strong>Manali</strong> and enjoy a premium welcome transfer.</li>
-              <li>Check-in to your <strong>luxury hotel/resort</strong> and relax.</li>
-              <li>Evening leisure stroll at <strong>Mall Road</strong> or hotel amenities.</li>
-              <li>Overnight stay in Manali.</li>
+              <li>Arrive in <strong>Shimla</strong> and transfer to your hotel.</li>
+              <li>Check-in and relax amidst the colonial vibes of the town.</li>
+              <li>Evening free for a leisurely walk at <strong>Mall Road & The Ridge</strong>.</li>
+              <li>Overnight stay in Shimla.</li>
             </ul>
           </div>
         </div>
@@ -645,14 +609,15 @@ Tour Itinerary
         <!-- DAY 2 -->
         <div class="faq-card" data-aos="fade-up">
           <div class="faq-question">
-            <span>DAY 2 - MANALI SIGHTSEEING & LEISURE</span>
+            <span>DAY 2 - HERITAGE WALK & LOCAL SIGHTSEEING</span>
             <i class="arrow">&#x25BC;</i>
           </div>
           <div class="faq-answer">
             <ul>
-              <li>After breakfast, enjoy a guided tour of <strong>Hadimba Temple, Vashisht Hot Springs, and Manu Temple</strong>.</li>
-              <li>Leisure time for spa or premium café experiences.</li>
-              <li>Overnight stay at the luxury hotel.</li>
+              <li>After breakfast, explore colonial gems: <strong>Christ Church, Scandal Point, and Viceregal Lodge</strong>.</li>
+              <li>Visit <strong>Jakhoo Temple</strong> for panoramic hill views.</li>
+              <li>Stroll through heritage lanes and old markets.</li>
+              <li>Overnight stay at the hotel.</li>
             </ul>
           </div>
         </div>
@@ -660,14 +625,15 @@ Tour Itinerary
         <!-- DAY 3 -->
         <div class="faq-card" data-aos="fade-up">
           <div class="faq-question">
-            <span>DAY 3 - SOLANG VALLEY EXCURSION</span>
+            <span>DAY 3 - KUFRI SNOW FUN</span>
             <i class="arrow">&#x25BC;</i>
           </div>
           <div class="faq-answer">
             <ul>
-              <li>Full-day guided trip to <strong>Solang Valley</strong> with scenic viewpoints.</li>
-              <li>Optional adventure activities: <strong>paragliding, zorbing, ropeway ride</strong>.</li>
-              <li>Return to hotel for a relaxing evening and fine dining experience.</li>
+              <li>After breakfast, enjoy a short drive to <strong>Kufri</strong>.</li>
+              <li>Experience <strong>snow adventure activities</strong> (seasonal): skiing, yak rides, horse rides.</li>
+              <li>Visit Kufri Fun World and Himalayan Nature Park.</li>
+              <li>Return to Shimla for overnight stay.</li>
             </ul>
           </div>
         </div>
@@ -675,15 +641,15 @@ Tour Itinerary
         <!-- DAY 4 -->
         <div class="faq-card" data-aos="fade-up">
           <div class="faq-question">
-            <span>DAY 4 - ROHTANG PASS & KULLU</span>
+            <span>DAY 4 - TOY TRAIN EXPERIENCE</span>
             <i class="arrow">&#x25BC;</i>
           </div>
           <div class="faq-answer">
             <ul>
-              <li>Drive to <strong>Rohtang Pass</strong> for breathtaking panoramic views (subject to permits & weather).</li>
-              <li>Optional photo stops and light trekking.</li>
-              <li>Evening visit to <strong>Kullu Valley</strong> for a curated cultural experience.</li>
-              <li>Return to hotel for overnight stay.</li>
+              <li>After breakfast, board the <strong>Kalka–Shimla Toy Train</strong> (UNESCO World Heritage).</li>
+              <li>Enjoy breathtaking tunnels, bridges, and hill views.</li>
+              <li>Get down at scenic stops for photography.</li>
+              <li>Return to Shimla by evening. Overnight stay.</li>
             </ul>
           </div>
         </div>
@@ -691,14 +657,14 @@ Tour Itinerary
         <!-- DAY 5 -->
         <div class="faq-card" data-aos="fade-up">
           <div class="faq-question">
-            <span>DAY 5 - NAGGAR & CULTURAL EXPERIENCE</span>
+            <span>DAY 5 - CHAIL EXCURSION</span>
             <i class="arrow">&#x25BC;</i>
           </div>
           <div class="faq-answer">
             <ul>
-              <li>After breakfast, drive to <strong>Naggar</strong> to explore <strong>Naggar Castle</strong> and <strong>Roerich Art Gallery</strong>.</li>
-              <li>Enjoy panoramic views of the Kullu Valley.</li>
-              <li>Return to Manali for dinner and overnight stay.</li>
+              <li>Drive to <strong>Chail</strong> (famous for <strong>Chail Palace</strong> & highest cricket ground).</li>
+              <li>Explore <strong>Chail Sanctuary</strong> and serene pine forests.</li>
+              <li>Return to Shimla for dinner & overnight stay.</li>
             </ul>
           </div>
         </div>
@@ -711,9 +677,9 @@ Tour Itinerary
           </div>
           <div class="faq-answer">
             <ul>
-              <li>After breakfast, enjoy a final morning at leisure in your resort.</li>
-              <li>Check-out and transfer for <strong>return journey</strong>.</li>
-              <li>Leave with memories of a luxurious Himalayan escape.</li>
+              <li>After breakfast, enjoy some last-minute shopping at <strong>Lakkar Bazaar</strong>.</li>
+              <li>Check-out from hotel and start your return journey.</li>
+              <li>Trip ends with beautiful <strong>heritage memories of Shimla</strong>.</li>
             </ul>
           </div>
         </div>
@@ -726,9 +692,10 @@ Tour Itinerary
 
 
 
+
 <div class="tab-pane fade" id="pkg4">
   <div class="content">
-    <h2>Manali Honeymoon Tour Package | 5 Days 4 Nights</h2>
+    <h2>Shimla Honeymoon Special Package | 5 Days 4 Nights</h2>
     <!-- Places Covered -->
     <div class="places-covered d-flex align-items-center mb-2">
       <i class="fa-solid fa-map-marked-alt text-primary me-2"></i>
@@ -736,20 +703,23 @@ Tour Itinerary
     </div>
 
     <p class="locations text-dark fw-semibold">
-      Manali » Solang Valley » Rohtang Pass » Vashisht » Kullu
+      Shimla » Kufri » Chail » Naldehra » Mall Road
     </p>
 
     <p>
-      Celebrate love amidst the majestic Himalayas with our “Manali Honeymoon” package. Over 5 days, enjoy romantic stays, scenic drives, and serene spots. Perfect for couples looking for a mix of adventure, relaxation, and private moments amidst nature’s beauty.
+      Celebrate your love in the Queen of Hills with our “Shimla Honeymoon Special” package. 
+      Over 5 days, enjoy romantic stays in the lap of the Himalayas, peaceful walks through pine forests, 
+      thrilling day trips to Kufri & Chail, and candlelight dinners with panoramic mountain views. 
+      Perfect for couples seeking romance, adventure, and relaxation in a dreamy hill station.
     </p>
 
     <!-- Image Row -->
     <div class="image-row">
       <div class="img-box">
-        <img src="../images/honeymoonmanali1.jpg" alt="manali honeymoon stay">
+        <img src="../images/honeymoon_shimla1.jpg" alt="shimla honeymoon stay">
       </div>
       <div class="img-box">
-        <img src="../images/solangvalley_honeymoon.jpg" alt="solang valley honeymoon">
+        <img src="../images/kufri_honeymoon.jpg" alt="kufri honeymoon adventure">
       </div>
     </div>
 
@@ -757,19 +727,21 @@ Tour Itinerary
       What To Expect !
     </h3>
     <p>
-      Enjoy a romantic escape with cozy stays, leisure walks in Manali, picturesque viewpoints at Solang Valley and Rohtang Pass, and cultural visits to Vashisht and Kullu. Fine dining, private moments, and curated experiences ensure your honeymoon is unforgettable.
+      Enjoy cozy evenings by the fire, romantic strolls on Shimla’s Mall Road, and breathtaking 
+      viewpoints at Kufri and Chail. Visit heritage sites, lush valleys, and pine forests with your loved one, 
+      while indulging in private moments, fine dining, and exclusive couple-friendly experiences.
     </p>
 
     <!-- Image Row -->
     <div class="image-row">
       <div class="img-box">
-        <img src="../images/honeymoon_manali.jpg" alt="vashisht hot springs">
+        <img src="../images/shimla_mall_honeymoon.jpg" alt="shimla mall road honeymoon">
       </div>
       <div class="img-box" data-aos="zoom-in">
-        <img src="../images/kullu_honeymoon.jpg" alt="kullu valley honeymoon">
+        <img src="../images/chail_honeymoon.jpg" alt="chail honeymoon trip">
       </div>
       <div class="img-box" data-aos="fade-left">
-        <img src="../images/rohtang_honeymoon.jpg" alt="rohtang pass honeymoon">
+        <img src="../images/naldehra_honeymoon.jpg" alt="naldehra honeymoon view">
       </div>
     </div>
 
@@ -777,7 +749,9 @@ Tour Itinerary
       Tour Itinerary
     </h3>
     <p>
-      This 4 Nights / 5 Days itinerary is designed for romance, adventure, and relaxation. Explore Manali town, enjoy Solang Valley excursions, visit Rohtang Pass, Vashisht, and Kullu, relax in premium resorts, and create beautiful memories together.
+      This 4 Nights / 5 Days itinerary blends romance, comfort, and scenic exploration. 
+      Explore Shimla town, enjoy Kufri and Chail excursions, relax in Naldehra, stroll on Mall Road, 
+      and spend unforgettable evenings in a romantic hill-station ambience.
     </p>
 
     <!-- FAQ Section -->
@@ -793,10 +767,10 @@ Tour Itinerary
           </div>
           <div class="faq-answer">
             <ul>
-              <li>Arrive in <strong>Manali</strong> and enjoy a warm welcome transfer.</li>
+              <li>Arrive in <strong>Shimla</strong> and receive a warm welcome transfer.</li>
               <li>Check-in to your <strong>romantic resort/hotel</strong> and relax.</li>
-              <li>Evening: leisure stroll or candlelight dinner.</li>
-              <li>Overnight stay in Manali.</li>
+              <li>Evening: Leisure walk on <strong>Mall Road</strong> and Ridge.</li>
+              <li>Overnight stay in Shimla.</li>
             </ul>
           </div>
         </div>
@@ -804,14 +778,14 @@ Tour Itinerary
         <!-- DAY 2 -->
         <div class="faq-card" data-aos="fade-up">
           <div class="faq-question">
-            <span>DAY 2 - MANALI SIGHTSEEING</span>
+            <span>DAY 2 - SHIMLA SIGHTSEEING</span>
             <i class="arrow">&#x25BC;</i>
           </div>
           <div class="faq-answer">
             <ul>
-              <li>After breakfast, visit <strong>Hadimba Temple, Manu Temple, and Old Manali</strong>.</li>
-              <li>Optional spa or couple’s activities at the resort.</li>
-              <li>Evening free to enjoy the scenic beauty and local markets.</li>
+              <li>Visit <strong>The Ridge, Christ Church, Jakhoo Temple, and State Museum</strong>.</li>
+              <li>Evening free for leisure shopping and café hopping at <strong>Mall Road</strong>.</li>
+              <li>Optional spa or couple’s activity at the resort.</li>
             </ul>
           </div>
         </div>
@@ -819,14 +793,14 @@ Tour Itinerary
         <!-- DAY 3 -->
         <div class="faq-card" data-aos="fade-up">
           <div class="faq-question">
-            <span>DAY 3 - SOLANG VALLEY & ROHTANG PASS</span>
+            <span>DAY 3 - KUFRI EXCURSION</span>
             <i class="arrow">&#x25BC;</i>
           </div>
           <div class="faq-answer">
             <ul>
-              <li>Full-day excursion to <strong>Solang Valley</strong> for adventure and photography.</li>
-              <li>Visit <strong>Rohtang Pass</strong> for snow fun and scenic views (subject to permits).</li>
-              <li>Return to hotel for a romantic evening and dinner.</li>
+              <li>Day trip to <strong>Kufri</strong> for snow fun, horse riding, and adventure activities.</li>
+              <li>Visit <strong>Himalayan Nature Park</strong> and scenic viewpoints.</li>
+              <li>Return to Shimla for a candlelight dinner at the resort.</li>
             </ul>
           </div>
         </div>
@@ -834,14 +808,14 @@ Tour Itinerary
         <!-- DAY 4 -->
         <div class="faq-card" data-aos="fade-up">
           <div class="faq-question">
-            <span>DAY 4 - VASHISHT & KULLU</span>
+            <span>DAY 4 - CHAIL & NALDEHRA</span>
             <i class="arrow">&#x25BC;</i>
           </div>
           <div class="faq-answer">
             <ul>
-              <li>Drive to <strong>Vashisht</strong> to enjoy the hot springs and quaint village.</li>
-              <li>Visit <strong>Kullu Valley</strong> for scenic viewpoints and optional activities.</li>
-              <li>Evening at leisure back at the resort.</li>
+              <li>Morning drive to <strong>Chail</strong> to explore the <strong>Palace & Cricket Ground</strong>.</li>
+              <li>Continue to <strong>Naldehra</strong> for a romantic walk in pine forests & golf course views.</li>
+              <li>Evening free for leisure in Shimla.</li>
             </ul>
           </div>
         </div>
@@ -854,9 +828,9 @@ Tour Itinerary
           </div>
           <div class="faq-answer">
             <ul>
-              <li>After breakfast, enjoy a relaxed morning at your resort.</li>
+              <li>After breakfast, enjoy a relaxed morning with your partner.</li>
               <li>Check-out and transfer for <strong>return journey</strong>.</li>
-              <li>Take back beautiful memories of your romantic Himalayan escape.</li>
+              <li>Leave Shimla with unforgettable honeymoon memories.</li>
             </ul>
           </div>
         </div>
@@ -865,6 +839,7 @@ Tour Itinerary
     </section>
   </div>
 </div>
+
 
 
 
