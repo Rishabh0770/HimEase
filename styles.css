@@ -54,7 +54,25 @@ footer a:hover{color:#fff}
 .navbar-brand .fa-earth-asia {
   color: #1b78c7 !important;
 }
+.call-btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #000;              /* black background */
+  color: #fff;                   /* white text */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
 
+.call-btn:hover {
+  background: transparent;       /* transparent background */
+  color: #000;                   /* black text */
+  border: 2px solid #000;        /* black border */
+}
 /* Hero */
 .hero-bg{
   position:absolute;inset:0;
@@ -78,22 +96,15 @@ footer a:hover{color:#fff}
   border-color: #000000;
 }
 
-.hero-section .badge.text-primary {
-  color: #1b78c7 !important;
-}
-
 .hero-section {
   text-align: center;
-  min-height: 100vh; /* full screen height */
+  min-height: 89vh; /* full screen height */
   display: flex;
   align-items: center; /* vertically center everything */
   position: relative;
 }
 .hero-section .container {
   z-index: 2; /* keep content above background */
-}
-.hero-section .badge {
-  display: inline-block;
 }
 
 .hero-section .d-flex {

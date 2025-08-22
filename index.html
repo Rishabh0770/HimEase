@@ -19,45 +19,53 @@
 </head>
 <body>
   <!-- Header / Navbar -->
-  <header class="sticky-top shadow-sm bg-white">
+<header class="sticky-top shadow-sm bg-white">
   <nav class="navbar navbar-expand-lg container py-2">
+    <!-- Left: Logo -->
     <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
-  <!-- Logo image -->
-  <img src="images/racing1.png" alt="WheelsOnMiles Logo" width="50" height="50">
-  <!-- Brand name with blue "On" -->
-  <span>Miles<span class="text-primary">On</span>Wheels</span>
-</a>
+      <img src="images/racing1.png" alt="WheelsOnMiles Logo" width="50" height="50">
+      <span>Miles<span class="text-primary">On</span>Wheels</span>
+    </a>
 
-
+    <!-- Mobile Toggle -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+
+    <!-- Center: Nav links -->
+    <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+      <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-3">
         <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
-        
-        <!-- Dropdown for Destinations -->
+
+        <!-- Dropdown -->
         <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" id="destinationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Destinations <i class="fa-solid fa-angle-down ms-1"></i>
-  </a>
-  <ul class="dropdown-menu" aria-labelledby="destinationsDropdown">
-    <li><a class="dropdown-item" href="./destinations/manali.html">Manali</a></li>
-    <li><a class="dropdown-item" href="./destinations/shimla.html">Shimla</a></li>
-    <li><a class="dropdown-item" href="./destinations/kinnaur.html">Kinnaur</a></li>
-    <li><a class="dropdown-item" href="./destinations/kangra.html">Dharamshala / Kangra</a></li>
-    <li><a class="dropdown-item" href="./destinations/kullu.html">Kullu</a></li>
-    <li><a class="dropdown-item" href="./destinations/spiti.html">Spiti</a></li>
-    <li><a class="dropdown-item" href="./destinations/ladakh.html">Ladakh</a></li>
-  </ul>
-</li>
+          <a class="nav-link dropdown-toggle" href="#" id="destinationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Destinations <i class="fa-solid fa-angle-down ms-1"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="destinationsDropdown">
+            <li><a class="dropdown-item" href="./destinations/manali.html">Manali</a></li>
+            <li><a class="dropdown-item" href="./destinations/shimla.html">Shimla</a></li>
+            <li><a class="dropdown-item" href="./destinations/kinnaur.html">Kinnaur</a></li>
+            <li><a class="dropdown-item" href="./destinations/kangra.html">Dharamshala / Kangra</a></li>
+            <li><a class="dropdown-item" href="./destinations/kullu.html">Kullu</a></li>
+            <li><a class="dropdown-item" href="./destinations/spiti.html">Spiti</a></li>
+            <li><a class="dropdown-item" href="./destinations/ladakh.html">Ladakh</a></li>
+          </ul>
+        </li>
+
         <li class="nav-item"><a class="nav-link" href="tours.html">Tours</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
       </ul>
     </div>
+
+    <!-- Right: Call Now Button -->
+    <div class="d-none d-lg-block ms-auto">
+  <a href="tel:+917018434170" class="call-btn">CALL NOW</a>
+</div>
   </nav>
 </header>
+
 
 
 <!-- Hero -->
@@ -66,12 +74,11 @@
   <div class="container position-relative" style="z-index:2">
     <div class="row justify-content-center align-items-center min-vh-75 py-5 text-center">
       <div class="col-lg-8 text-white" data-aos="fade-up" data-aos-duration="1000" style="padding-top: 45px;">
-        <span class="badge rounded-pill bg-white text-primary mb-3" data-aos="zoom-in" data-aos-delay="1000">#TravelHimachal</span>
-        <h1 class="display-5 fw-bold lh-sm" data-aos="fade-left" data-aos-delay="600">
-          Your Journey Begins
+        <h1 class="display-5 fw-bold lh-sm" data-aos="fade-left" data-aos-delay="600" style="font-family: 'Playfair Display', serif;font-weight: 600;">
+          EXPLORE HIMALAYA WITH US
         </h1>
         <p class="lead opacity-75 mt-3" style="font-family: 'Dancing Script', cursive; font-size: 22px; color: white;" data-aos="fade-right" data-aos-delay="800">
-          Where Adventure and Joy Find Their Perfect Blend
+          Miles On Wheels is the best way to truly experience the adventure, culture and history of the himalayan region of Himachal Pradesh and Leh-Ladakh
         </p>
         <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap" data-aos="fade-down" data-aos-delay="1000">
           <a href="#destinations" class="btn btn-primary btn" data-aos="zoom-in" data-aos-delay="1100">Explore Packages</a>
