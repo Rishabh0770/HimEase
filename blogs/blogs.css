@@ -98,7 +98,7 @@
 
 .img-box-1 img {
   width: 100%;
-  height: 500px;
+  height: 400px;
   object-fit: cover;
   transition: transform 0.4s ease;
   cursor: pointer;
@@ -388,5 +388,274 @@
 
   ol.wp-block-list > li > strong {
     display: block;               /* Ensure heading spans full width */
+  }
+}
+
+/* Social Icons full width */
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.social-icons a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* round buttons */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Brand Colors */
+.social-icons a.facebook { background: #3b5998; }
+.social-icons a.twitter { background: #1da1f2; }
+.social-icons a.linkedin { background: #0077b5; }
+.social-icons a.pinterest { background: #bd081c; }
+
+/* Hover Effects */
+.social-icons a:hover {
+  transform: translateY(-6px) scale(1.1);
+  box-shadow: 0 8px 14px rgba(0,0,0,0.2);
+}
+
+/* Nice glow effect on hover */
+.social-icons a.facebook:hover { background: #324b81; }
+.social-icons a.twitter:hover { background: #178cd9; }
+.social-icons a.linkedin:hover { background: #006097; }
+.social-icons a.pinterest:hover { background: #a50717; }
+
+/* User Box full width */
+.user-box {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  width: 100%;
+}
+
+.user-box img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.user-info h4 {
+  margin: 0;
+  font-weight: 600;
+  color: #333;
+}
+
+.user-info a {
+  color: #28a745;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.user-info a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .social-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .social-icons a {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .user-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .user-box img {
+    margin: 0 0 10px 0; /* space below image */
+  }
+
+  .user-info a {
+    display: inline-block;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .social-icons a {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .user-info h4 {
+    font-size: 16px;
+  }
+}
+
+
+/* Comment Form */
+.comment-form {
+  margin-top: 40px;
+  padding: 25px;
+  border-top: 1px solid #ffffff;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.comment-form h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+.comment-form p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.comment-form label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: 500;
+  color: #444;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 6px rgba(40, 167, 69, 0.3);
+}
+
+.comment-form textarea {
+  resize: none;
+}
+
+/* Checkbox Row */
+.checkbox-row {
+  display: flex;
+  align-items: center; /* ✅ aligns checkbox and text vertically */
+  gap: 10px;           /* space between checkbox and label */
+  margin: 15px 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;    /* better readability for long text */
+}
+
+.checkbox-row input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #5defcf; /* ✅ modern browsers: gives checkbox your theme color */
+}
+
+.checkbox-row label {
+  cursor: pointer; /* clicking text also toggles checkbox */
+}
+
+
+/* Submit Button */
+.btn-submit {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: #218838;
+  transform: translateY(-3px);
+}
+
+/* ===========================
+   Responsive Media Queries
+   =========================== */
+
+/* Tablets and smaller (<= 768px) */
+@media (max-width: 768px) {
+  .comment-form {
+    padding: 20px;
+  }
+
+  .comment-form h3 {
+    font-size: 20px;
+  }
+
+  .comment-form input,
+  .comment-form textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .btn-submit {
+    width: 100%;   /* button full width on tablet */
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .comment-form {
+    padding: 15px;
+  }
+
+  .comment-form h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .comment-form p {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .comment-form label {
+    font-size: 13px;
+  }
+
+  .checkbox-row {
+    flex-direction: column;   /* ✅ checkbox above text */
+    align-items: flex-start;  /* left align for neatness */
+    gap: 5px;
+  }
+
+  .btn-submit {
+    width: 100%;
+    padding: 10px;
+    font-size: 13px;
   }
 }
