@@ -122,3 +122,271 @@
     height: 250px; /* slightly smaller height for mobile */
   }
 }
+
+
+.wp-block-heading {
+    clear: both;
+    font-weight: 700;
+    margin: 0 0 1em;
+}
+
+.wp-block-list {
+    margin: 0 0 1em 1.5em;
+    padding: 0;
+}
+
+.wp-block-list li {
+    margin-bottom: .5em;
+}
+
+.wp-block-separator.has-alpha-channel-opacity {
+    opacity: .4;
+}
+
+.wp-block-separator.has-alpha-channel-opacity.is-style-wide,
+.wp-block-separator.has-alpha-channel-opacity.is-style-dots {
+    opacity: 1; /* override for styled variants */
+}
+
+
+/* 🌟 Author Box Base */
+.author-box {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+  width: 100%;
+  max-width: 350px; /* same width as form */
+  margin: 0 auto;
+}
+
+.author-box h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1d2f4f;
+  display: inline-block;
+  border: 1px solid #1d2f4f;
+  padding: 5px 12px;
+}
+
+.author-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.author-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.author-bio {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.author-socials a {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 18px;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.author-socials a:hover {
+  background: #1d3c73;
+  color: #fff;
+  border-color: #1d3c73;
+}
+
+/* 📱 Tablet (<=768px) */
+@media (max-width: 768px) {
+  .author-box {
+    max-width: 90%;   /* screen ke hisaab se chhoti ho jayegi */
+    padding: 15px;
+  }
+
+  .author-box h3 {
+    font-size: 1.2rem;
+    padding: 4px 10px;
+  }
+
+  .author-image img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .author-name {
+    font-size: 18px;
+    color: #1b78c7;
+  }
+
+  .author-bio {
+    font-size: 0.95rem;
+  }
+
+  .author-socials a {
+    font-size: 16px;
+    padding: 6px 8px;
+  }
+}
+
+/* 📱 Mobile (<=480px) */
+@media (max-width: 480px) {
+  .author-box {
+    max-width: 95%;   /* almost full width */
+    padding: 12px;
+  }
+
+  .author-box h3 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .author-image img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .author-name {
+    font-size: 16px;
+    color: #1b78c7;
+  }
+
+  .author-bio {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .author-socials a {
+    font-size: 15px;
+    padding: 5px 7px;
+    margin: 0 3px;
+  }
+}
+
+
+/* 🌟 Sidebar Sections */
+.sidebar-section {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+  margin-top: 25px;
+  width: 100%;
+  max-width: 350px; /* form width */
+  text-align: center; /* 👈 yeh add karo */
+}
+
+.sidebar-section h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1d2f4f;
+  display: inline-block;
+  border: 1px solid #1d2f4f;
+  padding: 5px 12px;
+  margin-bottom: 20px;
+}
+
+/* 📌 Recent Posts */
+.recent-posts .post-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.recent-posts .post-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.recent-posts .post-info a {
+  font-size: 15px;
+  font-weight: bold;
+  color: #1d2f4f;
+  text-decoration: none;
+}
+
+.recent-posts .post-info a:hover {
+  text-decoration: underline;
+}
+
+.recent-posts .post-info span {
+  display: block;
+  font-size: 13px;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* 📌 Follow Us Buttons */
+.follow-us .social-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.follow-us .social-grid a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  gap: 8px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.follow-us .facebook { background: #3b5998; }
+.follow-us .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.follow-us .whatsapp { background: #25d366; }
+.follow-us .linkedin { background: #0077b5; }
+
+.follow-us .social-grid a:hover {
+  opacity: 0.9;
+}
+
+/* 📱 Responsive */
+@media (max-width: 480px) {
+  .recent-posts .post-item img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .recent-posts .post-info a {
+    font-size: 14px;
+  }
+
+  .follow-us .social-grid {
+    grid-template-columns: 1fr; /* mobile pe ek-ek row */
+  }
+}
+
+/* Target mobile devices */
+@media (max-width: 768px) {
+  ol.wp-block-list > li {
+    padding-left: 0 !important;   /* Remove default indentation */
+    text-align: left;             /* Align text to left */
+  }
+
+  ol.wp-block-list > li > strong {
+    display: block;               /* Ensure heading spans full width */
+  }
+}
