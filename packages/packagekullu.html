@@ -1,0 +1,1365 @@
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Package — Kullu</title>
+    <meta name="description" content="Plan trips, discover destinations, and book curated travel packages." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+      <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../about.css">
+    <link rel="stylesheet" href="../tours.css">
+    <link rel="stylesheet" href="../destinations/destinations.css">
+    <link rel="stylesheet" href="packages.css">
+    <link rel="stylesheet" href="../whatsapp.css">
+  <style>
+      .about-section {
+    position: relative;
+    background: url('../images/kullu.jpg') center/cover no-repeat;
+    transition: all 0.6s ease-in-out;
+    overflow: hidden;
+    min-height: 70vh;
+    border-radius: 0 !important;  /* corners bilkul square */
+    margin: 0 !important;         /* left/right gap hatao */
+    width: 100% !important;       /* full screen cover */
+  }
+  .modal-overlay {
+    display: none;              /* hidden by default */
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;    /* keep flex props but only when shown */
+    align-items: center;
+    z-index: 1000;
+  }
+
+    .modal-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      width: 400px;
+      position: relative;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    .modal-box h3 {
+    text-align: center;   /* centers the heading */
+    margin-bottom: 15px;
+  }
+
+  .modal-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .modal-box form button {
+    background: #0a5db5;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+
+    /* Center the button */
+    align-self: center;
+  }
+
+  .modal-box form button:hover {
+    background: #084a90;  /* hover effect */
+  }
+  .close-btn {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+
+  .close-btn:hover {
+    color: #084a90; /* red hover */
+  }
+  </style>
+  </head>
+  <body>
+
+    <!-- Header / Navbar -->
+  <header class="sticky-top shadow-sm bg-white">
+    <nav class="navbar navbar-expand-lg container py-2">
+      <!-- Left: Logo -->
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="../index.html">
+        <img src="../images/racing1.png" alt="WheelsOnMiles Logo" width="50" height="50">
+        <span>Miles<span class="text-primary">On</span>Wheel</span>
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Center: Nav links -->
+      <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+        <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="../index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="../aboutus.html">ABOUT US</a></li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="destinationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              DESTINATIONS <i class="fa-solid fa-angle-down ms-1"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="destinationsDropdown">
+              <li><a class="dropdown-item" href="../destinations/manali.html">Manali</a></li>
+              <li><a class="dropdown-item" href="../destinations/shimla.html">Shimla</a></li>
+              <li><a class="dropdown-item" href="../destinations/kinnaur.html">Kinnaur</a></li>
+              <li><a class="dropdown-item" href="../destinations/kangra.html">Dharamshala / Kangra</a></li>
+              <li><a class="dropdown-item" href="../destinations/kullu.html">Kullu</a></li>
+              <li><a class="dropdown-item" href="../destinations/spiti.html">Spiti</a></li>
+              <li><a class="dropdown-item" href="../destinations/ladakh.html">Ladakh</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle active" href="#" id="packagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      EXPLORE PACKAGES <i class="fa-solid fa-angle-down ms-1"></i>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="packagesDropdown">
+      <li><a class="dropdown-item active" href="../tours.html">Himachal Tour Packages</a></li>
+      <li><a class="dropdown-item" href="../packages/honeymoon.html">Honeymoon Packages</a></li>
+      <li><a class="dropdown-item" href="../packages/adventure.html">Adventure Packages</a></li>
+      <li><a class="dropdown-item" href="../packages/family.html">Family Packages</a></li>
+      <li><a class="dropdown-item" href="../packages/group.html">Group Packages</a></li>
+      <li><a class="dropdown-item" href="../packages/weekend.html">Weekend Getaways</a></li>
+    </ul>
+  </li>
+
+          <li class="nav-item"><a class="nav-link" href="../contact.html">CONTACT US</a></li>
+          <li class="nav-item"><a class="nav-link" href="../termsconditions.html">TERMS & CONDITIONS</a></li>
+        </ul>
+      </div>
+
+      <!-- Right: Call Now Button -->
+      <div class="d-none d-lg-block ms-auto">
+    <a href="tel:+917018434170" class="call-btn">CALL NOW</a>
+  </div>
+    </nav>
+  </header>
+
+
+
+  <!-- About Us Section -->
+  <section class="about-section">
+    <div class="container position-relative" style="z-index:2">
+      <div class="row justify-content-center align-items-center min-vh-75 py-5 text-center">
+        <div class="col-lg-8 text-white" data-aos="fade-up" data-aos-duration="1000">
+          <h1 class="display-5 fw-bold lh-sm" data-aos="fade-left" data-aos-delay="600">
+            Kullu Tour Packages
+          </h1>
+          <p class="lead opacity-75 mt-3" style="font-family: 'Dancing Script', cursive; font-size: 22px; color: white;" data-aos="fade-right" data-aos-delay="800">
+            Where The Rivers Sing, The Valleys Bloom, And The Himalayas Whisper Stories Of Peace And Wonder.
+          </p>
+        </div>
+      </div>
+
+    <!-- Feature Cards for Kullu -->
+<div class="row justify-content-center mt-4 g-3 feature-cards">
+  <div class="col-6 col-md-2">
+    <div class="card bg-dark bg-opacity-50 text-white text-center h-100 border-0 shadow-sm hover-card">
+      <div class="card-body d-flex flex-column">
+        <i class="fa-solid fa-tree fa-2x mb-2 text-primary"></i>
+        <p class="m-0 fs-6 mt-auto">PINE VALLEYS</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6 col-md-2">
+    <div class="card bg-dark bg-opacity-50 text-white text-center h-100 border-0 shadow-sm hover-card">
+      <div class="card-body d-flex flex-column">
+        <i class="fa-solid fa-gopuram fa-2x mb-2 text-primary"></i>
+        <p class="m-0 fs-6 mt-auto">ANCIENT TEMPLES</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6 col-md-2">
+    <div class="card bg-dark bg-opacity-50 text-white text-center h-100 border-0 shadow-sm hover-card">
+      <div class="card-body d-flex flex-column">
+        <i class="fa-solid fa-water fa-2x mb-2 text-primary"></i>
+        <p class="m-0 fs-6 mt-auto">RIVER RAFTING</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6 col-md-2">
+    <div class="card bg-dark bg-opacity-50 text-white text-center h-100 border-0 shadow-sm hover-card">
+      <div class="card-body d-flex flex-column">
+        <i class="fa-solid fa-apple-whole fa-2x mb-2 text-primary"></i>
+        <p class="m-0 fs-6 mt-auto">APPLE ORCHARDS</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6 col-md-2">
+    <div class="card bg-dark bg-opacity-50 text-white text-center h-100 border-0 shadow-sm hover-card">
+      <div class="card-body d-flex flex-column">
+        <i class="fa-solid fa-sun fa-2x mb-2 text-primary"></i>
+        <p class="m-0 fs-6 mt-auto">SCENIC LANDSCAPES</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6 col-md-2">
+    <div class="card bg-dark bg-opacity-50 text-white text-center h-100 border-0 shadow-sm hover-card">
+      <div class="card-body d-flex flex-column">
+        <i class="fa-solid fa-people-group fa-2x mb-2 text-primary"></i>
+        <p class="m-0 fs-6 mt-auto">CULTURAL FESTIVALS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  <!-- Package Heading -->
+  <div class="package-heading text-center mb-3" data-aos="fade-up">
+    <h2>Select Your Package</h2>
+  </div>
+
+  <!-- Tabs with data-price for Kullu -->
+  <ul class="nav nav-tabs justify-content-center custom-tabs" id="packageTabs" data-aos="fade-up">
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#pkg1" data-price="18999" data-aos="fade-up">Kullu Escape – Valley Retreat (3D/2N)</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#pkg2" data-price="14999" data-aos="fade-up">Mystical Kullu – Temples & Traditions (4D/3N)</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#pkg3" data-price="21999" data-aos="fade-up">Colors of Kullu – Nature & Culture (5D/4N)</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#pkg4" data-price="17999" data-aos="fade-up">Kullu Explorer – Valleys, Villages & Beyond (7D/6N)</a>
+    </li>
+  </ul>
+
+  <!-- Price Sticker next to Tabs -->
+  <div class="price-sticker text-white" id="priceSticker" data-aos="fade-up">
+    <i class="fa-solid fa-hand-holding-dollar me-2"></i> ₹18,999 | Person
+  </div>
+
+  <!-- Section with AOS Effects -->
+  <div class="section-container" data-aos="fade-up">
+
+    <div class="tab-content mt-4">
+
+    <!-- Left Text -->
+  <div class="tab-pane fade show active" id="pkg1">
+  <div class="content" data-aos="fade-up">
+    <h2 data-aos="fade-up">Kullu Escape – Valley Retreat | 3 Days 2 Nights</h2>
+    
+    <!-- Places Covered -->
+    <div class="places-covered d-flex align-items-center mb-2" data-aos="fade-up">
+      <i class="fa-solid fa-map-marked-alt text-primary me-2"></i>
+      <span class="text-primary fw-semibold">Places Covered</span>
+    </div>
+
+    <p class="locations text-dark fw-semibold" data-aos="fade-up">
+      Kullu » Beas Riverside » Bijli Mahadev » Naggar Castle
+    </p>
+
+    <p data-aos="fade-up">
+      Unwind in the scenic lap of Himachal with our <strong>“Kullu Escape – Valley Retreat”</strong> package.  
+      Perfect for a short getaway, this 3-day retreat offers a mix of lush <strong>valleys</strong>, peaceful <strong>riversides</strong>, and a glimpse into Kullu’s <strong>spiritual heritage</strong>.  
+      Visit the sacred <strong>Bijli Mahadev Temple</strong>, enjoy riverside walks by the <strong>Beas River</strong>, and explore the medieval charm of <strong>Naggar Castle</strong>.  
+      This trip is ideal for families, couples, or solo travelers seeking serenity in nature.
+    </p>
+
+    <!-- Image Row -->
+    <div class="image-row">
+      <div class="img-box" data-aos="fade-right" data-aos-delay="100">
+        <img src="../images/kullu-valley.jpg" alt="kullu valley">
+      </div>
+      <div class="img-box" data-aos="zoom-in" data-aos-delay="200">
+        <img src="../images/beas-river.jpg" alt="beas river kullu">
+      </div>
+    </div>
+
+    <h3 style="margin-top: 20px;" data-aos="fade-up" data-aos-delay="100">
+      What To Expect !
+    </h3>
+    <p data-aos="fade-up">
+      In <strong>“Kullu Escape – Valley Retreat”</strong> (3 Days, 2 Nights), expect breathtaking valleys, spiritual experiences, and riverside peace.  
+      Explore <strong>Bijli Mahadev Temple</strong> with its panoramic views, walk along the <strong>Beas riverside</strong>, and step back in time at <strong>Naggar Castle</strong>.  
+      This short trip balances relaxation and exploration, leaving you with unforgettable Kullu memories.
+    </p>
+
+    <!-- Image Row -->
+    <div class="image-row">
+      <div class="img-box" data-aos="fade-right" data-aos-delay="100">
+        <img src="../images/bijli-mahadev.jpg" alt="bijli mahadev temple">
+      </div>
+      <div class="img-box" data-aos="zoom-in" data-aos-delay="200">
+        <img src="../images/naggar-castle.jpg" alt="naggar castle">
+      </div>
+      <div class="img-box" data-aos="fade-left" data-aos-delay="300">
+        <img src="../images/kullu-riverside.jpg" alt="kullu riverside">
+      </div>
+    </div>
+
+    <h3 style="margin-top: 20px;" data-aos="fade-up" data-aos-delay="100">
+      Tour Itinerary
+    </h3>
+    <p data-aos="fade-up">
+      This 2 nights / 3 days itinerary is designed for a quick yet fulfilling Kullu experience.  
+      From spiritual temple visits to riverside strolls and historical castles, it’s a short retreat that covers the essence of Kullu Valley.
+    </p>
+
+    <div class="container my-5">
+      <div class="row g-4">
+        
+        <!-- Included Card -->
+        <div class="col-md-6" data-aos="fade-right" data-aos-duration="800">
+          <div class="card shadow-lg border-0 h-100">
+            <div class="card-header bg-success text-white text-center fs-4 fw-bold">
+              <i class="bi bi-check-circle-fill me-2"></i> Included
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="bi bi-house-door-fill text-success me-2"></i> 2 Nights’ accommodation in Kullu hotels/guesthouses.</li>
+                <li class="list-group-item"><i class="bi bi-cup-hot-fill text-success me-2"></i> Breakfasts and Dinners included.</li>
+                <li class="list-group-item"><i class="bi bi-car-front-fill text-success me-2"></i> Transport services by private/shared cab.</li>
+                <li class="list-group-item"><i class="bi bi-person-check-fill text-success me-2"></i> Assistance on arrival & departure.</li>
+                <li class="list-group-item"><i class="bi bi-cash-stack text-success me-2"></i> Driver charges, tolls, and taxes included.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Excluded Card -->
+        <div class="col-md-6" data-aos="fade-left" data-aos-duration="800">
+          <div class="card shadow-lg border-0 h-100">
+            <div class="card-header bg-danger text-white text-center fs-4 fw-bold">
+              <i class="bi bi-x-circle-fill me-2"></i> Excluded
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="bi bi-building-fill-exclamation text-danger me-2"></i> Monument entry fees.</li>
+                <li class="list-group-item"><i class="bi bi-telephone-fill text-danger me-2"></i> Personal expenses (calls, laundry, shopping).</li>
+                <li class="list-group-item"><i class="bi bi-cup-straw text-danger me-2"></i> Drinks & snacks not mentioned.</li>
+                <li class="list-group-item"><i class="bi bi-egg-fried text-danger me-2"></i> Lunches.</li>
+                <li class="list-group-item"><i class="bi bi-percent text-danger me-2"></i> 5% GST.</li>
+                <li class="list-group-item"><i class="bi bi-question-circle-fill text-danger me-2"></i> Anything not mentioned in “Included”.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" style="background-image: url('../images/kullu-bg.png');" data-aos="fade-up">
+      <h2 class="faq-heading">Itinerary</h2>
+      <div class="faq-container">
+
+        <!-- DAY 1 -->
+        <div class="faq-card active" data-aos="fade-up">
+          <div class="faq-question">
+            <span>DAY 1 - ARRIVAL IN KULLU</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            <ul>
+              <li>Arrival in <strong>Kullu</strong>, check-in at hotel.</li>
+              <li>Evening walk along the <strong>Beas riverside</strong>.</li>
+              <li>Local market exploration.</li>
+              <li>Overnight stay in <strong>Kullu</strong>.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DAY 2 -->
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>DAY 2 - BIJLI MAHADEV EXCURSION</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            <ul>
+              <li>Morning drive to <strong>Bijli Mahadev Temple</strong>.</li>
+              <li>Short trek to the temple for panoramic views of Kullu Valley.</li>
+              <li>Return to hotel and leisure evening.</li>
+              <li>Overnight stay in <strong>Kullu</strong>.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DAY 3 -->
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>DAY 3 - NAGGAR CASTLE & DEPARTURE</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            <ul>
+              <li>Check-out after breakfast.</li>
+              <li>Visit <strong>Naggar Castle</strong> & explore its heritage.</li>
+              <li>Drive back towards onward destination.</li>
+              <li>Tour ends with cherished memories of <strong>Kullu Valley</strong>.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+</div>
+
+  <div class="tab-pane fade" id="pkg2">
+  <div class="content">
+    <h2>Mystical Kullu – Temples & Traditions | 4 Days 3 Nights</h2>
+    
+    <!-- Places Covered -->
+    <div class="places-covered d-flex align-items-center mb-2">
+      <i class="fa-solid fa-map-marked-alt text-primary me-2"></i>
+      <span class="text-primary fw-semibold">Places Covered</span>
+    </div>
+
+    <p class="locations text-dark fw-semibold">
+      Kullu » Raghunath Temple » Bijli Mahadev » Jagannathi Devi (Bhekhli) » Kais Monastery » Naggar Castle & Roerich Art Gallery
+    </p>
+
+    <p>
+      Immerse yourself in Kullu’s sacred heritage with <strong>“Mystical Kullu – Temples & Traditions”</strong>.  
+      Across 4 days, explore ancient temples, serene monasteries, and timeless Himalayan culture.  
+      Trek to the revered <strong>Bijli Mahadev</strong>, seek blessings at <strong>Raghunath Temple</strong>, experience the calm of <strong>Kais Monastery</strong>,  
+      and walk through history at <strong>Naggar Castle</strong> and the <strong>Roerich Art Gallery</strong>. Expect local handlooms, folk vibes, and riverside peace.
+    </p>
+
+    <!-- Image Row -->
+    <div class="image-row">
+      <div class="img-box" data-aos="fade-right" data-aos-delay="100">
+        <img src="../images/raghunath-temple.jpg" alt="Raghunath Temple Kullu">
+      </div>
+      <div class="img-box" data-aos="zoom-in" data-aos-delay="200">
+        <img src="../images/bijli-mahadev.jpg" alt="Bijli Mahadev Temple">
+      </div>
+    </div>
+
+    <h3 style="margin-top: 20px;" data-aos="fade-up" data-aos-delay="100">What To Expect !</h3>
+    <p data-aos="fade-up">
+      A culture-forward getaway with moderate walks, temple architecture, monastery chants, and heritage sights.  
+      Witness <strong>Kullu’s living traditions</strong>, from shawl weaving to local markets, with ample downtime by the <strong>Beas riverside</strong>.
+    </p>
+
+    <!-- Image Row -->
+    <div class="image-row">
+      <div class="img-box" data-aos="fade-right" data-aos-delay="100">
+        <img src="../images/kais-monastery.jpg" alt="Kais Monastery">
+      </div>
+      <div class="img-box" data-aos="zoom-in" data-aos-delay="200">
+        <img src="../images/naggar-castle.jpg" alt="Naggar Castle">
+      </div>
+      <div class="img-box" data-aos="fade-left" data-aos-delay="300">
+        <img src="../images/bhekhli-temple.jpg" alt="Jagannathi Devi Temple Bhekhli">
+      </div>
+    </div>
+
+    <h3 style="margin-top: 20px;" data-aos="fade-up" data-aos-delay="100">Tour Itinerary</h3>
+    <p data-aos="fade-up">
+      A <strong>3 Nights / 4 Days</strong> curation focused on Kullu’s spiritual landmarks and cultural heritage, balanced with scenic drives and leisure time.
+    </p>
+
+    <div class="container my-5">
+      <div class="row g-4">
+        <!-- Included Card -->
+        <div class="col-md-6">
+          <div class="card shadow-lg border-0 h-100">
+            <div class="card-header bg-success text-white text-center fs-4 fw-bold">
+              <i class="bi bi-check-circle-fill me-2"></i> Included
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="bi bi-house-door-fill text-success me-2"></i> 3 Nights’ accommodation in Kullu (hotel/guesthouse).</li>
+                <li class="list-group-item"><i class="bi bi-cup-hot-fill text-success me-2"></i> Breakfast & Dinner on all days.</li>
+                <li class="list-group-item"><i class="bi bi-car-front-fill text-success me-2"></i> Private/shared cab for transfers & sightseeing.</li>
+                <li class="list-group-item"><i class="bi bi-person-check-fill text-success me-2"></i> Assistance on arrival & departure.</li>
+                <li class="list-group-item"><i class="bi bi-cash-stack text-success me-2"></i> Driver allowances, tolls & taxes.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Excluded Card -->
+        <div class="col-md-6">
+          <div class="card shadow-lg border-0 h-100">
+            <div class="card-header bg-danger text-white text-center fs-4 fw-bold">
+              <i class="bi bi-x-circle-fill me-2"></i> Excluded
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="bi bi-building-fill-exclamation text-danger me-2"></i> Monument/Temple entry fees.</li>
+                <li class="list-group-item"><i class="bi bi-telephone-fill text-danger me-2"></i> Personal expenses (calls, laundry, shopping).</li>
+                <li class="list-group-item"><i class="bi bi-cup-straw text-danger me-2"></i> Drinks & snacks not mentioned.</li>
+                <li class="list-group-item"><i class="bi bi-egg-fried text-danger me-2"></i> Lunches.</li>
+                <li class="list-group-item"><i class="bi bi-percent text-danger me-2"></i> 5% GST.</li>
+                <li class="list-group-item"><i class="bi bi-question-circle-fill text-danger me-2"></i> Anything not mentioned in “Included”.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ / Day-wise Itinerary -->
+    <section class="faq-section" style="background-image: url('../images/kullu-culture-bg.png');" data-aos="fade-up">
+      <h2 class="faq-heading">Itinerary</h2>
+      <div class="faq-container">
+
+        <!-- DAY 1 -->
+        <div class="faq-card active" data-aos="fade-up">
+          <div class="faq-question">
+            <span>DAY 1 - ARRIVAL & RAGHUNATH TEMPLE</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            <ul>
+              <li>Arrive in <strong>Kullu</strong>, hotel check-in.</li>
+              <li>Visit the historic <strong>Raghunath Temple</strong>.</li>
+              <li>Evening walk at <strong>Beas riverside</strong> / local market.</li>
+              <li>Overnight in Kullu.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DAY 2 -->
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>DAY 2 - BIJLI MAHADEV TREK & KAIS MONASTERY</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            <ul>
+              <li>Morning drive and <strong>short trek</strong> to <strong>Bijli Mahadev Temple</strong> (panoramic valley views).</li>
+              <li>Post-lunch visit to the serene <strong>Kais Monastery</strong>.</li>
+              <li>Leisure evening. Overnight in Kullu.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DAY 3 -->
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>DAY 3 - NAGGAR CASTLE, ROERICH GALLERY & BHEKHLI TEMPLE</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            <ul>
+              <li>Explore <strong>Naggar Castle</strong> & <strong>Roerich Art Gallery</strong>.</li>
+              <li>Visit <strong>Jagannathi Devi (Bhekhli) Temple</strong> for cultural insights.</li>
+              <li>Optional stop at a <strong>Kullu shawl</strong> handloom center.</li>
+              <li>Overnight in Kullu.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DAY 4 -->
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>DAY 4 - DEPARTURE</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            <ul>
+              <li>Breakfast and check-out.</li>
+              <li>Departure with cultural memories of <strong>Kullu Valley</strong>.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+</div>
+
+  <div class="tab-pane fade" id="pkg3">
+  <div class="content">
+    <h2>Colors of Kullu – Nature & Culture | 5 Days 4 Nights</h2>
+    
+    <!-- Places Covered -->
+    <div class="places-covered d-flex align-items-center mb-2">
+      <i class="fa-solid fa-map-marked-alt text-primary me-2"></i>
+      <span class="text-primary fw-semibold">Places Covered</span>
+    </div>
+
+    <p class="locations text-dark fw-semibold">
+      Kullu » Great Himalayan National Park » Tirthan Valley » Naggar Castle » Raghunath Temple » Bijli Mahadev » Local Markets
+    </p>
+
+    <p>
+      Experience the perfect harmony of <strong>nature and tradition</strong> with our “Colors of Kullu” package.  
+      In 5 days, wander through the lush forests of the <strong>Great Himalayan National Park</strong>,  
+      soak in the serenity of <strong>Tirthan Valley</strong>, and discover Kullu’s rich cultural tapestry in its temples, markets, and heritage sites.  
+      A soulful blend of adventure, leisure, and cultural exploration.
+    </p>
+
+    <!-- Image Row -->
+    <div class="image-row">
+      <div class="img-box">
+        <img src="../images/tirthan-valley.jpg" alt="Tirthan Valley">
+      </div>
+      <div class="img-box">
+        <img src="../images/ghnp.jpg" alt="Great Himalayan National Park">
+      </div>
+    </div>
+
+    <h3 style="margin-top: 20px;">What To Expect !</h3>
+    <p>
+      A balanced journey offering <strong>adventure, culture, and relaxation</strong>.  
+      Explore forest trails, visit sacred temples, meet locals at bustling bazaars, and unwind by the riverside.  
+      Ideal for travelers who want to see <strong>Kullu’s natural beauty</strong> without missing its <strong>traditional heritage</strong>.
+    </p>
+
+    <!-- Image Row -->
+    <div class="image-row">
+      <div class="img-box">
+        <img src="../images/kullu-markets.jpg" alt="Kullu Local Market">
+      </div>
+      <div class="img-box" data-aos="zoom-in">
+        <img src="../images/naggar-castle.jpg" alt="Naggar Castle">
+      </div>
+      <div class="img-box" data-aos="fade-left">
+        <img src="../images/bijli-mahadev.jpg" alt="Bijli Mahadev Temple">
+      </div>
+    </div>
+
+    <h3 style="margin-top: 20px;">Tour Itinerary</h3>
+    <p>
+      A <strong>4 Nights / 5 Days</strong> itinerary designed to showcase Kullu’s natural escapes and timeless cultural landmarks.
+    </p>
+
+    <div class="container my-5">
+      <div class="row g-4">
+        
+        <!-- Included Card -->
+        <div class="col-md-6">
+          <div class="card shadow-lg border-0 h-100">
+            <div class="card-header bg-success text-white text-center fs-4 fw-bold">
+              <i class="bi bi-check-circle-fill me-2"></i> Included
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="bi bi-house-door-fill text-success me-2"></i> 4 Nights’ accommodation in Kullu/Tirthan.</li>
+                <li class="list-group-item"><i class="bi bi-cup-hot-fill text-success me-2"></i> Breakfast & Dinner daily.</li>
+                <li class="list-group-item"><i class="bi bi-car-front-fill text-success me-2"></i> Private cab for sightseeing & transfers.</li>
+                <li class="list-group-item"><i class="bi bi-person-check-fill text-success me-2"></i> Guidance & assistance on arrival/departure.</li>
+                <li class="list-group-item"><i class="bi bi-cash-stack text-success me-2"></i> Driver charges, tolls & state taxes.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Excluded Card -->
+        <div class="col-md-6">
+          <div class="card shadow-lg border-0 h-100">
+            <div class="card-header bg-danger text-white text-center fs-4 fw-bold">
+              <i class="bi bi-x-circle-fill me-2"></i> Excluded
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="bi bi-building-fill-exclamation text-danger me-2"></i> Monument/park entry tickets.</li>
+                <li class="list-group-item"><i class="bi bi-telephone-fill text-danger me-2"></i> Personal expenses (calls, shopping, etc.).</li>
+                <li class="list-group-item"><i class="bi bi-cup-straw text-danger me-2"></i> Drinks, snacks & meals not included.</li>
+                <li class="list-group-item"><i class="bi bi-egg-fried text-danger me-2"></i> Lunches.</li>
+                <li class="list-group-item"><i class="bi bi-percent text-danger me-2"></i> 5% GST.</li>
+                <li class="list-group-item"><i class="bi bi-question-circle-fill text-danger me-2"></i> Anything not mentioned in “Included”.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" style="background-image: url('../images/kullu-nature-bg.png');">
+      <h2 class="faq-heading">Itinerary</h2>
+      <div class="faq-container">
+
+        <!-- DAY 1 -->
+        <div class="faq-card active" data-aos="fade-up">
+          <div class="faq-question">
+            <span>DAY 1 - ARRIVAL IN KULLU & LEISURE</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            <ul>
+              <li>Arrive in <strong>Kullu</strong>, check-in at hotel.</li>
+              <li>Evening walk by the <strong>Beas riverside</strong> or local market visit.</li>
+              <li>Overnight stay in Kullu.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DAY 2 -->
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>DAY 2 - GREAT HIMALAYAN NATIONAL PARK</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            <ul>
+              <li>Day trip to <strong>Great Himalayan National Park</strong> for nature walks & wildlife spotting.</li>
+              <li>Picnic lunch amid lush valleys.</li>
+              <li>Return to Kullu by evening. Overnight stay.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DAY 3 -->
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>DAY 3 - TIRTHAN VALLEY ADVENTURE</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            <ul>
+              <li>Excursion to <strong>Tirthan Valley</strong> – waterfalls, riverside walks & trout fishing (optional).</li>
+              <li>Evening campfire or leisure at riverside guesthouse.</li>
+              <li>Overnight in Tirthan/Kullu.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DAY 4 -->
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>DAY 4 - HERITAGE & TEMPLES</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            <ul>
+              <li>Visit <strong>Naggar Castle</strong> & <strong>Roerich Art Gallery</strong>.</li>
+              <li>Seek blessings at <strong>Bijli Mahadev Temple</strong> & <strong>Raghunath Temple</strong>.</li>
+              <li>Overnight stay in Kullu.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DAY 5 -->
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>DAY 5 - DEPARTURE</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            <ul>
+              <li>Breakfast & check-out.</li>
+              <li>Departure with the <strong>colors of Kullu Valley</strong> in memory.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="tab-pane fade" id="pkg4">
+  <div class="content">
+    <h2>Kullu Explorer – Valleys, Villages & Beyond | 7 Days 6 Nights</h2>
+    
+    <!-- Places Covered -->
+    <div class="places-covered d-flex align-items-center mb-2">
+      <i class="fa-solid fa-map-marked-alt text-primary me-2"></i>
+      <span class="text-primary fw-semibold">Places Covered</span>
+    </div>
+
+    <p class="locations text-dark fw-semibold">
+      Kullu » Naggar » Manikaran » Tirthan Valley » Great Himalayan National Park » Bijli Mahadev » Kais » Local Villages & Markets
+    </p>
+
+    <p>
+      Discover the hidden beauty of the Kullu Valley with our <strong>“Kullu Explorer – Valleys, Villages & Beyond”</strong> package.  
+      Over 7 days, journey through scenic valleys, peaceful villages, sacred temples, and pristine nature escapes.  
+      From the vibrant riverside towns to the Himalayan wilderness, this tour is a perfect balance of <strong>culture, relaxation, and adventure</strong>.
+    </p>
+
+    <!-- Image Row -->
+    <div class="image-row">
+      <div class="img-box">
+        <img src="../images/kullu-valley.jpg" alt="Kullu Valley Landscape">
+      </div>
+      <div class="img-box">
+        <img src="../images/tirthan-river.jpg" alt="Tirthan Valley">
+      </div>
+    </div>
+
+    <h3 style="margin-top: 20px;">What To Expect !</h3>
+    <p>
+      Explore <strong>Kullu’s charm beyond the ordinary</strong> – from local villages and bustling bazaars to serene valleys, temples, and riversides.  
+      Ideal for explorers seeking <strong>authentic Himachali culture</strong>, soft adventure, and a refreshing break in the lap of nature.
+    </p>
+
+    <!-- Image Row -->
+    <div class="image-row">
+      <div class="img-box">
+        <img src="../images/naggar-castle.jpg" alt="Naggar Castle">
+      </div>
+      <div class="img-box" data-aos="zoom-in">
+        <img src="../images/bijli-mahadev.jpg" alt="Bijli Mahadev Temple">
+      </div>
+      <div class="img-box" data-aos="fade-left">
+        <img src="../images/kullu-village.jpg" alt="Kullu Villages">
+      </div>
+    </div>
+
+    <h3 style="margin-top: 20px;">Tour Itinerary</h3>
+    <p>
+      This <strong>6 Nights / 7 Days</strong> journey is designed for travelers who want to explore Kullu’s valleys, villages, temples, and natural beauty at a comfortable pace.
+    </p>
+
+    <div class="container my-5">
+      <div class="row g-4">
+        
+        <!-- Included Card -->
+        <div class="col-md-6">
+          <div class="card shadow-lg border-0 h-100">
+            <div class="card-header bg-success text-white text-center fs-4 fw-bold">
+              <i class="bi bi-check-circle-fill me-2"></i> Included
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="bi bi-house-door-fill text-success me-2"></i> 6 Nights’ accommodation in Kullu/Tirthan.</li>
+                <li class="list-group-item"><i class="bi bi-cup-hot-fill text-success me-2"></i> Breakfast & Dinner daily.</li>
+                <li class="list-group-item"><i class="bi bi-car-front-fill text-success me-2"></i> Private cab for sightseeing & transfers.</li>
+                <li class="list-group-item"><i class="bi bi-person-check-fill text-success me-2"></i> Assistance on arrival/departure.</li>
+                <li class="list-group-item"><i class="bi bi-cash-stack text-success me-2"></i> Driver charges, tolls & state taxes.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Excluded Card -->
+        <div class="col-md-6">
+          <div class="card shadow-lg border-0 h-100">
+            <div class="card-header bg-danger text-white text-center fs-4 fw-bold">
+              <i class="bi bi-x-circle-fill me-2"></i> Excluded
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="bi bi-building-fill-exclamation text-danger me-2"></i> Monument/temple entry tickets.</li>
+                <li class="list-group-item"><i class="bi bi-telephone-fill text-danger me-2"></i> Personal expenses (calls, shopping, etc.).</li>
+                <li class="list-group-item"><i class="bi bi-cup-straw text-danger me-2"></i> Drinks, snacks & meals not included.</li>
+                <li class="list-group-item"><i class="bi bi-egg-fried text-danger me-2"></i> Lunches.</li>
+                <li class="list-group-item"><i class="bi bi-percent text-danger me-2"></i> 5% GST.</li>
+                <li class="list-group-item"><i class="bi bi-question-circle-fill text-danger me-2"></i> Anything not mentioned in “Included”.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" style="background-image: url('../images/kullu-bg.png');">
+      <h2 class="faq-heading">Itinerary</h2>
+      <div class="faq-container">
+
+        <!-- DAY 1 -->
+        <div class="faq-card active" data-aos="fade-up">
+          <div class="faq-question">
+            <span>DAY 1 - ARRIVAL IN KULLU</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            <ul>
+              <li>Arrive in <strong>Kullu</strong> and check-in at hotel.</li>
+              <li>Evening riverside walk and leisure.</li>
+              <li>Overnight stay in Kullu.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DAY 2 -->
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>DAY 2 - NAGGAR & HERITAGE TOUR</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            <ul>
+              <li>Visit <strong>Naggar Castle</strong> & Roerich Art Gallery.</li>
+              <li>Explore quaint villages & local handicrafts.</li>
+              <li>Overnight stay in Kullu.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DAY 3 -->
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>DAY 3 - MANIKARAN & KASOL</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            <ul>
+              <li>Day trip to <strong>Manikaran Sahib</strong> hot springs & Gurudwara.</li>
+              <li>Explore <strong>Kasol</strong>, the “Mini Israel of India”.</li>
+              <li>Return to Kullu for overnight stay.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DAY 4 -->
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>DAY 4 - TIRTHAN VALLEY ESCAPE</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            <ul>
+              <li>Excursion to <strong>Tirthan Valley</strong>.</li>
+              <li>Riverside leisure & optional trout fishing.</li>
+              <li>Overnight stay in Tirthan/Kullu.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DAY 5 -->
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>DAY 5 - GREAT HIMALAYAN NATIONAL PARK</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            <ul>
+              <li>Nature walk & forest trail inside <strong>GHNP</strong>.</li>
+              <li>Picnic lunch surrounded by Himalayan wilderness.</li>
+              <li>Return to hotel, overnight in Kullu.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DAY 6 -->
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>DAY 6 - TEMPLES & VILLAGES</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            <ul>
+              <li>Seek blessings at <strong>Bijli Mahadev</strong> & <strong>Raghunath Temple</strong>.</li>
+              <li>Explore traditional Himachali villages around <strong>Kais</strong>.</li>
+              <li>Overnight stay in Kullu.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DAY 7 -->
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>DAY 7 - DEPARTURE</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            <ul>
+              <li>Breakfast & check-out.</li>
+              <li>Departure with memories of <strong>Kullu Explorer</strong>.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Right Form + Slider + Map -->
+    <div class="form-container" data-aos="fade-left">
+      <div class="form-box" data-aos="fade-up">
+    <h3>TOUR ENQUIRY</h3>
+    <form action="https://formspree.io/f/mrblvqzv" method="POST">
+      <input type="text" name="name" placeholder="Name" required data-aos="fade-up">
+      <input type="tel" name="phone" placeholder="Phone" required data-aos="fade-up">
+      <input type="email" name="email" placeholder="Email" required data-aos="fade-up">
+      <input type="date" name="date" required data-aos="fade-up">
+      <select name="package" required data-aos="fade-up">
+        <option value="">Select Package</option>
+        <option value="basic">Basic Package</option>
+        <option value="premium">Premium Package</option>
+        <option value="luxury">Luxury Package</option>
+      </select>
+      <button type="submit" data-aos="zoom-in">Submit</button>
+    </form>
+  </div>
+
+
+      <!-- Slider below form -->
+      <div class="slider-container" data-aos="fade-up">
+        <h3 class="slider-heading">Explore Tours</h3>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" data-aos="zoom-in">
+    <a href="manali.html" target="_blank">
+      <img src="../images/rafting.jpg" alt="Manali" />
+      <div class="slide-text" data-aos="fade-up" data-aos-delay="200">Adventure Escape in Manali</div>
+    </a>
+  </div>
+
+  <div class="swiper-slide" data-aos="zoom-in">
+    <a href="manali.html" target="_blank">
+      <img src="../images/paragliding1.jpg" alt="paragliding in manali" />
+      <div class="slide-text" data-aos="fade-up" data-aos-delay="500">Explore Manali</div>
+    </a>
+  </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="explore-section" style="margin-top: 15px;" data-aos="fade-up">
+        <h3 class="slider-heading">Explore Manali</h3>
+        <div class="explore-map">
+          <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26997.521732068573!2d77.16652016291825!3d32.23950667848006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39048708163fd03f%3A0x8129a80ebe5076cd!2sManali%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1755429781571!5m2!1sen!2sin" 
+              width="100%" 
+              height="450" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Cancellation Policy Card -->
+  <div class="cancellation-policy" data-aos="fade-up">
+    <h3>Cancellation Policy</h3>
+    <ul>
+      <li>If you cancel 30 days or more before your trip, a cancellation fee of <strong>15.0%</strong> of the entire tour cost will be charged.</li>
+      <li>If you cancel between 15 and 30 days before your trip, a cancellation fee of <strong>25.0%</strong> of the total tour cost will be charged.</li>
+      <li>If you cancel 7 to 15 days before your trip, a cancellation fee of <strong>50.0%</strong> of the total tour cost will be charged.</li>
+      <li>If you cancel between 0 and 7 days before your departure date, a cancellation fee of <strong>100.0%</strong> of the total tour cost will be charged.</li>
+    </ul>
+  </div>
+
+  <!-- Important Note Card -->
+  <div class="important-note" data-aos="fade-up">
+    <h3>Important Note</h3>
+    <p>This revised itinerary condenses the experience into 6 nights and 7 days while retaining the essence of <strong>“Manali Delights.”</strong> Travelers will still have the opportunity to explore the best of Manali’s natural beauty, culture, and adventure.</p>
+  </div>
+
+    </div>
+  </div>
+
+
+  <!-- Offer Section -->
+  <section class="offer-section" data-aos="fade-down" data-aos-delay="300">
+    <div class="offer-box">
+      <div class="offer-left" data-aos="fade-up" data-aos-delay="400">
+        <img src="../images/group.jpg" alt="Offer">
+        <div class="offer-text" data-aos="fade-down" data-aos-delay="500">
+          <h2>Bigger Group? Get special offers upto 50% off!</h2>
+          <p>We create unforgettable adventures, customized for your group.</p>
+        </div>
+      </div>
+      <!-- Button -->
+      <button class="offer-btn" id="offerBtn">Request a Callback</button>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="offerModal" class="modal-overlay">
+    <div class="modal-box">
+      <span class="close-btn">&times;</span>
+      <h3>Connect with a group tour expert</h3>
+      <!-- form -->
+      <form action="https://formspree.io/f/mrblvqzv" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="tel" name="phone" placeholder="Phone" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <div class="form-row">
+          <input type="date" name="date" placeholder="Travel Date">
+          <input type="number" name="travellers" placeholder="Traveller Count">
+        </div>
+        <textarea name="message" placeholder="Please let me know about the trip"></textarea>
+        <button type="submit">Get A Callback</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float" onclick="toggleChat()">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <!-- Overlay -->
+    <div class="chat-overlay" id="chatOverlay" onclick="toggleChat()"></div>
+
+    <!-- Chat Box -->
+    <div class="chat-box" id="chatBox">
+      <div class="chat-header">
+        <span><i class="fab fa-whatsapp"></i> WhatsApp</span>
+        <span class="close-btn" onclick="toggleChat()"><i class="fas fa-times"></i></span>
+      </div>
+      <div class="chat-body">
+        <div class="chat-msg">
+          Hello 👋 <br>
+          How can we help you?
+        </div>
+      </div>
+      <div class="chat-footer">
+        <div class="whatsapp-btn-wrapper">
+          <button class="open-chat-btn" onclick="openWhatsApp()">
+            Open chat <i class="fas fa-paper-plane"></i>
+          </button>
+
+          <!-- QR Popup -->
+          <div class="qr-popup">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/917018434170?text=Hi%20I’d%20like%20to%20know%20more%20about%20your%20travel%20packages" alt="WhatsApp QR">
+            <p>Scan me 👆</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-4 bg-dark text-white">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h5 class="fw-bold">HimEase</h5>
+            <p class="text-white-50">Making travel effortless with curated, transparent packages.</p>
+          </div>
+          <div class="col-md-4">
+            <h6 class="fw-semibold">Quick Links</h6>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="#">Destinations</a></li>
+              <li><a href="tours.html">Tours</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6 class="fw-semibold">Follow</h6>
+            <div class="d-flex gap-3 fs-5">
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="border-secondary my-4">
+        <div class="d-flex justify-content-between small text-white-50">
+          <span>© <span id="year"></span> HimEase. All rights reserved.</span>
+          <span>Built with ♥ by Rishav</span>
+        </div>
+      </div>
+    </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <!-- Include Swiper CSS & JS in your <head> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Swiper CSS & JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800, // animation speed
+      once: true,    // animate only once
+      offset: 100    // trigger point before element enters viewport
+    });
+  </script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 4000, // 4 seconds
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const cards = Array.from(document.querySelectorAll(".faq-card"));
+
+    // helper to set max-height with !important
+    const setMax = (el, val) => el.style.setProperty("max-height", val, "important");
+
+    const openCard = (card) => {
+      const ans = card.querySelector(".faq-answer");
+      // close others
+      cards.forEach(c => { if (c !== card) closeCard(c); });
+
+      card.classList.add("active");
+      ans.style.padding = "15px 20px 20px";
+      setMax(ans, ans.scrollHeight + "px");
+
+      ans.addEventListener("transitionend", function tidy(e){
+        if (e.propertyName === "max-height" && card.classList.contains("active")) {
+          setMax(ans, "none");
+          ans.removeEventListener("transitionend", tidy);
+        }
+      });
+    };
+
+    const closeCard = (card) => {
+      const ans = card.querySelector(".faq-answer");
+      if (!card.classList.contains("active")) return;
+
+      setMax(ans, ans.scrollHeight + "px");
+      void ans.offsetHeight; // force reflow
+      setMax(ans, "0px");
+      ans.style.padding = "0 20px";
+      card.classList.remove("active");
+    };
+
+    // click handlers
+    cards.forEach(card => {
+      const q = card.querySelector(".faq-question");
+      q.addEventListener("click", () => {
+        if (card.classList.contains("active")) {
+          closeCard(card);
+        } else {
+          openCard(card);
+        }
+      });
+    });
+
+    // keep first card open by default
+    if (cards.length) openCard(cards[0]);
+
+    // re-measure when viewport changes
+    const adjustOpen = () => {
+      const openAns = document.querySelector(".faq-card.active .faq-answer");
+      if (openAns) {
+        setMax(openAns, openAns.scrollHeight + "px");
+        setTimeout(() => setMax(openAns, "none"), 410);
+      }
+    };
+    window.addEventListener("resize", adjustOpen);
+    window.addEventListener("load", adjustOpen);
+
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(adjustOpen).catch(()=>{});
+    }
+
+    // ====== PACKAGE TABS HANDLING ======
+    const packageTabs = document.querySelectorAll('#packageTabs .nav-link');
+    packageTabs.forEach(tab => {
+      tab.addEventListener('shown.bs.tab', (e) => {
+        const target = e.target.getAttribute('href'); // e.g., #pkg1
+        const faqCardsInTab = document.querySelectorAll(`${target} .faq-card`);
+        // close all FAQ cards in this tab
+        faqCardsInTab.forEach(c => {
+          const ans = c.querySelector(".faq-answer");
+          c.classList.remove('active');
+          ans.style.padding = "0 20px";
+          setMax(ans, "0px");
+        });
+        // open first FAQ in the newly shown tab
+        if(faqCardsInTab.length > 0){
+          const firstCard = faqCardsInTab[0];
+          openCard(firstCard);
+        }
+      });
+    });
+  });
+  </script>
+
+
+  <script>
+    const offerModal = document.getElementById("offerModal");
+    const closeBtn = offerModal.querySelector(".close-btn");
+
+    // Select all buttons with class "offer-btn"
+    const offerBtns = document.querySelectorAll(".offer-btn");
+
+    // Loop through each button and attach event listener
+    offerBtns.forEach(btn => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault(); // stops <a> from jumping
+        offerModal.style.display = "flex";
+      });
+    });
+
+    // Close modal
+    closeBtn.addEventListener("click", () => {
+      offerModal.style.display = "none";
+    });
+
+    // Close on outside click
+    window.addEventListener("click", (e) => {
+      if (e.target === offerModal) {
+        offerModal.style.display = "none";
+      }
+    });
+  </script>
+
+  <script>
+      function toggleChat() {
+        const chatBox = document.getElementById("chatBox");
+        const overlay = document.getElementById("chatOverlay");
+        chatBox.classList.toggle("show");
+        overlay.classList.toggle("show");
+      }
+
+      function openWhatsApp() {
+        let phoneNumber = "917018434170"; // Change to your WhatsApp number
+        let msg = "Hi, I’d like to know more about your travel packages.";
+        let url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(msg)}`;
+        window.open(url, "_blank");
+      }
+    </script>
+
+    <!-- JavaScript for dynamic price -->
+  <script>
+    const tabs = document.querySelectorAll('#packageTabs .nav-link');
+    const priceSticker = document.getElementById('priceSticker');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('shown.bs.tab', (e) => {
+        const price = e.target.getAttribute('data-price');
+        priceSticker.innerHTML = `<i class="fa-solid fa-hand-holding-dollar me-2"></i> ₹${price} | Person`;
+      });
+    });
+  </script>
+  </body>
+  </html>
