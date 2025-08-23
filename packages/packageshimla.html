@@ -104,67 +104,64 @@
 </head>
 <body>
 
-  <!-- Header / Navbar -->
-<header class="sticky-top shadow-sm bg-white">
-  <nav class="navbar navbar-expand-lg container py-2">
-    <!-- Left: Logo -->
-    <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="../index.html">
-      <img src="../images/racing1.png" alt="WheelsOnMiles Logo" width="50" height="50">
-      <span>Miles<span class="text-primary">On</span>Wheel</span>
+   <!-- Header / Navbar -->
+  <header class="sticky-top shadow-sm bg-white">
+    <nav class="navbar navbar-expand-lg container py-2">
+      <!-- Left: Logo -->
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="../index.html">
+        <img src="../images/racing1.png" alt="WheelsOnMiles Logo" width="50" height="50">
+        <span>Miles<span class="text-primary">On</span>Wheel</span>
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Center: Nav links -->
+      <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+        <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../aboutus.html">About Us</a></li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="destinationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Destinations <i class="fa-solid fa-angle-down ms-1"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="destinationsDropdown">
+              <li><a class="dropdown-item" href="../destinations/manali.html">Manali</a></li>
+              <li><a class="dropdown-item" href="../destinations/shimla.html">Shimla</a></li>
+              <li><a class="dropdown-item" href="../destinations/kinnaur.html">Kinnaur</a></li>
+              <li><a class="dropdown-item" href="../destinations/kangra.html">Dharamshala / Kangra</a></li>
+              <li><a class="dropdown-item" href="../destinations/kullu.html">Kullu</a></li>
+              <li><a class="dropdown-item" href="../destinations/spiti.html">Spiti</a></li>
+              <li><a class="dropdown-item" href="../destinations/ladakh.html">Ladakh</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle active" href="#" id="packagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Packages <i class="fa-solid fa-angle-down ms-1"></i>
     </a>
+    <ul class="dropdown-menu" aria-labelledby="packagesDropdown">
+      <li><a class="dropdown-item active" href="../tours.html">Himachal Tour Packages</a></li>
+      <li><a class="dropdown-item" href="#">Himachal Trek Packages</a></li>
+      <li><a class="dropdown-item" href="#">Ladakh Packages</a></li>
+    </ul>
+  </li>
 
-    <!-- Mobile Toggle -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+          <li class="nav-item"><a class="nav-link" href="../contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="../termsconditions.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
 
-    <!-- Center: Nav links -->
-    <div class="collapse navbar-collapse justify-content-center" id="navMenu">
-      <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-3">
-        <li class="nav-item"><a class="nav-link" href="../index.html">HOME</a></li>
-        <li class="nav-item"><a class="nav-link" href="../aboutus.html">ABOUT US</a></li>
-
-        <!-- Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="destinationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            DESTINATIONS <i class="fa-solid fa-angle-down ms-1"></i>
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="destinationsDropdown">
-            <li><a class="dropdown-item" href="../destinations/manali.html">Manali</a></li>
-            <li><a class="dropdown-item" href="../destinations/shimla.html">Shimla</a></li>
-            <li><a class="dropdown-item" href="../destinations/kinnaur.html">Kinnaur</a></li>
-            <li><a class="dropdown-item" href="../destinations/kangra.html">Dharamshala / Kangra</a></li>
-            <li><a class="dropdown-item" href="../destinations/kullu.html">Kullu</a></li>
-            <li><a class="dropdown-item" href="../destinations/spiti.html">Spiti</a></li>
-            <li><a class="dropdown-item" href="../destinations/ladakh.html">Ladakh</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle active" href="#" id="packagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    EXPLORE PACKAGES <i class="fa-solid fa-angle-down ms-1"></i>
-  </a>
-  <ul class="dropdown-menu" aria-labelledby="packagesDropdown">
-    <li><a class="dropdown-item active" href="../tours.html">Himachal Tour Packages</a></li>
-    <li><a class="dropdown-item" href="../packages/honeymoon.html">Honeymoon Packages</a></li>
-    <li><a class="dropdown-item" href="../packages/adventure.html">Adventure Packages</a></li>
-    <li><a class="dropdown-item" href="../packages/family.html">Family Packages</a></li>
-    <li><a class="dropdown-item" href="../packages/group.html">Group Packages</a></li>
-    <li><a class="dropdown-item" href="../packages/weekend.html">Weekend Getaways</a></li>
-  </ul>
-</li>
-
-        <li class="nav-item"><a class="nav-link" href="../contact.html">CONTACT US</a></li>
-        <li class="nav-item"><a class="nav-link" href="../termsconditions.html">TERMS & CONDITIONS</a></li>
-      </ul>
-    </div>
-
-    <!-- Right: Call Now Button -->
-    <div class="d-none d-lg-block ms-auto">
-  <a href="tel:+917018434170" class="call-btn">CALL NOW</a>
-</div>
-  </nav>
-</header>
+      <!-- Right: Call Now Button -->
+      <div class="d-none d-lg-block ms-auto">
+    <a href="tel:+917018434170" class="call-btn">CALL NOW</a>
+  </div>
+    </nav>
+  </header>
 
 
 <!-- About Us Section -->
