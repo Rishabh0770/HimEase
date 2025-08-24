@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>The Ultimate Himachal Travel Guide</title>
+  <title>All Blogs</title>
   <meta name="description" content="Plan trips, discover destinations, and book curated travel packages." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,6 +28,105 @@
   text-align: center;
   height: 65vh;
 }
+.post-box {
+  background: #fff;
+  padding: 0;
+}
+
+.post-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.post-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0 2px;  /* title ke neeche sirf 2px gap */
+  line-height: 1.3;
+}
+
+.post-meta {
+  font-size: 11px;
+  color: #6c757d;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  margin: 0 0 2px;     /* neeche ka gap aur chhota */
+  line-height: 1.2;    /* lines tight ho gayi */
+}
+
+.post-excerpt {
+  font-size: 14px;
+  color: #444;
+  margin: 0 0 5px;     /* top 0 rakha taki meta k sath chipak jaye */
+  line-height: 1.5;
+}
+
+.continue-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.continue-link:hover {
+  text-decoration: underline;
+}
+/* ===============================
+   Responsive Design (Blog Section)
+   =============================== */
+@media (max-width: 767px) {
+  .post-box {
+    padding: 8px;                /* thoda padding for breathing space */
+    margin-bottom: 15px;         /* har card ke beech space */
+  }
+
+  .post-title {
+    font-size: 16px;             /* mobile pe thoda chhota */
+    margin: 8px 0 2px;
+  }
+
+  .post-meta {
+    font-size: 10px;             /* aur chhota, tight look */
+    margin: 0 0 4px;
+  }
+
+  .post-excerpt {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .continue-link {
+    font-size: 13px;
+  }
+
+  /* column ko ek hi row me laao */
+  .row.g-4 > [class*="col-"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* images ko rounded aur thoda spacing */
+  .post-box img {
+    border-radius: 6px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-title {
+    font-size: 15px;
+  }
+
+  .post-excerpt {
+    font-size: 12.5px;
+  }
+
+  .continue-link {
+    font-size: 12.5px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -94,194 +193,61 @@
   <!-- About Us Section -->
 <section class="about-section text-center">
   <div class="container">
-    <h1 data-aos="fade-up" data-aos-duration="1000" style="font-family: Viga, Sans-serif; text-transform: uppercase; font-weight: 600;">The Ultimate Himachal Travel Guide</h1>
-    
-    <!-- Meta Info -->
-    <div class="post-meta mt-3">
-      <span><i class="fa-solid fa-user"></i> By Rishav Kumar</span>
-      <span><i class="fa-solid fa-calendar-days"></i> March 16, 2025</span>
-      <span><i class="fa-solid fa-comments"></i> No Comments</span>
-    </div>
+    <h1 data-aos="fade-up" data-aos-duration="1000" style="font-family: Viga, Sans-serif; text-transform: uppercase; font-weight: 600;">Author: Rishav Kumar</h1>
   </div>
 </section>
-
-
 
 <!-- Section with AOS Effects -->
 <div class="section-container" data-aos="fade-up">
 
   <!-- Left Text -->
   <div class="content" data-aos="fade-up">
+<!-- Left Blog Posts Section -->
+<div class="row g-4">
 
-    <!-- Image Row -->
-    <div class="image-row">
-      <div class="img-box-1" data-aos="fade-right" data-aos-delay="100">
-        <img src="../images/himachal-blog.png" alt="Himachal View">
-      </div>
+  <!-- Blog Post 1 -->
+  <div class="col-md-6" data-aos="fade-up">
+    <div class="post-box">
+      <img src="../images/himachal-blog.png" alt="The Ultimate Himachal Travel Guide" class="img-fluid">
+      <h4 class="post-title">The Ultimate Himachal Travel Guide</h4>
+      <p class="post-meta">Rishav Kumar | March 16, 2025 | No Comments</p>
+      <p class="post-excerpt">
+        Planning a trip to Himachal? Look no further! At MilesOnWheel, based in the heart of Himachal, we’re here to make your journey unforgettable.
+      </p>
+      <a href="./blog1.html" class="continue-link">Continue Reading..</a>
     </div>
-
-    <p>Planning a trip to Himachal Pradesh? Look no further! At&nbsp;<strong>The MilesOnWheel</strong>, based in the heart of Shimla, we’re here to make your journey to this “Abode of Gods” unforgettable. Whether you’re a first-time visitor or a seasoned traveler, this detailed guide will help you explore the best of Himachal, from its iconic destinations to hidden gems. Let’s dive in!</p>
-
-    <hr class="wp-block-separator has-alpha-channel-opacity"/>
-
-    <h4 class="wp-block-heading"><strong>Why Visit Himachal Pradesh?</strong></h4>
-
-    <p>Himachal Pradesh is a land of breathtaking landscapes, with snow-capped mountains, lush valleys, rivers, and rich cultural heritage. It’s a destination that offers something for everyone – from romantic getaways and family vacations to adventure-packed trips and spiritual retreats.</p>
-
-    <hr class="wp-block-separator has-alpha-channel-opacity"/>
-
-    <h4 class="wp-block-heading"><strong>Top Places to Visit in Himachal</strong></h4>
-
-    <ol start="1" class="wp-block-list">
-      <li><strong>Shimla</strong>
-        <ul>
-          <li><strong>Mall Road</strong>: Enjoy a leisurely stroll along Shimla's iconic Mall Road with shops, cafes, and colonial architecture.</li>
-          <li><strong>The Ridge</strong>: A central hub with panoramic views of the surrounding mountains and heritage buildings.</li>
-          <li><strong>Jakhoo Temple</strong>: Visit this famous hilltop Hanuman temple for spiritual vibes and stunning views.</li>
-        </ul>
-        <em>Plan your Shimla trip with us: <a href="#" target="_blank" rel="noreferrer noopener">The MilesOnWheel Shimla Tours</a></em>
-      </li>
-
-      <li><strong>Manali</strong>
-        <ul>
-          <li><strong>Solang Valley</strong>: Adventure hub for paragliding, zorbing, and skiing in winter.</li>
-          <li><strong>Rohtang Pass</strong>: Explore snow-capped peaks and panoramic landscapes.</li>
-          <li><strong>Old Manali</strong>: Experience cozy cafes, trekking, and the local vibe.</li>
-        </ul>
-        <em>Book your Manali adventure: <a href="#" target="_blank" rel="noreferrer noopener">The MilesOnWheel Manali Packages</a></em>
-      </li>
-
-      <li><strong>Dharamshala</strong>
-        <ul>
-          <li><strong>McLeod Ganj</strong>: Explore Tibetan culture, monasteries, and the Dalai Lama Temple.</li>
-          <li><strong>Trekking Trails</strong>: Visit Triund and Kareri Lake for breathtaking treks.</li>
-          <li><strong>Bhagsu Waterfall</strong>: Enjoy nature walks and scenic beauty.</li>
-        </ul>
-        <em>Explore Dharamshala with us: <a href="#" target="_blank" rel="noreferrer noopener">The MilesOnWheel Dharamshala Tours</a></em>
-      </li>
-
-      <li><strong>Kullu</strong>
-        <ul>
-          <li><strong>Great Himalayan National Park</strong>: Trek through the pristine forest and spot wildlife.</li>
-          <li><strong>River Rafting</strong>: Experience thrilling rafting on the Beas River.</li>
-          <li><strong>Local Markets</strong>: Shop for Kullu shawls, handicrafts, and souvenirs.</li>
-        </ul>
-        <em>Plan your Kullu trip: <a href="#" target="_blank" rel="noreferrer noopener">The MilesOnWheel Kullu Adventures</a></em>
-      </li>
-    </ol>
-
-    <hr class="wp-block-separator has-alpha-channel-opacity"/>
-
-    <h4 class="wp-block-heading"><strong>Top Activities in Himachal</strong></h4>
-
-    <ol start="1" class="wp-block-list">
-      <li><strong>Paragliding in Bir Billing</strong><br>Experience one of the best paragliding spots in the world with breathtaking views.</li>
-
-      <li><strong>Skiing in Solang Valley</strong><br>Whether a beginner or a pro, Solang’s slopes offer the perfect skiing experience.</li>
-
-      <li><strong>Trekking in Himachal</strong><br>From Triund to Hampta Pass, Himachal offers some of the most scenic trekking routes.</li>
-
-      <li><strong>Exploring Local Culture</strong><br>Visit local markets, try Himachali cuisine, and shop for handicrafts, woolens, and souvenirs.</li>
-    </ol>
-
-    <hr class="wp-block-separator has-alpha-channel-opacity"/>
-
-    <h4 class="wp-block-heading"><strong>Best Time to Visit Himachal</strong></h4>
-
-    <ul class="wp-block-list">
-      <li><strong>Spring (March to May)</strong>: Perfect for blooming flowers and pleasant weather.</li>
-      <li><strong>Summer (June to August)</strong>: Ideal for sightseeing and outdoor activities.</li>
-      <li><strong>Autumn (September to November)</strong>: Enjoy the golden landscapes and apple harvest season.</li>
-      <li><strong>Winter (December to February)</strong>: Experience snowfall, skiing, and cozy winter retreats.</li>
-    </ul>
-
-    <p><em>Check out our seasonal packages:&nbsp;<a href="#" target="_blank" rel="noreferrer noopener">MilesOnWheel Seasonal Tours</a></em></p>
-
-    <hr class="wp-block-separator has-alpha-channel-opacity"/>
-
-    <h4 class="wp-block-heading"><strong>Travel Tips for Himachal</strong></h4>
-
-    <ul class="wp-block-list">
-      <li><strong>Pack Wisely</strong>: Carry warm clothes for winters and comfortable shoes for trekking.</li>
-      <li><strong>Stay Connected</strong>: Mobile network may be weak in remote areas.</li>
-      <li><strong>Respect Local Culture</strong>: Dress modestly and follow local customs.</li>
-      <li><strong>Book in Advance</strong>: During peak seasons, accommodations and activities fill up quickly.</li>
-    </ul>
-
-    <hr class="wp-block-separator has-alpha-channel-opacity"/>
-
-    <h4 class="wp-block-heading"><strong>Why Choose MilesOnWheel?</strong></h4>
-
-    <ul class="wp-block-list">
-      <li><strong>Local Expertise</strong>: Based in Shimla, we know Himachal like the back of our hand.</li>
-      <li><strong>Customized Packages</strong>: Tailor-made itineraries to suit your preferences.</li>
-      <li><strong>Hassle-Free Travel</strong>: From accommodations to transportation, we take care of everything.</li>
-      <li><strong>24/7 Support</strong>: Our team is always available to assist you during your trip.</li>
-    </ul>
-
-    <p><em>Follow us on Instagram for travel inspiration and updates:&nbsp;<a href="#" target="_blank" rel="noreferrer noopener">@milesonwheel.com</a></em></p>
-
-    <hr class="wp-block-separator has-alpha-channel-opacity"/>
-
-     <h4 class="wp-block-heading"><strong>Book Your Himachal Adventure Today!</strong></h4>
-
-    <p>Ready to explore Himachal Pradesh? Let <strong>The MilesOnWheel</strong> be your guide. Visit our website or contact us to plan your dream trip:</p>
-
-    <ul class="wp-block-list">
-      <li><strong>Website</strong>: <a href="#" target="_blank" rel="noreferrer noopener">www.milesonwheel.com</a></li>
-      <li><strong>Email</strong>: <a href="#" target="_blank" rel="noreferrer noopener">contact@milesonwheel.com</a></li>
-      <li><strong>Phone</strong>: +91 9876-543-210</li>
-    </ul>
-
-    <p>Himachal Pradesh is waiting for you – let’s make your journey unforgettable!</p>
-
-    <!-- Social Media Icons -->
-   <div class="social-icons">
-  <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-  <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-  <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-  <a href="#" class="pinterest"><i class="fab fa-pinterest"></i></a>
-</div>
-
-
-    <!-- User Info -->
-    <div class="user-box">
-      <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="User" />
-      <div class="user-info">
-        <h4>Rishav Kumar</h4>
-        <a href="./allblogs.html">VIEW ALL POSTS &gt;</a>
-      </div>
-    </div>
-
-    <hr class="wp-block-separator has-alpha-channel-opacity"/>
-
-<!-- Comment Form -->
-<div class="comment-form">
-  <h3>Leave a Reply</h3>
-  <p>Your email address will not be published. Required fields are marked *</p>
-
-  <form action="https://formspree.io/f/mrblvqzv" method="POST">
-  <label for="comment">Comment *</label>
-  <textarea id="comment" name="comment" rows="5" required></textarea>
-
-  <label for="name">Name *</label>
-  <input type="text" id="name" name="name" required>
-
-  <label for="email">Email *</label>
-  <input type="email" id="email" name="email" required>
-
-  <label for="phone">Phone Number *</label>
-  <input type="tel" id="phone" name="phone" required>
-
-  <div class="checkbox-row">
-    <input type="checkbox" id="save-info">
-    <label for="save-info">Save my info for next time.</label>
   </div>
 
-  <button type="submit" class="btn-submit">Post Reply</button>
-</form>
+  <!-- Blog Post 2 -->
+  <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+    <div class="post-box">
+      <img src="../images/blog-2.jpg" alt="The MilesOnWheel: Trusted Travel Partner" class="img-fluid">
+      <h4 class="post-title">The MilesOnWheel: Your Trusted Travel Partner In Himachal</h4>
+      <p class="post-meta">Rishav Kumar | May 28, 2025 | No Comments</p>
+      <p class="post-excerpt">
+        Planning a trip can be overwhelming, from finding the right destinations to booking accommodations and managing itineraries. This is where MilesOnWheel steps in.
+      </p>
+      <a href="./blog2.html" class="continue-link">Continue Reading..</a>
+    </div>
+  </div>
+
+  <!-- Blog Post 3 -->
+  <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+    <div class="post-box">
+      <img src="../images/blog3.png" alt="Top 04 Destinations to Visit in Himachal" class="img-fluid">
+      <h4 class="post-title">The Ultimate Himachal Travel Guide</h4>
+
+      <p class="post-meta">Rishav Kumar | December 01, 2024 | No Comments</p>
+      <p class="post-excerpt">
+        Himachal, often called "Paradise on Earth", offers a stunning blend of natural beauty, rich culture, and adventure. Here are the top 4 destinations.
+      </p>
+      <a href="./blog3.html" class="continue-link">Continue Reading..</a>
+    </div>
+  </div>
 
 </div>
+
+   
 
   </div>
 
