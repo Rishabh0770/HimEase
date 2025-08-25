@@ -1473,3 +1473,10 @@ textarea {
     margin-right: 10px; /* adjust px as needed */
   }
 }
+
+/* Hide subheading on mobile */
+@media (max-width: 991px) {
+  .navbar-brand small {
+    display: none;
+  }
+}
