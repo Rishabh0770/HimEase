@@ -6,24 +6,75 @@
   <title>WhatsApp Chat Clone</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    /* Floating WhatsApp button */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      color: white;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 28px;
-      cursor: pointer;
-      box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
-      z-index: 1000;
-    }
+/* Floating WhatsApp button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+  z-index: 1000;
+
+  /* Animation */
+  animation: pulse 2s infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+/* Dono icons ke liye default */
+.whatsapp-float i {
+  position: absolute;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Message icon hidden by default */
+.msg-icon {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+/* Hover pe effects */
+.whatsapp-float:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 25px rgba(37, 211, 102, 0.9), 
+              0 0 50px rgba(37, 211, 102, 0.6);
+  animation: bounce 0.6s;
+}
+
+/* WhatsApp se Message icon switch */
+.whatsapp-float:hover .whatsapp-icon {
+  opacity: 0;
+  transform: scale(0.5) rotate(-180deg);
+}
+
+.whatsapp-float:hover .msg-icon {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+  70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+/* Bounce effect */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-8px); }
+  60% { transform: translateY(-4px); }
+}
+
 
     /* Overlay */
     .chat-overlay {
@@ -227,9 +278,12 @@
 <body>
 
   <!-- WhatsApp Floating Button -->
-  <div class="whatsapp-float" onclick="toggleChat()">
-    <i class="fab fa-whatsapp"></i>
-  </div>
+  <!-- Floating WhatsApp button -->
+<div class="whatsapp-float" onclick="toggleChat()">
+  <i class="fab fa-whatsapp whatsapp-icon"></i>
+  <i class="fas fa-comment-alt msg-icon"></i>
+</div>
+
 
   <!-- Overlay -->
   <div class="chat-overlay" id="chatOverlay" onclick="toggleChat()"></div>
