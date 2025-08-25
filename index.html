@@ -48,7 +48,7 @@
   <!-- Custom Styles -->
   <link rel="stylesheet" href="./styles.css" />
   <link rel="stylesheet" href="whatsapp.css">
-
+  
   <!-- Schema Markup for SEO -->
   <script type="application/ld+json">
   {
@@ -88,16 +88,23 @@
     </div>
 
     <!-- Hamburger (Right on Mobile) -->
-    <button 
-      class="navbar-toggler d-lg-none" 
-      type="button" 
-      data-bs-toggle="collapse" 
-      data-bs-target="#navMenu" 
-      aria-controls="navMenu" 
-      aria-expanded="false" 
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<!-- Navbar Toggler with Grid Dots -->
+<button class="navbar-toggler d-lg-none custom-toggler collapsed" 
+        type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" 
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+  <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#121331" viewBox="0 0 24 24">
+    <circle cx="5" cy="5" r="2"/>
+    <circle cx="12" cy="5" r="2"/>
+    <circle cx="19" cy="5" r="2"/>
+    <circle cx="5" cy="12" r="2"/>
+    <circle cx="12" cy="12" r="2"/>
+    <circle cx="19" cy="12" r="2"/>
+    <circle cx="5" cy="19" r="2"/>
+    <circle cx="12" cy="19" r="2"/>
+    <circle cx="19" cy="19" r="2"/>
+  </svg>
+</button>
+
 
     <!-- Desktop Brand + Menu -->
     <div class="collapse navbar-collapse justify-content-center" id="navMenu">
