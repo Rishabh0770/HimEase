@@ -75,23 +75,21 @@
 <body>
 <!-- ================= HEADER / NAVBAR ================= -->
 <header class="sticky-top shadow-sm bg-white">
-  <nav class="navbar navbar-expand-lg container py-2">
-    
-    <!-- Logo (Left) -->
-<a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
-  <!-- Logo Image -->
-  <img src="images/logo-1.0.PNG" alt="MilesOnWheel Logo" width="50" height="50" loading="lazy">
-  
-  <!-- Text + Subheading -->
-  <div class="ms-2 d-flex flex-column">
-    <span>Miles<span class="text-primary">On</span>Wheel</span>
-    <small class="text-muted" style="font-size: 0.85rem;">Seamless Escapes, Infinite Stories</small>
-  </div>
-</a>
+  <nav class="navbar navbar-expand-lg container py-2 d-flex align-items-center justify-content-between">
 
-    <!-- Mobile Toggle Button -->
+    <!-- Logo (Left on Mobile) -->
+    <a class="d-flex align-items-center d-lg-none" href="index.html">
+      <img src="images/logo-1.0.PNG" alt="MilesOnWheel Logo" width="45" height="45" loading="lazy" class="logo-anim">
+    </a>
+
+    <!-- Brand Name (Center on Mobile, Text Only) -->
+    <div class="brand-center mx-auto text-center d-lg-none">
+      <span class="fw-bold brand-name">Miles<span class="text-primary">On</span>Wheel</span>
+    </div>
+
+    <!-- Hamburger (Right on Mobile) -->
     <button 
-      class="navbar-toggler" 
+      class="navbar-toggler d-lg-none" 
       type="button" 
       data-bs-toggle="collapse" 
       data-bs-target="#navMenu" 
@@ -101,32 +99,27 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Nav Links -->
+    <!-- Desktop Brand + Menu -->
     <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+      <a class="navbar-brand fw-bold d-none d-lg-flex align-items-center me-4" href="index.html">
+        <!-- Single Logo + Text for Desktop -->
+        <img src="images/logo-1.0.PNG" alt="MilesOnWheel Logo" width="50" height="50" class="me-2 logo-anim">
+        <div class="d-flex flex-column">
+          <span class="brand-name">Miles<span class="text-primary">On</span>Wheel</span>
+          <small class="brand-sub text-muted d-none d-lg-block" style="font-size: 0.85rem;">Seamless Escapes, Infinite Stories</small>
+        </div>
+      </a>
+
       <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-3">
-
-        <!-- Home -->
-        <li class="nav-item">
-          <a class="nav-link active" href="#hero">Home</a>
-        </li>
-
-        <!-- About -->
-        <li class="nav-item">
-          <a class="nav-link" href="aboutus.html">About Us</a>
-        </li>
+        <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
 
         <!-- Destinations Dropdown -->
         <li class="nav-item dropdown">
-          <a 
-            class="nav-link dropdown-toggle" 
-            href="#" 
-            id="destinationsDropdown" 
-            role="button" 
-            data-bs-toggle="dropdown" 
-            aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="destinationsDropdown" role="button" data-bs-toggle="dropdown">
             Destinations <i class="fa-solid fa-angle-down ms-1"></i>
           </a>
-          <ul class="dropdown-menu" aria-labelledby="destinationsDropdown">
+          <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="./destinations/manali.html">Manali</a></li>
             <li><a class="dropdown-item" href="./destinations/shimla.html">Shimla</a></li>
             <li><a class="dropdown-item" href="./destinations/kinnaur.html">Kinnaur</a></li>
@@ -139,45 +132,31 @@
 
         <!-- Packages Dropdown -->
         <li class="nav-item dropdown">
-          <a 
-            class="nav-link dropdown-toggle" 
-            href="#" 
-            id="packagesDropdown" 
-            role="button" 
-            data-bs-toggle="dropdown" 
-            aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="packagesDropdown" role="button" data-bs-toggle="dropdown">
             Packages <i class="fa-solid fa-angle-down ms-1"></i>
           </a>
-          <ul class="dropdown-menu" aria-labelledby="packagesDropdown">
+          <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="tours.html">Himachal Tour Packages</a></li>
             <li><a class="dropdown-item" href="#">Himachal Trek Packages</a></li>
             <li><a class="dropdown-item" href="#">Ladakh Packages</a></li>
           </ul>
         </li>
 
-        <!-- Contact -->
-        <li class="nav-item">
-          <a class="nav-link" href="./contact.html">Contact Us</a>
-        </li>
-
-        <!-- Terms -->
-        <li class="nav-item">
-          <a class="nav-link" href="./termsconditions.html">Terms & Conditions</a>
-        </li>
-
+        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="./termsconditions.html">Terms & Conditions</a></li>
       </ul>
-    </div>
 
-    <!-- Call Now Button (Right) -->
-    <div class="d-none d-lg-block ms-auto">
-      <a href="tel:+917018434170" class="btn btn-primary fw-semibold px-3 py-2 rounded-pill shadow-sm">
-        <i class="fa-solid fa-phone me-2"></i> Call Now
-      </a>
+      <!-- Call Now Button (Right Desktop) -->
+      <div class="d-none d-lg-block ms-auto">
+        <a href="tel:+917018434170" class="btn btn-primary fw-semibold px-3 py-2 rounded-pill shadow-sm">
+          <i class="fa-solid fa-phone me-2"></i> Call Now
+        </a>
+      </div>
     </div>
-
   </nav>
 </header>
 <!-- ================= END HEADER ================= -->
+
 
 <!-- Hero -->
 <section id="hero" class="hero-section position-relative overflow-hidden">

@@ -1480,3 +1480,47 @@ textarea {
     display: none;
   }
 }
+
+.brand-name {
+  display: inline-block;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideIn 2s ease-out forwards;
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Subheading Animation (upar se) */
+.brand-sub {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeSlideDown 2s ease-out forwards;
+  animation-delay: 0.5s; /* subheading thoda late aaye */
+}
+
+@keyframes fadeSlideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo-anim {
+  opacity: 0;
+  transform: rotate(-180deg) scale(0.5);
+  animation: logoSpin 2s ease-out forwards;
+}
+
+@keyframes logoSpin {
+  to {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+}
