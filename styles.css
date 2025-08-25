@@ -1571,3 +1571,10 @@ textarea {
   80% { transform: rotate(-10deg); }
   100% { transform: rotate(0deg); }
 }
+
+/* Brand (Logo + Name) gap only for desktop */
+@media (min-width: 992px) {
+  .navbar-brand {
+    margin-right: 3rem; /* sirf desktop me navlinks ke beech gap */
+  }
+}
