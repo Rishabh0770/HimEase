@@ -1461,3 +1461,15 @@ textarea {
 }
 
 
+/* Target mobile screens only */
+@media (max-width: 991px) {
+  /* Shift logo slightly right */
+  .navbar-brand {
+    margin-left: 10px; /* adjust px as needed */
+  }
+
+  /* Shift hamburger slightly left */
+  .navbar-toggler {
+    margin-right: 10px; /* adjust px as needed */
+  }
+}
