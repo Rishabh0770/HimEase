@@ -32,69 +32,80 @@
 </head>
 <body>
 
-<!-- Header / Navbar -->
+<!-- ================= HEADER / NAVBAR ================= -->
 <header class="sticky-top shadow-sm bg-white">
-  <nav class="navbar navbar-expand-lg container py-2">
-    <!-- Logo (Left) -->
-<a class="navbar-brand d-flex align-items-center fw-bold" href="../index.html">
-  <!-- Logo Image -->
-  <img src="../images/racing1.png" alt="MilesOnWheel Logo" width="50" height="50" loading="lazy">
-  
-  <!-- Text + Subheading -->
-  <div class="ms-2 d-flex flex-column">
-    <span>Miles<span class="text-primary">On</span>Wheel</span>
-    <small class="text-muted" style="font-size: 0.85rem;">Seamless Escapes, Infinite Stories</small>
-  </div>
-</a>
+  <nav class="navbar navbar-expand-lg container py-2 d-flex align-items-center justify-content-between">
 
-    <!-- Mobile Toggle -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <!-- Logo + Brand Name (Mobile & Desktop Unified) -->
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="../index.html">
+      <img src="../images/logo12345.PNG" alt="MilesOnWheel Logo" width="55" height="55" loading="lazy" class="logo-anim me-2">
+      <div class="d-flex flex-column">
+        <span class="brand-name">Miles<span class="text-primary">On</span>Wheel</span>
+        <small class="brand-sub text-muted d-none d-lg-block" style="font-size: 0.85rem;">Seamless Escapes, Infinite Stories</small>
+      </div>
+    </a>
+
+    <!-- Navbar Toggler (Mobile Only) -->
+    <button class="navbar-toggler d-lg-none custom-toggler collapsed" 
+            type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" 
+            aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#121331" viewBox="0 0 24 24">
+        <circle cx="5" cy="5" r="2"/>
+        <circle cx="12" cy="5" r="2"/>
+        <circle cx="19" cy="5" r="2"/>
+        <circle cx="5" cy="12" r="2"/>
+        <circle cx="12" cy="12" r="2"/>
+        <circle cx="19" cy="12" r="2"/>
+        <circle cx="5" cy="19" r="2"/>
+        <circle cx="12" cy="19" r="2"/>
+        <circle cx="19" cy="19" r="2"/>
+      </svg>
     </button>
 
-    <!-- Center: Nav links -->
+    <!-- Nav Menu -->
     <div class="collapse navbar-collapse justify-content-center" id="navMenu">
       <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-3">
         <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="../aboutus.html">About Us</a></li>
 
-        <!-- Dropdown -->
+        <!-- Destinations Dropdown -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" id="destinationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle active" href="#" id="destinationsDropdown" role="button" data-bs-toggle="dropdown">
             Destinations <i class="fa-solid fa-angle-down ms-1"></i>
           </a>
-          <ul class="dropdown-menu" aria-labelledby="destinationsDropdown">
+          <ul class="dropdown-menu">
             <li><a class="dropdown-item active" href="../destinations/manali.html">Manali</a></li>
             <li><a class="dropdown-item" href="../destinations/shimla.html">Shimla</a></li>
-            <li><a class="dropdown-item " href="../destinations/kinnaur.html">Kinnaur</a></li>
-            <li><a class="dropdown-item " href="../destinations/kangra.html">Dharamshala / Kangra</a></li>
-            <li><a class="dropdown-item " href="../destinations/kullu.html">Kullu</a></li>
+            <li><a class="dropdown-item" href="../destinations/kinnaur.html">Kinnaur</a></li>
+            <li><a class="dropdown-item" href="../destinations/kangra.html">Dharamshala / Kangra</a></li>
+            <li><a class="dropdown-item" href="../destinations/kullu.html">Kullu</a></li>
             <li><a class="dropdown-item" href="../destinations/spiti.html">Spiti</a></li>
-            <li><a class="dropdown-item " href="../destinations/ladakh.html">Ladakh</a></li>
+            <li><a class="dropdown-item" href="../destinations/ladakh.html">Ladakh</a></li>
           </ul>
         </li>
 
+        <!-- Packages Dropdown -->
         <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" id="packagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Packages <i class="fa-solid fa-angle-down ms-1"></i>
-  </a>
-  <ul class="dropdown-menu" aria-labelledby="packagesDropdown">
-    <li><a class="dropdown-item" href="../tours.html">Himachal Tour Packages</a></li>
-    <li><a class="dropdown-item" href="#">Himachal Trek Packages</a></li>
-    <li><a class="dropdown-item" href="#">Ladakh Packages</a></li>
-  </ul>
-</li>
+          <a class="nav-link dropdown-toggle" href="#" id="packagesDropdown" role="button" data-bs-toggle="dropdown">
+            Packages <i class="fa-solid fa-angle-down ms-1"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../tours.html">Himachal Tour Packages</a></li>
+            <li><a class="dropdown-item" href="../trek.html">Himachal Trek Packages</a></li>
+            <li><a class="dropdown-item" href="../ladakh.html">Ladakh Packages</a></li>
+          </ul>
+        </li>
 
         <li class="nav-item"><a class="nav-link" href="../contact.html">Contact Us</a></li>
         <li class="nav-item"><a class="nav-link" href="../termsconditions.html">Terms & Conditions</a></li>
       </ul>
-    </div>
 
-    <!-- Call Now Button (Right) -->
-    <div class="d-none d-lg-block ms-auto">
-      <a href="tel:+917018434170" class="btn btn-primary fw-semibold px-3 py-2 rounded-pill shadow-sm">
-        <i class="fa-solid fa-phone me-2"></i> Call Now
-      </a>
+      <!-- Call Now Button (Desktop Only) -->
+      <div class="d-none d-lg-block ms-auto">
+        <a href="tel:+917018434170" class="btn btn-primary fw-semibold px-3 py-2 rounded-pill shadow-sm">
+          <i class="fa-solid fa-phone me-2"></i> Call Now
+        </a>
+      </div>
     </div>
   </nav>
 </header>
