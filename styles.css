@@ -1497,7 +1497,7 @@ textarea {
     text-align: left;        /* left align */
     position: absolute;      /* navbar ke bottom me chipka dena */
     bottom: 5px;             /* thoda upar niche adjust kar lena */
-    left: 75px;              /* logo ke baad thoda gap */
+    left: 78px;              /* logo ke baad thoda gap */
   }
 
   /* parent <a> ko relative banana hoga */
