@@ -1498,8 +1498,6 @@ textarea {
     position: absolute;      /* navbar ke bottom me chipka dena */
     bottom: 5px;             /* thoda upar niche adjust kar lena */
     left: 75px;              /* logo ke baad thoda gap */
-    transform: none;         /* animation ke baad normal position */
-    opacity: 1;              /* animation se override na ho */
   }
 
   /* parent <a> ko relative banana hoga */
