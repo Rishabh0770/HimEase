@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MilesOnWheel — Himachal Trek Packages</title>
+  <meta name="description" content="Book best Himachal trekking packages with MilesOnWheel: Triund, Kheerganga, Hampta Pass, Bhrigu Lake, Indrahar Pass, Pin Parvati. Guided treks, camping, meals & permits included." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff', 100: '#e0f2fe', 200: '#bae6fd', 300: '#7dd3fc',
+              400: '#38bdf8', 500: '#0ea5e9', 600: '#0284c7', 700: '#0369a1',
+              800: '#075985', 900: '#0c4a6e'
+            }
+          },
+          boxShadow: { soft: '0 8px 30px rgba(2,132,199,.12)' }
+        }
+      }
+    }
+  </script>
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🥾</text></svg>">
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="MilesOnWheel — Himachal Trek Packages" />
+  <meta property="og:description" content="Guided treks in Himachal: Triund, Kheerganga, Hampta Pass, Bhrigu Lake, Indrahar, Pin Parvati." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    /* Smooth scrollbar for long itineraries */
+    .nice-scroll { scrollbar-width: thin; scrollbar-color: #94a3b8 transparent; }
+    .nice-scroll::-webkit-scrollbar { height: 8px; width: 8px; }
+    .nice-scroll::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 8px; }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 font-bold text-xl">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-brand-600 text-white shadow-soft">MW</span>
+        <span>MilesOnWheel</span>
+      </a>
+      <nav class="hidden sm:flex items-center gap-6 text-sm">
+        <a href="#treks" class="hover:text-brand-700">Treks</a>
+        <a href="#faqs" class="hover:text-brand-700">FAQs</a>
+        <a href="#booking" class="hover:text-brand-700">Book Now</a>
+        <a href="tel:+919999999999" class="px-3 py-1.5 rounded-lg bg-brand-600 text-white hover:bg-brand-700">Call: +91 99999 99999</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-brand-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <p class="uppercase tracking-widest text-brand-700 text-xs font-semibold mb-2">Himachal Pradesh • India</p>
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Himachal Trek Packages
+          <span class="block text-brand-700">Guided • Safe • All‑Inclusive</span>
+        </h1>
+        <p class="mt-4 text-slate-600">Pick from beginner‑friendly weekend hikes to legendary high‑altitude crossings. All packages include certified trek leaders, camping gear, meals, permits & first‑aid support.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#treks" class="px-5 py-3 rounded-xl bg-brand-600 text-white hover:bg-brand-700 shadow-soft">Explore Treks</a>
+          <a href="#booking" class="px-5 py-3 rounded-xl bg-white border border-slate-200 hover:border-brand-600">Get a Quote</a>
+        </div>
+        <ul class="mt-6 flex flex-wrap gap-4 text-xs text-slate-600">
+          <li class="inline-flex items-center gap-2"><span class="i">⛰️</span> Small Groups</li>
+          <li class="inline-flex items-center gap-2"><span class="i">🧭</span> Certified Guides</li>
+          <li class="inline-flex items-center gap-2"><span class="i">⛺</span> Cozy Camping</li>
+          <li class="inline-flex items-center gap-2"><span class="i">🩺</span> Basic First‑aid</li>
+        </ul>
+      </div>
+      <div class="relative">
+        <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-soft bg-[url('https://images.unsplash.com/photo-1509644851169-2acc08aa25b2?q=80&w=1600&auto=format&fit=crop')] bg-cover bg-center"></div>
+        <div class="absolute -bottom-4 -right-4 bg-white p-4 rounded-2xl shadow-soft hidden md:block">
+          <p class="text-sm font-semibold">Avg. Rating</p>
+          <p class="text-2xl">4.8/5 ⭐</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="border-y bg-white">
+    <div class="max-w-7xl mx-auto px-4 py-5">
+      <div class="grid md:grid-cols-4 gap-3">
+        <label class="col-span-2 md:col-span-1">
+          <span class="text-xs font-semibold text-slate-500">Search trek</span>
+          <input id="q" type="search" placeholder="e.g., Triund, Hampta…" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-500" />
+        </label>
+        <label>
+          <span class="text-xs font-semibold text-slate-500">Difficulty</span>
+          <select id="difficulty" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-500">
+            <option value="">Any</option>
+            <option>Easy</option>
+            <option>Moderate</option>
+            <option>Moderate to Difficult</option>
+            <option>Difficult</option>
+          </select>
+        </label>
+        <label>
+          <span class="text-xs font-semibold text-slate-500">Duration (max days)</span>
+          <input id="days" type="range" min="2" max="12" value="12" class="w-full accent-brand-600" />
+          <div class="text-xs text-slate-500"><span id="daysVal">12</span> days</div>
+        </label>
+        <label>
+          <span class="text-xs font-semibold text-slate-500">Best Season</span>
+          <select id="season" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-500">
+            <option value="">Any</option>
+            <option>Jan–Mar</option>
+            <option>Apr–Jun</option>
+            <option>Jul–Sep</option>
+            <option>Oct–Dec</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <!-- Treks Grid -->
+  <main id="treks" class="max-w-7xl mx-auto px-4 py-10">
+    <div id="cards" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </main>
+
+  <!-- Booking CTA -->
+  <section class="bg-brand-700 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold">Unsure which trek fits you?</h2>
+        <p class="text-white/80">Tell us your dates & fitness level — we'll recommend the best option.</p>
+      </div>
+      <a href="#booking" class="px-6 py-3 rounded-xl bg-white text-brand-800 font-semibold hover:bg-brand-50">Get a Free Plan</a>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section id="booking" class="max-w-7xl mx-auto px-4 py-12">
+    <div class="grid lg:grid-cols-2 gap-8">
+      <div>
+        <h3 class="text-2xl font-bold">Book / Enquire</h3>
+        <p class="text-slate-600">Fill the form and our trek expert will get back within 24 hours.</p>
+        <form id="form" class="mt-6 space-y-4 bg-white p-6 rounded-2xl border border-slate-200 shadow-soft">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <label class="block">Name
+              <input name="name" required class="w-full mt-1 rounded-xl border border-slate-300 px-3 py-2"/>
+            </label>
+            <label class="block">Phone
+              <input name="phone" required pattern="[0-9]{10}" class="w-full mt-1 rounded-xl border border-slate-300 px-3 py-2"/>
+            </label>
+            <label class="block sm:col-span-2">Email
+              <input type="email" name="email" class="w-full mt-1 rounded-xl border border-slate-300 px-3 py-2"/>
+            </label>
+            <label class="block">Select Trek
+              <select name="trek" id="trekSelect" class="w-full mt-1 rounded-xl border border-slate-300 px-3 py-2"></select>
+            </label>
+            <label class="block">Dates
+              <input type="date" name="date" class="w-full mt-1 rounded-xl border border-slate-300 px-3 py-2"/>
+            </label>
+            <label class="block">Travellers
+              <input type="number" min="1" value="2" name="pax" class="w-full mt-1 rounded-xl border border-slate-300 px-3 py-2"/>
+            </label>
+            <label class="block">Fitness Level
+              <select name="fitness" class="w-full mt-1 rounded-xl border border-slate-300 px-3 py-2">
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+              </select>
+            </label>
+          </div>
+          <label class="block">Message
+            <textarea name="msg" rows="4" class="w-full mt-1 rounded-xl border border-slate-300 px-3 py-2"></textarea>
+          </label>
+          <button class="w-full px-5 py-3 rounded-xl bg-brand-600 text-white font-semibold hover:bg-brand-700">Submit</button>
+          <p id="formMsg" class="hidden text-center text-sm"></p>
+        </form>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-soft">
+        <h4 class="text-xl font-semibold">Why book with MilesOnWheel?</h4>
+        <ul class="mt-4 space-y-2 text-slate-700">
+          <li>✔️ Experienced, local trek leaders</li>
+          <li>✔️ High‑quality tents, sleeping bags & mats</li>
+          <li>✔️ Hygienic vegetarian meals</li>
+          <li>✔️ All permits & forest fees handled</li>
+          <li>✔️ Emergency support & basic first‑aid</li>
+        </ul>
+        <div class="mt-6 rounded-xl p-4 bg-brand-50 border border-brand-100 text-sm text-brand-900">
+          Tip: Weekend treks like <strong>Triund</strong> or <strong>Kheerganga</strong> are great for first‑timers.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section id="faqs" class="bg-white border-t">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+      <h3 class="text-2xl font-bold">FAQs</h3>
+      <div class="mt-6 grid md:grid-cols-2 gap-4">
+        <details class="group p-5 border rounded-2xl">
+          <summary class="font-semibold cursor-pointer flex items-center justify-between">What is included in the trek cost?<span>➕</span></summary>
+          <p class="mt-3 text-slate-600">Professional trek lead, support staff, camping gear, permits/fees, meals as per itinerary, and basic first‑aid. Transport to base can be added.</p>
+        </details>
+        <details class="group p-5 border rounded-2xl">
+          <summary class="font-semibold cursor-pointer flex items-center justify-between">Is it safe for beginners?<span>➕</span></summary>
+          <p class="mt-3 text-slate-600">Yes. Start with an easy trek (Triund/Kheerganga). We do a quick fitness & gear check before departure.</p>
+        </details>
+        <details class="group p-5 border rounded-2xl">
+          <summary class="font-semibold cursor-pointer flex items-center justify-between">Best time to trek in Himachal?<span>➕</span></summary>
+          <p class="mt-3 text-slate-600">Spring (Apr–Jun) and Autumn (Sep–Oct) suit most trails. High passes open mid‑Jun to Sep depending on snow.</p>
+        </details>
+        <details class="group p-5 border rounded-2xl">
+          <summary class="font-semibold cursor-pointer flex items-center justify-between">What to pack?<span>➕</span></summary>
+          <p class="mt-3 text-slate-600">Trekking shoes, 30–40L backpack, 2‑3 warm layers, rain jacket, cap, gloves, water bottle, headlamp, and basic toiletries. A detailed checklist is shared after booking.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-100">
+    <div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-8">
+      <div class="md:col-span-2">
+        <h4 class="text-lg font-semibold">MilesOnWheel Tour & Travel</h4>
+        <p class="mt-2 text-slate-400">Himachal specialists for tours, treks and custom holidays.</p>
+      </div>
+      <div>
+        <p class="text-slate-400">Support</p>
+        <a class="block hover:underline" href="mailto:hello@milesonwheel.in">hello@milesonwheel.in</a>
+        <a class="block hover:underline" href="tel:+919999999999">+91 99999 99999</a>
+      </div>
+      <div>
+        <p class="text-slate-400">Office</p>
+        <p>Old Manali, Kullu, Himachal Pradesh</p>
+      </div>
+    </div>
+    <div class="border-t border-white/10 py-4 text-center text-sm text-slate-400">© <span id="yr"></span> MilesOnWheel</div>
+  </footer>
+
+  <!-- Trek Details Modal -->
+  <div id="modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="max-w-3xl w-full bg-white rounded-2xl overflow-hidden shadow-soft">
+      <div class="flex items-center justify-between p-4 border-b">
+        <h4 id="mTitle" class="text-xl font-bold"></h4>
+        <button id="mClose" class="h-9 w-9 rounded-full bg-slate-100 hover:bg-slate-200">✕</button>
+      </div>
+      <div class="grid md:grid-cols-2 gap-0">
+        <div class="p-4 space-y-4 nice-scroll max-h-[70vh] overflow-auto">
+          <div id="mHighlights" class="text-sm text-slate-700"></div>
+          <div>
+            <h5 class="font-semibold">Itinerary</h5>
+            <ol id="mItinerary" class="list-decimal pl-5 text-sm text-slate-700 space-y-1"></ol>
+          </div>
+          <div class="grid grid-cols-2 gap-3 text-sm">
+            <div>
+              <h6 class="font-semibold">Inclusions</h6>
+              <ul id="mInc" class="list-disc pl-5 space-y-1"></ul>
+            </div>
+            <div>
+              <h6 class="font-semibold">Exclusions</h6>
+              <ul id="mExc" class="list-disc pl-5 space-y-1"></ul>
+            </div>
+          </div>
+        </div>
+        <div id="mImg" class="min-h-[280px] bg-slate-100"></div>
+      </div>
+      <div class="p-4 border-t flex items-center justify-between">
+        <div class="text-slate-700 text-sm"><span id="mMeta"></span></div>
+        <a href="#booking" id="mCta" class="px-4 py-2 rounded-xl bg-brand-600 text-white hover:bg-brand-700">Book This Trek</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- JSON-LD (basic sample for SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "MilesOnWheel Tour & Travel",
+    "url": "https://www.milesonwheel.in/",
+    "areaServed": "Himachal Pradesh, India",
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "itemOffered": {"@type": "TouristTrip", "name": "Triund Trek"},
+        "priceCurrency": "INR", "price": "1999"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {"@type": "TouristTrip", "name": "Hampta Pass Trek"},
+        "priceCurrency": "INR", "price": "9999"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Data + JS -->
+  <script>
+    const TREKS = [
+      {
+        id: 'triund',
+        name: 'Triund Trek (Dharamshala)',
+        days: 2,
+        difficulty: 'Easy',
+        season: 'Apr–Jun, Sep–Oct',
+        seasonBand: 'Apr–Jun',
+        price: 1999,
+        altitude: '2,850 m',
+        image: "https://images.unsplash.com/photo-1528821154947-1aa3d1f9a82b?q=80&w=1600&auto=format&fit=crop",
+        highlights: 'Starry camping • Dhauladhar views • Bonfire',
+        itinerary: ['McLeodganj → Triund (camping)', 'Sunrise • return to base'],
+        inc: ['Guide & support', 'Camping & sleeping bags', 'Dinner & breakfast', 'Permits & forest fee'],
+        exc: ['Transport to base', 'Personal expenses', 'Anything not in inclusions']
+      },
+      {
+        id: 'kheerganga',
+        name: 'Kheerganga Trek (Kasol)',
+        days: 2,
+        difficulty: 'Easy to Moderate',
+        season: 'Mar–Jun, Sep–Nov',
+        seasonBand: 'Apr–Jun',
+        price: 2499,
+        altitude: '2,960 m',
+        image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1600&auto=format&fit=crop",
+        highlights: 'Hot springs • Forest trail • Riverside camping',
+        itinerary: ['Barshaini → Kheerganga (camping)', 'Hot spring • descend to base'],
+        inc: ['Guide & permits', 'Camping & sleeping bags', 'Dinner & breakfast'],
+        exc: ['Transport to Barshaini', 'Porter/mule (optional)']
+      },
+      {
+        id: 'hampta',
+        name: 'Hampta Pass Trek (Manali → Spiti crossover)',
+        days: 5,
+        difficulty: 'Moderate',
+        season: 'Jun–Sep',
+        seasonBand: 'Jul–Sep',
+        price: 9999,
+        altitude: '4,270 m',
+        image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1600&auto=format&fit=crop",
+        highlights: 'Valley crossover • Meadows to Spiti desert • Optional Chandratal',
+        itinerary: ['Manali → Jobra → Chika', 'Chika → Balu ka Ghera', 'Balu → Hampta Pass → Shea Goru', 'Shea Goru → Chatru (drive to Chandratal if open)', 'Return to Manali'],
+        inc: ['Trek lead & staff', 'All meals on trek', 'Tents, mats, sleeping bags', 'Permits & fees'],
+        exc: ['Manali hotel stay', 'Off‑road to Chandratal (optional)']
+      },
+      {
+        id: 'bhrigu',
+        name: 'Bhrigu Lake Trek (Manali)',
+        days: 3,
+        difficulty: 'Moderate',
+        season: 'May–Oct',
+        seasonBand: 'Jul–Sep',
+        price: 5499,
+        altitude: '4,300 m',
+        image: "https://images.unsplash.com/photo-1519681393457-4bc31d49a5a7?q=80&w=1600&auto=format&fit=crop",
+        highlights: 'High‑altitude alpine lake • Lush meadows',
+        itinerary: ['Manali → Gulaba → Jonker Thatch', 'Jonker → Bhrigu Lake → camp', 'Descend to Gulaba • Manali'],
+        inc: ['Guide & staff', 'Camping gear', 'Meals on trek', 'Permits'],
+        exc: ['Transport to base', 'Personal equipment rental']
+      },
+      {
+        id: 'indrahar',
+        name: 'Indrahar Pass Trek (Dharamshala)',
+        days: 4,
+        difficulty: 'Moderate to Difficult',
+        season: 'May–Oct',
+        seasonBand: 'Jul–Sep',
+        price: 7999,
+        altitude: '4,342 m',
+        image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop",
+        highlights: 'Dhauladhar traverse • Snow patches • Ridge walk',
+        itinerary: ['McLeodganj → Triund', 'Triund → Lahesh Cave', 'Lahesh → Indrahar Pass → return', 'Buffer / descend'],
+        inc: ['Guide & permits', 'Camping & meals', 'Basic first‑aid'],
+        exc: ['Transport', 'Porter/mule (optional)']
+      },
+      {
+        id: 'pinparvati',
+        name: 'Pin Parvati Pass Trek (Kasol → Spiti)',
+        days: 10,
+        difficulty: 'Difficult',
+        season: 'Jul–Sep',
+        seasonBand: 'Jul–Sep',
+        price: 23999,
+        altitude: '5,319 m',
+        image: "https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?q=80&w=1600&auto=format&fit=crop",
+        highlights: 'Expedition‑style • Glaciers • Remote valleys',
+        itinerary: ['Kasol → Kheerganga', 'Kheerganga → Tunda Bhuj', 'To Thakur Kuan', 'Odi Thach', 'Mantalai', 'Base camp', 'Cross Pin Parvati Pass', 'Pin valley', 'Mudh (Spiti)', 'Drive out'],
+        inc: ['Expedition leader & staff', 'All meals', 'Tents & safety gear', 'Permits & insurance (group)'],
+        exc: ['Personal insurance', 'Transport to base', 'Emergency evacuation']
+      }
+    ];
+
+    const cardsEl = document.getElementById('cards');
+    const q = document.getElementById('q');
+    const difficulty = document.getElementById('difficulty');
+    const days = document.getElementById('days');
+    const daysVal = document.getElementById('daysVal');
+    const season = document.getElementById('season');
+    const trekSelect = document.getElementById('trekSelect');
+
+    function seasonToBand(s) {
+      if (/Jan|Feb|Mar/.test(s)) return 'Jan–Mar';
+      if (/Apr|May|Jun/.test(s)) return 'Apr–Jun';
+      if (/Jul|Aug|Sep/.test(s)) return 'Jul–Sep';
+      if (/Oct|Nov|Dec/.test(s)) return 'Oct–Dec';
+      return '';
+    }
+
+    function renderTreks(list) {
+      cardsEl.innerHTML = '';
+      list.forEach(t => {
+        const card = document.createElement('article');
+        card.className = 'bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-soft flex flex-col';
+        card.innerHTML = `
+          <div class="aspect-[4/3] bg-cover bg-center" style="background-image:url('${t.image}')"></div>
+          <div class="p-4 flex-1 flex flex-col">
+            <h3 class="font-bold text-lg">${t.name}</h3>
+            <p class="mt-1 text-sm text-slate-600">${t.highlights}</p>
+            <div class="mt-3 grid grid-cols-3 gap-2 text-xs">
+              <div class="rounded-lg bg-slate-50 p-2">⏱️ <strong>${t.days}</strong> days</div>
+              <div class="rounded-lg bg-slate-50 p-2">🧗 ${t.difficulty}</div>
+              <div class="rounded-lg bg-slate-50 p-2">⛰️ ${t.altitude}</div>
+            </div>
+            <div class="mt-3 text-xs text-slate-600">Best season: ${t.season}</div>
+            <div class="mt-4 flex items-center justify-between">
+              <div class="text-xl font-extrabold">₹${t.price.toLocaleString('en-IN')}</div>
+              <div class="flex gap-2">
+                <button data-id="${t.id}" class="view px-4 py-2 rounded-xl border hover:border-brand-600">View Details</button>
+                <a href="#booking" class="px-4 py-2 rounded-xl bg-brand-600 text-white hover:bg-brand-700">Book</a>
+              </div>
+            </div>
+          </div>`;
+        cardsEl.appendChild(card);
+      });
+    }
+
+    function applyFilters() {
+      const query = q.value.trim().toLowerCase();
+      const maxDays = +days.value;
+      const diff = difficulty.value;
+      const sea = season.value;
+      const filtered = TREKS.filter(t => {
+        const matchesQ = !query || t.name.toLowerCase().includes(query) || t.highlights.toLowerCase().includes(query);
+        const matchesD = !diff || t.difficulty === diff;
+        const matchesDays = t.days <= maxDays;
+        const matchesS = !sea || seasonToBand(t.season).includes(sea);
+        return matchesQ && matchesD && matchesDays && matchesS;
+      });
+      renderTreks(filtered);
+      attachViewHandlers();
+    }
+
+    function attachViewHandlers(){
+      document.querySelectorAll('button.view').forEach(btn => btn.addEventListener('click', e => {
+        const id = e.currentTarget.getAttribute('data-id');
+        const t = TREKS.find(x => x.id === id);
+        openModal(t);
+      }));
+    }
+
+    function populateSelect(){
+      trekSelect.innerHTML = '<option value="">Any</option>' + TREKS.map(t => `<option>${t.name}</option>`).join('');
+    }
+
+    // Modal logic
+    const modal = document.getElementById('modal');
+    const mClose = document.getElementById('mClose');
+    const mTitle = document.getElementById('mTitle');
+    const mHighlights = document.getElementById('mHighlights');
+    const mItinerary = document.getElementById('mItinerary');
+    const mInc = document.getElementById('mInc');
+    const mExc = document.getElementById('mExc');
+    const mImg = document.getElementById('mImg');
+    const mMeta = document.getElementById('mMeta');
+
+    function openModal(t){
+      mTitle.textContent = t.name;
+      mHighlights.textContent = t.highlights;
+      mItinerary.innerHTML = t.itinerary.map(i => `<li>${i}</li>`).join('');
+      mInc.innerHTML = t.inc.map(i => `<li>${i}</li>`).join('');
+      mExc.innerHTML = t.exc.map(i => `<li>${i}</li>`).join('');
+      mImg.className = "min-h-[280px] bg-cover bg-center";
+      mImg.style.backgroundImage = `url('${t.image}')`;
+      mMeta.textContent = `${t.days} days • ${t.difficulty} • Alt: ${t.altitude} • Best: ${t.season}`;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    mClose.addEventListener('click', () => modal.classList.add('hidden'));
+    modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.add('hidden'); });
+
+    // Booking form dummy handler
+    const form = document.getElementById('form');
+    const formMsg = document.getElementById('formMsg');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      formMsg.className = 'block text-center text-sm text-emerald-700';
+      formMsg.textContent = 'Thanks! We\'ve received your enquiry. Our expert will call you shortly.';
+      form.reset();
+    });
+
+    // Filters listeners
+    [q, difficulty, days, season].forEach(el => el.addEventListener('input', applyFilters));
+    days.addEventListener('input', () => daysVal.textContent = days.value);
+
+    // Init
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    populateSelect();
+    renderTreks(TREKS);
+    attachViewHandlers();
+  </script>
+</body>
+</html>
