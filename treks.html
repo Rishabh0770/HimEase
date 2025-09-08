@@ -122,8 +122,38 @@
 .close-btn:hover {
   color: #084a90; /* red hover */
 }
+</style>
 
+<style>
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;   /* ✅ force ek line */
+  gap: 10px;             /* buttons aur text ke beech gap */
+}
 
+.pagination .page-link {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+/* ✅ Mobile optimization */
+@media (max-width: 480px) {
+  .pagination .page-link {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+  #pageIndicator {
+    font-size: 14px;
+  }
+}
 </style>
 </head>
 <body>
@@ -234,6 +264,7 @@
   <div class="col-12 col-md-2">
     <select class="form-select" name="package" required>
   <option value="">Select Trek Package</option>
+
   <option value="triund-trek">Triund Trek, Dharamshala</option>
   <option value="kheerganga-trek">Kheerganga Trek, Kasol</option>
   <option value="hampta-pass">Hampta Pass Trek, Manali</option>
@@ -299,13 +330,13 @@
       <p class="subtitle" style="font-family: Roboto Slab; font-weight: bold;">Cherished your memories</p>
       <h2 class="title" style="color: #1b78c7; font-family: 'Times New Roman', Times, serif; font-size: 38px; font-weight: 700;">Himachal Trek Packages</h2>
     </div>
-    <div class="row g-4 mt-2">
+<div class="row g-4 mt-2" id="cardContainer">
 
 <!-- Card 1 -->
 <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
   <div class="tour-card" onclick="event.stopPropagation(); window.location.href='./packages/triundtrek.html'">
     <div style="position: relative;">
-      <img src="images/triund.jpg" alt="Triund Trek, Dharamshala">
+      <img src="treks/trek-imgs/triund-trek.jpg" alt="Triund Trek, Dharamshala">
       <div class="price-tag">Book @ ₹3,500</div>
     </div>
     <div class="card-content">
@@ -341,7 +372,7 @@
 <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
   <div class="tour-card" onclick="event.stopPropagation(); window.location.href='./packages/kheergangatrek.html'">
     <div style="position: relative;">
-      <img src="images/kheerganga.jpg" alt="Kheerganga Trek, Kasol">
+      <img src="treks/trek-imgs/kheerganga-trek.jpg" alt="Kheerganga Trek, Kasol">
       <div class="price-tag">Book @ ₹3,800</div>
     </div>
     <div class="card-content">
@@ -376,7 +407,7 @@
 <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
   <div class="tour-card" onclick="event.stopPropagation(); window.location.href='./packages/hamptapass.html'">
     <div style="position: relative;">
-      <img src="images/hampta.jpg" alt="Hampta Pass Trek, Manali">
+      <img src="treks/trek-imgs/hampta-pass.jpg" alt="Hampta Pass Trek, Manali">
       <div class="price-tag">Book @ ₹9,500</div>
     </div>
     <div class="card-content">
@@ -412,7 +443,7 @@
 <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
   <div class="tour-card" onclick="event.stopPropagation(); window.location.href='./packages/pinparvati.html'">
     <div style="position: relative;">
-      <img src="images/pinparvati.jpg" alt="Pin Parvati Pass Trek, Himachal">
+      <img src="treks/trek-imgs/pin-parvati.jpg" alt="Pin Parvati Pass Trek, Himachal">
       <div class="price-tag">Book @ ₹18,000</div>
     </div>
     <div class="card-content">
@@ -448,7 +479,7 @@
 <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
   <div class="tour-card" onclick="event.stopPropagation(); window.location.href='./packages/prasharlake.html'">
     <div style="position: relative;">
-      <img src="images/prashar.jpg" alt="Prashar Lake Trek, Mandi">
+      <img src="treks/trek-imgs/prashar.jpg" alt="Prashar Lake Trek, Mandi">
       <div class="price-tag">Book @ ₹2,500</div>
     </div>
     <div class="card-content">
@@ -484,7 +515,7 @@
 <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
   <div class="tour-card" onclick="event.stopPropagation(); window.location.href='./packages/baralachachandratal.html'">
     <div style="position: relative;">
-      <img src="images/baralacha.jpg" alt="Baralacha to Chandratal Trek">
+      <img src="treks/trek-imgs/baralacha.jpg" alt="Baralacha to Chandratal Trek">
       <div class="price-tag">Book @ ₹12,500</div>
     </div>
     <div class="card-content">
@@ -519,7 +550,7 @@
 <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
   <div class="tour-card" onclick="event.stopPropagation(); window.location.href='./packages/malana.html'">
     <div style="position: relative;">
-      <img src="images/malana.jpg" alt="Malana Village Trek, Kasol">
+      <img src="treks/trek-imgs/malana.jpeg" alt="Malana Village Trek, Kasol">
       <div class="price-tag">Book @ ₹4,000</div>
     </div>
     <div class="card-content">
@@ -552,7 +583,7 @@
 <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
   <div class="tour-card" onclick="event.stopPropagation(); window.location.href='./packages/bhaba-pass.html'">
     <div style="position: relative;">
-      <img src="images/bhaba-pass.jpg" alt="Bhaba Pass Trek, Kinnaur">
+      <img src="treks/trek-imgs/bhaba.jpg" alt="Bhaba Pass Trek, Kinnaur">
       <div class="price-tag">Book @ ₹12,000</div>
     </div>
     <div class="card-content">
@@ -585,7 +616,7 @@
 <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
   <div class="tour-card" onclick="event.stopPropagation(); window.location.href='./packages/sach-pass.html'">
     <div style="position: relative;">
-      <img src="images/sach-pass.jpg" alt="Sach Pass Trek, Chamba">
+      <img src="treks/trek-imgs/sach-pass.jpg" alt="Sach Pass Trek, Chamba">
       <div class="price-tag">Book @ ₹10,000</div>
     </div>
     <div class="card-content">
@@ -618,7 +649,7 @@
 <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
   <div class="tour-card" onclick="event.stopPropagation(); window.location.href='./packages/churdhar.html'">
     <div style="position: relative;">
-      <img src="images/churdhar.jpg" alt="Churdhar Peak Trek, Sirmaur">
+      <img src="treks/trek-imgs/churdhar.jpg" alt="Churdhar Peak Trek, Sirmaur">
       <div class="price-tag">Book @ ₹6,000</div>
     </div>
     <div class="card-content">
@@ -651,7 +682,7 @@
 <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
   <div class="tour-card" onclick="event.stopPropagation(); window.location.href='./packages/lam-dal.html'">
     <div style="position: relative;">
-      <img src="images/lam-dal.jpg" alt="Lam Dal Lake Trek, Chamba">
+      <img src="treks/trek-imgs/dal-lake.webp" alt="Lam Dal Lake Trek, Chamba">
       <div class="price-tag">Book @ ₹9,000</div>
     </div>
     <div class="card-content">
@@ -684,7 +715,7 @@
 <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
   <div class="tour-card" onclick="event.stopPropagation(); window.location.href='./packages/baspa-valley.html'">
     <div style="position: relative;">
-      <img src="images/baspa.jpg" alt="Baspa Valley Trek, Kinnaur">
+      <img src="treks/trek-imgs/baspa.jpg" alt="Baspa Valley Trek, Kinnaur">
       <div class="price-tag">Book @ ₹8,000</div>
     </div>
     <div class="card-content">
@@ -713,7 +744,75 @@
   </div>
 </div>
 
+</div>
 
+<!-- Pagination -->
+<nav aria-label="Page navigation" class="mt-4">
+  <ul class="pagination justify-content-center align-items-center">
+    <li class="page-item">
+      <a class="page-link rounded-circle bg-primary text-white border-0" 
+         href="#" id="prevBtn" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+
+    <li class="page-item">
+      <span id="pageIndicator" class="mx-2 fw-bold">1 / 2</span>
+    </li>
+
+    <li class="page-item">
+      <a class="page-link rounded-circle bg-primary text-white border-0" 
+         href="#" id="nextBtn" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<script>
+  const cards = document.querySelectorAll('#cardContainer .col-12'); 
+  const cardsPerPage = 6;
+  let currentPage = 1;
+  const totalPages = Math.ceil(cards.length / cardsPerPage);
+
+  function showPage(page) {
+    const start = (page - 1) * cardsPerPage;
+    const end = start + cardsPerPage;
+
+    cards.forEach((card, index) => {
+      if (index >= start && index < end) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    // Update page number
+    document.getElementById('pageIndicator').textContent = `${page} / ${totalPages}`;
+
+    // Buttons disable/enable
+    document.getElementById('prevBtn').disabled = page === 1;
+    document.getElementById('nextBtn').disabled = page === totalPages;
+  }
+
+  // Button Events
+  document.getElementById('prevBtn').addEventListener('click', () => {
+    if (currentPage > 1) {
+      currentPage--;
+      showPage(currentPage);
+    }
+  });
+
+  document.getElementById('nextBtn').addEventListener('click', () => {
+    if (currentPage < totalPages) {
+      currentPage++;
+      showPage(currentPage);
+    }
+  });
+
+  // Show first page by default
+  showPage(currentPage);
+</script>
 
 <div id="formModal" class="modal-overlay">
         <div class="modal-box">
@@ -733,6 +832,7 @@
         </div>
       </div>
 </section>
+
 
 <section class="custom-packages" data-aos="fade-up" data-aos-delay="100">
   <h3 class="small-heading" style="font-family: Roboto Slab;" data-aos="fade-down" data-aos-delay="200">Create Your</h3>
