@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Treks - Triund</title>
+  <meta name="description" content="Plan trips, discover destinations, and book curated travel packages." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../about.css">
+  <link rel="stylesheet" href="../whatsapp.css">
+<link rel="stylesheet" href="location.css">
+  <style>
+.about-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('trek-imgs/triund-trek.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+  height: 60vh;
+}
+  </style>
+</head>
+<body>
+
+<!-- ================= HEADER / NAVBAR ================= -->
+<header class="sticky-top shadow-sm bg-white">
+  <nav class="navbar navbar-expand-lg container py-2 d-flex align-items-center justify-content-between">
+
+    <!-- Logo + Brand Name (Mobile & Desktop Unified) -->
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="../index.html">
+      <img src="../images/logo12345.PNG" alt="MilesOnWheel Logo" width="55" height="55" loading="lazy" class="logo-anim me-2">
+      <div class="d-flex flex-column">
+        <span class="brand-name">Miles<span class="text-primary">On</span>Wheel</span>
+        <small class="brand-sub text-muted d-none d-lg-block" style="font-size: 0.85rem;">Seamless Escapes, Infinite Stories</small>
+      </div>
+    </a>
+
+    <!-- Navbar Toggler (Mobile Only) -->
+    <button class="navbar-toggler d-lg-none custom-toggler collapsed" 
+            type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" 
+            aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#121331" viewBox="0 0 24 24">
+        <circle cx="5" cy="5" r="2"/>
+        <circle cx="12" cy="5" r="2"/>
+        <circle cx="19" cy="5" r="2"/>
+        <circle cx="5" cy="12" r="2"/>
+        <circle cx="12" cy="12" r="2"/>
+        <circle cx="19" cy="12" r="2"/>
+        <circle cx="5" cy="19" r="2"/>
+        <circle cx="12" cy="19" r="2"/>
+        <circle cx="19" cy="19" r="2"/>
+      </svg>
+    </button>
+
+    <!-- Nav Menu -->
+    <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+      <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-3">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../aboutus.html">About Us</a></li>
+
+        <!-- Destinations Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="destinationsDropdown" role="button" data-bs-toggle="dropdown">
+            Destinations <i class="fa-solid fa-angle-down ms-1"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../destinations/manali.html">Manali</a></li>
+            <li><a class="dropdown-item" href="../destinations/shimla.html">Shimla</a></li>
+            <li><a class="dropdown-item" href="../destinations/kinnaur.html">Kinnaur</a></li>
+            <li><a class="dropdown-item" href="../destinations/kangra.html">Dharamshala / Kangra</a></li>
+            <li><a class="dropdown-item" href="../destinations/kullu.html">Kullu</a></li>
+            <li><a class="dropdown-item" href="../destinations/spiti.html">Spiti</a></li>
+            <li><a class="dropdown-item" href="../destinations/ladakh.html">Ladakh</a></li>
+          </ul>
+        </li>
+
+        <!-- Packages Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="packagesDropdown" role="button" data-bs-toggle="dropdown">
+            Packages <i class="fa-solid fa-angle-down ms-1"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../tours.html">Himachal Tour Packages</a></li>
+            <li><a class="dropdown-item active" href="../treks.html">Himachal Trek Packages</a></li>
+            <li><a class="dropdown-item" href="../destinations/ladakh.html">Ladakh Packages</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="../contact.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="../termsconditions.html">Terms & Conditions</a></li>
+      </ul>
+
+      <!-- Call Now Button (Desktop Only) -->
+      <div class="d-none d-lg-block ms-auto">
+        <a href="tel:+917018434170" class="btn btn-primary fw-semibold px-3 py-2 rounded-pill shadow-sm">
+          <i class="fa-solid fa-phone me-2"></i> Call Now
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <!-- About Us Section -->
+<section class="about-section">
+  <div class="container">
+    <h1 data-aos="fade-up" data-aos-duration="1000">Triund Trek</h1>
+    <p class="lead opacity-75 mt-3" style="font-family: Roboto Slab;" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
+     <strong>Every Step On Triund Is A Story Closer To Peace.</strong>
+    </p>
+  </div>
+</section>
+
+<!-- Offer Section -->
+<section class="offer-section" data-aos="fade-down" data-aos-delay="300">
+  <div class="offer-box">
+    <div class="offer-left" data-aos="fade-up" data-aos-delay="400">
+      <img src="../images/group.jpg" alt="Offer">
+      <div class="offer-text" data-aos="fade-down" data-aos-delay="500">
+        <h2>Bigger Group? Get special offers upto 50% off!</h2>
+        <p>We create unforgettable adventures, customized for your group.</p>
+      </div>
+    </div>
+    <!-- Button -->
+    <button class="offer-btn" id="offerBtn">Request a Callback</button>
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="offerModal" class="modal-overlay">
+  <div class="modal-box">
+    <span class="close-btn">&times;</span>
+    <h3>Connect with a group tour expert</h3>
+    <!-- form -->
+    <form action="https://formspree.io/f/mrblvqzv" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="tel" name="phone" placeholder="Phone" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <div class="form-row">
+        <input type="date" name="date" placeholder="Travel Date">
+        <input type="number" name="travellers" placeholder="Traveller Count">
+      </div>
+      <textarea name="message" placeholder="Please let me know about the trip"></textarea>
+      <button type="submit">Get A Callback</button>
+    </form>
+  </div>
+</div>
+
+<!-- Section with AOS Effects -->
+<div class="section-container" data-aos="fade-up">
+
+  <!-- Left Text -->
+  <div class="content" data-aos="fade-up">
+    <h2 data-aos="fade-up">Discover Triund Trek</h2>
+    <p data-aos="fade-up">
+      Welcome to the breathtaking <strong>Triund Trek</strong>, one of the most popular and scenic treks in 
+      <strong>Himachal Pradesh</strong>. Nestled in the lap of the <strong>Dhauladhar range</strong>, 
+      this trek offers mesmerizing views of snow-capped peaks and lush valleys. 
+      Starting from <strong>McLeodganj</strong> or <strong>Dharamkot</strong>, the trail takes you through 
+      rhododendron forests, chirping birds, and panoramic landscapes that feel straight out of a postcard.
+    </p>
+
+    <p data-aos="fade-up">
+      The <strong>Triund Hill</strong> stands as a peaceful escape, offering stunning sunsets and a 
+      starlit night sky that trekkers cherish forever. Known as the "Crown Jewel of Dharamshala," 
+      it’s a beginner-friendly trek yet rewards you with 
+      <strong>360° views of the Kangra Valley</strong> and mighty Himalayan ranges.
+    </p>
+
+    <p data-aos="fade-up" style="margin-bottom: 10px;">
+      Triund is the perfect destination for those seeking <strong>adventure</strong>, 
+      <strong>serenity</strong>, and a <strong>short getaway</strong>. Whether you’re a solo traveler, 
+      nature enthusiast, or adventure seeker, this trek promises memories to last a lifetime.
+    </p>
+
+    <!-- Image Row -->
+    <div class="image-row">
+      <div class="img-box" data-aos="fade-right" data-aos-delay="100">
+        <img src="../treks/trek-imgs/triund-trek.jpg" alt="Triund Trek">
+      </div>
+      <div class="img-box" data-aos="zoom-in" data-aos-delay="200">
+        <img src="../images/mcleodganj.jpg" alt="McLeodganj Base">
+      </div>
+      <div class="img-box" data-aos="fade-left" data-aos-delay="300">
+        <img src="../images/dhauladhar.jpg" alt="Dhauladhar Range">
+      </div>
+    </div>
+
+    <h3 style="margin-top: 20px;" data-aos="fade-up" data-aos-delay="100">
+      Highlights of Triund Trek
+    </h3>
+    <ul data-aos="fade-up" data-aos-delay="200">
+      <li><strong>Panoramic Views:</strong> Majestic Dhauladhar ranges on one side and the vast Kangra Valley on the other.</li>
+      <li><strong>Beginner-Friendly:</strong> A perfect trek for first-timers, with well-marked trails and moderate difficulty.</li>
+      <li><strong>Camping Experience:</strong> Spend the night under a sky full of stars at Triund Hill.</li>
+      <li><strong>Flora & Fauna:</strong> Walk through oak, deodar, and rhododendron forests with diverse bird species.</li>
+      <li><strong>Short Getaway:</strong> Can be completed in 1–2 days, making it a quick yet rewarding trek.</li>
+    </ul>
+
+    <h3 data-aos="fade-up" data-aos-delay="300">Experiences at Triund</h3>
+    <ul data-aos="fade-up" data-aos-delay="400">
+      <li><strong>Trekking:</strong> A 9 km trail from McLeodganj/Dharamkot that takes 4–6 hours.</li>
+      <li><strong>Camping:</strong> Experience peaceful nights with bonfires and starry skies.</li>
+      <li><strong>Photography:</strong> Sunrise and sunset views make Triund a photographer’s paradise.</li>
+      <li><strong>Local Culture:</strong> Explore Tibetan cafés in McLeodganj before or after your trek.</li>
+    </ul>
+
+    <h3 data-aos="fade-up" data-aos-delay="500">How to Reach Triund</h3>
+    <p data-aos="fade-up" data-aos-delay="600">
+      The trek to Triund begins from <strong>McLeodganj</strong> or <strong>Dharamkot</strong>, 
+      both well-connected by road from Delhi and Chandigarh.  
+      The nearest airport is <strong>Kangra Airport (Gaggal)</strong>, about 18 km from Dharamshala.  
+      The nearest railway station is <strong>Pathankot</strong>, from where buses and taxis are easily available.  
+      Regular buses operate between Dharamshala and major North Indian cities.
+    </p>
+
+    <!-- Image Row -->
+    <div class="image-row">
+      <div class="img-box" data-aos="fade-right" data-aos-delay="100">
+        <img src="../images/camping-triund.jpg" alt="Triund Camping">
+      </div>
+      <div class="img-box" data-aos="zoom-in" data-aos-delay="200">
+        <img src="../images/sunset-triund.jpg" alt="Sunset at Triund">
+      </div>
+      <div class="img-box" data-aos="fade-left" data-aos-delay="300">
+        <img src="../images/starry-night.jpg" alt="Starry Night at Triund">
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" data-aos="fade-up">
+      <h2 class="faq-heading">FAQ'S</h2>
+      <div class="faq-container">
+
+        <div class="faq-card active" data-aos="fade-up">
+          <div class="faq-question">
+            <span>What is the best time to trek Triund?</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            The best time to visit Triund is from <strong>March to June</strong> and 
+            <strong>September to November</strong>. Winters are snow-covered and adventurous, but trekking becomes harder.
+          </div>
+        </div>
+
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>Is Triund suitable for beginners?</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            Yes! Triund is considered a beginner-friendly trek with moderate difficulty, ideal for first-time trekkers.
+          </div>
+        </div>
+
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>Can we camp at Triund?</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            Absolutely! Camping at Triund under the stars is the most popular activity, offering a magical experience.
+          </div>
+        </div>
+
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>How long is the Triund Trek?</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            The trek is around <strong>9 km</strong> (one way) and usually takes 4–6 hours depending on pace.
+          </div>
+        </div>
+
+        <div class="faq-card" data-aos="fade-up">
+          <div class="faq-question">
+            <span>Do we need a guide for Triund?</span>
+            <i class="arrow">&#x25BC;</i>
+          </div>
+          <div class="faq-answer">
+            A guide is not mandatory as the trail is well-marked, but beginners can hire one for safety and local insights.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Right Form + Slider + Map -->
+  <div class="form-container" data-aos="fade-left">
+    <div class="form-box" data-aos="fade-up">
+      <h3>TOUR ENQUIRY</h3>
+      <form action="https://formspree.io/f/mrblvqzv" method="POST">
+        <input type="text" name="name" placeholder="Name" required data-aos="fade-up">
+        <input type="tel" name="phone" placeholder="Phone" required data-aos="fade-up">
+        <input type="email" name="email" placeholder="Email" required data-aos="fade-up">
+        <input type="date" name="date" required data-aos="fade-up">
+        <select name="package" required data-aos="fade-up">
+          <option value="">Select Package</option>
+          <option value="triund-1day">Triund 1-Day Trek</option>
+          <option value="triund-camping">Triund Trek with Camping</option>
+          <option value="triund-snow">Winter Snow Trek to Triund</option>
+        </select>
+        <button type="submit" data-aos="zoom-in">Submit</button>
+      </form>
+    </div>
+
+    <!-- Slider below form -->
+    <div class="slider-container" data-aos="fade-up">
+      <h3 class="slider-heading">Explore More Treks</h3>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-aos="zoom-in">
+            <a href="#" target="_blank">
+              <img src="../images/kareri.jpg" alt="Kareri Lake" />
+              <div class="slide-text" data-aos="fade-up" data-aos-delay="200">Kareri Lake Trek</div>
+            </a>
+          </div>
+
+          <div class="swiper-slide" data-aos="zoom-in">
+            <a href="#" target="_blank">
+              <img src="../images/indrahar.jpg" alt="Indrahar Pass" />
+              <div class="slide-text" data-aos="fade-up" data-aos-delay="500">Indrahar Pass Trek</div>
+            </a>
+          </div>
+
+          <div class="swiper-slide" data-aos="zoom-in">
+            <a href="#" target="_blank">
+              <img src="../images/laka-glacier.jpg" alt="Laka Glacier" />
+              <div class="slide-text" data-aos="fade-up" data-aos-delay="700">Laka Glacier Trek</div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div class="explore-section" style="margin-top: 15px;" data-aos="fade-up">
+      <h3 class="slider-heading">Explore Triund</h3>
+      <div class="explore-map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d339428.020367027!2d76.2!3d32.24!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b5747f865a1ff%3A0x87dcb0a2fca3eaf2!2sTriund%20Trek!5e0!3m2!1sen!2sin!4v1755432100000!5m2!1sen!2sin" 
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- WhatsApp Floating Button -->
+  <div class="whatsapp-float" onclick="toggleChat()">
+    <i class="fab fa-whatsapp"></i>
+  </div>
+
+  <!-- Overlay -->
+  <div class="chat-overlay" id="chatOverlay" onclick="toggleChat()"></div>
+
+  <!-- Chat Box -->
+  <div class="chat-box" id="chatBox">
+    <div class="chat-header">
+      <span><i class="fab fa-whatsapp"></i> WhatsApp</span>
+      <span class="close-btn" onclick="toggleChat()"><i class="fas fa-times"></i></span>
+    </div>
+    <div class="chat-body">
+      <div class="chat-msg">
+        Hello 👋 <br>
+        How can we help you?
+      </div>
+    </div>
+    <div class="chat-footer">
+      <div class="whatsapp-btn-wrapper">
+        <button class="open-chat-btn" onclick="openWhatsApp()">
+          Open chat <i class="fas fa-paper-plane"></i>
+        </button>
+
+        <!-- QR Popup -->
+        <div class="qr-popup">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/917018434170?text=Hi%20I’d%20like%20to%20know%20more%20about%20your%20travel%20packages" alt="WhatsApp QR">
+          <p>Scan me 👆</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+<footer class="pt-5 pb-4 bg-dark text-white">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4 text-center text-md-start">
+  <!-- Logo + Heading -->
+<h5 class="fw-bold mb-1" style="white-space: nowrap; display: inline-flex; align-items: center;">
+  <img src="../images/logo1234.PNG" alt="Logo" width="50" height="50" style="margin-right: 5px;">
+  Miles<span style="color:#1b78c7;">On</span>Wheel
+</h5>
+<!-- Subheading (below logo + heading) -->
+<p class="text-white-50 mb-0" style="font-size: 0.85rem; font-family: 'Roboto', sans-serif;">
+  Seamless Escapes, Infinite Stories
+</p>
+  <p class="text-white-50">Making travel effortless with curated, transparent packages.</p>
+</div>
+      <div class="col-md-4">
+        <h6 class="fw-semibold">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../aboutus.html">About Us</a></li>
+
+          <!-- Destinations with Collapse -->
+<li>
+  <a href="#destinationsMenu" class="d-flex align-items-center" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="destinationsMenu">
+    Destinations <i class="fa-solid fa-chevron-down ms-2"></i>
+  </a>
+  <ul class="collapse list-unstyled ms-3 mt-2" id="destinationsMenu" style="margin-bottom: 10px;">
+    <li><a href="../destinations/manali.html">Manali</a></li>
+    <li><a href="../destinations/shimla.html">Shimla</a></li>
+    <li><a href="../destinations/kullu.html">Kullu</a></li>
+    <li><a href="../destinations/spiti.html">Spiti Valley</a></li>
+    <li><a href="../destinations/kangra.html">Kangra / Dharamshala</a></li>
+    <li><a href="../destinations/ladakh.html">Ladakh</a></li>
+    <li><a href="../destinations/kinnaur.html">Kinnaur</a></li>
+  </ul>
+</li>
+
+<!-- Packages with Collapse -->
+<li>
+  <a href="#packagesMenu" class="d-flex align-items-center" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="packagesMenu">
+    Packages <i class="fa-solid fa-chevron-down ms-2"></i>
+  </a>
+  <ul class="collapse list-unstyled ms-3 mt-2" id="packagesMenu" style="margin-bottom: 10px;">
+    <li><a href="../tours.html">Himachal Tour Packages</a></li>
+    <li><a href="../treks.html">Himachal Trek Packages</a></li>
+    <li><a href="../destinations/ladakh.html">Ladakh Packages</a></li>
+  </ul>
+</li>
+          <li><a href="../contact.html">Contact Us</a></li>
+          <li><a href="../termsconditions.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h6 class="fw-semibold">Follow</h6>
+        <div class="d-flex gap-3 fs-5">
+          <a href="https://www.instagram.com/milesonwheel.com_/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-secondary my-4">
+
+   <div class="d-flex justify-content-between small text-white-50">
+  <span>© <span id="year"></span> MilesOnWheel. All rights reserved.</span>
+  <span>
+    Built with ♥ by 
+    <a href="https://rishavkumar.vercel.app/" target="_blank" class="text-white text-decoration-none">
+      Rishav
+    </a>
+  </span>
+</div>
+
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+  <!-- Include Swiper CSS & JS in your <head> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Swiper CSS & JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800, // animation speed
+    once: true,    // animate only once
+    offset: 100    // trigger point before element enters viewport
+  });
+</script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 4000, // 4 seconds
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const cards = Array.from(document.querySelectorAll(".faq-card"));
+
+    // helper to set max-height with !important (beats any external CSS caps)
+    const setMax = (el, val) => el.style.setProperty("max-height", val, "important");
+
+    const openCard = (card) => {
+      const ans = card.querySelector(".faq-answer");
+      // close others
+      cards.forEach(c => { if (c !== card) closeCard(c); });
+
+      card.classList.add("active");
+      ans.style.padding = "15px 20px 20px";
+      // animate to full height then free it to grow naturally
+      setMax(ans, ans.scrollHeight + "px");
+      // after transition, remove cap so long text/images can keep expanding
+      ans.addEventListener("transitionend", function tidy(e){
+        if (e.propertyName === "max-height" && card.classList.contains("active")) {
+          setMax(ans, "none");
+          ans.removeEventListener("transitionend", tidy);
+        }
+      });
+    };
+
+    const closeCard = (card) => {
+      const ans = card.querySelector(".faq-answer");
+      if (!card.classList.contains("active")) return;
+
+      // from auto/none → measure → collapse (to keep smooth animation)
+      setMax(ans, ans.scrollHeight + "px");
+      // force reflow
+      void ans.offsetHeight;
+      setMax(ans, "0px");
+      ans.style.padding = "0 20px";
+      card.classList.remove("active");
+    };
+
+    // click handlers
+    cards.forEach(card => {
+      const q = card.querySelector(".faq-question");
+      q.addEventListener("click", () => {
+        if (card.classList.contains("active")) {
+          closeCard(card);
+        } else {
+          openCard(card);
+        }
+      });
+    });
+
+    // keep first card open by default (and fully expanded)
+    if (cards.length) {
+      openCard(cards[0]);
+    }
+
+    // re-measure when viewport changes (e.g., phone rotation)
+    const adjustOpen = () => {
+      const openAns = document.querySelector(".faq-card.active .faq-answer");
+      if (openAns) {
+        setMax(openAns, openAns.scrollHeight + "px");
+        // free it again after transition
+        setTimeout(() => setMax(openAns, "none"), 410);
+      }
+    };
+    window.addEventListener("resize", adjustOpen);
+    window.addEventListener("load", adjustOpen);
+
+    // fonts/AOS can change text flow—recheck once fonts settle
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(adjustOpen).catch(()=>{});
+    }
+  });
+</script>
+
+<script>
+    function toggleChat() {
+      const chatBox = document.getElementById("chatBox");
+      const overlay = document.getElementById("chatOverlay");
+      chatBox.classList.toggle("show");
+      overlay.classList.toggle("show");
+    }
+
+    function openWhatsApp() {
+      let phoneNumber = "917018434170"; // Change to your WhatsApp number
+      let msg = "Hi, I’d like to know more about your travel packages.";
+      let url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(msg)}`;
+      window.open(url, "_blank");
+    }
+  </script>
+
+<script>
+  const offerBtn = document.getElementById("offerBtn");
+  const offerModal = document.getElementById("offerModal");
+  const closeBtn = offerModal.querySelector(".close-btn");
+
+  // Open modal
+  offerBtn.addEventListener("click", () => {
+    offerModal.style.display = "flex";
+  });
+
+  // Close modal
+  closeBtn.addEventListener("click", () => {
+    offerModal.style.display = "none";
+  });
+
+  // Close on outside click
+  window.addEventListener("click", (e) => {
+    if (e.target === offerModal) {
+      offerModal.style.display = "none";
+    }
+  });
+</script>
+
+</body>
+</html>
