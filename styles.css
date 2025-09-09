@@ -1595,3 +1595,14 @@ textarea {
     margin-right: 3rem; /* sirf desktop me navlinks ke beech gap */
   }
 }
+
+.contact-link {
+  color: #000000; /* Bootstrap professional blue */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+  color: #0a58ca; /* darker blue on hover */
+}
