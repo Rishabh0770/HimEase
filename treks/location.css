@@ -406,12 +406,12 @@ text-align: center;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  background-image: url(../images/background2.jpg);
+  background-image: url(../images/background2.webp);
 }
 
 .faq-card {
   background: #fff;
-  background-image: url(../images/background2.jpg);
+  background-image: url(../images/background2.webp);
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   overflow: hidden;

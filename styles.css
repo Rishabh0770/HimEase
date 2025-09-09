@@ -267,7 +267,7 @@ footer a:hover{color:#fff}
   background-size: cover;
   background-position: center;
   padding: 80px 0;
-  background-image: url('images/background2.jpg'); /* Your image */
+  background-image: url('images/background2.webp'); /* Your image */
   position: relative;
 }
 
@@ -352,7 +352,7 @@ footer a:hover{color:#fff}
 
 
 #destinations {
-  background: url('images/flight.png') center/cover no-repeat;
+  background: url('images/flight.webp') center/cover no-repeat;
   position: relative;
   z-index: 1;
 }
@@ -691,7 +691,7 @@ textarea {
   text-align: center;
   color: white;
   padding: 60px 20px;
-  background: url('images/background-3.jpg') center/cover no-repeat;
+  background: url('images/background-3.webp') center/cover no-repeat;
 }
 
 #packages-section::before {
@@ -728,7 +728,7 @@ textarea {
   margin: auto;
   border-radius: 15px;
   overflow: hidden;
-  background: url('images/spiti.jpg') center/cover no-repeat;
+  background: url('images/spiti.webp') center/cover no-repeat;
   transition: background-image 0.5s ease;
 }
 
@@ -830,7 +830,7 @@ textarea {
 
 /* 2 about cards */
 .about-section {
-  background: url('images/hero4.jpg') no-repeat center center/cover;
+  background: url('images/hero4.webp') no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1228,7 +1228,7 @@ textarea {
 }
 
 #contact {
-  background-image: url(images/background2.jpg);
+  background-image: url(images/background2.webp);
 }
 /* Contact section - theme blue for icons */
 #contact .text-primary {

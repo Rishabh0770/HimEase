@@ -2,7 +2,7 @@ html{scroll-behavior:smooth}
 
 /* 2 about cards */
 .about-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/contactus.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/contactus.webp') no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +51,7 @@ html{scroll-behavior:smooth}
 
 .contact-section {
   padding: 60px 0;
-  background: url('images/background2.jpg') no-repeat center/cover;
+  background: url('images/background2.webp') no-repeat center/cover;
 }
 
 .contact-container {
