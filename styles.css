@@ -166,12 +166,12 @@ footer a:hover{color:#fff}
 }
 
 @keyframes slideShow {
-  0%   { background-image: url('images/img1.jpg'); }
-  20%  { background-image: url('images/img5.jpg'); }
-  40%  { background-image: url('images/img2.jpg'); }
-  60%  { background-image: url('images/img4.jpg'); }
-  80%  { background-image: url('images/img3.jpg'); }
-  100% { background-image: url('images/img1.jpg'); }
+  0%   { background-image: url('images/img1.webp'); }
+  20%  { background-image: url('images/img5.webp'); }
+  40%  { background-image: url('images/img2.webp'); }
+  60%  { background-image: url('images/img4.webp'); }
+  80%  { background-image: url('images/img3.webp'); }
+  100% { background-image: url('images/img1.webp'); }
 }
 
 @media (max-width: 768px) {

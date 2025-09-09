@@ -82,11 +82,11 @@ window.addEventListener('click', (e) => {
 // slideshow hero background
 document.addEventListener("DOMContentLoaded", function () {
   const images = [
-    "images/img1.jpg",
-    "images/img5.jpg",
-    "images/img2.jpg",
-    "images/img4.jpg",
-    "images/img3.jpg"
+    "images/img1.webp",
+    "images/img5.webp",
+    "images/img2.webp",
+    "images/img4.webp",
+    "images/img3.webp"
   ];
   
   let current = 0;
