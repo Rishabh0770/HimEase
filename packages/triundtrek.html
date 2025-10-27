@@ -503,32 +503,33 @@
                 <div class="booking-form-container" data-aos="fade-up">
                   <div class="booking-form">
                     <h4>Book This Trek</h4>
-                    <form>
+                    <form action="https://formspree.io/f/mrbajbge" method="POST">
                       <div class="mb-3">
                         <label class="form-label">Full Name</label>
-                        <input type="text" class="form-control" required>
+                        <input type="text" name="name" class="form-control" required>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Email</label>
-                        <input type="email" class="form-control" required>
+                        <input type="email" name="email" class="form-control" required>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Phone</label>
-                        <input type="tel" class="form-control" required>
+                        <input type="tel" name="phone" class="form-control" required>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Number of Trekkers</label>
-                        <select class="form-select">
-                          <option>1 Person</option>
-                          <option>2 People</option>
-                          <option>3 People</option>
-                          <option>4 People</option>
-                          <option>5+ People</option>
+                        <select name="trekkers" class="form-select" required>
+                          <option value="">Select Number</option>
+                          <option value="1 Person">1 Person</option>
+                          <option value="2 People">2 People</option>
+                          <option value="3 People">3 People</option>
+                          <option value="4 People">4 People</option>
+                          <option value="5+ People">5+ People</option>
                         </select>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Preferred Date</label>
-                        <input type="date" class="form-control" required>
+                        <input type="date" name="date" class="form-control" required>
                       </div>
                       <button type="submit" class="btn btn-primary w-100">Book Now</button>
                       <p class="text-muted mt-2 small">*Booking confirmation will be sent via email/WhatsApp</p>
@@ -578,32 +579,33 @@
                 <div class="booking-form-container" data-aos="fade-up">
                   <div class="booking-form">
                     <h4>Book Camping Experience</h4>
-                    <form>
+                    <form action="https://formspree.io/f/mrbajbge" method="POST">
                       <div class="mb-3">
                         <label class="form-label">Full Name</label>
-                        <input type="text" class="form-control" required>
+                        <input type="text" name="name" class="form-control" required>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Email</label>
-                        <input type="email" class="form-control" required>
+                        <input type="email" name="email" class="form-control" required>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Phone</label>
-                        <input type="tel" class="form-control" required>
+                        <input type="tel" name="phone" class="form-control" required>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Number of Trekkers</label>
-                        <select class="form-select">
-                          <option>1 Person</option>
-                          <option>2 People</option>
-                          <option>3 People</option>
-                          <option>4 People</option>
-                          <option>5+ People</option>
+                        <select name="trekkers" class="form-select" required>
+                          <option value="">Select Number</option>
+                          <option value="1 Person">1 Person</option>
+                          <option value="2 People">2 People</option>
+                          <option value="3 People">3 People</option>
+                          <option value="4 People">4 People</option>
+                          <option value="5+ People">5+ People</option>
                         </select>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Preferred Date</label>
-                        <input type="date" class="form-control" required>
+                        <input type="date" name="date" class="form-control" required>
                       </div>
                       <button type="submit" class="btn btn-primary w-100">Book Now</button>
                       <p class="text-muted mt-2 small">*Booking confirmation will be sent via email/WhatsApp</p>
@@ -654,41 +656,43 @@
                 <div class="booking-form-container" data-aos="fade-up">
                   <div class="booking-form">
                     <h4>Book Photography Trek</h4>
-                    <form>
+                    <form action="https://formspree.io/f/mrbajbge" method="POST">
                       <div class="mb-3">
                         <label class="form-label">Full Name</label>
-                        <input type="text" class="form-control" required>
+                        <input type="text" name="name" class="form-control" required>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Email</label>
-                        <input type="email" class="form-control" required>
+                        <input type="email" name="email" class="form-control" required>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Phone</label>
-                        <input type="tel" class="form-control" required>
+                        <input type="tel" name="phone" class="form-control" required>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Photography Experience</label>
-                        <select class="form-select">
-                          <option>Beginner</option>
-                          <option>Intermediate</option>
-                          <option>Advanced</option>
-                          <option>Professional</option>
+                        <select name="experience" class="form-select" required>
+                          <option value="">Select Experience</option>
+                          <option value="Beginner">Beginner</option>
+                          <option value="Intermediate">Intermediate</option>
+                          <option value="Advanced">Advanced</option>
+                          <option value="Professional">Professional</option>
                         </select>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Number of Trekkers</label>
-                        <select class="form-select">
-                          <option>1 Person</option>
-                          <option>2 People</option>
-                          <option>3 People</option>
-                          <option>4 People</option>
-                          <option>5+ People</option>
+                        <select name="trekkers" class="form-select" required>
+                          <option value="">Select Number</option>
+                          <option value="1 Person">1 Person</option>
+                          <option value="2 People">2 People</option>
+                          <option value="3 People">3 People</option>
+                          <option value="4 People">4 People</option>
+                          <option value="5+ People">5+ People</option>
                         </select>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Preferred Date</label>
-                        <input type="date" class="form-control" required>
+                        <input type="date" name="date" class="form-control" required>
                       </div>
                       <button type="submit" class="btn btn-primary w-100">Book Now</button>
                       <p class="text-muted mt-2 small">*Booking confirmation will be sent via email/WhatsApp</p>
@@ -877,3 +881,5 @@
   </script>
 </body>
 </html>
+
+

@@ -519,18 +519,18 @@
                 <div class="booking-form-container" data-aos="fade-up">
                   <div class="booking-form">
                     <h4>Book Cultural Trek</h4>
-                    <form>
+                    <form action="https://formspree.io/f/mrbajbge" method="POST">
                       <div class="mb-3">
                         <label class="form-label">Full Name</label>
-                        <input type="text" class="form-control" required>
+                        <input type="text" name="name" class="form-control" required>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Email</label>
-                        <input type="email" class="form-control" required>
+                        <input type="email" name="email" class="form-control" required>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Phone</label>
-                        <input type="tel" class="form-control" required>
+                        <input type="tel" name="phone" class="form-control" required>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Age</label>
@@ -538,7 +538,7 @@
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Interest in Culture</label>
-                        <select class="form-select">
+                        <select name="trekkers" class="form-select" required>
                           <option>General Cultural Interest</option>
                           <option>History & Anthropology</option>
                           <option>Photography</option>
@@ -547,16 +547,17 @@
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Group Size</label>
-                        <select class="form-select">
-                          <option>1 Person</option>
-                          <option>2 People</option>
+                        <select name="trekkers" class="form-select" required>
+                          <option value="">Select Number</option>
+                          <option value="1 Person">1 Person</option>
+                          <option value="2 People">2 People</option>
                           <option>3-5 People</option>
                           <option>6+ People</option>
                         </select>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Preferred Date</label>
-                        <input type="date" class="form-control" required>
+                        <input type="date" name="date" class="form-control" required>
                       </div>
                       <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" required>
@@ -604,22 +605,22 @@
                   <div class="booking-form">
                     <h4>Book Heritage Discovery</h4>
                     <p class="small text-muted">Deep cultural immersion experience</p>
-                    <form>
+                    <form action="https://formspree.io/f/mrbajbge" method="POST">
                       <div class="mb-3">
                         <label class="form-label">Full Name</label>
-                        <input type="text" class="form-control" required>
+                        <input type="text" name="name" class="form-control" required>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Email</label>
-                        <input type="email" class="form-control" required>
+                        <input type="email" name="email" class="form-control" required>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Phone</label>
-                        <input type="tel" class="form-control" required>
+                        <input type="tel" name="phone" class="form-control" required>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Cultural Focus</label>
-                        <select class="form-select">
+                        <select name="trekkers" class="form-select" required>
                           <option>Traditional Governance</option>
                           <option>Arts & Crafts</option>
                           <option>Social Anthropology</option>
@@ -628,7 +629,7 @@
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Preferred Date</label>
-                        <input type="date" class="form-control" required>
+                        <input type="date" name="date" class="form-control" required>
                       </div>
                       <button type="submit" class="btn btn-primary w-100">Book Heritage Trek</button>
                     </form>
@@ -670,22 +671,22 @@
                   <div class="booking-form">
                     <h4>Book Premium Cultural Tour</h4>
                     <p class="small text-muted">Exclusive cultural immersion with VIP access</p>
-                    <form>
+                    <form action="https://formspree.io/f/mrbajbge" method="POST">
                       <div class="mb-3">
                         <label class="form-label">Full Name</label>
-                        <input type="text" class="form-control" required>
+                        <input type="text" name="name" class="form-control" required>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Email</label>
-                        <input type="email" class="form-control" required>
+                        <input type="email" name="email" class="form-control" required>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Phone</label>
-                        <input type="tel" class="form-control" required>
+                        <input type="tel" name="phone" class="form-control" required>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Purpose of Visit</label>
-                        <select class="form-select">
+                        <select name="trekkers" class="form-select" required>
                           <option>Cultural Research</option>
                           <option>Educational Study</option>
                           <option>Documentary/Media</option>
@@ -698,7 +699,7 @@
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Preferred Date</label>
-                        <input type="date" class="form-control" required>
+                        <input type="date" name="date" class="form-control" required>
                       </div>
                       <button type="submit" class="btn btn-primary w-100">Book Premium Tour</button>
                     </form>
@@ -873,3 +874,10 @@
   </script>
 </body>
 </html>
+
+
+
+
+
+
+
