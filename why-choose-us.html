@@ -72,10 +72,6 @@
         padding: 20px 15px;
       }
     }
-    .feature-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-    }
     .feature-icon {
       font-size: 48px;
       color: #1b78c7;
@@ -96,6 +92,23 @@
     .feature-card p {
       color: #666;
       line-height: 1.8;
+    }
+    /* Clickable Feature Card Links */
+    .feature-card-link {
+      text-decoration: none;
+      display: block;
+      color: inherit;
+      cursor: pointer;
+    }
+    .feature-card-link:hover .feature-card {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      border-top: 4px solid #ff6b35;
+    }
+    .feature-card-link:active,
+    .feature-card-link:focus {
+      text-decoration: none;
+      color: inherit;
     }
     .stats-section {
       background: linear-gradient(135deg, #1b78c7 0%, #0d47a1 100%);
@@ -325,7 +338,7 @@
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse justify-content-center" id="navMenu">
-        <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-3">
+        <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-2">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link active" href="why-choose-us.html">Why Choose Us</a></li>
           <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
@@ -352,58 +365,70 @@
       <!-- Key Features -->
       <div class="row mb-5">
         <div class="col-md-6 col-lg-4">
-          <div class="feature-card">
-            <div class="feature-icon">
-              <i class="fas fa-mountain"></i>
+          <a href="./tours.html" class="feature-card-link">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-mountain"></i>
+              </div>
+              <h3>Expert Local Guides</h3>
+              <p>Our guides have 10+ years of experience and deep knowledge of every trail, village, and hidden gem in Himachal Pradesh and Ladakh.</p>
             </div>
-            <h3>Expert Local Guides</h3>
-            <p>Our guides have 10+ years of experience and deep knowledge of every trail, village, and hidden gem in Himachal Pradesh and Ladakh.</p>
-          </div>
+          </a>
         </div>
         <div class="col-md-6 col-lg-4">
-          <div class="feature-card">
-            <div class="feature-icon">
-              <i class="fas fa-tag"></i>
+          <a href="./tours.html" class="feature-card-link">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-tag"></i>
+              </div>
+              <h3>Transparent Pricing</h3>
+              <p>No hidden costs. All-inclusive packages with clear breakdowns of accommodation, meals, transport, and activities. What you see is what you pay.</p>
             </div>
-            <h3>Transparent Pricing</h3>
-            <p>No hidden costs. All-inclusive packages with clear breakdowns of accommodation, meals, transport, and activities. What you see is what you pay.</p>
-          </div>
+          </a>
         </div>
         <div class="col-md-6 col-lg-4">
-          <div class="feature-card">
-            <div class="feature-icon">
-              <i class="fas fa-puzzle-piece"></i>
+          <a href="./contact.html" class="feature-card-link">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-puzzle-piece"></i>
+              </div>
+              <h3>100% Customizable</h3>
+              <p>Every traveler is unique. We customize dates, duration, accommodation, activities, and budget to create your perfect itinerary.</p>
             </div>
-            <h3>100% Customizable</h3>
-            <p>Every traveler is unique. We customize dates, duration, accommodation, activities, and budget to create your perfect itinerary.</p>
-          </div>
+          </a>
         </div>
         <div class="col-md-6 col-lg-4">
-          <div class="feature-card">
-            <div class="feature-icon">
-              <i class="fas fa-shield-halved"></i>
+          <a href="./travel-tips.html" class="feature-card-link">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-shield-halved"></i>
+              </div>
+              <h3>Safety First</h3>
+              <p>Trained guides, well-maintained vehicles, safety equipment, first-aid kits, and strict protocols ensure your peace of mind on every journey.</p>
             </div>
-            <h3>Safety First</h3>
-            <p>Trained guides, well-maintained vehicles, safety equipment, first-aid kits, and strict protocols ensure your peace of mind on every journey.</p>
-          </div>
+          </a>
         </div>
         <div class="col-md-6 col-lg-4">
-          <div class="feature-card">
-            <div class="feature-icon">
-              <i class="fas fa-heart"></i>
+          <a href="./contact.html" class="feature-card-link">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h3>Personalized Service</h3>
+              <p>From booking to return, our team provides 24/7 support. We're not just operators—we're your travel companions and friends.</p>
             </div>
-            <h3>Personalized Service</h3>
-            <p>From booking to return, our team provides 24/7 support. We're not just operators—we're your travel companions and friends.</p>
-          </div>
+          </a>
         </div>
         <div class="col-md-6 col-lg-4">
-          <div class="feature-card">
-            <div class="feature-icon">
-              <i class="fas fa-globe"></i>
+          <a href="./aboutus.html" class="feature-card-link">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <h3>Community Focus</h3>
+              <p>We partner with local communities, support sustainable tourism, and ensure your travels positively impact the regions you visit.</p>
             </div>
-            <h3>Community Focus</h3>
-            <p>We partner with local communities, support sustainable tourism, and ensure your travels positively impact the regions you visit.</p>
-          </div>
+          </a>
         </div>
       </div>
 

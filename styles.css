@@ -45,7 +45,32 @@ footer a{color:#adb5bd}
 footer a:hover{color:#fff}
 
 /* Navbar */
-.navbar .nav-link{font-weight:500}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.navbar-brand {
+  margin-right: auto !important;
+  flex-shrink: 0;
+  order: 1;
+}
+.navbar-collapse {
+  order: 2;
+  flex: 1;
+}
+.navbar-collapse .navbar-nav {
+  margin: 0 auto;
+}
+.navbar-nav {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.navbar .nav-link{
+  font-weight: 500;
+  white-space: nowrap;
+  font-size: 0.95rem;
+  padding: 0.4rem 0.5rem !important;
+}
 .navbar .nav-link.active{color:var(--primary) !important}
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
@@ -53,6 +78,68 @@ footer a:hover{color:#fff}
 }
 .navbar-brand .fa-earth-asia {
   color: #1b78c7 !important;
+}
+/* Call Now Button in Navbar */
+.navbar .btn-primary {
+  white-space: nowrap;
+  padding: 0.4rem 1rem !important;
+  font-size: 0.9rem;
+  margin-left: auto;
+  order: 3;
+  flex-shrink: 0;
+}
+/* Mobile Navbar */
+.navbar-toggler {
+  order: 3 !important;
+  margin-left: auto !important;
+}
+@media (max-width: 991px) {
+  .navbar {
+    flex-wrap: nowrap;
+    position: relative;
+  }
+  .navbar-brand {
+    order: 1;
+    margin-right: 0 !important;
+    flex: 0 0 auto;
+    flex-shrink: 0;
+  }
+  .navbar-toggler {
+    order: 2;
+    position: relative;
+    margin-left: auto;
+    padding: 5px 8px;
+    border: none;
+    z-index: 1050;
+    flex-shrink: 0;
+  }
+  .navbar-collapse {
+    order: 3;
+    flex-basis: 100%;
+    margin-top: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: white;
+    border-top: 1px solid #e0e0e0;
+  }
+  .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    gap: 5px !important;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .navbar .nav-link {
+    text-align: center;
+    padding: 8px 0 !important;
+  }
+  .navbar .btn-primary {
+    margin: 10px auto;
+    display: block;
+    width: fit-content;
+  }
 }
 .call-btn {
   display: inline-block;
