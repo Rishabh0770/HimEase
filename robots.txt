@@ -1,0 +1,24 @@
+# Robots.txt for MilesOnWheel - SEO Optimized
+# Allow all search engines to crawl the website
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Crawl delay to prevent server overload (in seconds)
+Crawl-delay: 2
+
+# Specific rules for popular search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Reference to sitemap
+Sitemap: https://www.milesonwheel.com/sitemap.xml
+Sitemap: https://milesonwheel.com/sitemap.xml

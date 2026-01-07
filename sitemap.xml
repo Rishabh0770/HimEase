@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.milesonwheel.com/</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Main Pages -->
+  <url>
+    <loc>https://www.milesonwheel.com/aboutus.html</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.milesonwheel.com/contact.html</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.milesonwheel.com/termsconditions.html</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Destination Pages -->
+  <url>
+    <loc>https://www.milesonwheel.com/destinations/manali.html</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>bi-weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.milesonwheel.com/destinations/shimla.html</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>bi-weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.milesonwheel.com/destinations/kinnaur.html</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>bi-weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.milesonwheel.com/destinations/kangra.html</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>bi-weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.milesonwheel.com/destinations/kullu.html</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>bi-weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.milesonwheel.com/destinations/spiti.html</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>bi-weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.milesonwheel.com/destinations/ladakh.html</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>bi-weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Tour Packages -->
+  <url>
+    <loc>https://www.milesonwheel.com/tours.html</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Trek Packages -->
+  <url>
+    <loc>https://www.milesonwheel.com/treks.html</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Blog Pages -->
+  <url>
+    <loc>https://www.milesonwheel.com/blogs/allblogs.html</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.milesonwheel.com/blogs/blog1.html</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.milesonwheel.com/blogs/blog2.html</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.milesonwheel.com/blogs/blog3.html</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- New SEO Pages (to be created) -->
+  <url>
+    <loc>https://www.milesonwheel.com/faq.html</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.milesonwheel.com/travel-tips.html</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.milesonwheel.com/why-choose-us.html</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+</urlset>

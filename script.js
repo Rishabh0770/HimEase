@@ -4,6 +4,55 @@ document.addEventListener('DOMContentLoaded', () => {
   const y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
 
+  // Rotating Taglines for Hero Section
+  const taglines = [
+    "Where Mountains Meet Memories",
+    "Your Himalayan Adventure Starts Here",
+    "Discover, Explore, Experience Himachal"
+  ];
+  let taglineIndex = 0;
+  const taglineEl = document.getElementById('rotating-tagline');
+  
+  if (taglineEl) {
+    setInterval(() => {
+      taglineEl.style.opacity = '0';
+      setTimeout(() => {
+        taglineIndex = (taglineIndex + 1) % taglines.length;
+        taglineEl.textContent = taglines[taglineIndex];
+        taglineEl.style.opacity = '1';
+      }, 300);
+    }, 6000);
+  }
+
+  // Social Proof Notifications
+  const notifications = [
+    "Rahul from Delhi just booked a Manali Package",
+    "Priya from Bangalore just booked a Shimla Tour",
+    "Arjun from Mumbai just booked a Spiti Trek",
+    "Sarah from Pune just booked a Ladakh Package",
+    "Vikram from Chennai just booked a Kinnaur Tour"
+  ];
+  let notifIndex = 0;
+  const notifBar = document.getElementById('notification-bar');
+  const notifText = document.getElementById('notification-text');
+  
+  if (notifBar && notifText) {
+    // Show notification
+    setTimeout(() => {
+      notifBar.style.opacity = '1';
+    }, 2000);
+    
+    // Rotate notifications
+    setInterval(() => {
+      notifBar.style.opacity = '0';
+      setTimeout(() => {
+        notifIndex = (notifIndex + 1) % notifications.length;
+        notifText.textContent = notifications[notifIndex];
+        notifBar.style.opacity = '1';
+      }, 500);
+    }, 8000);
+  }
+
   // Fake search
   const searchBtn = document.getElementById('searchBtn');
   if (searchBtn){
