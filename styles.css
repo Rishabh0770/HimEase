@@ -147,6 +147,13 @@ header.sticky-top {
   animation: logoSpin 1.6s cubic-bezier(0.34,1.56,0.64,1) forwards;
 }
 
+.navbar-brand .logo-anim {
+  width: 60px !important;
+  height: auto !important;
+  max-height: 60px;
+  display: block;
+}
+
 @keyframes fadeSlideIn { to { opacity:1; transform:translateY(0); } }
 @keyframes fadeSlideDown { to { opacity:1; transform:translateY(0); } }
 @keyframes logoSpin { to { opacity:1; transform:rotate(0) scale(1); } }
@@ -1425,30 +1432,100 @@ header.sticky-top {
    FOOTER
    ============================================================ */
 footer.pt-5 {
-  background: #0d1b2a !important;
+  background: #07121d !important;
   color: #fff;
 }
-footer .fw-bold { font-family: var(--font-display); font-size: 1.2rem; }
-footer p.text-white-50 { font-size: 0.85rem; }
-footer h6.fw-semibold { font-size: 0.82rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-bottom: 14px; }
-footer ul li { margin-bottom: 8px; }
-footer ul li a {
-  color: rgba(255,255,255,0.55);
-  font-size: 0.87rem;
-  transition: var(--transition-fast);
-  position: relative;
+footer .footer-brand h5 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  margin: 0;
 }
-footer ul li a:hover { color: #fff; padding-left: 4px; }
-footer .fa-brands {
-  font-size: 1.2rem;
-  color: rgba(255,255,255,0.55);
-  transition: var(--transition-fast);
+footer .footer-brand img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }
-footer .fa-brands:hover { color: var(--primary); transform: translateY(-2px) scale(1.1); display: inline-block; }
-footer hr.border-secondary { border-color: rgba(255,255,255,0.08) !important; }
-footer .small { font-size: 0.8rem; color: rgba(255,255,255,0.4); }
-footer .text-white { color: rgba(255,255,255,0.8) !important; }
-@media (max-width: 767px) { footer .d-flex { justify-content: center !important; flex-wrap: wrap; gap: 8px; } }
+footer p.text-white-50 { font-size: 0.92rem; line-height: 1.7; }
+footer h6.fw-semibold { font-size: 0.82rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.7); margin-bottom: 18px; }
+footer .footer-links {
+  display: block;
+  padding-left: 0;
+}
+footer .footer-links li { margin-bottom: 0.8rem; }
+footer .footer-links a,
+footer .footer-link {
+  color: rgba(255,255,255,0.72);
+  font-size: 0.92rem;
+  transition: var(--transition-fast);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+footer .footer-links a:hover,
+footer .footer-link:hover {
+  color: #fff;
+  transform: translateX(4px);
+}
+footer .footer-links a i {
+  width: 18px;
+  text-align: center;
+}
+footer .footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .contact-item {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+}
+footer .contact-icon {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+footer .footer-link {
+  color: rgba(255,255,255,0.75);
+}
+footer .social-links {
+  flex-wrap: wrap;
+}
+footer .social-icon {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.85);
+  transition: var(--transition);
+}
+footer .social-icon:hover {
+  background: #1b78c7;
+  color: #fff;
+  transform: translateY(-2px);
+}
+footer hr.border-secondary { border-color: rgba(255,255,255,0.12) !important; }
+footer .small { font-size: 0.82rem; color: rgba(255,255,255,0.45); }
+footer .text-white { color: rgba(255,255,255,0.9) !important; }
+@media (max-width: 991px) {
+  footer .footer-links { grid-template-columns: 1fr; }
+}
+@media (max-width: 767px) {
+  footer .footer-brand { justify-content: center; }
+  footer .footer-brand div { text-align: center; }
+  footer .footer-links { padding-left: 0; }
+  footer .contact-item { align-items: center; }
+  footer .contact-item div { flex:1; }
+  footer .d-flex { justify-content: center !important; flex-wrap: wrap; gap: 8px; }
+  footer .text-center-mobile { text-align: center; }
+}
 
 /* ============================================================
    WHATSAPP FLOAT
