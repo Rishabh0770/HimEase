@@ -7,7 +7,7 @@
 **BEFORE:**
 ```
 H1: EXPLORE HIMALAYA WITH US
-Subtitle: Miles On Wheel is the best way to truly experience the adventure, culture and history...
+Subtitle: Sangla On Wheels is the best way to truly experience the adventure, culture and history...
 CTA Button: "Explore Packages"
 ```
 
@@ -43,7 +43,7 @@ NEW: Social Proof Section below hero
 robots.txt: ❌ MISSING
 sitemap.xml: ❌ MISSING
 Schema: ❌ Basic (no FAQ schema)
-Meta Title: "MilesOnWheel | Himachal Pradesh Tour Packages, Manali & Shimla Trips" (65 chars - TOO LONG)
+Meta Title: "Sangla On Wheels | Himachal Pradesh Tour Packages, Manali & Shimla Trips" (65 chars - TOO LONG)
 Meta Desc: Generic, not CTA-focused
 Canonical: ❌ MISSING
 ```
@@ -63,7 +63,7 @@ Schema: ✅ ENHANCED
   ├─ FAQPage (5 pre-written FAQs with structured answers)
   └─ Added to future pages (Article, Organization, etc.)
   
-Meta Title: "Himachal Travel Packages | Manali, Shimla & Trek Tours | MilesOnWheel" (72 chars - BETTER)
+Meta Title: "Himachal Travel Packages | Manali, Shimla & Trek Tours | Sangla On Wheels" (72 chars - BETTER)
 Meta Desc: "Book curated Himachal Pradesh travel & trek packages. Expert-led tours to Manali, Shimla, Spiti, Kinnaur, Ladakh. 500+ happy travelers. Customized, transparent pricing." (155 chars - WITH CTA)
 Canonical: ✅ ADDED
 ```
@@ -184,15 +184,15 @@ Footer Menu:
 
 **BEFORE:**
 ```html
-<meta name="title" content="MilesOnWheel — Best Travel & Tours in Himachal Pradesh" />
-<meta name="description" content="Discover Himachal Pradesh with MilesOnWheel. Book curated travel packages for Manali, Shimla, Spiti, Kinnaur, Ladakh & more. Affordable, customized, and memorable trips." />
+<meta name="title" content="Sangla On Wheels — Best Travel & Tours in Himachal Pradesh" />
+<meta name="description" content="Discover Himachal Pradesh with Sangla On Wheels. Book curated travel packages for Manali, Shimla, Spiti, Kinnaur, Ladakh & more. Affordable, customized, and memorable trips." />
 ```
 
 **AFTER:**
 ```html
-<meta name="title" content="Himachal Travel Packages | Manali, Shimla & Trek Tours | MilesOnWheel" />
+<meta name="title" content="Himachal Travel Packages | Manali, Shimla & Trek Tours | Sangla On Wheels" />
 <meta name="description" content="Book curated Himachal Pradesh travel & trek packages. Expert-led tours to Manali, Shimla, Spiti, Kinnaur, Ladakh. 500+ happy travelers. Customized, transparent pricing." />
-<link rel="canonical" href="https://www.milesonwheel.com/" />
+<link rel="canonical" href="https://www.Sangla On Wheels.com/" />
 ```
 
 **Why Better**:
@@ -210,8 +210,8 @@ Footer Menu:
 ```json
 {
   "@type": "TravelAgency",
-  "name": "MilesOnWheel",
-  "url": "https://milesonwheel.com"
+  "name": "Sangla On Wheels",
+  "url": "https://Sangla On Wheels.com"
   // Basic info only
 }
 ```
@@ -221,13 +221,13 @@ Footer Menu:
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "MilesOnWheel",
-  "url": "https://www.milesonwheel.com",
-  "logo": "https://www.milesonwheel.com/images/logo12345.webp",
+  "name": "Sangla On Wheels",
+  "url": "https://www.Sangla On Wheels.com",
+  "logo": "https://www.Sangla On Wheels.com/images/logo12345.webp",
   "description": "Expert-led travel and trek packages across Himachal Pradesh and Ladakh",
   "address": { /* complete postal address */ },
-  "telephone": "+917018434170",
-  "email": "contact.milesonwheel@gmail.com",
+  "telephone": "+91 88941-01001",
+  "email": "contact.Sangla On Wheels@gmail.com",
   "sameAs": [ /* social media links */ ],
   "areaServed": ["Himachal Pradesh", "Ladakh", "India"],
   "serviceType": "Travel Agency",

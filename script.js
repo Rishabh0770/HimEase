@@ -1,5 +1,5 @@
 /* ============================================================
-   MilesOnWheel — script.js (Premium Edition)
+   Sangla On Wheels — script.js (Premium Edition)
    ============================================================ */
 
 /* ── 1. DOM Ready ── */
@@ -322,7 +322,7 @@ function toggleChat() {
 }
 
 function openWhatsApp() {
-  const phone = '917018434170';
+  const phone = '91+91 88941-01001';
   const msg = "Hi, I'd like to know more about your travel packages.";
   window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, '_blank');
 }

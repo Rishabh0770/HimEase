@@ -1,4 +1,4 @@
-# MilesOnWheel SEO Implementation Summary
+# Sangla On Wheels SEO Implementation Summary
 
 ## 🎉 IMMEDIATE DEPLOYMENT STATUS: READY
 
@@ -90,7 +90,7 @@ After: ~80+ keywords across all new pages
 - Month 6: 50-100% increase (if other pages optimized)
 
 ### Ranking Targets
-1. **Homepage** - Brand keywords (MilesOnWheel)
+1. **Homepage** - Brand keywords (Sangla On Wheels)
 2. **FAQ page** - FAQ variations, "questions about Himachal"
 3. **Travel Tips** - "Himachal travel tips," "packing guide," "budget guide"
 4. **Why Choose Us** - "best travel agency," "Himachal tour operator"
@@ -243,12 +243,12 @@ The optimizations highlight:
    - script.js (updated version)
 
 3. **Verify in browser**:
-   - Visit https://www.milesonwheel.com/robots.txt
-   - Visit https://www.milesonwheel.com/sitemap.xml
+   - Visit https://www.Sangla On Wheels.com/robots.txt
+   - Visit https://www.Sangla On Wheels.com/sitemap.xml
    - Test faq.html, travel-tips.html, why-choose-us.html
 
 4. **Google Search Console**:
-   - Add sitemap (https://www.milesonwheel.com/sitemap.xml)
+   - Add sitemap (https://www.Sangla On Wheels.com/sitemap.xml)
    - Request indexing for new pages
    - Monitor for errors
 

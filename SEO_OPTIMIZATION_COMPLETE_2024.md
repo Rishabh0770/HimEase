@@ -15,80 +15,80 @@
 ## 🗂️ DESTINATION PAGES OPTIMIZED (7 pages)
 
 ### 1. **Manali** (`/destinations/manali.html`)
-- **Title**: \"Manali Tour Packages & Travel Guide | Adventure Destination in Himachal | MilesOnWheel\"
+- **Title**: \"Manali Tour Packages & Travel Guide | Adventure Destination in Himachal | Sangla On Wheels\"
 - **Description**: \"Explore Manali with our expert-curated tour packages. Discover Solang Valley, Rohtang Pass, adventure activities & scenic beauty. Book your Manali trek today!\"
 - **Keywords**: Manali tour packages, Manali trek, Solang Valley, Rohtang Pass, Manali adventure, Himachal tour, Manali honeymoon
-- **Canonical**: https://www.milesonwheel.com/destinations/manali.html
+- **Canonical**: https://www.Sangla On Wheels.com/destinations/manali.html
 
 ### 2. **Shimla** (`/destinations/shimla.html`)
-- **Title**: \"Shimla Tour Packages & Travel Guide | Hill Station Packages in Himachal | MilesOnWheel\"
-- **Description**: \"Book Shimla tour packages with MilesOnWheel. Explore Mall Road, heritage sites, scenic mountain views. Best for honeymooners & families.\"
+- **Title**: \"Shimla Tour Packages & Travel Guide | Hill Station Packages in Himachal | Sangla On Wheels\"
+- **Description**: \"Book Shimla tour packages with Sangla On Wheels. Explore Mall Road, heritage sites, scenic mountain views. Best for honeymooners & families.\"
 - **Keywords**: Shimla tour packages, Shimla travel, Shimla honeymoon, hill station Himachal, Kufri, Chail, Mashobra
-- **Canonical**: https://www.milesonwheel.com/destinations/shimla.html
+- **Canonical**: https://www.Sangla On Wheels.com/destinations/shimla.html
 
 ### 3. **Ladakh** (`/destinations/ladakh.html`)
-- **Title**: \"Ladakh Tour Packages & Travel Guide | High Altitude Adventure Destination | MilesOnWheel\"
+- **Title**: \"Ladakh Tour Packages & Travel Guide | High Altitude Adventure Destination | Sangla On Wheels\"
 - **Description**: \"Discover Ladakh with our curated tour packages. Explore Leh, Pangong Lake, Nubra Valley, Khardung La & more. Book your Ladakh trip today!\"
 - **Keywords**: Ladakh tour packages, Leh Ladakh, Pangong Lake, Nubra Valley, Khardung La, high altitude trek, Ladakh adventure
-- **Canonical**: https://www.milesonwheel.com/destinations/ladakh.html
+- **Canonical**: https://www.Sangla On Wheels.com/destinations/ladakh.html
 
 ### 4. **Kinnaur** (`/destinations/kinnaur.html`)
-- **Title**: \"Kinnaur Tour Packages & Travel Guide | Apple Valley & Mountain Destination | MilesOnWheel\"
+- **Title**: \"Kinnaur Tour Packages & Travel Guide | Apple Valley & Mountain Destination | Sangla On Wheels\"
 - **Description**: \"Explore Kinnaur with our expert-guided tour packages. Discover Sangla Valley, apple orchards, Baspa River, and stunning Himalayan scenery. Book your Kinnaur adventure now!\"
 - **Keywords**: Kinnaur tour packages, Sangla Valley, Kinnaur trek, apple valley Himachal, Baspa Valley, Chitkul
-- **Canonical**: https://www.milesonwheel.com/destinations/kinnaur.html
+- **Canonical**: https://www.Sangla On Wheels.com/destinations/kinnaur.html
 
 ### 5. **Kullu** (`/destinations/kullu.html`)
-- **Title**: \"Kullu Tour Packages & Travel Guide | Adventure & Valley Destination | MilesOnWheel\"
+- **Title**: \"Kullu Tour Packages & Travel Guide | Adventure & Valley Destination | Sangla On Wheels\"
 - **Description**: \"Discover Kullu with our curated tour packages. Explore Parvati Valley, Kasol, adventure activities, and stunning mountain landscapes.\"
 - **Keywords**: Kullu tour packages, Parvati Valley, Kasol trek, Kullu Valley, adventure in Himachal, Himalayan trekking
-- **Canonical**: https://www.milesonwheel.com/destinations/kullu.html
+- **Canonical**: https://www.Sangla On Wheels.com/destinations/kullu.html
 
 ### 6. **Spiti Valley** (`/destinations/spiti.html`)
-- **Title**: \"Spiti Valley Tour Packages & Travel Guide | Desert Mountain Destination | MilesOnWheel\"
+- **Title**: \"Spiti Valley Tour Packages & Travel Guide | Desert Mountain Destination | Sangla On Wheels\"
 - **Description**: \"Explore Spiti Valley with our expert tour packages. Discover ancient monasteries, Kinnaur, Tabo, Key Monastery & stunning desert mountain landscapes. Book now!\"
 - **Keywords**: Spiti Valley tour, Spiti trek, Key Monastery, Tabo, Kinnaur Spiti, desert mountain adventure, Himachal trekking
-- **Canonical**: https://www.milesonwheel.com/destinations/spiti.html
+- **Canonical**: https://www.Sangla On Wheels.com/destinations/spiti.html
 
 ### 7. **Kangra/Dharamshala** (`/destinations/kangra.html`)
-- **Title**: \"Dharamshala & Kangra Tour Packages | Himachal Adventure Destination | MilesOnWheel\"
+- **Title**: \"Dharamshala & Kangra Tour Packages | Himachal Adventure Destination | Sangla On Wheels\"
 - **Description**: \"Discover Dharamshala & Kangra with our curated tour packages. Explore Mcleod Ganj, Kangra Fort, adventure activities & scenic mountain beauty. Book your trip today!\"
 - **Keywords**: Dharamshala tour, Kangra tour packages, Mcleod Ganj, Kangra Fort, Bir Billing paragliding, Himachal adventure
-- **Canonical**: https://www.milesonwheel.com/destinations/kangra.html
+- **Canonical**: https://www.Sangla On Wheels.com/destinations/kangra.html
 
 ---
 
 ## 🎁 MAIN DESTINATION PACKAGE PAGES (6 pages)
 
 ### 1. **Manali Package** (`/packages/packagemanali.html`)
-- **Title**: \"Manali Tour Packages 2024-2025 | Adventure & Honeymoon Packages | MilesOnWheel\"
+- **Title**: \"Manali Tour Packages 2024-2025 | Adventure & Honeymoon Packages | Sangla On Wheels\"
 - **Description**: \"Book best Manali tour packages from ₹15,000. Includes Solang Valley, Rohtang Pass, adventures & more. Customizable packages for couples, families & groups.\"
-- **Canonical**: https://www.milesonwheel.com/packages/packagemanali.html
+- **Canonical**: https://www.Sangla On Wheels.com/packages/packagemanali.html
 
 ### 2. **Shimla Package** (`/packages/packageshimla.html`)
-- **Title**: \"Shimla Tour Packages 2024-2025 | Budget & Premium Hill Station Packages | MilesOnWheel\"
+- **Title**: \"Shimla Tour Packages 2024-2025 | Budget & Premium Hill Station Packages | Sangla On Wheels\"
 - **Description**: \"Discover Shimla tour packages starting ₹12,000. Explore Mall Road, Kufri, heritage sites. Perfect for honeymoon, family trips & group tours.\"
-- **Canonical**: https://www.milesonwheel.com/packages/packageshimla.html
+- **Canonical**: https://www.Sangla On Wheels.com/packages/packageshimla.html
 
 ### 3. **Kullu Package** (`/packages/packagekullu.html`)
-- **Title**: \"Kullu Tour Packages 2024-2025 | Parvati Valley & Adventure Packages | MilesOnWheel\"
+- **Title**: \"Kullu Tour Packages 2024-2025 | Parvati Valley & Adventure Packages | Sangla On Wheels\"
 - **Description**: \"Book Kullu tour packages with Parvati Valley & Kasol exploration. From ₹13,000. Includes adventure activities, trekking & scenic tours.\"
-- **Canonical**: https://www.milesonwheel.com/packages/packagekullu.html
+- **Canonical**: https://www.Sangla On Wheels.com/packages/packagekullu.html
 
 ### 4. **Kinnaur Package** (`/packages/packagekinnaur.html`)
-- **Title**: \"Kinnaur Tour Packages 2024-2025 | Sangla Valley & Apple Valley Tours | MilesOnWheel\"
+- **Title**: \"Kinnaur Tour Packages 2024-2025 | Sangla Valley & Apple Valley Tours | Sangla On Wheels\"
 - **Description**: \"Explore Kinnaur with our curated tour packages starting ₹14,000. Discover Sangla Valley, apple orchards, Baspa River. Customizable for families & adventure seekers.\"
-- **Canonical**: https://www.milesonwheel.com/packages/packagekinnaur.html
+- **Canonical**: https://www.Sangla On Wheels.com/packages/packagekinnaur.html
 
 ### 5. **Spiti Package** (`/packages/packagespiti.html`)
-- **Title**: \"Spiti Valley Tour Packages 2024-2025 | Desert Mountain Adventure Tours | MilesOnWheel\"
+- **Title**: \"Spiti Valley Tour Packages 2024-2025 | Desert Mountain Adventure Tours | Sangla On Wheels\"
 - **Description**: \"Adventure awaits in Spiti Valley! Book our expertly-guided tour packages from ₹20,000. Visit Key Monastery, Tabo, stunning desert landscapes.\"
-- **Canonical**: https://www.milesonwheel.com/packages/packagespiti.html
+- **Canonical**: https://www.Sangla On Wheels.com/packages/packagespiti.html
 
 ### 6. **Dharamshala Package** (`/packages/packagedharamshala.html`)
-- **Title**: \"Dharamshala & Kangra Tour Packages | Mcleod Ganj & Adventure Packages | MilesOnWheel\"
+- **Title**: \"Dharamshala & Kangra Tour Packages | Mcleod Ganj & Adventure Packages | Sangla On Wheels\"
 - **Description**: \"Discover Dharamshala & Kangra tour packages from ₹11,000. Explore Mcleod Ganj, Kangra Fort, Bir Billing paragliding. Perfect for adventure & spiritual seekers.\"
-- **Canonical**: https://www.milesonwheel.com/packages/packagedharamshala.html
+- **Canonical**: https://www.Sangla On Wheels.com/packages/packagedharamshala.html
 
 ---
 
@@ -114,76 +114,76 @@ All trek pages now have professional SEO titles with year indicators (2024-2025)
 ## 📝 BLOG & ARTICLE PAGES (4 pages)
 
 ### 1. **Blog 1 - Ultimate Himachal Guide**
-- **Title**: \"The Ultimate Himachal Travel Guide 2024-2025 | Tips & Itineraries | MilesOnWheel\"
+- **Title**: \"The Ultimate Himachal Travel Guide 2024-2025 | Tips & Itineraries | Sangla On Wheels\"
 - **Description**: \"Complete Himachal travel guide with expert tips, best destinations, itineraries & travel hacks.\"
 - **Keywords**: Himachal travel guide, Himachal Pradesh tips, best destinations Himachal, travel itinerary
-- **Canonical**: https://www.milesonwheel.com/blogs/blog1.html
+- **Canonical**: https://www.Sangla On Wheels.com/blogs/blog1.html
 
-### 2. **Blog 2 - About MilesOnWheel**
-- **Title**: \"Why MilesOnWheel is Your Trusted Travel Partner in Himachal\"
-- **Description**: \"Discover why 500+ travelers trust MilesOnWheel. Expert guides, customized packages, transparent pricing.\"
-- **Canonical**: https://www.milesonwheel.com/blogs/blog2.html
+### 2. **Blog 2 - About Sangla On Wheels**
+- **Title**: \"Why Sangla On Wheels is Your Trusted Travel Partner in Himachal\"
+- **Description**: \"Discover why 500+ travelers trust Sangla On Wheels. Expert guides, customized packages, transparent pricing.\"
+- **Canonical**: https://www.Sangla On Wheels.com/blogs/blog2.html
 
 ### 3. **Blog 3 - Top Destinations**
 - **Title**: \"Top 4 Must-Visit Destinations in Himachal Pradesh 2024-2025\"
 - **Description**: \"Explore top 4 must-visit destinations: Manali, Shimla, Spiti Valley, Ladakh.\"
-- **Canonical**: https://www.milesonwheel.com/blogs/blog3.html
+- **Canonical**: https://www.Sangla On Wheels.com/blogs/blog3.html
 
 ### 4. **All Blogs Hub**
-- **Title**: \"All Blog Articles | Himachal Travel Tips & Guides | MilesOnWheel\"
-- **Description**: \"Read all MilesOnWheel blog articles about Himachal Pradesh travel and expert advice.\"
-- **Canonical**: https://www.milesonwheel.com/blogs/allblogs.html
+- **Title**: \"All Blog Articles | Himachal Travel Tips & Guides | Sangla On Wheels\"
+- **Description**: \"Read all Sangla On Wheels blog articles about Himachal Pradesh travel and expert advice.\"
+- **Canonical**: https://www.Sangla On Wheels.com/blogs/allblogs.html
 
 ---
 
 ## 🏠 MAIN PAGES OPTIMIZED (6 pages)
 
 ### 1. **About Us** (`/aboutus.html`)
-- **Title**: \"About MilesOnWheel | Expert Himachal Travel Company & Tour Operators\"
-- **Description**: \"Learn about MilesOnWheel - trusted Himachal tour operators since 2010. 500+ happy travelers, expert guides.\"
-- **Canonical**: https://www.milesonwheel.com/aboutus.html
+- **Title**: \"About Sangla On Wheels | Expert Himachal Travel Company & Tour Operators\"
+- **Description**: \"Learn about Sangla On Wheels - trusted Himachal tour operators since 2010. 500+ happy travelers, expert guides.\"
+- **Canonical**: https://www.Sangla On Wheels.com/aboutus.html
 
 ### 2. **Contact Us** (`/contact.html`)
-- **Title**: \"Contact MilesOnWheel | Get in Touch with Himachal Travel Experts\"
-- **Description**: \"Get in touch with MilesOnWheel for your Himachal travel queries. Professional support team ready.\"
-- **Canonical**: https://www.milesonwheel.com/contact.html
+- **Title**: \"Contact Sangla On Wheels | Get in Touch with Himachal Travel Experts\"
+- **Description**: \"Get in touch with Sangla On Wheels for your Himachal travel queries. Professional support team ready.\"
+- **Canonical**: https://www.Sangla On Wheels.com/contact.html
 
 ### 3. **Tours Page** (`/tours.html`)
-- **Title**: \"Himachal Tour Packages 2024-2025 | Family & Group Tours | MilesOnWheel\"
+- **Title**: \"Himachal Tour Packages 2024-2025 | Family & Group Tours | Sangla On Wheels\"
 - **Description**: \"Browse all Himachal tour packages. Expert-guided tours from ₹11,000+. Best for families, couples & groups.\"
-- **Canonical**: https://www.milesonwheel.com/tours.html
+- **Canonical**: https://www.Sangla On Wheels.com/tours.html
 
 ### 4. **Treks Page** (`/treks.html`)
-- **Title**: \"Himachal Trek Packages 2024-2025 | Best Mountain Trekking Tours | MilesOnWheel\"
+- **Title**: \"Himachal Trek Packages 2024-2025 | Best Mountain Trekking Tours | Sangla On Wheels\"
 - **Description**: \"Explore epic Himachal trek packages. Hampta Pass, Bhaba Pass, Spiti Valley treks & more. From ₹10,000+.\"
-- **Canonical**: https://www.milesonwheel.com/treks.html
+- **Canonical**: https://www.Sangla On Wheels.com/treks.html
 
 ### 5. **Reviews & Testimonials** (`/reviews.html`)
-- **Title**: \"Customer Reviews & Testimonials | MilesOnWheel Himachal Tours\"
+- **Title**: \"Customer Reviews & Testimonials | Sangla On Wheels Himachal Tours\"
 - **Description**: \"Read real reviews from 500+ happy travelers. 5-star ratings, testimonials, and traveler stories.\"
-- **Canonical**: https://www.milesonwheel.com/reviews.html
+- **Canonical**: https://www.Sangla On Wheels.com/reviews.html
 
 ### 6. **FAQ Page** (`/faq.html`)
-- **Title**: \"FAQ - Himachal Travel Packages | MilesOnWheel\" (Already optimized)
-- **Canonical**: https://www.milesonwheel.com/faq.html
+- **Title**: \"FAQ - Himachal Travel Packages | Sangla On Wheels\" (Already optimized)
+- **Canonical**: https://www.Sangla On Wheels.com/faq.html
 
 ### 7. **Travel Tips** (`/travel-tips.html`)
-- **Title**: \"Himachal Travel Tips & Expert Guide 2024-2025 | MilesOnWheel\"
+- **Title**: \"Himachal Travel Tips & Expert Guide 2024-2025 | Sangla On Wheels\"
 - **Description**: \"Complete Himachal travel guide with expert tips, packing list, best times to visit, safety tips, budget guide.\"
-- **Canonical**: https://www.milesonwheel.com/travel-tips.html
+- **Canonical**: https://www.Sangla On Wheels.com/travel-tips.html
 
 ### 8. **Why Choose Us** (`/why-choose-us.html`)
-- **Title**: \"Why Choose MilesOnWheel | Best Himachal Travel Agency & Tour Operator\"
-- **Description**: \"Why 500+ travelers trust MilesOnWheel: Expert guides, transparent pricing, customized packages, safety-first approach.\"
-- **Canonical**: https://www.milesonwheel.com/why-choose-us.html
+- **Title**: \"Why Choose Sangla On Wheels | Best Himachal Travel Agency & Tour Operator\"
+- **Description**: \"Why 500+ travelers trust Sangla On Wheels: Expert guides, transparent pricing, customized packages, safety-first approach.\"
+- **Canonical**: https://www.Sangla On Wheels.com/why-choose-us.html
 
 ### 9. **Terms & Conditions** (`/termsconditions.html`)
-- **Title**: \"Terms & Conditions | MilesOnWheel - Himachal Tour Operator\"
-- **Description**: \"Read MilesOnWheel terms and conditions for tour bookings, cancellations, and refunds. Transparent terms for your adventure.\"
-- **Canonical**: https://www.milesonwheel.com/termsconditions.html
+- **Title**: \"Terms & Conditions | Sangla On Wheels - Himachal Tour Operator\"
+- **Description**: \"Read Sangla On Wheels terms and conditions for tour bookings, cancellations, and refunds. Transparent terms for your adventure.\"
+- **Canonical**: https://www.Sangla On Wheels.com/termsconditions.html
 
 ### 10. **404 Error Page** (`/404.html`)
-- **Title**: \"Page Not Found | MilesOnWheel - Himachal Travel Packages\"
+- **Title**: \"Page Not Found | Sangla On Wheels - Himachal Travel Packages\"
 - **Meta Robots**: noindex, follow (prevents indexing of error pages)
 
 ---

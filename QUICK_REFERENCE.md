@@ -30,9 +30,9 @@
 
 ### 1. Meta Tags (lines 22-26)
 ```
-Title: "Himachal Travel Packages | Manali, Shimla & Trek Tours | MilesOnWheel"
+Title: "Himachal Travel Packages | Manali, Shimla & Trek Tours | Sangla On Wheels"
 Description: "Book curated Himachal Pradesh travel & trek packages..."
-Canonical: https://www.milesonwheel.com/
+Canonical: https://www.Sangla On Wheels.com/
 ```
 
 ### 2. Schema Markup (lines 100-150)
@@ -129,12 +129,12 @@ All original functionality preserved!
 - [ ] Click FAQ accordion items (should expand)
 
 ### Online (After Deployment)
-- [ ] https://www.milesonwheel.com/robots.txt (should display)
-- [ ] https://www.milesonwheel.com/sitemap.xml (should display XML)
-- [ ] https://www.milesonwheel.com/404.html (test by visiting fake page)
-- [ ] https://www.milesonwheel.com/faq.html (should load with schema)
-- [ ] https://www.milesonwheel.com/travel-tips.html (should load)
-- [ ] https://www.milesonwheel.com/why-choose-us.html (should load)
+- [ ] https://www.Sangla On Wheels.com/robots.txt (should display)
+- [ ] https://www.Sangla On Wheels.com/sitemap.xml (should display XML)
+- [ ] https://www.Sangla On Wheels.com/404.html (test by visiting fake page)
+- [ ] https://www.Sangla On Wheels.com/faq.html (should load with schema)
+- [ ] https://www.Sangla On Wheels.com/travel-tips.html (should load)
+- [ ] https://www.Sangla On Wheels.com/why-choose-us.html (should load)
 
 ### Search Engines
 - [ ] Google Search Console - Submit sitemap

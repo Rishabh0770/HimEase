@@ -1,4 +1,4 @@
-# MilesOnWheel SEO Optimization & Implementation Report
+# Sangla On Wheels SEO Optimization & Implementation Report
 
 ## ✅ COMPLETED IMPROVEMENTS
 
@@ -10,7 +10,7 @@
 
 ### 2. HOMEPAGE (index.html) ENHANCEMENTS
 - ✅ **Meta Tags**
-  - Updated title: "Himachal Travel Packages | Manali, Shimla & Trek Tours | MilesOnWheel"
+  - Updated title: "Himachal Travel Packages | Manali, Shimla & Trek Tours | Sangla On Wheels"
   - Improved meta description with keywords and CTA
   - Added canonical URL
 
@@ -187,7 +187,7 @@ All pages need:
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.milesonwheel.com/page-name">
+<link rel="canonical" href="https://www.Sangla On Wheels.com/page-name">
 ```
 
 ### PRIORITY 9: Performance & Core Web Vitals

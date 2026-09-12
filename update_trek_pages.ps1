@@ -17,7 +17,7 @@ $newFooter = @"
   <!-- Logo + Heading -->
 <h5 class="fw-bold mb-1" style="white-space: nowrap; display: inline-flex; align-items: center;">
   <img src="../images/logo1234.webp" alt="Logo" width="60" height="50" style="margin-right: 5px;">
-  Miles<span style="color:#1b78c7;">On</span>Wheel
+  Sangla<span style="color:#1b78c7;">On</span>Wheel
 </h5>
 <!-- Subheading (below logo + heading) -->
 <p class="text-white-50 mb-0" style="font-size: 0.85rem;">
@@ -64,7 +64,7 @@ $newFooter = @"
       <div class="col-md-4">
         <h6 class="fw-semibold">Follow</h6>
         <div class="d-flex gap-3 fs-5">
-          <a href="https://www.instagram.com/milesonwheel.com_/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.instagram.com/sanglaonwheels/Sangla On Wheels.com_/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
           <a href="https://x.com/mileesonwh2317" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
           <a href="https://www.facebook.com/profile.php?id=61580331159828" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
         </div>
@@ -72,7 +72,7 @@ $newFooter = @"
     </div>
     <hr class="border-secondary my-4">
    <div class="d-flex justify-content-between small text-white-50">
-  <span>© <span id="year"></span> MilesOnWheel. All rights reserved.</span>
+  <span>© <span id="year"></span> Sangla On Wheels. All rights reserved.</span>
   <span>
     Built by 
     <a href="https://rishavkumar.vercel.app/" target="_blank" class="text-white text-decoration-none">
@@ -122,7 +122,7 @@ $newScripts = @"
 Write-Host "Trek pages update script created. This script contains the standardized footer and scripts for all trek pages."
 Write-Host "Files to be updated: $($trekFiles -join ', ')"
 Write-Host "`nUpdates include:"
-Write-Host "✓ Consistent MilesOnWheel navbar with logo and branding"
+Write-Host "✓ Consistent Sangla On Wheels navbar with logo and branding"
 Write-Host "✓ Mobile-responsive design"
 Write-Host "✓ WhatsApp chat integration" 
 Write-Host "✓ Standardized footer with collapsible menus"
