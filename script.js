@@ -322,9 +322,10 @@ function toggleChat() {
 }
 
 function openWhatsApp() {
-  const phone = '91+91 88941-01001';
+  const phone = '918894101001';
   const msg = "Hi, I'd like to know more about your travel packages.";
-  window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, '_blank');
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+  window.open(url, '_blank');
 }
 
 /* ============================================================
