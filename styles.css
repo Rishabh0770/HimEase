@@ -796,16 +796,27 @@ header.sticky-top {
 .packages-card {
   position: relative;
   display: flex;
-  width: 90%;
-  max-width: 1040px;
+  width: min(1040px, calc(100vw - 80px));
+  min-height: 440px;
   height: 440px;
   margin: auto;
   border-radius: 20px;
   overflow: hidden;
-  background: url('images/spiti.webp') center/cover no-repeat;
-  transition: background-image 0.6s ease;
+  background-image: url('images/spiti.webp');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 300ms ease, transform 280ms ease, box-shadow 280ms ease;
   box-shadow: 0 28px 64px rgba(0,0,0,0.45);
   z-index: 2;
+}
+
+.packages-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.36);
+  z-index: 0;
 }
 
 .package-section {
@@ -817,14 +828,19 @@ header.sticky-top {
   gap: 8px;
   position: relative;
   padding-bottom: 36px;
-  transition: var(--transition);
+  transition: transform 280ms ease, background 280ms ease, filter 280ms ease;
   cursor: pointer;
-  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%);
+  background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 70%);
+  min-width: 0;
+  isolation: isolate;
 }
 .package-section:not(:last-child) {
   border-right: 1px solid rgba(255,255,255,0.15);
 }
-.package-section:hover { background: linear-gradient(to top, rgba(27,120,199,0.65) 0%, transparent 70%); }
+.package-section:hover {
+  background: linear-gradient(to top, rgba(27,120,199,0.65) 0%, transparent 70%);
+  transform: translateY(-4px);
+}
 
 .package-section h3 {
   font-family: var(--font-display);
@@ -862,10 +878,9 @@ header.sticky-top {
 
 .package-section:hover .location,
 .package-section:hover .explore-btn { display: block; }
-.package-section:hover { transform: translateY(-6px); }
 
 @media (max-width: 768px) {
-  .packages-card { flex-direction: column; height: auto; }
+  .packages-card { flex-direction: column; min-height: auto; height: auto; }
   .package-section { padding: 32px 20px; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.15); justify-content: center; }
   .package-section:last-child { border-bottom: none; }
   .package-section .location,

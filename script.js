@@ -117,12 +117,33 @@ document.addEventListener('DOMContentLoaded', () => {
   sections.forEach(s => sectionObserver.observe(s));
 
   /* ── 3-in-1 Packages hover background change ── */
+  const packagesCard = document.querySelector('.packages-card');
+  const defaultPackageBg = packagesCard ? packagesCard.getAttribute('data-default-bg') || 'images/spiti.webp' : 'images/spiti.webp';
+
   document.querySelectorAll('.package-section').forEach(section => {
+    const bg = section.getAttribute('data-bg');
+
     section.addEventListener('mouseenter', () => {
-      const bg = section.getAttribute('data-bg');
-      if (bg) {
-        const card = document.querySelector('.packages-card');
-        if (card) card.style.backgroundImage = `url('${bg}')`;
+      if (bg && packagesCard) {
+        packagesCard.style.backgroundImage = `url('${bg}')`;
+      }
+    });
+
+    section.addEventListener('mouseleave', () => {
+      if (packagesCard) {
+        packagesCard.style.backgroundImage = `url('${defaultPackageBg}')`;
+      }
+    });
+
+    section.addEventListener('focusin', () => {
+      if (bg && packagesCard) {
+        packagesCard.style.backgroundImage = `url('${bg}')`;
+      }
+    });
+
+    section.addEventListener('focusout', () => {
+      if (packagesCard) {
+        packagesCard.style.backgroundImage = `url('${defaultPackageBg}')`;
       }
     });
   });
@@ -419,10 +440,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 /* ============================================================
    PACKAGE SECTION hover bg (outside DOMContentLoaded for safety)
    ============================================================ */
+const packagesCard = document.querySelector('.packages-card');
+const defaultPackageBg = packagesCard ? packagesCard.getAttribute('data-default-bg') || 'images/spiti.webp' : 'images/spiti.webp';
+
 document.querySelectorAll('.package-section').forEach(section => {
+  const bg = section.getAttribute('data-bg');
+
   section.addEventListener('mouseenter', () => {
-    const bg = section.getAttribute('data-bg');
-    const card = document.querySelector('.packages-card');
-    if (bg && card) card.style.backgroundImage = `url('${bg}')`;
+    if (bg && packagesCard) {
+      packagesCard.style.backgroundImage = `url('${bg}')`;
+    }
+  });
+
+  section.addEventListener('mouseleave', () => {
+    if (packagesCard) {
+      packagesCard.style.backgroundImage = `url('${defaultPackageBg}')`;
+    }
   });
 });
