@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  color: #0d1b2a;
+  background: #ecf0f3;
+}
+
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  color: #fff;
+  overflow: hidden;
+  background: #07111b;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.22) 0%, rgba(0,0,0,0.65) 100%);
+}
+
+.hero-bg img {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 20px 260px;
+}
+
+.hero-title {
+  margin: 0 0 16px;
+  font-size: clamp(4rem, 8vw, 6rem);
+  line-height: 1.1;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.03em;
+  text-shadow: 0 4px 14px rgba(0,0,0,0.8);
+}
+
+.hero-desc {
+  max-width: 900px;
+  margin: 0 auto 26px;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  line-height: 1.6;
+  color: rgba(255,255,255,0.95);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.75);
+}
+
+.explore-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: #1b78c7;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 12px 26px;
+  border-radius: 999px;
+  letter-spacing: 0.08em;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+  transition: transform 240ms ease, background 240ms ease;
+}
+
+.explore-btn:hover {
+  background: #145992;
+  transform: translateY(-2px);
+}
+
+.cards-slider {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 32px;
+  z-index: 3;
+  width: min(1180px, calc(100vw - 48px));
+  margin: 0 auto;
+}
+
+.swiper {
+  position: relative;
+  overflow: visible;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  min-width: 0;
+}
+
+.card {
+  position: relative;
+  height: 190px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.4);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+  transform: scale(0.94);
+  transition: transform 420ms ease, box-shadow 420ms ease, filter 420ms ease;
+}
+
+.swiper-slide-active .card {
+  transform: scale(1.04);
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent, rgba(0,0,0,0.82));
+}
+
+.card-overlay {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 12px;
+  z-index: 2;
+  color: #fff;
+}
+
+.card-overlay h3 {
+  margin: 0 0 5px;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.card-overlay span {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.8);
+}
+
+.slider-arrows {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 4;
+  pointer-events: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,0.92);
+  color: #0d1b2a;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.swiper-button-prev {
+  left: -8px;
+}
+
+.swiper-button-next {
+  right: -8px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.swiper-button-prev::after {
+  content: '‹';
+}
+
+.swiper-button-next::after {
+  content: '›';
+}
+
+@media (max-width: 767px) {
+  .hero-content {
+    padding-top: 80px;
+    padding-bottom: 260px;
+  }
+
+  .hero-title {
+    font-size: clamp(2.8rem, 14vw, 4rem);
+  }
+
+  .hero-desc {
+    font-size: 0.96rem;
+  }
+
+  .cards-slider {
+    bottom: 16px;
+  }
+
+  .card {
+    height: 160px;
+  }
+
+  .card img {
+    height: 160px;
+  }
+}
